@@ -1,0 +1,20 @@
+<li class="application">
+        <div class="application_pic">
+            <a href="/product/{{ application.get('appKey','') }}">
+            <img src="{{ application.get('icon-normal','/static/images/apppic.png')}}" class="application_img"></a>
+        </div>
+        <div class="application_intro">
+             <div class="product_info">
+                <p class="product_name">
+                <a href="/product/{{ application.get('appKey','') }}">{{ application.get('applicationName','') }}</a>
+                </p>
+                <p class="product_sort">{{ application.get('Introduction','') }}</p>
+                <p class="product_data">
+                    labels: 
+                    {% for label in  application.get('labels')%}
+                         <span class="label label-success">{{ label }}</span>
+                    {% end %}
+                </p>
+            </div>
+        </div>
+</li>

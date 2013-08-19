@@ -1,0 +1,87 @@
+{% extends "main.html" %}
+{% autoescape None %}
+{% block body %}
+
+   <!--  <button class="btn btn-success" style="float:right">创建应用</button> -->
+   <a href="#createApplicationModal" role="button" class="btn btn-success" data-toggle="modal" style="float:right">注册应用信息</a>
+   
+    <ul class="applications">
+        {% for application in applications%}
+            {% module Application(application) %}
+        {% end %}
+    </ul>
+
+    <!-- Modal -->
+    <div id="createApplicationModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="height:100%;top:0;left: 30%;width: 80%">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">注册应用</h3>
+      </div>
+      <div class="modal-body" style="max-height:10000px;height:100%;overflow-y:auto">
+        <form id="form_regist" action="" method="post" class="form-horizontal" style="margin-top:20px">
+              <input type="hidden" value="" name="icon-normal" id="form_icon_normal">
+              <div class="control-group">
+                <label class="control-label">应用名称：</label>
+                <div class="controls">
+                  <input type="text"  class="input-xlarge" name="applicationName">
+                  <span style="color:#999;margin-left:20px">该名称也用于来源显示，不超过10个汉字或20个字母
+                  </span>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label" >应用简介：</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" name="Introduction">
+                  <span style="color:#999;margin-left:20px">用于行为动态模块中应用介绍、授权页等，不超过15个汉字</span>
+                </div>
+              </div>
+	     <div class="control-group">
+                <label class="control-label" >应用介绍：</label>
+                <div class="controls">
+                  <textarea rows="3" class="input-xlarge" name="details"></textarea>
+                  <span style="color:#999;margin-left:20px">请简述应用的作用、使用方法等信息，将显示在应用广场中，不超过1000汉字
+                  </span>
+                </div>
+              </div>
+             <div class="control-group">
+                <label class="control-label" >标签：</label>
+                <div class="controls">
+                  <input type="text" class="input-xlarge" name="labels">
+                   <span style="color:#999;margin-left:20px">多个标签之间请用','分割
+                  </span>
+                </div>
+              </div>
+            </form>
+            <form id="form-preview" action="/images/preview" method="post" 
+                  enctype="MULTIPART/FORM-DATA" class="form-horizontal">
+                <div class="control-group">
+                  <label class="control-label" >图标：</label>
+                  <div class="controls">
+                    <input type="file" id="txt_icon_file" class="input-xlarge" name="icon-normal">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <img id="img-preview" src="{{ static_url("images/apppic.png") }}" width="100" height="100"/>
+                  </div>
+                </div>
+            </form>
+            <form class="form-horizontal">
+            <div class="control-group">
+                <div class="controls">
+                  <label class="checkbox">
+                    <input type="checkbox"> 我已经阅读了开发者协定内容
+                  </label>
+                  <button id="btn_submit_form" type="button" class="btn ">注册</button>
+		      <button type="button" class="btn ">取消</button>
+                </div>
+              </div>
+            </form>
+        
+       
+      </div>
+      
+    </div>
+
+     <script data-main="{{ static_url("js/app/dashbord") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+{% end %}
