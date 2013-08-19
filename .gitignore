@@ -1,3 +1,6 @@
+#
+conf/server.conf
+
 *.py[cod]
 
 # C extensions
