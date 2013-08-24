@@ -209,7 +209,7 @@ class Application(tornado.web.Application):
 def main():
 
     conf_file = os.path.join(
-        os.path.dirname(__file__), "conf" + os.path.sep + "server_test.conf")
+        os.path.dirname(__file__), "conf" + os.path.sep + "server.conf")
     tornado.options.parse_config_file(conf_file)
     http_server = tornado.httpserver.HTTPServer(Application())
     http_server.listen(os.environ.get("PORT", options.port))
