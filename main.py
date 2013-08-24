@@ -35,6 +35,7 @@ define("port", default=5000, help="run on the given port", type=int)
 define("root", default="http://localhost:5000", help="application url")
 define("cookie_secret", default="123456", help="application secret cookie")
 define('driver_url', default="localhost:27017", help="mongo db driver_url")
+define('collection', default="test", help="mongo db collection")
 define('douban_app_key', default="appkey", help="your douban app key")
 define('douban_app_secret', default="appsecret", help="you douban app secret")
 define('douban_callback', default="http://localhost/callback",
@@ -98,7 +99,7 @@ class DoubanSiginHandler(BaseHandler):
 
 class DoubanCallbackHandler(BaseHandler):
 
-    #get the params of douban callback
+    # get the params of douban callback
     @tornado.gen.coroutine
     def get(self):
         self.collection = self.settings['db'].account
@@ -174,7 +175,7 @@ class Application(tornado.web.Application):
 
         client = motor.MotorClient(
             options.driver_url).open_sync()
-        db = client.heroku_app17272954
+        db = client[options.collection]
 
         handlers = [
             (r"/", MainHandler),
@@ -208,7 +209,7 @@ class Application(tornado.web.Application):
 def main():
 
     conf_file = os.path.join(
-        os.path.dirname(__file__), "conf" + os.path.sep + "server.conf")
+        os.path.dirname(__file__), "conf" + os.path.sep + "server_test.conf")
     tornado.options.parse_config_file(conf_file)
     http_server = tornado.httpserver.HTTPServer(Application())
     http_server.listen(os.environ.get("PORT", options.port))

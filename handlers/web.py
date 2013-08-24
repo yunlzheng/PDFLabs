@@ -4,6 +4,7 @@
 import tornado.web
 import motor
 from tornado.options import options
+from . import BaseHandler
 
 class MainHandler(BaseHandler):
 

@@ -17,7 +17,8 @@ from tornado.httpclient import AsyncHTTPClient
 class BaseHandler(tornado.web.RequestHandler):
 
     def get_current_user(self):
-        return self.get_secure_cookie("userid")
+        return 1
+        #return self.get_secure_cookie("userid")
 
 
 class ContributeHandler(BaseHandler):
@@ -105,7 +106,6 @@ class DoubanSearchHandler(BaseHandler):
         url = "https://api.douban.com/v2/book/search?q=" + \
             keyword + "&fields=" + fields
         response = yield http_client.fetch(url)
-
         self.write(response.body)
 
 
