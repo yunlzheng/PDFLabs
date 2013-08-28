@@ -1,6 +1,7 @@
 #
 #conf/server.conf
 
+*.log
 
 *.py[cod]
 */*.py[cod]
