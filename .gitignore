@@ -1,9 +1,12 @@
 #
 #conf/server.conf
 
+*.log
 
 *.py[cod]
 */*.py[cod]
+
+*/*.pyc
 
 # C extensions
 *.so

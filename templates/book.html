@@ -26,20 +26,34 @@
 		<label id="book_tags"><b>标签:</b>
 		</label>
 		</div>
-		{% if current_user %}
-		     <div class="span2">
+		<!-- {% if current_user %} -->
+		     <!-- <div class="span2">
 		     	<a href="{{ book.get('resource_url') }}" target="_blank" class="btn btn-success">下载</a>
-		     </div>
-		{% else %}
+		     </div> -->
+		<!-- {% else %}
 		    <div> 
 			<img id="qrcode" title="未登录用户，请扫描二维码，获取下载地址" src="/static/qrcode/{{ book.get('id','default') }}.png" style="width:100px;height:100px"/>
 			<p style="font-size: 12px;color: #47A4CF;">扫描获取下载地址</p>
 		    </div>
-		{% end %}
+		{% end %} -->
 	</div>
 	
 </div>
 <br/>
+<div class="row-fulid">
+   <h5>文件下载</h5>
+   <hr>
+   <ul>
+	{% for file in book.get('files') %}
+          <li>由{{ file.get('account').get('name') }}提供   <a href="/static/doc/{{ file.get('file') }}" target="_blank" class="btn btn-success">下载</a></li>
+   	{% end %}
+	{% if book.get('network_disk') %}
+		{% for url in book.get('network_disk') %}
+		    {{ url }} 
+		{% end %}
+	{% end %}
+ </ul>
+</div>
 <div id="online-view" class="row-fluid " >
 	<h5>在线预览</h5>
 	<hr>
@@ -50,6 +64,11 @@
 	<h5>关于本书</h5>
 	<hr>
 	<p id="book_summary"></p>
+</div>
+<br/>
+<div class="row-fluid">
+	<h5>看过这本书的人都是这样说的</h5>
+	<hr>
 </div>
 
 

@@ -11,7 +11,7 @@
  	{% for book in hot_books[0:4] %}
 	    <div class="span3">
           	    <a href="/book/{{ book.get('id') }}">
-          	    <img alt="" img-load="{{ book.get('id') }}">
+          	    <img alt="" src="{{ book.get('image') }}">
           	    <div class="book_intro">{{ book.get('title','') }}</div>
           	    </a>
           	    </div>
@@ -23,7 +23,7 @@
 	        {% for book in hot_books[4:8] %}
 		<div class="span3">
 	          	<a href="/book/{{ book.get('id') }}">
-	          	<img  alt="" img-load="{{ book.get('id') }}">
+	          	<img  alt="" src="{{ book.get('image') }}">
 	          	<div class="book_intro">{{ book.get('title','') }}</div>
 	          	</a>
 	          	</div>
@@ -44,8 +44,8 @@
 		    
 		    <div class="span3">
 			<a href="/book/{{ books[i].get('id') }}">
-		    	<img class="img"  img-load="{{ books[i].get('id') }}">
-		    	<div class="book_intro">{{ books[i].get('title','未知') }}</div>
+		    	<img class="img"  src="{{ books[i].get('image') }}">
+		    	<div class="book_intro">{{ books[i].get('title','') }}</div>
 		    	</a>
 		    </div>
 		    {% if (i+1)%4==0 %}

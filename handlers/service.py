@@ -27,14 +27,3 @@ class AccountAPI(tornado.web.RequestHandler):
             if account.get('refresh_token', None):
                 del account['refresh_token']
             self.write(account)
-
-
-class BookAPI(tornado.web.RequestHandler):
-
-    @tornado.gen.coroutine
-    def get(self, id):
-        self.set_header('Content-Type', 'application/json')
-        http_client = AsyncHTTPClient()
-        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
-        book_details = json.loads(response.body)
-        self.write(book_details)
