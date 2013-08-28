@@ -17,8 +17,8 @@ from tornado.httpclient import AsyncHTTPClient
 class BaseHandler(tornado.web.RequestHandler):
 
     def get_current_user(self):
-        return 1
-        #return self.get_secure_cookie("userid")
+        # return 1
+        return self.get_secure_cookie("userid")
 
 
 class ContributeHandler(BaseHandler):
@@ -36,25 +36,29 @@ class ContributeHandler(BaseHandler):
     def post(self):
         db = self.settings['db']
         self.collection = db.books
-        book_id = self.get_argument('id', '')
+        id = self.get_argument('id', '')
         title = self.get_argument('title', '')
+        image = self.get_argument('image', '')
+        isbn13 = self.get_argument('isbn13', '')
+        publisher = self.get_argument('publisher', '')
         resource_url = self.get_argument('resource_url', '')
-        resource_type = self.get_argument('type', '')
-        resource_own = self.get_argument('own', False)
 
         book = {
-            'id': book_id,
+            'id': id,
             'title': title,
-            'resource_url': resource_url,
-            'resource_type': resource_type,
-            'resource_own': resource_own,
-            'uid': self.get_current_user(),
+            'image': image,
+            'isbn13': isbn13,
+            'publisher': publisher,
             'create_date': time.strftime('%Y-%m-%d %X', time.localtime()),
             'download_count': 0
         }
 
-        # create network disk download link qrcode
+        if resource_url:
+            book['network_disk'] = [resource_url]
 
+        uid = self.get_current_user()
+        account = yield motor.Op(self.settings['db'].account.find_one, {'uid': uid})
+        # create network disk download link qrcode
         # save file to mingodb gridfs
         try:
             self.request.files['file']
@@ -63,37 +67,42 @@ class ContributeHandler(BaseHandler):
             index = filename.rindex('.')
             fiexed = filename[index:]
             upload_file_path = 'static'
-            file_obj = open(
-                upload_file_path + os.path.sep + 'doc' + os.path.sep + book_id + fiexed, 'w+')
+            file_obj = open(upload_file_path + os.path.sep +
+                            'doc' + os.path.sep + id + fiexed, 'w+')
             file_obj.write(uploadFile['body'])
             # save the file to mongo gridfs
             # f = yield motor.Op(motor.MotorGridIn(db.fs, filename=filename).open)
             # yield motor.Op(f.write, file_obj)
             # yield motor.Op(f.close)
-            book['file_name'] = book_id + fiexed
-
+            book_file = {
+                'account': account,
+                'file': id + fiexed
+            }
+            book['files'] = [book_file]
         except:
             pass
 
-        root = self.settings['root']
-        qrcode_content = ''
-        if resource_url:
-            qrcode_content += resource_url
-        elif book['file_name']:
-            qrcode_content = self.settings[
-                'root'] + "static/doc/" + book["file_name"]
+        # create qrcode images
 
-        img = qrcode.make(qrcode_content)
-        img.save('static/qrcode/' + book_id + ".png")
+        # root = self.settings['root']
+        # qrcode_content = ''
+        # if resource_url:
+        #     qrcode_content += resource_url
+        # elif book['files']:
+        #     qrcode_content = self.settings[
+        #         'root'] + "static/doc/" + book["title"]
 
-        document = yield motor.Op(self.collection.find_one, {'id': book_id})
+        # img = qrcode.make(qrcode_content)
+        # img.save('static/qrcode/' + book_id + ".png")
+
+        document = yield motor.Op(self.collection.find_one, {'id': id})
         if document is None:
             arguments = yield motor.Op(self.collection.insert, book)
             app_log.info('contribute a new book resources')
         else:
             app_log.debug('book info alredy exist...')
             pass
-        self.redirect("/book/" + book_id)
+        self.redirect("/book/" + id)
 
 
 class DoubanSearchHandler(BaseHandler):
@@ -107,5 +116,3 @@ class DoubanSearchHandler(BaseHandler):
             keyword + "&fields=" + fields
         response = yield http_client.fetch(url)
         self.write(response.body)
-
-
