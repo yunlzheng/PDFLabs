@@ -1,22 +1,23 @@
 # -*- coding : utf-8 -*-
-from handlers import *
 from handlers.weixin import WeiXinHandler
-from handlers.service import AccountAPI, BookAPI
-from handlers.web import MainHandler, DevHandler, BookHandler, AuthenticateHandler, LogsHandler
+from handlers.douban import BookDetailHandler, BookSearchHandler
+from handlers.service import AccountAPI
+from handlers.auth import GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
+from handlers.web import MainHandler, DevHandler, BookHandler, AuthenticateHandler, LogsHandler, ContributeHandler
 
 router = [
       (r"/", MainHandler),
       (r"/dev", DevHandler),
       (r"/logs", LogsHandler),
       (r'/contribute', ContributeHandler),
-      (r"/sigin", AuthenticateHandler),
-      (r"/sigout", LogoutHandler),
-      (R"/weixin/service1", WeiXinHandler),
-      (r"/sigin/google", GoogleLoginHandler),
-      (r"/sigin/douban", DoubanSiginHandler),
       (r"/book/([0-9]+)", BookHandler),
       (r"/callback", DoubanCallbackHandler),
+      (r"/sigin", AuthenticateHandler),
+      (r"/sigout", LogoutHandler),
+      (r"/sigin/google", GoogleLoginHandler),
+      (r"/sigin/douban", DoubanSiginHandler),
       (r"/api/account/([\s\S]*)", AccountAPI),
-      (r"/api/book/search/([\s\S]*)", DoubanSearchHandler),
-      (r"/api/book/([0-9]+)", BookAPI)
+      (r"/api/book/search/([\s\S]*)", BookSearchHandler),
+      (r"/api/book/([0-9]+)", BookDetailHandler),
+      (r"/weixin/service1", WeiXinHandler)
 ]
