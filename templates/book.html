@@ -41,11 +41,13 @@
 </div>
 <br/>
 <div class="row-fulid">
-   <h5>文件下载</h5>
+   <h5>共享的文件</h5>
    <hr>
    <ul>
 	{% for file in book.get('files') %}
-          <li>由{{ file.get('account').get('name') }}提供   <a href="/static/doc/{{ file.get('file') }}" target="_blank" class="btn btn-success">下载</a></li>
+          <li>由{{ file.get('account').get('name') }}提供   
+          	<a href="/static/doc/{{ file.get('file') }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
+          	<a href="/preview/{{ book.get('id') }}" target="_blank" class="btn btn-success">预览</a></li>
    	{% end %}
 	{% if book.get('network_disk') %}
 		{% for url in book.get('network_disk') %}
@@ -53,11 +55,6 @@
 		{% end %}
 	{% end %}
  </ul>
-</div>
-<div id="online-view" class="row-fluid " >
-	<h5>在线预览</h5>
-	<hr>
-	<div id="documentViewer"></div>
 </div>
 <br/>
 <div class="row-fluid ">

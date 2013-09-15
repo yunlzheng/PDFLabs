@@ -7,12 +7,6 @@
 #
 import os
 import os.path
-import time
-import datetime
-import json
-import urllib
-import urllib2
-import unicodedata
 
 import motor
 import tornado.escape
@@ -24,7 +18,6 @@ import tornado.web
 import tornado.auth
 
 from tornado.log import app_log
-from tornado.httpclient import AsyncHTTPClient
 from tornado.options import define, options
 
 import defines

@@ -1,0 +1,16 @@
+{% extends "main.html" %}
+{% autoescape None %}
+{% block body %}
+<script type="text/javascript">
+	var bookid = {{ book.get('id',None) }}
+</script>
+<div id="online-view" class="row-fluid " >
+	<h5>{{ book.get('title') }} 在线预览</h5>
+	<hr>
+	<div id="documentViewer"></div>
+</div>
+<br/>
+
+ <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/flexpaper.css") }}">
+<script data-main="{{ static_url("js/app/book") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+{% end %}

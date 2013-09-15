@@ -4,20 +4,23 @@ var books;
 function iWant(id){
 
 	var book = books[id];	
-	$("#contribute-book-id").val(book.id);     
-	$("#contribute-book-title").val(book.title);     
-	$("#contriibute-book-image").val(book.image);     
-	$("#contribute-book-isbn13").val(book.isbn13);     
-	$("#contribute-book-publisher").val(book.publisher);
-        alert("iWant");
-
+      $.ajax({
+          type:"post",
+          url:"/api/want/"+book.id,
+          success:function(result,statusText,jqXHR){
+              alert("i Want success");
+          },
+          error:function(error,jqXHR){
+              alert("i Want error");
+          }
+      });
+      
 
 }
 
 function iHave(id){
 
 	var book = books[id];	
-	console.log(book);
 	$(".info-book-name").each(function(){
 		$(this).val(book.title);	
 	});;

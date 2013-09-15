@@ -22,13 +22,18 @@ class MainHandler(BaseHandler):
 
         books = []
         hot_books = []
-        n = yield motor.Op(self.settings['db'].books.find().count)
-        if n < 16:
-            begin = 0
-            end = 16
-        else:
-            begin = n - 16
-            end = n
+        begin = 0
+        end = 0
+        try:
+            n = yield motor.Op(self.settings['db'].books.find().count)
+            if n < 16:
+                begin = 0
+                end = 16
+            else:
+                begin = n - 16
+                end = n
+        except Exception as e:
+            app_log.error(e)
 
         cursor = self.settings['db'].books.find().sort('DESCENDING')[begin:end]
 
@@ -67,6 +72,18 @@ class BookHandler(BaseHandler):
         book = yield motor.Op(self.collection.find_one, {'id': bookid})
         self.render(
             "book.html",
+            page_heading=book['title'],
+            book=book
+        )
+
+class PreviewHandler(BaseHandler):
+
+    @tornado.gen.coroutine
+    def get(self, bookid):
+        self.collection = self.settings['db'].books
+        book = yield motor.Op(self.collection.find_one, {'id': bookid})
+        self.render(
+            "preview.html",
             page_heading=book['title'],
             book=book
         )
