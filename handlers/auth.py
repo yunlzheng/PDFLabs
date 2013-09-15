@@ -72,7 +72,7 @@ class DoubanCallbackHandler(BaseHandler):
     def get(self):
         self.collection = self.settings['db'].account
         code = self.get_argument('code')
-        url = douban_auth_url + "/token"
+        url = options.douban_auth_url + "/token"
         values = {
             "client_id": options.douban_app_key,
             "client_secret": options.douban_app_secret,
