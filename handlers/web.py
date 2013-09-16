@@ -1,56 +1,39 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
-import time
+import datetime
 import os.path
 import tornado.web
 import tornado.gen
 import tornado.httpclient
 import motor
-import qrcode
-from bson.py3compat import b
 from tornado.log import app_log
-from tornado.options import options
 from tornado.httpclient import *
-from tornado.httpclient import AsyncHTTPClient
+from models.books import Book
+from models.files import File
 
-from . import BaseHandler
+from handlers import BaseHandler
+
+class UUIDMixin():
+
+    def generate_uuid(self):
+
+        date = datetime.datetime.now()
+        return date.strftime("%Y%m%d%Hx%M%S")
 
 class MainHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self):
-
+        
         books = []
-        hot_books = []
-        begin = 0
-        end = 0
-        try:
-            n = yield motor.Op(self.settings['db'].books.find().count)
-            if n < 16:
-                begin = 0
-                end = 16
-            else:
-                begin = n - 16
-                end = n
-        except Exception as e:
-            app_log.error(e)
-
-        cursor = self.settings['db'].books.find().sort('DESCENDING')[begin:end]
-
-        for document in (yield motor.Op(cursor.to_list)):
-            books.append(document)
-
-        cursor1 = self.settings['db'].books.find().sort('DESCENDING')
-        for document in (yield motor.Op(cursor1.to_list)):
-            hot_books.append(document)
-
-        books.reverse()
+        for book in Book.objects():
+            books.append(book)
 
         self.render(
             "home.html",
             page_heading='PDFLabs',
             books=books,
-            hot_books=hot_books
+            hot_books=books[-8:]
         )
 
 
@@ -69,10 +52,10 @@ class BookHandler(BaseHandler):
     @tornado.gen.coroutine
     def get(self, bookid):
         self.collection = self.settings['db'].books
-        book = yield motor.Op(self.collection.find_one, {'id': bookid})
+        book = Book.objects(bid = bookid)[0]
         self.render(
             "book.html",
-            page_heading=book['title'],
+            page_heading=book.title,
             book=book
         )
 
@@ -110,7 +93,7 @@ class LogsHandler(BaseHandler):
             page_heading='PDFLabs 更新日志'
         )
 
-class ContributeHandler(BaseHandler):
+class ContributeHandler(BaseHandler, UUIDMixin):
 
     ''' contribute new book resources handler '''
     @tornado.web.authenticated
@@ -120,11 +103,45 @@ class ContributeHandler(BaseHandler):
             page_heading='cuttle | contribute book'
         )
 
+    def share_network_file(self, book, resource_url):
+        user = self.get_curent_user_model()
+        file = File(file_type='network_disk',
+                file_address=resource_url,
+        )
+        if user:
+            file.author = user
+        book.files.append(file)
+        book.save()
+        self.redirect("/book/" + book.bid)
+
+    def share_local_file(self,book, resource_url):
+        
+        user = self.get_curent_user_model()
+        try:
+            self.request.files['file']
+            uploadFile = self.request.files['file'][0]
+            filename = uploadFile['filename']
+            fiexed = filename[filename.rindex('.'):]
+            path = 'static' + os.path.sep +'doc' + os.path.sep + self.generate_uuid() + fiexed
+            file_obj = open(path, 'w+')
+            file_obj.write(uploadFile['body'])
+            file = File(
+                file_type='local_disk',
+                file_address=path,
+            )
+            if user:
+                file.author = user
+            print ">++++++++++++++++++++++++++++++"
+            book.files.append(file)
+            book.save()
+        except Exception as ex:
+            app_log.error(ex)
+        self.redirect("/book/" + str(book.bid))
+
     @tornado.web.authenticated
     @tornado.gen.coroutine
     def post(self):
-        db = self.settings['db']
-        self.collection = db.books
+
         id = self.get_argument('id', '')
         title = self.get_argument('title', '')
         image = self.get_argument('image', '')
@@ -132,63 +149,22 @@ class ContributeHandler(BaseHandler):
         publisher = self.get_argument('publisher', '')
         resource_url = self.get_argument('resource_url', '')
 
-        book = {
-            'id': id,
-            'title': title,
-            'image': image,
-            'isbn13': isbn13,
-            'publisher': publisher,
-            'create_date': time.strftime('%Y-%m-%d %X', time.localtime()),
-            'download_count': 0
-        }
+        try: 
+            book = Book.objects(bid=id)[0]
+        except Exception as ex:
+            app_log.error(ex)
+            book = Book(bid = id, 
+                title=title, 
+                image=image, 
+                isbn13=isbn13,
+                publisher=publisher,
+                wcount=0,
+                dcount=0
+            )
+        finally:
+            book.save()
 
         if resource_url:
-            book['network_disk'] = [resource_url]
-
-        uid = self.get_current_user()
-        account = yield motor.Op(self.settings['db'].account.find_one, {'uid': uid})
-        # create network disk download link qrcode
-        # save file to mingodb gridfs
-        try:
-            self.request.files['file']
-            uploadFile = self.request.files['file'][0]
-            filename = uploadFile['filename']
-            index = filename.rindex('.')
-            fiexed = filename[index:]
-            upload_file_path = 'static'
-            file_obj = open(upload_file_path + os.path.sep +
-                            'doc' + os.path.sep + id + fiexed, 'w+')
-            file_obj.write(uploadFile['body'])
-            # save the file to mongo gridfs
-            # f = yield motor.Op(motor.MotorGridIn(db.fs, filename=filename).open)
-            # yield motor.Op(f.write, file_obj)
-            # yield motor.Op(f.close)
-            book_file = {
-                'account': account,
-                'file': id + fiexed
-            }
-            book['files'] = [book_file]
-        except:
-            pass
-
-        # create qrcode images
-
-        # root = self.settings['root']
-        # qrcode_content = ''
-        # if resource_url:
-        #     qrcode_content += resource_url
-        # elif book['files']:
-        #     qrcode_content = self.settings[
-        #         'root'] + "static/doc/" + book["title"]
-
-        # img = qrcode.make(qrcode_content)
-        # img.save('static/qrcode/' + book_id + ".png")
-
-        document = yield motor.Op(self.collection.find_one, {'id': id})
-        if document is None:
-            arguments = yield motor.Op(self.collection.insert, book)
-            app_log.info('contribute a new book resources')
+            self.share_network_file(book, resource_url)
         else:
-            app_log.debug('book info alredy exist...')
-            pass
-        self.redirect("/book/" + id)
+            self.share_local_file(book, resource_url)

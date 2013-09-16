@@ -2,7 +2,7 @@
 {% autoescape None %}
 {% block body %}
 <script type="text/javascript">
-	var bookid = {{ book.get('id',None) }}
+	var bookid = {{ book.bid }}
 	
 </script>
 <div id="book" class="row-fluid bookstore">
@@ -11,31 +11,21 @@
 	</div>
 	<div class="span8">
 		<div class="span8">
-		<h5>{{ book.get('title') }}</h5><h6 id="book_subtitle"></h6>
+		<h5>{{ book.title }}</h5><h6 id="book_subtitle"></h6>
 		<label id="book_authors"><b>作者:</b>
 		</label>
 		<label>
-			<b>出版商:</b><span id="book_publisher"></span>	
+			<b>出版商:</b><span id="book_publisher">{{ book.publisher }}</span>	
 		</label>
 		<label>
 			<b>出版日期:</b><span id="book_publisher"></span>
 		</label>
 		<label>
-			<b>ISBN:</b><span id="book_isbn13"></span>
+			<b>ISBN:</b><span id="book_isbn13">{{ book.isbn13 }}</span>
 		</label>
 		<label id="book_tags"><b>标签:</b>
 		</label>
 		</div>
-		<!-- {% if current_user %} -->
-		     <!-- <div class="span2">
-		     	<a href="{{ book.get('resource_url') }}" target="_blank" class="btn btn-success">下载</a>
-		     </div> -->
-		<!-- {% else %}
-		    <div> 
-			<img id="qrcode" title="未登录用户，请扫描二维码，获取下载地址" src="/static/qrcode/{{ book.get('id','default') }}.png" style="width:100px;height:100px"/>
-			<p style="font-size: 12px;color: #47A4CF;">扫描获取下载地址</p>
-		    </div>
-		{% end %} -->
 	</div>
 	
 </div>
@@ -44,17 +34,20 @@
    <h5>共享的文件</h5>
    <hr>
    <ul>
-   {% if book.get('files') %}
-	{% for file in book.get('files') %}
-          <li>由{{ file.get('account').get('name') }}提供   
-          	<a href="/static/doc/{{ file.get('file') }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
-          	<a href="/preview/{{ book.get('id') }}" target="_blank" class="btn btn-success">预览</a></li>
+   {% if book.files %}
+	{% for file in book.files %}
+	    {% if file.file_type=='network_disk' %}
+	    	<li>
+	    		由{{ file.author.name }}提供
+	    		<a href="{{ file.file_address }}" target="_blank" class="btn btn-success">获取</a>
+	    	</li><br/>
+	    {% else %}
+	    	 <li>由{{ file.author.name }}提供   
+	          	<a href="/{{ file.file_address }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
+	          	<a href="/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li><br/>
+	    {% end %}
+	    
    	{% end %}
-	{% if book.get('network_disk') %}
-		{% for url in book.get('network_disk') %}
-		    {{ url }} 
-		{% end %}
-	{% end %}
    {% else %}
    	暂时未提供相关分享
    {% end %}

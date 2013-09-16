@@ -39,14 +39,16 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
         if self.get_argument("openid.mode", None):
 
             result = yield self.get_authenticated_user()
-            user = User.objects(type='google', email=result['email'])[0]
-            if not user:
+            try:
+                user = User.objects(type='google', email=result['email'])[0]
+            except Exception as ex:
+                app_log.error(ex)
                 user = User(uid=self.generate_uuid(), 
-                        type='google', 
-                        email=result['email'], 
-                        name=result['name'])
+                            type='google', 
+                            email=result['email'], 
+                            name=result['name'])
                 user.save()
-               
+            
             self.set_secure_cookie('userid', user.uid)
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")
@@ -90,23 +92,23 @@ class DoubanCallbackHandler(BaseHandler):
             request2.add_header('Authorization', 'Bearer ' + access_token)
             response2 = urllib2.urlopen(request2)
             account = json.loads(response2.read())
-    
-            user = User.objects(type='douban', uid=uid)[0]
-            if not user:
+            
+            try:
+                user = User.objects(type='douban', uid=uid)[0]
+            except Exception, e:
+                app_log.error(e)
                 user = User(uid=account_json['uid'], 
                         type='douban', 
                         name=account['name'],
                         avatar=account['avatar'],
                         access_token=data['access_token'],
                         refresh_token=data['refresh_token'])
-                user.save()
-                
             else:
                 user.access_token=access_token
                 user.refresh_token = refresh_token
+            finally:
                 user.save()
-        
-
+                
             self.set_secure_cookie('userid', user.uid)
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")

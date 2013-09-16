@@ -2,7 +2,6 @@
 import json
 import tornado.web
 import tornado.gen
-import motor
 from tornado.httpclient import AsyncHTTPClient
 
 from . import BaseHandler
