@@ -4,7 +4,7 @@ PDFLabs
 
 Share PDF files on the Internet
 
- ![image](https://github.com/yunlzheng/PDFLabs/blob/master/static/img/home.png)
+ ![image](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/home.png)
 
 
 LICENSE
