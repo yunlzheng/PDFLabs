@@ -3,7 +3,7 @@
 from mongoengine import *
 
 class User(Document):
-    id = StringField(required=True)
+    uid = StringField(required=True)
     type = StringField(required=True)
     email = StringField(required=True)
     name = StringField(max_length=50)
