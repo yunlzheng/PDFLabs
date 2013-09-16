@@ -6,7 +6,8 @@ import tornado.gen
 import motor
 from tornado.httpclient import AsyncHTTPClient
 from tornado.log import app_log
-from . import BaseHandler
+from handlers import BaseHandler
+from models.users import User 
 
 class AccountAPI(tornado.web.RequestHandler):
 

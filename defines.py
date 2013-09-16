@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
-from tornado.options import define, options
+from tornado.options import define
 
 define("port", default=5000, help="run on the given port", type=int)
 define("root", help="application url")
@@ -12,3 +12,8 @@ define('douban_app_secret', help="you douban app secret")
 define('douban_callback',  help="you douban app callback url")
 define('douban_auth_url', help="douban api address to auth")
 define('douban_account_info',  help="douban api to get current account info")
+
+define('mongo_host')
+define('mongo_port')
+define('mongo_username')
+define('mongo_password')
