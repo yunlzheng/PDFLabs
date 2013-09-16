@@ -12,15 +12,15 @@
 	    <div class="span3">
 	    	<div class="book_thing">
 	    	    <div class="pre_ribbon">
-	    	      {% if book.get('files') %}
+	    	      {% if book.files %}
 	    	     	<span class='stack'>现货</span>
 	    	     {% else %}
 	    	     	<span class='wait'>等待</span>
 	    	     {% end %}
 	    	    </div>
-	          	    <a href="/book/{{ book.get('id') }}">
-	          	    <img alt="" src="{{ book.get('image') }}">
-	          	    <div class="book_intro">{{ book.get('title','') }}</div>
+	          	    <a href="/book/{{ book.bid }}">
+	          	    <img alt="" src="{{ book.image }}">
+	          	    <div class="book_intro">{{ book.title }}</div>
           		</div>
           	    </a>
           	    </div>
@@ -33,15 +33,15 @@
 		<div class="span3">
 		 <div class="book_thing">
 		       <div class="pre_ribbon">
-		    	      {% if book.get('files') %}
+		    	      {% if book.files %}
 		    	     	<span class='stack'>现货</span>
 		    	     {% else %}
 		    	     	<span class='wait'>等待</span>
 		    	     {% end %}
 		        </div>
-		       <a href="/book/{{ book.get('id') }}">
-		       <img  alt="" src="{{ book.get('image') }}">
-		       <div class="book_intro">{{ book.get('title','') }}</div>
+		       <a href="/book/{{ book.bid }}">
+		       <img  alt="" src="{{ book.image }}">
+		       <div class="book_intro">{{ book.title }}</div>
 		       </a>
 		 </div>
 	          	</div>
@@ -63,15 +63,15 @@
 			    <div class="span3">
 			    	<div class="book_thing">
 				    	<div class="pre_ribbon">
-				    	      {% if books[i].get('files') %}
+				    	      {% if books[i].files %}
 				    	     	<span class='stack'>现货</span>
 				    	     {% else %}
 				    	     	<span class='wait'>等待</span>
 				    	     {% end %}
 				    	</div>
-					<a href="/book/{{ books[i].get('id') }}">
-				    	<img class="img"  src="{{ books[i].get('image') }}">
-				    	<div class="book_intro">{{ books[i].get('title','') }}</div>
+					<a href="/book/{{ books[i].bid }}">
+				    	<img class="img"  src="{{ books[i].image }}">
+				    	<div class="book_intro">{{ books[i].title }}</div>
 				    	</a>
 			    	</div>
 			    </div>

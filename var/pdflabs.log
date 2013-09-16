@@ -3224,3 +3224,662 @@
 [I 130916 23:28:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
 [I 130916 23:28:38 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.21ms
 [I 130916 23:28:39 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 301.15ms
+[I 130916 23:48:33 main:54]  PDFLabs running server on 5000
+[E 130916 23:48:38 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130916 23:48:38 web:1635] 200 GET /contribute (127.0.0.1) 35.98ms
+[I 130916 23:48:39 web:1635] 200 GET /static/js/app/contributeBook.js (127.0.0.1) 18.88ms
+[W 130916 23:48:39 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 1.81ms
+[I 130916 23:48:39 web:1635] 200 GET /static/js/module/contribute_book.js (127.0.0.1) 1.01ms
+[I 130916 23:48:39 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 320.29ms
+[I 130916 23:48:46 web:1635] 200 GET /api/book/search/Ruby?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 2090.81ms
+[I 130916 23:48:54 web:1635] 200 POST /api/want/2032343 (127.0.0.1) 4237.45ms
+[I 130916 23:49:52 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:49:54 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:02 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:06 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:08 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:12 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:14 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:17 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:19 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:23 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:25 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:31 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:33 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:49 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:50:51 main:54]  PDFLabs running server on 5000
+[I 130916 23:50:54 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:55:50 main:54]  PDFLabs running server on 5000
+[E 130916 23:55:54 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130916 23:55:54 web:1635] 304 GET /contribute (127.0.0.1) 17.48ms
+[I 130916 23:55:54 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.49ms
+[I 130916 23:55:54 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.27ms
+[I 130916 23:55:54 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130916 23:55:54 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130916 23:55:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.37ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/app/contributeBook.js (127.0.0.1) 1.18ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/module/contribute_book.js (127.0.0.1) 0.98ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.29ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.27ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.01ms
+[I 130916 23:55:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.26ms
+[W 130916 23:55:55 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 1.77ms
+[I 130916 23:55:58 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 693.47ms
+[I 130916 23:56:07 web:1635] 200 GET /api/book/search/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 2037.75ms
+[E 130916 23:56:12 service:49] no such item for Cursor instance
+[I 130916 23:56:12 web:1635] 200 POST /api/want/2243615 (127.0.0.1) 2550.54ms
+[I 130916 23:56:44 web:1635] 200 POST /api/want/2243615 (127.0.0.1) 2529.82ms
+[I 130916 23:56:57 web:1635] 200 POST /api/want/2243615 (127.0.0.1) 2528.44ms
+[E 130916 23:57:16 service:49] no such item for Cursor instance
+[I 130916 23:57:17 web:1635] 200 POST /api/want/1052241 (127.0.0.1) 2518.37ms
+[E 130916 23:57:23 service:49] no such item for Cursor instance
+[I 130916 23:57:24 web:1635] 200 POST /api/want/2334288 (127.0.0.1) 2516.68ms
+[E 130916 23:57:30 service:49] no such item for Cursor instance
+[I 130916 23:57:30 web:1635] 200 POST /api/want/4260618 (127.0.0.1) 2525.15ms
+[I 130916 23:57:46 web:1635] 200 GET /api/book/search/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 2033.11ms
+[E 130916 23:57:51 service:49] no such item for Cursor instance
+[I 130916 23:57:51 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 2513.10ms
+[I 130916 23:58:08 web:1635] 200 GET /api/book/search/%E7%97%85%E6%AF%92%E5%BE%AA%E7%8E%AF?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1909.21ms
+[E 130916 23:58:12 service:49] no such item for Cursor instance
+[I 130916 23:58:12 web:1635] 200 POST /api/want/22790103 (127.0.0.1) 2528.34ms
+[I 130916 23:58:27 web:1635] 200 GET /api/book/search/%E8%AE%BE%E8%AE%A1?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 2210.86ms
+[E 130916 23:58:38 service:49] no such item for Cursor instance
+[I 130916 23:58:39 web:1635] 200 POST /api/want/1941558 (127.0.0.1) 2536.65ms
+[E 130916 23:58:56 service:49] no such item for Cursor instance
+[I 130916 23:58:57 web:1635] 200 POST /api/want/1139336 (127.0.0.1) 2507.98ms
+[I 130916 23:59:08 web:1635] 200 GET /api/book/search/%E5%A4%A7%E6%95%B0%E6%8D%AE?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1945.42ms
+[I 130916 23:59:12 web:1635] 200 GET / (127.0.0.1) 2379.59ms
+[W 130916 23:59:14 web:1635] 404 GET /modules/home.js (127.0.0.1) 2.44ms
+[I 130916 23:59:15 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 298.40ms
+[E 130916 23:59:15 service:49] no such item for Cursor instance
+[I 130916 23:59:16 web:1635] 200 POST /api/want/20429677 (127.0.0.1) 2710.48ms
+[I 130916 23:59:26 web:1635] 200 GET /api/book/search/python?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1952.35ms
+[E 130916 23:59:31 service:49] no such item for Cursor instance
+[I 130916 23:59:31 web:1635] 200 POST /api/want/3884108 (127.0.0.1) 2433.67ms
+[E 130916 23:59:36 service:49] no such item for Cursor instance
+[I 130916 23:59:36 web:1635] 200 POST /api/want/1239501 (127.0.0.1) 2433.36ms
+[E 130916 23:59:49 service:49] no such item for Cursor instance
+[I 130916 23:59:49 web:1635] 200 POST /api/want/10561367 (127.0.0.1) 2455.61ms
+[E 130917 00:00:02 service:49] no such item for Cursor instance
+[I 130917 00:00:02 web:1635] 200 POST /api/want/1440658 (127.0.0.1) 3236.76ms
+[E 130917 00:00:07 service:49] no such item for Cursor instance
+[I 130917 00:00:08 web:1635] 200 POST /api/want/5401851 (127.0.0.1) 2492.92ms
+[E 130917 00:00:14 service:49] no such item for Cursor instance
+[I 130917 00:00:14 web:1635] 200 POST /api/want/1418172 (127.0.0.1) 3259.91ms
+[I 130917 00:01:24 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:01:28 main:54]  PDFLabs running server on 5000
+[I 130917 00:03:39 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:03:42 main:54]  PDFLabs running server on 5000
+[I 130917 00:03:47 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:03:50 main:54]  PDFLabs running server on 5000
+[I 130917 00:04:11 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:04:13 main:54]  PDFLabs running server on 5000
+[I 130917 00:04:37 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:04:39 main:54]  PDFLabs running server on 5000
+[I 130917 00:04:45 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:04:47 main:54]  PDFLabs running server on 5000
+[E 130917 00:04:51 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'If-None-Match': '"d4fbbb47a13635700c782926ea5cb588cef5704e"', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 27, in get
+        hot_books=Book.objects()[-8:]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 139, in __getitem__
+        raise err
+    IndexError: Cursor instances do not supportnegative indices
+[E 130917 00:04:51 web:1635] 500 GET / (127.0.0.1) 10.01ms
+[I 130917 00:05:30 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:06:01 main:54]  PDFLabs running server on 5000
+[E 130917 00:06:07 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 29, in get
+        hot_books=[book for book in Book.objects()[-8:]]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 139, in __getitem__
+        raise err
+    IndexError: Cursor instances do not supportnegative indices
+[E 130917 00:06:07 web:1635] 500 GET / (127.0.0.1) 314.97ms
+[I 130917 00:07:33 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:07:35 main:54]  PDFLabs running server on 5000
+[I 130917 00:07:50 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:08:02 main:54]  PDFLabs running server on 5000
+[E 130917 00:08:05 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 30, in get
+        hot_books=[book for book in Book.objects()[-8:]]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 139, in __getitem__
+        raise err
+    IndexError: Cursor instances do not supportnegative indices
+[E 130917 00:08:05 web:1635] 500 GET / (127.0.0.1) 615.89ms
+[I 130917 00:08:26 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:08:29 main:54]  PDFLabs running server on 5000
+[I 130917 00:08:38 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:08:41 main:54]  PDFLabs running server on 5000
+[I 130917 00:08:45 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:08:47 main:54]  PDFLabs running server on 5000
+[I 130917 00:08:57 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:08:59 main:54]  PDFLabs running server on 5000
+[E 130917 00:09:05 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 31, in get
+        hot_books=books[-8:]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 538, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 645, in render_string
+        return t.generate(**namespace)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/template.py", line 273, in generate
+        return execute()
+      File "home_html.generated.py", line 57, in _tt_execute
+        if book.get('files'):  # home.html:15 (via main.html:68)
+    AttributeError: 'Book' object has no attribute 'get'
+[E 130917 00:09:05 web:1635] 500 GET / (127.0.0.1) 342.61ms
+[E 130917 00:10:50 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 31, in get
+        hot_books=books[-8:]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 538, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 645, in render_string
+        return t.generate(**namespace)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/template.py", line 273, in generate
+        return execute()
+      File "home_html.generated.py", line 69, in _tt_execute
+        _tt_tmp = book.image  # home.html:22 (via main.html:68)
+    AttributeError: 'Book' object has no attribute 'image'
+[E 130917 00:10:50 web:1635] 500 GET / (127.0.0.1) 322.85ms
+[E 130917 00:10:52 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 31, in get
+        hot_books=books[-8:]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 538, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 645, in render_string
+        return t.generate(**namespace)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/template.py", line 273, in generate
+        return execute()
+      File "home_html.generated.py", line 69, in _tt_execute
+        _tt_tmp = book.image  # home.html:22 (via main.html:68)
+    AttributeError: 'Book' object has no attribute 'image'
+[E 130917 00:10:52 web:1635] 500 GET / (127.0.0.1) 321.90ms
+[I 130917 00:11:20 autoreload:186] /home/zheng/github/PDFLabs/models/books.py modified; restarting server
+[I 130917 00:13:05 main:54]  PDFLabs running server on 5000
+[I 130917 00:13:08 web:1635] 200 GET / (127.0.0.1) 320.76ms
+[I 130917 00:13:08 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.35ms
+[I 130917 00:13:08 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.08ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.60ms
+[I 130917 00:13:08 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.08ms
+[I 130917 00:13:08 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.02ms
+[I 130917 00:13:08 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.43ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.01ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.06ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.16ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.14ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.09ms
+[I 130917 00:13:08 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.35ms
+[W 130917 00:13:09 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.70ms
+[I 130917 00:13:09 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 302.88ms
+[I 130917 00:13:18 web:1635] 200 GET /static/img/glyphicons-halflings.png (127.0.0.1) 21.84ms
+[I 130917 00:13:18 web:1635] 200 GET /static/img/glyphicons-halflings-white.png (127.0.0.1) 33.60ms
+[E 130917 00:13:19 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130917 00:13:19 web:1635] 304 GET /contribute (127.0.0.1) 17.25ms
+[W 130917 00:13:19 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 1.64ms
+[I 130917 00:13:20 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 303.37ms
+[I 130917 00:13:29 web:1635] 200 GET /api/book/search/ruby?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1937.27ms
+[E 130917 00:13:33 service:49] no such item for Cursor instance
+[I 130917 00:13:35 web:1635] 200 POST /api/want/2032343 (127.0.0.1) 3229.64ms
+[E 130917 00:13:37 service:49] no such item for Cursor instance
+[I 130917 00:13:37 web:1635] 200 POST /api/want/3329887 (127.0.0.1) 2441.22ms
+[E 130917 00:13:45 service:49] no such item for Cursor instance
+[I 130917 00:13:45 web:1635] 200 POST /api/want/4888652 (127.0.0.1) 2442.22ms
+[E 130917 00:13:50 service:49] no such item for Cursor instance
+[I 130917 00:13:50 web:1635] 200 POST /api/want/7056800 (127.0.0.1) 2443.13ms
+[E 130917 00:13:55 service:49] no such item for Cursor instance
+[I 130917 00:13:55 web:1635] 200 POST /api/want/6756090 (127.0.0.1) 3000.07ms
+[E 130917 00:14:01 service:49] no such item for Cursor instance
+[I 130917 00:14:01 web:1635] 200 POST /api/want/3644726 (127.0.0.1) 4127.05ms
+[E 130917 00:14:07 service:49] no such item for Cursor instance
+[I 130917 00:14:07 web:1635] 200 POST /api/want/3094230 (127.0.0.1) 2741.01ms
+[I 130917 00:14:20 web:1635] 200 GET /api/book/search/mongodb?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1988.28ms
+[E 130917 00:14:25 service:49] no such item for Cursor instance
+[I 130917 00:14:26 web:1635] 200 POST /api/want/6068947 (127.0.0.1) 2750.59ms
+[E 130917 00:14:26 service:49] no such item for Cursor instance
+[I 130917 00:14:27 web:1635] 200 POST /api/want/19977785 (127.0.0.1) 2907.74ms
+[E 130917 00:14:28 service:49] no such item for Cursor instance
+[I 130917 00:14:28 web:1635] 200 POST /api/want/10439364 (127.0.0.1) 3301.65ms
+[E 130917 00:14:36 service:49] no such item for Cursor instance
+[I 130917 00:14:36 web:1635] 200 POST /api/want/5992483 (127.0.0.1) 2446.65ms
+[E 130917 00:14:41 service:49] no such item for Cursor instance
+[I 130917 00:14:42 web:1635] 200 POST /api/want/4711365 (127.0.0.1) 3089.10ms
+[E 130917 00:14:48 web:1228] Uncaught exception GET / (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/contribute', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a', 'If-None-Match': '"0260f8a45aff73c8384105b9b2503ce25606aa82"'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 31, in get
+        hot_books=books[-8:]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 538, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 645, in render_string
+        return t.generate(**namespace)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/template.py", line 273, in generate
+        return execute()
+      File "home_html.generated.py", line 109, in _tt_execute
+        if books[i].get('files'):  # home.html:66 (via main.html:68)
+    AttributeError: 'Book' object has no attribute 'get'
+[E 130917 00:14:48 web:1635] 500 GET / (127.0.0.1) 322.93ms
+[I 130917 00:15:37 web:1635] 200 GET / (127.0.0.1) 324.15ms
+[I 130917 00:15:37 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130917 00:15:37 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.17ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130917 00:15:37 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.31ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.17ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.89ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.18ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.10ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.15ms
+[I 130917 00:15:37 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 2.68ms
+[W 130917 00:15:38 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.57ms
+[I 130917 00:15:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130917 00:15:38 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.11ms
+[I 130917 00:15:39 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 300.20ms
+[I 130917 00:15:58 web:1635] 304 GET / (127.0.0.1) 671.02ms
+[I 130917 00:15:58 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130917 00:15:58 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.24ms
+[I 130917 00:15:58 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.95ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130917 00:15:59 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.12ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.20ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.18ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.05ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.18ms
+[I 130917 00:15:59 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 2.53ms
+[W 130917 00:15:59 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.72ms
+[I 130917 00:16:00 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130917 00:16:00 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.26ms
+[I 130917 00:16:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 300.30ms
+[E 130917 00:16:21 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130917 00:16:21 web:1635] 304 GET /contribute (127.0.0.1) 27.78ms
+[W 130917 00:16:21 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 2.66ms
+[I 130917 00:16:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 302.91ms
+[I 130917 00:16:31 web:1635] 200 GET /api/book/search/%E9%BB%91%E5%AE%A2?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1960.71ms
+[E 130917 00:16:36 service:49] no such item for Cursor instance
+[I 130917 00:16:36 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 2458.93ms
+[E 130917 00:16:45 service:49] no such item for Cursor instance
+[I 130917 00:16:45 web:1635] 200 POST /api/want/6860890 (127.0.0.1) 2613.89ms
+[E 130917 00:16:54 service:49] no such item for Cursor instance
+[I 130917 00:16:54 web:1635] 200 POST /api/want/6025284 (127.0.0.1) 2458.76ms
+[I 130917 00:17:07 web:1635] 200 GET / (127.0.0.1) 321.27ms
+[W 130917 00:17:07 web:1635] 404 GET /modules/home.js (127.0.0.1) 2.39ms
+[I 130917 00:17:08 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 299.49ms
+[E 130917 00:17:28 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130917 00:17:28 web:1635] 200 GET /book/6068947 (127.0.0.1) 3026.74ms
+[I 130917 00:17:28 web:1635] 200 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.61ms
+[I 130917 00:17:28 web:1635] 200 GET /static/js/app/book.js (127.0.0.1) 0.99ms
+[W 130917 00:17:28 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.69ms
+[I 130917 00:17:29 web:1635] 200 GET /static/js/module/book.js (127.0.0.1) 12.04ms
+[I 130917 00:17:29 web:1635] 200 GET /static/js/lib/flexpaper.js (127.0.0.1) 10.51ms
+[I 130917 00:17:29 web:1635] 200 GET /static/js/lib/flexpaper_handlers.js (127.0.0.1) 13.86ms
+[I 130917 00:17:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 300.99ms
+[I 130917 00:17:31 web:1635] 200 GET /api/book/6068947 (127.0.0.1) 2068.81ms
+[I 130917 00:17:58 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:18:02 main:54]  PDFLabs running server on 5000
+[I 130917 00:18:23 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:18:25 main:54]  PDFLabs running server on 5000
+[I 130917 00:18:28 web:1635] 304 GET / (127.0.0.1) 326.10ms
+[W 130917 00:18:28 web:1635] 404 GET /modules/home.js (127.0.0.1) 2.14ms
+[I 130917 00:18:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 301.08ms
+[I 130917 00:19:12 web:1635] 200 GET / (127.0.0.1) 336.84ms
+[I 130917 00:19:12 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 4.97ms
+[I 130917 00:19:12 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.20ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.11ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.99ms
+[I 130917 00:19:12 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.42ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.22ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.99ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.09ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.16ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.28ms
+[I 130917 00:19:12 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.32ms
+[W 130917 00:19:12 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.64ms
+[I 130917 00:19:13 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.46ms
+[I 130917 00:19:13 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.64ms
+[I 130917 00:19:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 309.10ms
+[I 130917 00:19:45 web:1635] 200 GET / (127.0.0.1) 331.72ms
+[I 130917 00:19:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.80ms
+[I 130917 00:19:45 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.19ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130917 00:19:45 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.44ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.13ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.08ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.01ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.16ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.16ms
+[I 130917 00:19:45 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.51ms
+[W 130917 00:19:45 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.61ms
+[I 130917 00:19:47 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130917 00:19:47 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.05ms
+[I 130917 00:19:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 310.62ms
+[E 130917 00:19:49 web:1228] Uncaught exception GET /book/2032343 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/2032343', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 49, in get
+        book = Book.objects(bid = book_id)
+    NameError: global name 'book_id' is not defined
+[E 130917 00:19:49 web:1635] 500 GET /book/2032343 (127.0.0.1) 5.45ms
+[I 130917 00:19:53 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 315.09ms
+[I 130917 00:20:05 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:20:07 main:54]  PDFLabs running server on 5000
+[E 130917 00:20:10 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a', 'If-None-Match': '"4f28e8ce313d24f3984ad0d8098d9b50f87b2323"'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:20:10 web:1635] 500 GET /book/6068947 (127.0.0.1) 15.71ms
+[E 130917 00:20:10 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:20:10 web:1635] 500 GET /book/6068947 (127.0.0.1) 5.59ms
+[E 130917 00:25:35 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:35 web:1635] 500 GET /book/6068947 (127.0.0.1) 3.54ms
+[E 130917 00:25:36 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:36 web:1635] 500 GET /book/6068947 (127.0.0.1) 3.81ms
+[E 130917 00:25:37 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:37 web:1635] 500 GET /book/6068947 (127.0.0.1) 3.68ms
+[E 130917 00:25:37 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:37 web:1635] 500 GET /book/6068947 (127.0.0.1) 4.45ms
+[E 130917 00:25:37 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:37 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.41ms
+[E 130917 00:25:38 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book['title'],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 152, in __getitem__
+        raise AttributeError
+    AttributeError
+[E 130917 00:25:38 web:1635] 500 GET /book/6068947 (127.0.0.1) 4.07ms
+[I 130917 00:25:55 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:26:05 main:54]  PDFLabs running server on 5000
+[E 130917 00:26:13 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:13 web:1635] 500 GET /book/6068947 (127.0.0.1) 7.91ms
+[E 130917 00:26:13 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:13 web:1635] 500 GET /book/6068947 (127.0.0.1) 4.98ms
+[E 130917 00:26:13 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:13 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.50ms
+[E 130917 00:26:13 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:13 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.53ms
+[E 130917 00:26:14 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:14 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.08ms
+[E 130917 00:26:14 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:14 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.10ms
+[E 130917 00:26:14 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:14 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.96ms
+[E 130917 00:26:14 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:14 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.32ms
+[E 130917 00:26:14 web:1228] Uncaught exception GET /book/6068947 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book/6068947', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/web.py", line 52, in get
+        page_heading=book.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130917 00:26:14 web:1635] 500 GET /book/6068947 (127.0.0.1) 2.43ms
+[I 130917 00:26:30 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130917 00:26:38 main:54]  PDFLabs running server on 5000
+[E 130917 00:26:49 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130917 00:26:49 web:1635] 200 GET /book/6068947 (127.0.0.1) 342.24ms
+[I 130917 00:26:49 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.70ms
+[I 130917 00:26:49 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.11ms
+[I 130917 00:26:49 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 2.82ms
+[I 130917 00:26:49 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.58ms
+[I 130917 00:26:49 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 3.71ms
+[I 130917 00:26:49 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.13ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/app/book.js (127.0.0.1) 1.14ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 3.27ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 1.07ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.11ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.09ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.36ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/lib/flexpaper.js (127.0.0.1) 1.25ms
+[I 130917 00:26:50 web:1635] 304 GET /static/js/lib/flexpaper_handlers.js (127.0.0.1) 1.05ms
+[W 130917 00:26:50 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.66ms
+[I 130917 00:26:53 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 321.01ms
+[I 130917 00:27:00 web:1635] 304 GET /api/book/6068947 (127.0.0.1) 6811.65ms

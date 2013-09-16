@@ -8,6 +8,8 @@ import tornado.httpclient
 import motor
 from tornado.log import app_log
 from tornado.httpclient import *
+from models.books import Book
+from models.files import File
 
 from handlers import BaseHandler
 
@@ -16,38 +18,16 @@ class MainHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self):
-
+        
         books = []
-        hot_books = []
-        begin = 0
-        end = 0
-        try:
-            n = yield motor.Op(self.settings['db'].books.find().count)
-            if n < 16:
-                begin = 0
-                end = 16
-            else:
-                begin = n - 16
-                end = n
-        except Exception as e:
-            app_log.error(e)
-
-        cursor = self.settings['db'].books.find().sort('DESCENDING')[begin:end]
-
-        for document in (yield motor.Op(cursor.to_list)):
-            books.append(document)
-
-        cursor1 = self.settings['db'].books.find().sort('DESCENDING')
-        for document in (yield motor.Op(cursor1.to_list)):
-            hot_books.append(document)
-
-        books.reverse()
+        for book in Book.objects():
+            books.append(book)
 
         self.render(
             "home.html",
             page_heading='PDFLabs',
             books=books,
-            hot_books=hot_books
+            hot_books=books[-8:]
         )
 
 
@@ -66,10 +46,10 @@ class BookHandler(BaseHandler):
     @tornado.gen.coroutine
     def get(self, bookid):
         self.collection = self.settings['db'].books
-        book = yield motor.Op(self.collection.find_one, {'id': bookid})
+        book = Book.objects(bid = bookid)[0]
         self.render(
             "book.html",
-            page_heading=book['title'],
+            page_heading=book.title,
             book=book
         )
 
@@ -120,6 +100,7 @@ class ContributeHandler(BaseHandler):
     @tornado.web.authenticated
     @tornado.gen.coroutine
     def post(self):
+        user = self.get_curent_user_model()
         db = self.settings['db']
         self.collection = db.books
         id = self.get_argument('id', '')
@@ -138,6 +119,23 @@ class ContributeHandler(BaseHandler):
             'create_date': time.strftime('%Y-%m-%d %X', time.localtime()),
             'download_count': 0
         }
+
+        book_doc = Book(bid = id, 
+            title=title, 
+            image=image, 
+            isbn13=isbn13,
+            publisher=publisher,
+            wcount=0,
+            dcount=0
+            )
+
+        if resource_url:
+            file = File(file_type='network_disk',
+                file_address=resource_url,
+            )
+            if user:
+                file.author = user
+            book_doc.files.append(file)
 
         if resource_url:
             book['network_disk'] = [resource_url]
@@ -164,7 +162,16 @@ class ContributeHandler(BaseHandler):
                 'account': account,
                 'file': id + fiexed
             }
+
+            file2 = File(file_type='local_disk',
+                file_address=id + fiexed,
+            )
+            if user:
+                file2.author = user
+
             book['files'] = [book_file]
+            book_doc.files.append(file2)
+            book_doc.save()
         except:
             pass
 

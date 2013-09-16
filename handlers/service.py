@@ -1,13 +1,12 @@
 # -*- coding : utf-8 -*-
 import json
-import datetime
 import tornado.web
 import tornado.gen
-import motor
 from tornado.httpclient import AsyncHTTPClient
 from tornado.log import app_log
 from handlers import BaseHandler
 from models.users import User 
+from models.books import Book
 
 class AccountAPI(tornado.web.RequestHandler):
 
@@ -44,26 +43,19 @@ class IWantService(BaseHandler):
         http_client = AsyncHTTPClient()
         response = yield http_client.fetch("https://api.douban.com/v2/book/"+bookid)
         book_details = json.loads(response.body)
-        uid = self.get_current_user()
-
-        book = {
-            'id':book_details['id'],
-            'title':book_details['title'],
-            'image':book_details['image'],
-            'isbn13':book_details['isbn13'],
-            'publisher':book_details['publisher'],
-            'create_date':datetime.datetime.now(),
-            'want_count':0,
-            'download_count':0,
-            'wishs':[]
-        }
-
-        tmp_book = yield motor.Op(self.settings['db'].books.find_one, {'id': book['id']})
-        if not tmp_book:
-            arguments = yield motor.Op(self.settings['db'].books.insert, book)
-            app_log.debug(arguments)
+        try:
+            book = Book.objects(bid=book_details['id'])[0]
+        except Exception, e:
+            app_log.error(e)
+            book = Book(bid = book_details['id'], 
+                title=book_details['title'], 
+                image=book_details['image'], 
+                isbn13=book_details['isbn13'],
+                publisher=book_details['publisher'],
+                wcount=0,
+                dcount=0
+            )   
         else:
-            _id = tmp_book['_id']
-            count = tmp_book['want_count'] +1
-            book = yield motor.Op(self.settings['db'].books.update, {'_id':_id},{'$set': {'want_count' : count}})
-        print book
+            book.wcount = book.wcount+1
+        finally:
+            book.save()
