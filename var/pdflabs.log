@@ -2434,3 +2434,452 @@
 [I 130916 22:54:39 web:1635] 304 GET /sigin (127.0.0.1) 3.98ms
 [W 130916 22:54:39 web:1635] 404 GET /assets/ico/favicon.png (127.0.0.1) 1.82ms
 [I 130916 22:54:41 web:1635] 302 GET /sigin/douban (127.0.0.1) 1.02ms
+[I 130916 22:58:34 main:54]  PDFLabs running server on 5000
+[I 130916 22:58:40 web:1635] 304 GET /sigin (127.0.0.1) 7.82ms
+[I 130916 22:58:40 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.66ms
+[I 130916 22:58:40 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.03ms
+[I 130916 22:58:40 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 15.39ms
+[I 130916 22:58:40 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.60ms
+[I 130916 22:58:43 web:1635] 302 GET /sigin/google (127.0.0.1) 1.67ms
+[E 130916 22:58:48 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T14%3A58%3A45ZayizcEZ02eY_dQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9U9fSd3QlvUHa6iZMNEphhrrdjzm_XHb49LAzP-ejr8mLBjRgNJjpdLj3hH&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lo5uxRgjvYS8Nl6wtf%2BqWHCOldo%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T14%3A58%3A45ZayizcEZ02eY_dQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9U9fSd3QlvUHa6iZMNEphhrrdjzm_XHb49LAzP-ejr8mLBjRgNJjpdLj3hH&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lo5uxRgjvYS8Nl6wtf%2BqWHCOldo%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 141, in get_db
+        conn_settings['password'])
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/database.py", line 730, in authenticate
+        self.connection._cache_credentials(self.name, credentials)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 424, in _cache_credentials
+        auth.authenticate(credentials, sock_info, self.__simple_command)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 171, in authenticate
+        _authenticate_mongo_cr(username, password, source, sock_info, cmd_func)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 157, in _authenticate_mongo_cr
+        cmd_func(sock_info, source, query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 576, in __simple_command
+        helpers._check_command_response(response, None, msg)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/helpers.py", line 142, in _check_command_response
+        raise OperationFailure(msg % errmsg)
+    OperationFailure: command SON([('authenticate', 1), ('user', u'zheng'), ('nonce', u'1055bfd97ad18a0f'), ('key', u'a62afefe1766fddbe01bce8eb18ed58d')]) failed: auth fails
+[E 130916 22:58:48 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T14%3A58%3A45ZayizcEZ02eY_dQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9U9fSd3QlvUHa6iZMNEphhrrdjzm_XHb49LAzP-ejr8mLBjRgNJjpdLj3hH&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lo5uxRgjvYS8Nl6wtf%2BqWHCOldo%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 2896.01ms
+[E 130916 22:58:48 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T14%3A58%3A45ZayizcEZ02eY_dQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9U9fSd3QlvUHa6iZMNEphhrrdjzm_XHb49LAzP-ejr8mLBjRgNJjpdLj3hH&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lo5uxRgjvYS8Nl6wtf%2BqWHCOldo%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T14%3A58%3A45ZayizcEZ02eY_dQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9U9fSd3QlvUHa6iZMNEphhrrdjzm_XHb49LAzP-ejr8mLBjRgNJjpdLj3hH&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lo5uxRgjvYS8Nl6wtf%2BqWHCOldo%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 141, in get_db
+        conn_settings['password'])
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/database.py", line 730, in authenticate
+        self.connection._cache_credentials(self.name, credentials)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 424, in _cache_credentials
+        auth.authenticate(credentials, sock_info, self.__simple_command)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 171, in authenticate
+        _authenticate_mongo_cr(username, password, source, sock_info, cmd_func)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 157, in _authenticate_mongo_cr
+        cmd_func(sock_info, source, query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 576, in __simple_command
+        helpers._check_command_response(response, None, msg)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/helpers.py", line 142, in _check_command_response
+        raise OperationFailure(msg % errmsg)
+    OperationFailure: command SON([('authenticate', 1), ('user', u'zheng'), ('nonce', u'1055bfd97ad18a0f'), ('key', u'a62afefe1766fddbe01bce8eb18ed58d')]) failed: auth fails
+[I 130916 22:59:57 autoreload:186] /home/zheng/github/PDFLabs/models/__init__.py modified; restarting server
+[I 130916 23:00:00 main:54]  PDFLabs running server on 5000
+[I 130916 23:00:06 web:1635] 304 GET /sigin (127.0.0.1) 7.91ms
+[I 130916 23:00:06 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.26ms
+[I 130916 23:00:06 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 0.97ms
+[I 130916 23:00:06 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.15ms
+[I 130916 23:00:06 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.15ms
+[I 130916 23:00:09 web:1635] 302 GET /sigin/google (127.0.0.1) 2.23ms
+[E 130916 23:00:11 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A00%3A09ZCwIWRX7Ab5VePw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WklUQhhHqzTsTaST1lqsikKrj6P4bKb8dCQmhor5SRzmzVtmZLYGXz4VQc&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=MED4cpyx5cvNIvGPaWLOA1aBcyQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A00%3A09ZCwIWRX7Ab5VePw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WklUQhhHqzTsTaST1lqsikKrj6P4bKb8dCQmhor5SRzmzVtmZLYGXz4VQc&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=MED4cpyx5cvNIvGPaWLOA1aBcyQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 141, in get_db
+        conn_settings['password'])
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/database.py", line 730, in authenticate
+        self.connection._cache_credentials(self.name, credentials)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 424, in _cache_credentials
+        auth.authenticate(credentials, sock_info, self.__simple_command)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 171, in authenticate
+        _authenticate_mongo_cr(username, password, source, sock_info, cmd_func)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 157, in _authenticate_mongo_cr
+        cmd_func(sock_info, source, query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 576, in __simple_command
+        helpers._check_command_response(response, None, msg)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/helpers.py", line 142, in _check_command_response
+        raise OperationFailure(msg % errmsg)
+    OperationFailure: command SON([('authenticate', 1), ('user', u'zheng'), ('nonce', u'26c7b6a2e46a1c38'), ('key', u'cb31c2e93ec844c0c32f235586e58b33')]) failed: auth fails
+[E 130916 23:00:11 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A00%3A09ZCwIWRX7Ab5VePw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WklUQhhHqzTsTaST1lqsikKrj6P4bKb8dCQmhor5SRzmzVtmZLYGXz4VQc&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=MED4cpyx5cvNIvGPaWLOA1aBcyQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 2075.98ms
+[E 130916 23:00:11 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A00%3A09ZCwIWRX7Ab5VePw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WklUQhhHqzTsTaST1lqsikKrj6P4bKb8dCQmhor5SRzmzVtmZLYGXz4VQc&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=MED4cpyx5cvNIvGPaWLOA1aBcyQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A00%3A09ZCwIWRX7Ab5VePw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WklUQhhHqzTsTaST1lqsikKrj6P4bKb8dCQmhor5SRzmzVtmZLYGXz4VQc&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=MED4cpyx5cvNIvGPaWLOA1aBcyQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 141, in get_db
+        conn_settings['password'])
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/database.py", line 730, in authenticate
+        self.connection._cache_credentials(self.name, credentials)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 424, in _cache_credentials
+        auth.authenticate(credentials, sock_info, self.__simple_command)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 171, in authenticate
+        _authenticate_mongo_cr(username, password, source, sock_info, cmd_func)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/auth.py", line 157, in _authenticate_mongo_cr
+        cmd_func(sock_info, source, query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/mongo_client.py", line 576, in __simple_command
+        helpers._check_command_response(response, None, msg)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/helpers.py", line 142, in _check_command_response
+        raise OperationFailure(msg % errmsg)
+    OperationFailure: command SON([('authenticate', 1), ('user', u'zheng'), ('nonce', u'26c7b6a2e46a1c38'), ('key', u'cb31c2e93ec844c0c32f235586e58b33')]) failed: auth fails
+[I 130916 23:01:18 autoreload:186] /home/zheng/github/PDFLabs/models/__init__.py modified; restarting server
+[I 130916 23:02:45 main:54]  PDFLabs running server on 5000
+[I 130916 23:02:51 web:1635] 304 GET /sigin (127.0.0.1) 9.61ms
+[I 130916 23:02:51 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.75ms
+[I 130916 23:02:51 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.17ms
+[I 130916 23:02:51 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 2.19ms
+[I 130916 23:02:51 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.14ms
+[I 130916 23:02:53 web:1635] 302 GET /sigin/google (127.0.0.1) 2.30ms
+[E 130916 23:02:55 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A02%3A53ZKxXaZy6drwR9wQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9Xo9MRI4ym2yUkOZCSVr_wNIqYuw4DY3x2DhSTmCCo8WTG-aa-1RG3oWN2f&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fy8zW%2B08%2FWUO0NLCtPVgM2heW4I%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A02%3A53ZKxXaZy6drwR9wQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9Xo9MRI4ym2yUkOZCSVr_wNIqYuw4DY3x2DhSTmCCo8WTG-aa-1RG3oWN2f&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fy8zW%2B08%2FWUO0NLCtPVgM2heW4I%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 135, in get_db
+        conn = get_connection(alias)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 94, in get_connection
+        raise ConnectionError(msg)
+    ConnectionError: You have not defined a default connection
+[E 130916 23:02:55 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A02%3A53ZKxXaZy6drwR9wQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9Xo9MRI4ym2yUkOZCSVr_wNIqYuw4DY3x2DhSTmCCo8WTG-aa-1RG3oWN2f&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fy8zW%2B08%2FWUO0NLCtPVgM2heW4I%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 1477.16ms
+[E 130916 23:02:55 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A02%3A53ZKxXaZy6drwR9wQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9Xo9MRI4ym2yUkOZCSVr_wNIqYuw4DY3x2DhSTmCCo8WTG-aa-1RG3oWN2f&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fy8zW%2B08%2FWUO0NLCtPVgM2heW4I%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A02%3A53ZKxXaZy6drwR9wQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9Xo9MRI4ym2yUkOZCSVr_wNIqYuw4DY3x2DhSTmCCo8WTG-aa-1RG3oWN2f&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fy8zW%2B08%2FWUO0NLCtPVgM2heW4I%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 135, in get_db
+        conn = get_connection(alias)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 94, in get_connection
+        raise ConnectionError(msg)
+    ConnectionError: You have not defined a default connection
+[I 130916 23:03:27 autoreload:186] /home/zheng/github/PDFLabs/models/__init__.py modified; restarting server
+[I 130916 23:03:43 main:54]  PDFLabs running server on 5000
+[I 130916 23:03:49 web:1635] 304 GET /sigin (127.0.0.1) 7.80ms
+[I 130916 23:03:49 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.71ms
+[I 130916 23:03:49 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.01ms
+[I 130916 23:03:49 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.10ms
+[I 130916 23:03:49 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.14ms
+[I 130916 23:03:50 web:1635] 302 GET /sigin/google (127.0.0.1) 1.64ms
+[E 130916 23:03:52 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 135, in get_db
+        conn = get_connection(alias)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 94, in get_connection
+        raise ConnectionError(msg)
+    ConnectionError: You have not defined a default connection
+[E 130916 23:03:52 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 1659.02ms
+[E 130916 23:03:52 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/manager.py", line 37, in __get__
+        queryset = queryset_class(owner, owner._get_collection())
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 147, in _get_collection
+        db = cls._get_db()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/document.py", line 141, in _get_db
+        return get_db(cls._meta.get("db_alias", DEFAULT_CONNECTION_NAME))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 135, in get_db
+        conn = get_connection(alias)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/connection.py", line 94, in get_connection
+        raise ConnectionError(msg)
+    ConnectionError: You have not defined a default connection
+[I 130916 23:04:24 autoreload:186] /home/zheng/github/PDFLabs/models/__init__.py modified; restarting server
+[I 130916 23:05:05 main:54]  PDFLabs running server on 5000
+[I 130916 23:05:13 web:1635] 304 GET /sigin (127.0.0.1) 5.64ms
+[I 130916 23:05:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.36ms
+[I 130916 23:05:13 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.19ms
+[I 130916 23:05:13 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.37ms
+[I 130916 23:05:13 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 3.28ms
+[E 130916 23:05:13 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 41, in get
+        result = yield self.get_authenticated_user()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    AuthError: Invalid OpenID response: is_valid:false
+    ns:http://specs.openid.net/auth/2.0
+    
+[E 130916 23:05:13 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 4580.47ms
+[E 130916 23:05:13 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A03%3A50ZiCIRh4LPzCf6IA&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9UfIFuS4dnwIZ5MqZQXLbmJD6ZzdhdGi2E-9mjUZa5dRhmOl7pc8rccTN4h&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=%2Fa%2FODHuqcVTNu9yJt68YSvL31TQ%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 41, in get
+        result = yield self.get_authenticated_user()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    AuthError: Invalid OpenID response: is_valid:false
+    ns:http://specs.openid.net/auth/2.0
+    
+[I 130916 23:05:14 web:1635] 302 GET /sigin/google (127.0.0.1) 1.66ms
+[I 130916 23:05:16 web:1635] 302 GET /sigin/google (127.0.0.1) 1.58ms
+[E 130916 23:05:21 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A05%3A17Z9NvIHdr0e6O4Xw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WG4p5jKxZNe5nCkyuoLgvhGP-bX1uATcmspnOL-Kj4aYXHaNr75EmUnwkJ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=4z4gQ3r%2FFpUucSVdOZmrFtx3fng%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A05%3A17Z9NvIHdr0e6O4Xw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WG4p5jKxZNe5nCkyuoLgvhGP-bX1uATcmspnOL-Kj4aYXHaNr75EmUnwkJ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=4z4gQ3r%2FFpUucSVdOZmrFtx3fng%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1115, in _stack_context_handle_exception
+        raise_exc_info((type, value, traceback))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1307, in future_complete
+        f.result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130916 23:05:21 web:1635] 500 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A05%3A17Z9NvIHdr0e6O4Xw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WG4p5jKxZNe5nCkyuoLgvhGP-bX1uATcmspnOL-Kj4aYXHaNr75EmUnwkJ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=4z4gQ3r%2FFpUucSVdOZmrFtx3fng%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 3797.91ms
+[E 130916 23:05:21 web:1228] Uncaught exception GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A05%3A17Z9NvIHdr0e6O4Xw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WG4p5jKxZNe5nCkyuoLgvhGP-bX1uATcmspnOL-Kj4aYXHaNr75EmUnwkJ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=4z4gQ3r%2FFpUucSVdOZmrFtx3fng%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A05%3A17Z9NvIHdr0e6O4Xw&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WG4p5jKxZNe5nCkyuoLgvhGP-bX1uATcmspnOL-Kj4aYXHaNr75EmUnwkJ&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=4z4gQ3r%2FFpUucSVdOZmrFtx3fng%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Referer': 'http://localhost:5000/sigin', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 507, in run
+        yielded = self.gen.send(next)
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 42, in get
+        user = User.objects(type='google', email=result['email'])[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[I 130916 23:06:16 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130916 23:07:16 main:54]  PDFLabs running server on 5000
+[I 130916 23:07:20 web:1635] 304 GET /sigin (127.0.0.1) 7.38ms
+[I 130916 23:07:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.98ms
+[I 130916 23:07:20 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.32ms
+[I 130916 23:07:20 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.15ms
+[I 130916 23:07:20 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 2.27ms
+[I 130916 23:07:25 web:1635] 302 GET /sigin/google (127.0.0.1) 2.20ms
+[E 130916 23:07:28 auth:45] no such item for Cursor instance
+[I 130916 23:07:31 web:1635] 302 GET /sigin/google?openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&openid.mode=id_res&openid.op_endpoint=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fud&openid.response_nonce=2013-09-16T15%3A07%3A26ZdTVfLJMLM0T3VQ&openid.return_to=http%3A%2F%2Flocalhost%3A5000%2Fsigin%2Fgoogle&openid.assoc_handle=1.AMlYA9WAx4KL--v0DmgCfAdnDBcZe44sgNB4y0mQtnDnVcn3yGBTytibZayQLzg_&openid.signed=op_endpoint%2Cclaimed_id%2Cidentity%2Creturn_to%2Cresponse_nonce%2Cassoc_handle%2Cns.ext1%2Cext1.mode%2Cext1.type.firstname%2Cext1.value.firstname%2Cext1.type.lastname%2Cext1.value.lastname%2Cext1.type.language%2Cext1.value.language%2Cext1.type.email%2Cext1.value.email&openid.sig=lmaIjk5bb72KD9KbFejWzMANpKs%3D&openid.identity=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.claimed_id=https%3A%2F%2Fwww.google.com%2Faccounts%2Fo8%2Fid%3Fid%3DAItOawmOfCUYcH7jARC7yu1-5cs1TkqRgCgKMNI&openid.ns.ext1=http%3A%2F%2Fopenid.net%2Fsrv%2Fax%2F1.0&openid.ext1.mode=fetch_response&openid.ext1.type.firstname=http%3A%2F%2Faxschema.org%2FnamePerson%2Ffirst&openid.ext1.value.firstname=yunlong&openid.ext1.type.lastname=http%3A%2F%2Faxschema.org%2FnamePerson%2Flast&openid.ext1.value.lastname=zheng&openid.ext1.type.language=http%3A%2F%2Faxschema.org%2Fpref%2Flanguage&openid.ext1.value.language=en&openid.ext1.type.email=http%3A%2F%2Faxschema.org%2Fcontact%2Femail&openid.ext1.value.email=yunl.zheng%40gmail.com (127.0.0.1) 4850.18ms
+[E 130916 23:07:33 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:07:33 web:1635] 200 GET / (127.0.0.1) 2332.62ms
+[W 130916 23:07:33 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.81ms
+[W 130916 23:07:34 web:1635] 404 GET /api/account/2013091623x0728 (127.0.0.1) 306.95ms
+[I 130916 23:08:16 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130916 23:08:18 main:54]  PDFLabs running server on 5000
+[I 130916 23:08:40 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130916 23:08:47 main:54]  PDFLabs running server on 5000
+[I 130916 23:09:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
