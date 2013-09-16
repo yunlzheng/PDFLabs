@@ -1,4 +1,4 @@
-PDFLabs
+PDFLabs [![Build Status](https://travis-ci.org/yunlzheng/PDFLabs.png?branch=master)](https://travis-ci.org/yunlzheng/PDFLabs)
 =========
 分享互联网上的PDF
 
