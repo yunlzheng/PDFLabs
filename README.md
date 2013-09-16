@@ -1,9 +1,8 @@
-PDFLabs 
+PDFLabs [![Build Status](https://travis-ci.org/yunlzheng/PDFLabs.png?branch=master)](https://travis-ci.org/yunlzheng/PDFLabs)
 =========
 分享互联网上的PDF
 
 Share PDF files on the Internet
-[![Build Status](https://travis-ci.org/yunlzheng/PDFLabs.png?branch=master)](https://travis-ci.org/yunlzheng/PDFLabs)
 
  ![image](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/home.png)
  
