@@ -2883,3 +2883,344 @@
 [I 130916 23:08:40 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
 [I 130916 23:08:47 main:54]  PDFLabs running server on 5000
 [I 130916 23:09:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130916 23:13:38 main:54]  PDFLabs running server on 5000
+[I 130916 23:14:38 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:16:01 main:54]  PDFLabs running server on 5000
+[E 130916 23:16:08 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:16:08 web:1635] 304 GET / (127.0.0.1) 2408.07ms
+[I 130916 23:16:09 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.01ms
+[I 130916 23:16:09 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.26ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130916 23:16:09 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.30ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.14ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.20ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.82ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.14ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.05ms
+[I 130916 23:16:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.40ms
+[W 130916 23:16:09 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.69ms
+[I 130916 23:16:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130916 23:16:10 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.48ms
+[E 130916 23:16:13 web:1228] Uncaught exception GET /api/account/2013091623x0728 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/account/2013091623x0728', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Cache-Control': 'max-age=0', 'Referer': 'http://localhost:5000/', 'Content-Type': 'application/json', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/service.py", line 29, in get
+        self.write(user)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 533, in write
+        chunk = utf8(chunk)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/escape.py", line 192, in utf8
+        "Expected bytes, unicode, or None; got %r" % type(value)
+    AssertionError: Expected bytes, unicode, or None; got <class 'models.users.User'>
+[E 130916 23:16:13 web:1635] 500 GET /api/account/2013091623x0728 (127.0.0.1) 332.55ms
+[E 130916 23:16:19 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:16:19 web:1635] 304 GET / (127.0.0.1) 2706.19ms
+[I 130916 23:16:19 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130916 23:16:19 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.18ms
+[I 130916 23:16:19 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.60ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.10ms
+[I 130916 23:16:19 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130916 23:16:19 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.32ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.23ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.97ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.17ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.16ms
+[I 130916 23:16:19 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.33ms
+[W 130916 23:16:19 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.67ms
+[E 130916 23:16:20 web:1228] Uncaught exception GET /api/account/2013091623x0728 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/account/2013091623x0728', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/service.py", line 29, in get
+        self.write(user)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 533, in write
+        chunk = utf8(chunk)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/escape.py", line 192, in utf8
+        "Expected bytes, unicode, or None; got %r" % type(value)
+    AssertionError: Expected bytes, unicode, or None; got <class 'models.users.User'>
+[E 130916 23:16:20 web:1635] 500 GET /api/account/2013091623x0728 (127.0.0.1) 301.94ms
+[I 130916 23:17:01 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:17:03 main:54]  PDFLabs running server on 5000
+[E 130916 23:17:09 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:17:09 web:1635] 304 GET / (127.0.0.1) 2621.09ms
+[I 130916 23:17:09 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.41ms
+[I 130916 23:17:09 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.28ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.02ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130916 23:17:09 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.16ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.12ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.15ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.00ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.08ms
+[I 130916 23:17:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.35ms
+[W 130916 23:17:09 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.70ms
+[I 130916 23:17:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130916 23:17:10 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.22ms
+[E 130916 23:17:11 web:1228] Uncaught exception GET /api/account/2013091623x0728 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/account/2013091623x0728', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Cache-Control': 'max-age=0', 'Referer': 'http://localhost:5000/', 'Content-Type': 'application/json', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/service.py", line 29, in get
+        self.write(json.dumps(user))
+      File "/usr/lib/python2.7/json/__init__.py", line 231, in dumps
+        return _default_encoder.encode(obj)
+      File "/usr/lib/python2.7/json/encoder.py", line 201, in encode
+        chunks = self.iterencode(o, _one_shot=True)
+      File "/usr/lib/python2.7/json/encoder.py", line 264, in iterencode
+        return _iterencode(o, 0)
+      File "/usr/lib/python2.7/json/encoder.py", line 178, in default
+        raise TypeError(repr(o) + " is not JSON serializable")
+    TypeError: <User: User object> is not JSON serializable
+[E 130916 23:17:11 web:1635] 500 GET /api/account/2013091623x0728 (127.0.0.1) 320.21ms
+[I 130916 23:17:28 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:19:01 main:54]  PDFLabs running server on 5000
+[E 130916 23:19:08 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:19:08 web:1635] 304 GET / (127.0.0.1) 2383.74ms
+[I 130916 23:19:08 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.36ms
+[I 130916 23:19:08 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.20ms
+[I 130916 23:19:08 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130916 23:19:08 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.45ms
+[I 130916 23:19:08 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.34ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.16ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.19ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.18ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.04ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.28ms
+[I 130916 23:19:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.52ms
+[W 130916 23:19:09 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.76ms
+[I 130916 23:19:11 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130916 23:19:11 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.15ms
+[I 130916 23:19:12 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 300.14ms
+[I 130916 23:20:12 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:20:14 main:54]  PDFLabs running server on 5000
+[E 130916 23:20:23 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:20:23 web:1635] 304 GET / (127.0.0.1) 2373.55ms
+[I 130916 23:20:23 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.37ms
+[I 130916 23:20:23 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.21ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130916 23:20:23 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.59ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.18ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.97ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.13ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.14ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.17ms
+[I 130916 23:20:23 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.48ms
+[W 130916 23:20:23 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.85ms
+[I 130916 23:20:24 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.20ms
+[I 130916 23:20:24 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.03ms
+[E 130916 23:20:25 web:1228] Uncaught exception GET /api/account/2013091623x0728 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/account/2013091623x0728', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'If-None-Match': '"923311c75eb45142e1a2d10432f1ee0ec3c02c41"', 'Content-Type': 'application/json', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/service.py", line 30, in get
+        self.write(json_util.dumps(user._query))
+    AttributeError: 'User' object has no attribute '_query'
+[E 130916 23:20:25 web:1635] 500 GET /api/account/2013091623x0728 (127.0.0.1) 300.37ms
+[I 130916 23:21:21 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:21:23 main:54]  PDFLabs running server on 5000
+[I 130916 23:21:30 main:54]  PDFLabs running server on 5000
+[E 130916 23:21:36 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:21:36 web:1635] 304 GET / (127.0.0.1) 3138.14ms
+[I 130916 23:21:36 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.10ms
+[I 130916 23:21:36 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.20ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.39ms
+[I 130916 23:21:36 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.09ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.09ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.18ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.33ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.09ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.26ms
+[I 130916 23:21:36 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.54ms
+[W 130916 23:21:36 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.54ms
+[I 130916 23:21:37 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130916 23:21:37 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.28ms
+[I 130916 23:21:38 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 1.39ms
+[I 130916 23:21:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:22:02 main:54]  PDFLabs running server on 5000
+[E 130916 23:22:09 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:22:09 web:1635] 304 GET / (127.0.0.1) 2423.98ms
+[I 130916 23:22:09 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.06ms
+[I 130916 23:22:09 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 0.98ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.43ms
+[I 130916 23:22:09 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.59ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.13ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.95ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.22ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.18ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.14ms
+[I 130916 23:22:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.30ms
+[W 130916 23:22:10 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.66ms
+[I 130916 23:22:11 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130916 23:22:11 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.14ms
+[I 130916 23:22:12 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 365.46ms
+[I 130916 23:22:34 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:24:36 main:54]  PDFLabs running server on 5000
+[E 130916 23:24:42 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:24:42 web:1635] 304 GET / (127.0.0.1) 2338.26ms
+[I 130916 23:24:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.27ms
+[I 130916 23:24:42 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.16ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130916 23:24:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.04ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.67ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.14ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.03ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.17ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.18ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.14ms
+[I 130916 23:24:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.55ms
+[W 130916 23:24:42 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.67ms
+[I 130916 23:24:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.54ms
+[I 130916 23:24:45 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.23ms
+[E 130916 23:24:45 web:1228] Uncaught exception GET /api/account/2013091623x0728 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/account/2013091623x0728', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/', 'Cache-Control': 'max-age=0', 'If-None-Match': '"63a95d33007e638fa3003755b8f090c53d53a065"', 'Content-Type': 'application/json', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/service.py", line 30, in get
+        'name':user.name,
+    AttributeError: 'QuerySet' object has no attribute 'name'
+[E 130916 23:24:45 web:1635] 500 GET /api/account/2013091623x0728 (127.0.0.1) 3.38ms
+[I 130916 23:25:15 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130916 23:25:17 main:54]  PDFLabs running server on 5000
+[E 130916 23:25:27 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:25:27 web:1635] 304 GET / (127.0.0.1) 2750.88ms
+[I 130916 23:25:28 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.03ms
+[I 130916 23:25:28 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.29ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 6.18ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.66ms
+[I 130916 23:25:28 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.08ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.16ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.95ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.20ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.09ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.16ms
+[I 130916 23:25:28 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.35ms
+[W 130916 23:25:28 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.63ms
+[I 130916 23:25:29 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.31ms
+[I 130916 23:25:29 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.65ms
+[I 130916 23:25:29 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 312.47ms
+[E 130916 23:25:43 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:25:43 web:1635] 304 GET / (127.0.0.1) 934.95ms
+[I 130916 23:25:43 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.74ms
+[I 130916 23:25:43 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.21ms
+[I 130916 23:25:43 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130916 23:25:43 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.34ms
+[I 130916 23:25:43 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.58ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.08ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.03ms
+[I 130916 23:25:44 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130916 23:25:44 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.27ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.21ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.12ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.11ms
+[I 130916 23:25:44 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.45ms
+[W 130916 23:25:44 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.71ms
+[I 130916 23:25:45 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 304.70ms
+[E 130916 23:26:19 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 23:26:19 web:1635] 304 GET / (127.0.0.1) 1007.46ms
+[I 130916 23:26:19 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130916 23:26:19 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.18ms
+[I 130916 23:26:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.56ms
+[I 130916 23:26:19 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130916 23:26:19 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.01ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.15ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.23ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.13ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.21ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.37ms
+[I 130916 23:26:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.43ms
+[W 130916 23:26:20 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.67ms
+[I 130916 23:26:21 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.19ms
+[I 130916 23:26:21 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.23ms
+[I 130916 23:26:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 329.17ms
+[I 130916 23:27:12 web:1635] 200 GET / (127.0.0.1) 1546.14ms
+[I 130916 23:27:12 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.72ms
+[I 130916 23:27:12 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.41ms
+[I 130916 23:27:12 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130916 23:27:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130916 23:27:12 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.09ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 0.95ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.80ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.13ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.12ms
+[I 130916 23:27:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.45ms
+[W 130916 23:27:13 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.40ms
+[I 130916 23:27:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.22ms
+[I 130916 23:27:14 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.27ms
+[I 130916 23:27:15 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 301.59ms
+[I 130916 23:27:18 web:1635] 304 GET / (127.0.0.1) 929.12ms
+[I 130916 23:27:19 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.79ms
+[I 130916 23:27:19 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.32ms
+[I 130916 23:27:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.29ms
+[I 130916 23:27:19 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130916 23:27:19 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130916 23:27:19 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.15ms
+[I 130916 23:27:20 web:1635] 304 GET / (127.0.0.1) 920.62ms
+[W 130916 23:27:21 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.76ms
+[I 130916 23:27:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 299.69ms
+[I 130916 23:27:27 web:1635] 200 GET / (127.0.0.1) 922.61ms
+[I 130916 23:27:27 web:1635] 200 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.39ms
+[I 130916 23:27:27 web:1635] 200 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.39ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.81ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.99ms
+[I 130916 23:27:27 web:1635] 200 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.43ms
+[I 130916 23:27:27 web:1635] 200 GET /static/img/bookcase.jpg (127.0.0.1) 1.43ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/app/home.js (127.0.0.1) 1.29ms
+[I 130916 23:27:27 web:1635] 200 GET /static/images/avatar.jpg (127.0.0.1) 1.32ms
+[I 130916 23:27:27 web:1635] 200 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.58ms
+[I 130916 23:27:27 web:1635] 200 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.43ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/module/home.js (127.0.0.1) 1.01ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 4.36ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/lib/application.js (127.0.0.1) 1.40ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/module/ajax_client.js (127.0.0.1) 1.24ms
+[I 130916 23:27:27 web:1635] 200 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.66ms
+[W 130916 23:27:27 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.75ms
+[I 130916 23:27:28 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 298.17ms
+[I 130916 23:28:37 web:1635] 304 GET / (127.0.0.1) 918.63ms
+[I 130916 23:28:37 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130916 23:28:37 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.25ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130916 23:28:37 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.35ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.15ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.15ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.18ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.10ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.15ms
+[I 130916 23:28:37 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.31ms
+[W 130916 23:28:38 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.41ms
+[I 130916 23:28:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130916 23:28:38 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.21ms
+[I 130916 23:28:39 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 301.15ms

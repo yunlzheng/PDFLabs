@@ -13,10 +13,11 @@ class AccountAPI(tornado.web.RequestHandler):
 
     @tornado.gen.coroutine
     def get(self, uid):
-        self.collection = self.settings['db'].account
         self.set_header('Content-Type', 'application/json')
-        account = yield motor.Op(self.collection.find_one, {'uid': uid})
-        if account is None:
+        try:
+            user = User.objects(uid=uid)[0]
+        except Exception as ex:
+            app_log.error(ex)
             self.set_status(404)
             response = {
                 'msg': 'account not exist',
@@ -25,12 +26,11 @@ class AccountAPI(tornado.web.RequestHandler):
             }
             self.write(response)
         else:
-            del account['_id']
-            if account.get('access_token', None):
-                del account['access_token']
-            if account.get('refresh_token', None):
-                del account['refresh_token']
-            self.write(account)
+            response={
+                'name':user.name,
+                'avatar':user.avatar
+            }
+            self.write(response)
 
 class IWantService(BaseHandler):
 
