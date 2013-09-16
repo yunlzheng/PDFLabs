@@ -1843,3 +1843,21 @@
 [I 130916 14:53:45 web:1635] 304 GET /api/book/3112503 (127.0.0.1) 537.67ms
 [W 130916 14:54:59 web:1635] 405 PUT /api/book/3112503 (127.0.0.1) 1.29ms
 [I 130916 14:55:05 web:1635] 200 GET /api/book/3112503 (127.0.0.1) 1095.64ms
+[I 130916 14:57:44 main:54]  PDFLabs running server on 5000
+[E 130916 14:57:48 web:2144] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 14:57:48 web:1635] 304 GET / (127.0.0.1) 2425.15ms
+[I 130916 14:57:49 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.61ms
+[I 130916 14:57:49 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.13ms
+[I 130916 14:57:49 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.92ms
+[I 130916 14:57:49 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130916 14:57:49 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130916 14:57:49 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 1.16ms
+[I 130916 14:57:49 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130916 14:57:49 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.19ms
+[W 130916 14:57:50 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.75ms
+[W 130916 14:57:51 web:1635] 404 GET /api/account/2013090315x5653 (127.0.0.1) 325.38ms
+[E 130916 14:59:43 web:2144] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130916 14:59:43 web:1635] 200 GET /book/4049942 (127.0.0.1) 998.12ms
+[W 130916 14:59:43 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.63ms
+[W 130916 14:59:44 web:1635] 404 GET /api/account/2013090315x5653 (127.0.0.1) 299.42ms
+[I 130916 14:59:44 web:1635] 200 GET /api/book/4049942 (127.0.0.1) 422.55ms
