@@ -494,3 +494,52 @@ padding: 9px 0;
   padding-bottom: 100px;
   vertical-align: bottom;
 }
+
+.book_thing{
+  position: relative;
+  .pre_ribbon{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100px;
+      width: 100px;
+      overflow: hidden;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      letter-spacing: .5em;
+      .stack{
+             background: rgb(70, 165, 70);
+             
+      }
+      .wait{
+        background: rgb(248, 148, 6)
+      }
+      span{
+          
+          filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+          opacity: 0.8;
+          display: block;
+          width: 150px;
+          padding-left: 10px;
+          padding-top: 5px;
+          padding-bottom: 3px;
+          position: relative;
+          left: -40px;
+          top: 75px;
+          text-align: center;
+          -webkit-transform-origin: 0 0;
+          -moz-transform-origin: 0 0;
+          -ms-transform-origin: 0 0;
+          -o-transform-origin: 0 0;
+          transform-origin: 0 0;
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+          -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+          -moz-box-shadow: rgba(0,0,0,0.3) 1px 1px 10px;
+          box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+      }
+  }
+}

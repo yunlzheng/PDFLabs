@@ -44,6 +44,7 @@
    <h5>共享的文件</h5>
    <hr>
    <ul>
+   {% if book.get('files') %}
 	{% for file in book.get('files') %}
           <li>由{{ file.get('account').get('name') }}提供   
           	<a href="/static/doc/{{ file.get('file') }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
@@ -54,6 +55,9 @@
 		    {{ url }} 
 		{% end %}
 	{% end %}
+   {% else %}
+   	暂时未提供相关分享
+   {% end %}
  </ul>
 </div>
 <br/>

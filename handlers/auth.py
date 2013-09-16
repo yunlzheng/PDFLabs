@@ -12,7 +12,6 @@ from bson.py3compat import b
 from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import *
-from tornado.httpclient import AsyncHTTPClient
 
 from . import BaseHandler
 

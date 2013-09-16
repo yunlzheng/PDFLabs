@@ -10,9 +10,18 @@
  	<div class="row-fluid ">
  	{% for book in hot_books[0:4] %}
 	    <div class="span3">
-          	    <a href="/book/{{ book.get('id') }}">
-          	    <img alt="" src="{{ book.get('image') }}">
-          	    <div class="book_intro">{{ book.get('title','') }}</div>
+	    	<div class="book_thing">
+	    	    <div class="pre_ribbon">
+	    	      {% if book.get('files') %}
+	    	     	<span class='stack'>现货</span>
+	    	     {% else %}
+	    	     	<span class='wait'>等待</span>
+	    	     {% end %}
+	    	    </div>
+	          	    <a href="/book/{{ book.get('id') }}">
+	          	    <img alt="" src="{{ book.get('image') }}">
+	          	    <div class="book_intro">{{ book.get('title','') }}</div>
+          		</div>
           	    </a>
           	    </div>
              {% end %}
@@ -22,10 +31,19 @@
       	<div class="row-fluid">
 	        {% for book in hot_books[4:8] %}
 		<div class="span3">
-	          	<a href="/book/{{ book.get('id') }}">
-	          	<img  alt="" src="{{ book.get('image') }}">
-	          	<div class="book_intro">{{ book.get('title','') }}</div>
-	          	</a>
+		 <div class="book_thing">
+		       <div class="pre_ribbon">
+		    	      {% if book.get('files') %}
+		    	     	<span class='stack'>现货</span>
+		    	     {% else %}
+		    	     	<span class='wait'>等待</span>
+		    	     {% end %}
+		        </div>
+		       <a href="/book/{{ book.get('id') }}">
+		       <img  alt="" src="{{ book.get('image') }}">
+		       <div class="book_intro">{{ book.get('title','') }}</div>
+		       </a>
+		 </div>
 	          	</div>
 	        {% end %}
       	</div>
@@ -42,19 +60,28 @@
 		<div class="bookstore bookrow">
 		{% for i in xrange(len(books)) %}
 		    
-		    <div class="span3">
-			<a href="/book/{{ books[i].get('id') }}">
-		    	<img class="img"  src="{{ books[i].get('image') }}">
-		    	<div class="book_intro">{{ books[i].get('title','') }}</div>
-		    	</a>
-		    </div>
+			    <div class="span3">
+			    	<div class="book_thing">
+				    	<div class="pre_ribbon">
+				    	      {% if books[i].get('files') %}
+				    	     	<span class='stack'>现货</span>
+				    	     {% else %}
+				    	     	<span class='wait'>等待</span>
+				    	     {% end %}
+				    	</div>
+					<a href="/book/{{ books[i].get('id') }}">
+				    	<img class="img"  src="{{ books[i].get('image') }}">
+				    	<div class="book_intro">{{ books[i].get('title','') }}</div>
+				    	</a>
+			    	</div>
+			    </div>
 		    {% if (i+1)%4==0 %}
 		    	     <div class="clearfix"></div>
 			    </div>
 			    </div>
 			    <br/>
 			    <div class="row-fluid">
-			    <div class="bookstore bookrow">
+			<div class="bookstore bookrow">
 		    {% end %}
 
 		{% end %}
