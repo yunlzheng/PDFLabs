@@ -2403,3 +2403,34 @@
 [I 130916 20:26:29 main:54]  PDFLabs running server on 5000
 [I 130916 20:27:01 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
 [I 130916 20:29:12 main:54]  PDFLabs running server on 5000
+[I 130916 22:52:51 main:54]  PDFLabs running server on 5000
+[I 130916 22:53:20 autoreload:186] /home/zheng/github/PDFLabs/models/__init__.py modified; restarting server
+[I 130916 22:53:21 main:54]  PDFLabs running server on 5000
+[I 130916 22:53:38 autoreload:186] /home/zheng/github/PDFLabs/defines.py modified; restarting server
+[I 130916 22:53:39 main:54]  PDFLabs running server on 5000
+[I 130916 22:54:09 main:54]  PDFLabs running server on 5000
+[E 130916 22:54:15 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/home'
+[I 130916 22:54:15 web:1635] 304 GET / (127.0.0.1) 2320.88ms
+[I 130916 22:54:15 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 4.99ms
+[I 130916 22:54:15 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.46ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 26.45ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 1.57ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.95ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.39ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.53ms
+[I 130916 22:54:15 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 5.33ms
+[W 130916 22:54:16 web:1635] 404 GET /modules/home.js (127.0.0.1) 17.41ms
+[I 130916 22:54:17 web:1635] 304 GET /static/img/bookcase.jpg (127.0.0.1) 1.70ms
+[I 130916 22:54:17 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 4.13ms
+[I 130916 22:54:17 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.79ms
+[I 130916 22:54:17 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.30ms
+[W 130916 22:54:17 web:1635] 404 GET /favicon.ico (127.0.0.1) 1.22ms
+[E 130916 22:54:29 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130916 22:54:29 web:1635] 200 GET /book/3334872 (127.0.0.1) 331.99ms
+[W 130916 22:54:30 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.81ms
+[I 130916 22:54:32 web:1635] 304 GET /api/book/3334872 (127.0.0.1) 1885.43ms
+[I 130916 22:54:39 web:1635] 304 GET /sigin (127.0.0.1) 3.98ms
+[W 130916 22:54:39 web:1635] 404 GET /assets/ico/favicon.png (127.0.0.1) 1.82ms
+[I 130916 22:54:41 web:1635] 302 GET /sigin/douban (127.0.0.1) 1.02ms
