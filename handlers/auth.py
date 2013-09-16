@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
-import time
-import os.path
 import tornado.web
 import tornado.gen
 import tornado.httpclient
 import motor
-import qrcode
 import datetime
-from bson.py3compat import b
 from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import *
@@ -116,6 +112,7 @@ class DoubanCallbackHandler(BaseHandler):
                 if result is None:
                     # save account info to database
                     arguments = yield motor.Op(self.collection.insert, account)
+                    app_log.debug(arguments)
 
                 else:
                     _id = result['_id']
@@ -123,7 +120,7 @@ class DoubanCallbackHandler(BaseHandler):
                     result['refresh_token'] = refresh_token
                     update_result = yield motor.Op(self.collection.update, {'_id': _id}, result)
                     # print 'replaced', update_result['n'], 'document'
-
+                    app_log.debug(update_result)
             except:
                 app_log.error('some error happen when query account')
 
