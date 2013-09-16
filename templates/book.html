@@ -37,10 +37,14 @@
    {% if book.files %}
 	{% for file in book.files %}
 	    {% if file.file_type=='network_disk' %}
+	    	<li>
+	    		由{{ file.author.name }}提供
+	    		<a href="{{ file.file_address }}" target="_blank" class="btn btn-success">获取</a>
+	    	</li><br/>
 	    {% else %}
 	    	 <li>由{{ file.author.name }}提供   
-	          	<a href="/static/doc/{{ file.file_address }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
-	          	<a href="/preview/{{ book.bid }}" target="_blank" class="btn btn-success">预览</a></li>
+	          	<a href="/{{ file.file_address }}" target="_blank" class="btn btn-success">下载</a>&nbsp;
+	          	<a href="/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li><br/>
 	    {% end %}
 	    
    	{% end %}
