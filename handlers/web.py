@@ -27,14 +27,16 @@ class MainHandler(BaseHandler):
     def get(self):
         
         books = []
-        for book in Book.objects():
+        hot_books = Book.objects().order_by('-wcount')[:8]
+        for book in Book.objects().order_by('+update_at'):
             books.append(book)
 
+        books.reverse()
         self.render(
             "home.html",
             page_heading='PDFLabs',
             books=books,
-            hot_books=books[-8:]
+            hot_books=hot_books
         )
 
 
@@ -52,7 +54,6 @@ class BookHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self, bookid):
-        self.collection = self.settings['db'].books
         book = Book.objects(bid = bookid)[0]
         self.render(
             "book.html",
@@ -60,11 +61,29 @@ class BookHandler(BaseHandler):
             book=book
         )
 
+    @tornado.web.authenticated
+    def post(self, bookid):
+        resource_url = self.get_argument('resource_url', None)
+        if resource_url:
+            try: 
+                book = Book.objects(bid=bookid)[0]
+            except Exception as ex:
+                app_log.error(ex)
+            else:
+                user = self.get_curent_user_model()
+                file = File(file_type='network_disk',
+                        file_address=resource_url,
+                )
+                file.author = user
+                book.files.append(file)
+                book.update_at=datetime.datetime.now()
+                book.save()
+        self.redirect("/book/" + bookid)
+
 class PreviewHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self, bookid):
-        self.collection = self.settings['db'].books
         book = yield motor.Op(self.collection.find_one, {'id': bookid})
         self.render(
             "preview.html",
@@ -112,6 +131,7 @@ class ContributeHandler(BaseHandler, UUIDMixin):
         if user:
             file.author = user
         book.files.append(file)
+        book.update_at=datetime.datetime.now()
         book.save()
         self.redirect("/book/" + book.bid)
 
@@ -133,6 +153,7 @@ class ContributeHandler(BaseHandler, UUIDMixin):
             if user:
                 file.author = user
             book.files.append(file)
+            book.update_at=datetime.datetime.now()
             book.save()
         except Exception as ex:
             app_log.error(ex)

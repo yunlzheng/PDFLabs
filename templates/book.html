@@ -3,15 +3,22 @@
 {% block body %}
 <script type="text/javascript">
 	var bookid = {{ book.bid }}
-	
 </script>
+<div id="alert-ilike-success" class="alert alert-success" style="display:none">
+              <button type="button" class="close" data-dismiss="alert">×</button>
+              <strong>恭喜</strong>  点击喜欢的次数越多，该本书得到分享的机会也就越来大.
+ </div>
+ <div id="alert-error" class="alert alert-error" style="display:none">
+	  <strong>抱歉 </strong>与服务器进行数据传输时出现的错误
+</div>
 <div id="book" class="row-fluid bookstore">
 	<div class="span3">
 	     <img id="book_img" class="img" src=""/>
 	</div>
 	<div class="span8">
 		<div class="span8">
-		<h5>{{ book.title }}</h5><h6 id="book_subtitle"></h6>
+		<h5>{{ book.title }}  <button id="btn_ilike" class="btn" title="喜欢"><i class="icon-heart"></i></button></h5><h6 id="book_subtitle"> </h6>
+
 		<label id="book_authors"><b>作者:</b>
 		</label>
 		<label>
@@ -30,7 +37,13 @@
 </div>
 <br/>
 <div class="row-fulid">
-   <h5>共享的文件</h5>
+   <h5>
+   	共享的文件  
+   	{% if current_user %}
+   	<a class="btn" id="btn_share" title="我要分享" data-toggle='modal' href='#myModal'><i class="icon-hand-up"></i>我要分享
+   	</a>
+   	{% end %}
+   </h5>
    <hr>
    <ul>
    {% if book.files %}
@@ -70,8 +83,48 @@
 	<h5>看过这本书的人都是这样说的</h5>
 	<hr>
 </div>
-
-
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 >分享-{{ book.title }}</h4>
+  </div>
+  <div class="modal-body">
+    <form id="form-contribute" class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+   <input id="contribute-book-id" type="hidden" name="id" value="{{ book.bid }}"/>
+	<div class="tabbable">
+	  <ul class="nav nav-tabs">
+	    <li class="active"><a href="#tab1" data-toggle="tab">网盘资源</a></li>
+	    <li><a href="#tab2" data-toggle="tab">本地上传</a></li>
+	  </ul>
+	  <div class="tab-content">
+	    <div class="tab-pane active" id="tab1">
+              <div class="control-group"><label class="control-label">我要分享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly" value="{{ book.title }}"></div></div>
+	      <div class="control-group">
+		    <label class="control-label">网盘下载地址</label>
+		    <div class="controls">
+		      <input type="text" name="resource_url" placeholder="资源下载地址">
+		    </div>
+		</div>
+	    </div>
+	    <div class="tab-pane" id="tab2">
+	     <div class="control-group"><label class="control-label">我要分享的</label><div class="controls"><input type="text" class="info-book-name" value="{{ book.title }}" readonly="readonly"></div></div>
+	     <div class="control-group">
+		    <label class="control-label">直接上传文件</label>
+		   <div class="controls">
+	   	    <input type="file" name="file" />
+		    </div>
+		</div>
+	    </div>
+	  </div>
+	</div>
+	
+   </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button id="contribute-submit" class="btn btn-primary">分享</button>
+  </div>
+  </div>
  <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/flexpaper.css") }}">
 <script data-main="{{ static_url("js/app/book") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

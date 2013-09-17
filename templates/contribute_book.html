@@ -1,6 +1,13 @@
 {% extends "main.html" %}
 {% autoescape None %}
 {% block body %}
+<div id="alert-ilike-success" class="alert alert-success" style="display:none">
+	<button type="button" class="close" data-dismiss="alert">×</button>
+             <strong>恭喜</strong>  点击喜欢的次数越多，该本书得到分享的机会也就越来大.
+ </div>
+ <div id="alert-error" class="alert alert-error" style="display:none">
+	  <strong>抱歉 </strong>与服务器进行数据传输时出现的错误
+</div>
 
 <div class="form-search" style="text-align:center;margin-bottom: 20px;">
   <div class="input-append">

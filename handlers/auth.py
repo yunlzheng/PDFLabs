@@ -35,7 +35,6 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
     @tornado.gen.coroutine
     def get(self):
 
-        self.collection = self.settings['db'].account
         if self.get_argument("openid.mode", None):
 
             result = yield self.get_authenticated_user()
@@ -70,7 +69,7 @@ class DoubanCallbackHandler(BaseHandler):
     # get the params of douban callback
     @tornado.gen.coroutine
     def get(self):
-        self.collection = self.settings['db'].account
+        
         code = self.get_argument('code')
         url = options.douban_auth_url + "/token"
         values = {

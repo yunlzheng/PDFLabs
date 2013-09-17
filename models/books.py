@@ -13,7 +13,12 @@ class Book(Document):
     image = StringField()
     publisher = StringField()
     create_at = DateTimeField()
+    update_at = DateTimeField()
     comments = ListField(EmbeddedDocumentField(BookComment))
     files = ListField(EmbeddedDocumentField(File))
     wcount = IntField(default=0)
     dcount = IntField()
+
+    meta = {
+        'ordering' : ['-update_at']
+    }

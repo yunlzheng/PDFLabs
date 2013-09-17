@@ -3,7 +3,7 @@
 {% block body %}
 <div class="row-fluid">
 <div id="divHomeCarousel" class="carousel slide custom-carousel ">
-    <h5>热门推荐</h5>
+    <h5>最热门</h5>
     <hr>
     <div class="carousel-inner bookstore" >
       <div class="item active">
@@ -36,7 +36,7 @@
 		    	      {% if book.files %}
 		    	     	<span class='stack'>现货</span>
 		    	     {% else %}
-		    	     	<span class='wait'>等待</span>
+		    	     	<span class='wait'>期待中</span>
 		    	     {% end %}
 		        </div>
 		       <a href="/book/{{ book.bid }}">
@@ -66,7 +66,7 @@
 				    	      {% if books[i].files %}
 				    	     	<span class='stack'>现货</span>
 				    	     {% else %}
-				    	     	<span class='wait'>等待</span>
+				    	     	<span class='wait'>期待中</span>
 				    	     {% end %}
 				    	</div>
 					<a href="/book/{{ books[i].bid }}">
