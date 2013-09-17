@@ -6,7 +6,7 @@ from handlers.weixin import WeiXinHandler
 from handlers.douban import BookDetailHandler, BookSearchHandler
 from handlers.service import AccountAPI, IWantService
 from handlers.auth import GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
-from handlers.web import MainHandler, DevHandler, AuthenticateHandler, LogsHandler
+from handlers.web import MainHandler, AuthenticateHandler, LogsHandler
 import tornado.web
 from handlers.web import BookHandler, PreviewHandler, ContributeHandler
 
@@ -20,7 +20,6 @@ router = [
       (r"/(rebots\.xml)", tornado.web.StaticFileHandler, static_dir_dict),
       # handlers
       (r"/", MainHandler),
-      (r"/dev", DevHandler),
       (r"/logs", LogsHandler),
       (r'/contribute', ContributeHandler),
       (r"/book/([0-9]+)", BookHandler),

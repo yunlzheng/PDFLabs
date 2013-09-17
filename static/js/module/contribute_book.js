@@ -8,10 +8,16 @@ function iWant(id){
           type:"post",
           url:"/api/want/"+book.id,
           success:function(result,statusText,jqXHR){
-              alert("i Want success");
+              $("#alert-ilike-success").show(1000);
+              setTimeout(function(){
+                $("#alert-ilike-success").hide().remove();
+              },2000)
           },
           error:function(error,jqXHR){
-              alert("i Want error");
+             $("#alert-error").show(1000);
+              setTimeout(function(){
+                $("#alert-error").hide(1000);
+              },2000)
           }
       });
       
@@ -30,7 +36,6 @@ function iHave(id){
 	$("#contribute-book-publisher").val(book.publisher);    
 }
 
-
 define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], function($,application,client) {
     //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
     $(function() {
@@ -38,7 +43,7 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], fu
     	$("#btn_search").click(function(){
 
     	     var keyword = $("#txt_key").val();
-             application.alert('Loading...')
+           application.alert('Loading...')
     	     client.seach_book(keyword,success)
     		 
     	});
@@ -54,9 +59,9 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], fu
 
     function success(result,statusText,jqXHR){
 
-          var json = $.parseJSON(result);
-          books = json.books;
-	  $("#books").empty()
+      var json = $.parseJSON(result);
+      books = json.books;
+	$("#books").empty()
           for(var i=0;i<json.books.length;i++){
                 var book = json.books[i]
                 var str = "<div class='well row-fluid'>"+

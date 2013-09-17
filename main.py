@@ -23,20 +23,13 @@ from tornado.options import options
 import defines
 from routers import router
 
-
 # application settings and handle mapping info
 
 class Application(tornado.web.Application):
 
     def __init__(self):
 
-        client = motor.MotorClient(
-            options.driver_url).open_sync()
-
-        db = client[options.database]
-
         static_dir = os.path.join(os.path.dirname(__file__), "static")
-
         handlers = router
         settings = dict(
             template_path=os.path.join(
@@ -44,7 +37,6 @@ class Application(tornado.web.Application):
             static_path= static_dir,
             cookie_secret=options.cookie_secret,
             login_url="/sigin",
-            db=db,
             debug=True,
             root=options.root
         )

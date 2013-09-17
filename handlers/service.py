@@ -1,5 +1,6 @@
 # -*- coding : utf-8 -*-
 import json
+import datetime
 import tornado.web
 import tornado.gen
 from tornado.httpclient import AsyncHTTPClient
@@ -59,4 +60,5 @@ class IWantService(BaseHandler):
         else:
             book.wcount = book.wcount+1
         finally:
+            book.update_at=datetime.datetime.now()
             book.save()
