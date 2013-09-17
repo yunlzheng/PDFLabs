@@ -131,7 +131,6 @@ class ContributeHandler(BaseHandler, UUIDMixin):
             )
             if user:
                 file.author = user
-            print ">++++++++++++++++++++++++++++++"
             book.files.append(file)
             book.save()
         except Exception as ex:
