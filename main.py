@@ -18,7 +18,7 @@ import tornado.web
 import tornado.auth
 
 from tornado.log import app_log
-from tornado.options import define, options
+from tornado.options import options
 
 import defines
 from routers import router
@@ -35,11 +35,13 @@ class Application(tornado.web.Application):
 
         db = client[options.database]
 
+        static_dir = os.path.join(os.path.dirname(__file__), "static")
+
         handlers = router
         settings = dict(
             template_path=os.path.join(
                 os.path.dirname(__file__), "templates"),
-            static_path=os.path.join(os.path.dirname(__file__), "static"),
+            static_path= static_dir,
             cookie_secret=options.cookie_secret,
             login_url="/sigin",
             db=db,
