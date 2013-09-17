@@ -19,17 +19,15 @@ function iWant(id){
 }
 
 function iHave(id){
-
 	var book = books[id];	
 	$(".info-book-name").each(function(){
 		$(this).val(book.title);	
 	});;
 	$("#contribute-book-id").val(book.id);     
 	$("#contribute-book-title").val(book.title);     
-	$("#contriibute-book-image").val(book.image);     
+	$("#contriibute-book-image").val(book.images.large);     
 	$("#contribute-book-isbn13").val(book.isbn13);     
 	$("#contribute-book-publisher").val(book.publisher);    
-
 }
 
 

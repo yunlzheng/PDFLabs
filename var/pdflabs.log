@@ -4652,3 +4652,105 @@
 [I 130917 01:18:21 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 296.48ms
 [W 130917 01:18:21 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.68ms
 [I 130917 01:18:23 web:1635] 304 GET /api/book/6021440 (127.0.0.1) 1829.33ms
+[I 130917 01:24:53 main:54]  PDFLabs running server on 5000
+[I 130917 01:24:58 web:1635] 200 GET / (127.0.0.1) 325.11ms
+[W 130917 01:24:59 web:1635] 404 GET /favicon.ico (127.0.0.1) 1.69ms
+[W 130917 01:24:59 web:1635] 404 GET /modules/home.js (127.0.0.1) 0.65ms
+[I 130917 01:25:00 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 301.39ms
+[I 130917 09:11:27 main:54]  PDFLabs running server on 5000
+[I 130917 09:11:33 web:1635] 304 GET / (127.0.0.1) 408.41ms
+[I 130917 09:11:33 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.85ms
+[I 130917 09:11:33 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.50ms
+[I 130917 09:11:33 web:1635] 304 GET /static/style/custom.css?v=3847f3adaa12cba5b8dcd1b9397d5ada (127.0.0.1) 1.23ms
+[I 130917 09:11:33 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.38ms
+[I 130917 09:11:34 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.19ms
+[I 130917 09:11:34 web:1635] 304 GET /static/img/bookcase.jpg (127.0.0.1) 1.45ms
+[I 130917 09:11:34 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.87ms
+[I 130917 09:11:34 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 19.45ms
+[I 130917 09:11:34 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 18.56ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/app/home.js (127.0.0.1) 15.40ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/module/home.js (127.0.0.1) 12.75ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.06ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 36.88ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 16.12ms
+[I 130917 09:11:34 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 7.34ms
+[W 130917 09:11:34 web:1635] 404 GET /modules/home.js (127.0.0.1) 20.73ms
+[I 130917 09:11:36 web:1635] 304 GET /static/img/glyphicons-halflings.png (127.0.0.1) 13.38ms
+[I 130917 09:11:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 284.85ms
+[W 130917 09:11:36 web:1635] 404 GET /favicon.ico (127.0.0.1) 1.86ms
+[E 130917 09:11:37 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130917 09:11:37 web:1635] 200 GET /contribute (127.0.0.1) 26.86ms
+[W 130917 09:11:38 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 1.66ms
+[I 130917 09:11:38 web:1635] 200 GET /static/js/module/contribute_book.js (127.0.0.1) 1.36ms
+[I 130917 09:11:38 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 315.88ms
+[I 130917 09:11:46 web:1635] 200 GET /api/book/search/Git?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 693.95ms
+[E 130917 09:11:51 service:49] no such item for Cursor instance
+[I 130917 09:11:51 web:1635] 200 POST /api/want/3420144 (127.0.0.1) 1071.44ms
+[E 130917 09:11:58 service:49] no such item for Cursor instance
+[I 130917 09:11:58 web:1635] 200 POST /api/want/6526452 (127.0.0.1) 1366.95ms
+[I 130917 09:12:22 web:1635] 200 GET / (127.0.0.1) 404.40ms
+[W 130917 09:12:22 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.73ms
+[I 130917 09:12:23 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 407.96ms
+[E 130917 09:17:18 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130917 09:17:18 web:1635] 304 GET /contribute (127.0.0.1) 18.45ms
+[W 130917 09:17:18 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 2.27ms
+[I 130917 09:17:18 web:1635] 304 GET /static/js/module/contribute_book.js (127.0.0.1) 1.26ms
+[I 130917 09:17:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 388.55ms
+[I 130917 09:17:29 web:1635] 200 GET /api/book/search/%E9%BB%91%E5%AE%A2%E4%B8%8E%E7%94%BB%E5%AE%B6?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 750.33ms
+[E 130917 09:17:32 service:49] no such item for Cursor instance
+[I 130917 09:17:32 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 1200.65ms
+[I 130917 09:17:42 web:1635] 304 GET /api/book/search/%E7%97%85%E6%AF%92%E5%BE%AA%E7%8E%AF?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 533.99ms
+[E 130917 09:17:50 service:49] no such item for Cursor instance
+[I 130917 09:17:50 web:1635] 200 POST /api/want/22790103 (127.0.0.1) 6199.98ms
+[I 130917 09:17:58 web:1635] 200 POST /api/want/22790103 (127.0.0.1) 1303.11ms
+[I 130917 09:18:02 web:1635] 200 GET /api/book/search/git%20?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 621.76ms
+[E 130917 09:18:04 service:49] no such item for Cursor instance
+[I 130917 09:18:05 web:1635] 200 POST /api/want/6526452 (127.0.0.1) 1154.96ms
+[E 130917 09:18:13 service:49] no such item for Cursor instance
+[I 130917 09:18:13 web:1635] 200 POST /api/want/3420144 (127.0.0.1) 1036.92ms
+[I 130917 09:18:27 web:1635] 200 GET /api/book/search/%E4%B8%96%E7%95%8C%E5%9B%A0%E4%BD%A0?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 635.50ms
+[E 130917 09:18:30 service:49] no such item for Cursor instance
+[I 130917 09:18:31 web:1635] 200 POST /api/want/4010196 (127.0.0.1) 1598.79ms
+[I 130917 09:18:42 web:1635] 200 GET /api/book/search/FaceBook?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 2154.97ms
+[E 130917 09:19:04 service:49] no such item for Cursor instance
+[I 130917 09:19:05 web:1635] 200 POST /api/want/5313010 (127.0.0.1) 11242.94ms
+[E 130917 09:19:05 service:49] no such item for Cursor instance
+[I 130917 09:19:06 web:1635] 200 POST /api/want/20471120 (127.0.0.1) 1876.43ms
+[I 130917 09:20:04 web:1635] 200 GET /api/book/search/%E6%B5%AA%E6%BD%AE%E4%B9%8B%E5%B7%85?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1370.11ms
+[E 130917 09:20:06 service:49] no such item for Cursor instance
+[I 130917 09:20:06 web:1635] 200 POST /api/want/6709783 (127.0.0.1) 1284.01ms
+[I 130917 09:20:15 web:1635] 200 GET /api/book/search/rework?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 611.76ms
+[E 130917 09:20:18 service:49] no such item for Cursor instance
+[I 130917 09:20:19 web:1635] 200 POST /api/want/5320866 (127.0.0.1) 1241.45ms
+[I 130917 09:20:24 web:1635] 200 GET /api/book/search/%E9%87%8D%E6%9E%84?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 738.77ms
+[E 130917 09:20:27 service:49] no such item for Cursor instance
+[I 130917 09:20:28 web:1635] 200 POST /api/want/1229923 (127.0.0.1) 1119.96ms
+[I 130917 09:20:44 web:1635] 200 GET /api/book/search/%E5%A4%B1%E6%8E%A7?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1733.11ms
+[E 130917 09:21:10 service:49] no such item for Cursor instance
+[I 130917 09:21:10 web:1635] 200 POST /api/want/5375620 (127.0.0.1) 1670.58ms
+[I 130917 09:21:32 web:1635] 200 GET /api/book/search/%E5%A4%A7%E6%95%B0%E6%8D%AE?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 537.70ms
+[E 130917 09:21:35 service:49] no such item for Cursor instance
+[I 130917 09:21:35 web:1635] 200 POST /api/want/20429677 (127.0.0.1) 1210.97ms
+[I 130917 09:22:14 web:1635] 200 GET /api/book/search/%E7%B2%BE%E7%9B%8A%E5%88%9B%E4%B8%9A?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 589.11ms
+[E 130917 09:22:17 service:49] no such item for Cursor instance
+[I 130917 09:22:17 web:1635] 200 POST /api/want/10945606 (127.0.0.1) 1200.99ms
+[I 130917 09:22:57 web:1635] 200 GET /api/book/search/%E7%A8%8B%E5%BA%8F%E5%91%98%E7%9A%84%E8%87%AA%E6%88%91?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 1845.83ms
+[E 130917 09:23:00 service:49] no such item for Cursor instance
+[I 130917 09:23:00 web:1635] 200 POST /api/want/3652388 (127.0.0.1) 1102.03ms
+[I 130917 09:23:18 web:1635] 200 GET /api/book/search/%E9%9B%86%E4%BD%93%E6%99%BA%E6%85%A7%E7%BC%96%E7%A8%8B?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 495.83ms
+[E 130917 09:23:21 service:49] no such item for Cursor instance
+[I 130917 09:23:21 web:1635] 200 POST /api/want/3288908 (127.0.0.1) 1307.12ms
+[I 130917 09:23:24 web:1635] 200 GET / (127.0.0.1) 357.10ms
+[W 130917 09:23:24 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.57ms
+[I 130917 09:23:30 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 290.12ms
+[E 130917 09:23:52 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130917 09:23:52 web:1635] 304 GET /contribute (127.0.0.1) 15.20ms
+[I 130917 09:23:53 web:1635] 304 GET /static/js/module/contribute_book.js (127.0.0.1) 1.30ms
+[W 130917 09:23:53 web:1635] 404 GET /modules/contributeBook.js (127.0.0.1) 1.63ms
+[I 130917 09:23:53 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 314.60ms
+[I 130917 09:24:00 web:1635] 200 GET /api/book/search/%E4%BB%A3%E7%A0%81%E7%9A%84%E6%9C%AA%E6%9D%A5?fields=id,title,publisher,author,isbn13,image (127.0.0.1) 621.31ms
+[E 130917 09:24:02 service:49] no such item for Cursor instance
+[I 130917 09:24:03 web:1635] 200 POST /api/want/24536403 (127.0.0.1) 1074.16ms
+[I 130917 09:24:07 web:1635] 200 GET / (127.0.0.1) 365.16ms
+[W 130917 09:24:08 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.69ms
+[I 130917 09:24:08 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 318.84ms

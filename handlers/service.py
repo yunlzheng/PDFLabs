@@ -49,7 +49,7 @@ class IWantService(BaseHandler):
             app_log.error(e)
             book = Book(bid = book_details['id'], 
                 title=book_details['title'], 
-                image=book_details['image'], 
+                image=book_details['images']['large'], 
                 isbn13=book_details['isbn13'],
                 publisher=book_details['publisher'],
                 wcount=0,

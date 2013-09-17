@@ -2,9 +2,6 @@
 #conf/server.conf
 
 *.py[cod]
-*/*.py[cod]
-
-*/*.pyc
 
 # C extensions
 *.so
