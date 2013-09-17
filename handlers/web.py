@@ -39,17 +39,6 @@ class MainHandler(BaseHandler):
             hot_books=hot_books
         )
 
-
-class DevHandler(BaseHandler):
-
-    #@tornado.web.authenticated
-    def get(self):
-        self.render(
-            "dev.html",
-            page_heading='PDFLabs|贡献者'
-        )
-
-
 class BookHandler(BaseHandler):
 
     @tornado.gen.coroutine
