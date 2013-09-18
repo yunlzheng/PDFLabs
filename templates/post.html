@@ -1,0 +1,49 @@
+{% extends "main.html" %}
+{% autoescape None %}
+{% block body %}
+<div class="row-fluid bbs">
+  <h5><a href="../{{ bbs.tag }}">{{ bbs.name }}</a></h5>
+  <button class="btn"><b class="icon-edit"></b>发帖</button>
+  <br/>
+  <span class="subtitle">{{ bbs.description }}</span>
+  <hr>
+  <div class="post-list">
+
+    <div class="post-item">
+      <div class="post-image">
+          <img src="/static/images/avatar.jpg"/>
+      </div>
+      <div class="post">
+        <div class="post-title">
+          <a href="{{bbs.tag}}/{{ post.id }}">{{ post.title }}</a>
+        </div>
+        <div class="post-info">
+          <span class="post-author">huiyunlau</span>
+          <div class="post-last-comment">
+              最后由 <span class="comment-author">海洋封</span> 于22天前回复
+          </div>
+        </div>
+      </div>
+      <div class="post-comments-count">
+        <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <hr/>
+    <p>{{ post.content }}</p>
+  </div>
+  <h8><b class="icon-list-alt"></b>回复:</h8>
+
+  <div class="comments">
+    {% for comment in post.comments %}
+        <h2>{{ comment }}</h2>
+    {% end %}
+    {% if not post.comments %}
+        <p>快来抢沙发了</p>
+    {% end %}
+  </div>
+</div>
+<script data-main="{{ static_url("js/app/post") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBiu5WCpU9fwzo2qrDWHxpnZTYsfO775C4&sensor=false">
+ </script>
+{% end %}

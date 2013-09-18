@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% autoescape None %}
+{% block body %}
+<div class="row-fluid bbs">
+  <h5>{{ bbs.name }}</h5>
+  <button class="btn"><b class="icon-edit"></b>发帖</button>
+  <br/>
+  <span class="subtitle">{{ bbs.description }}</span>
+  <hr>
+  <div class="post-list">
+    {% for post in bbs.posts%}
+    <div class="post-item">
+      <div class="post-image">
+          <img src="/static/images/avatar.jpg"/>
+      </div>
+      <div class="post">
+        <div class="post-title">
+          <a href="{{bbs.tag}}/{{ post.id }}">{{ post.title }}</a>
+        </div>
+        <div class="post-info">
+          <span class="post-author">huiyunlau</span>
+          <div class="post-last-comment">
+              最后由 <span class="comment-author">海洋封</span> 于22天前回复
+          </div>
+        </div>
+      </div>
+      <div class="post-comments-count">
+        <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+    <hr/>
+    {% end %}
+  </div>
+</div>
+<script data-main="{{ static_url("js/app/bbs") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBiu5WCpU9fwzo2qrDWHxpnZTYsfO775C4&sensor=false">
+ </script>
+{% end %}

@@ -14,18 +14,11 @@ from models.files import File
 
 from handlers import BaseHandler
 
-class UUIDMixin():
-
-    def generate_uuid(self):
-
-        date = datetime.datetime.now()
-        return date.strftime("%Y%m%d%Hx%M%S")
-
 class MainHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self):
-        
+
         books = []
         hot_books = Book.objects().order_by('-wcount')[:8]
         for book in Book.objects().order_by('+update_at'):
@@ -36,7 +29,8 @@ class MainHandler(BaseHandler):
             "home.html",
             page_heading='PDFLabs',
             books=books,
-            hot_books=hot_books
+            hot_books=hot_books,
+            bbss = self.get_bbs()
         )
 
 class BookHandler(BaseHandler):
@@ -47,14 +41,15 @@ class BookHandler(BaseHandler):
         self.render(
             "book.html",
             page_heading=book.title,
-            book=book
+            book=book,
+            bbss = self.get_bbs()
         )
 
     @tornado.web.authenticated
     def post(self, bookid):
         resource_url = self.get_argument('resource_url', None)
         if resource_url:
-            try: 
+            try:
                 book = Book.objects(bid=bookid)[0]
             except Exception as ex:
                 app_log.error(ex)
@@ -77,7 +72,8 @@ class PreviewHandler(BaseHandler):
         self.render(
             "preview.html",
             page_heading=book['title'],
-            book=book
+            book=book,
+            bbss = self.get_bbs()
         )
 
 
@@ -99,17 +95,19 @@ class LogsHandler(BaseHandler):
     def get(self):
         self.render(
             "logs.html",
-            page_heading='PDFLabs 更新日志'
+            page_heading='PDFLabs 更新日志',
+            bbss = self.get_bbs()
         )
 
-class ContributeHandler(BaseHandler, UUIDMixin):
+class ContributeHandler(BaseHandler):
 
     ''' contribute new book resources handler '''
     @tornado.web.authenticated
     def get(self):
         self.render(
             "contribute_book.html",
-            page_heading='cuttle | contribute book'
+            page_heading='cuttle | contribute book',
+            bbss = self.get_bbs()
         )
 
     def share_network_file(self, book, resource_url):
@@ -125,7 +123,7 @@ class ContributeHandler(BaseHandler, UUIDMixin):
         self.redirect("/book/" + book.bid)
 
     def share_local_file(self,book, resource_url):
-        
+
         user = self.get_curent_user_model()
         try:
             self.request.files['file']
@@ -160,13 +158,13 @@ class ContributeHandler(BaseHandler, UUIDMixin):
         response = json.loads(response.body)
 
         book=None
-        try: 
+        try:
             book = Book.objects(bid=id)[0]
         except Exception as ex:
             app_log.error(ex)
-            book = Book(bid = id, 
-                title=response['title'], 
-                image=response['images']['large'], 
+            book = Book(bid = id,
+                title=response['title'],
+                image=response['images']['large'],
                 isbn13=response['isbn13'],
                 publisher=response['publisher'],
                 wcount=0,
