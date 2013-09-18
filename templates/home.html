@@ -3,9 +3,9 @@
 {% block body %}
 <div class="row-fluid">
 <div id="divHomeCarousel" class="carousel slide custom-carousel ">
-    <h5>最热门</h5>
-    <hr>
-    <div class="carousel-inner bookstore" >
+    <h5 class="min-hidden">最热门</h5>
+    <hr class="min-hidden">
+    <div class="carousel-inner bookstore min-hidden" >
       <div class="item active">
  	<div class="row-fluid ">
  	{% for book in hot_books[0:4] %}
@@ -51,8 +51,8 @@
       
     </div>
 
-    <a class="left carousel-control" href="#divHomeCarousel" data-slide="prev">‹</a>
-    <a class="right carousel-control" href="#divHomeCarousel" data-slide="next">›</a>
+    <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control min-hidden" href="#divHomeCarousel" data-slide="next">›</a>
 
     <h5>最新共享</h5>
      <hr>

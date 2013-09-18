@@ -46,7 +46,7 @@ class IWantService(BaseHandler):
         book_details = json.loads(response.body)
         try:
             book = Book.objects(bid=book_details['id'])[0]
-            book.image = book_details['images']['large']
+            #book.image = book_details['images']['large']
         except Exception, e:
             app_log.error(e)
             book = Book(bid = book_details['id'], 
