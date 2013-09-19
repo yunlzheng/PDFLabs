@@ -3,7 +3,12 @@
 {% block body %}
 <div class="row-fluid group">
   <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
-  <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+  {% if current_user %}
+      <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+  {% else %}
+      <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
+  {% end %}
+
   <br/>
   <span class="subtitle">{{ post.group.description }}</span>
   <hr>
@@ -48,7 +53,12 @@
   </div>
   <div class="comment-publish">
       <textarea class="comment-content"></textarea>
-      <button class='btn btn-publish'>发布</button>
+      {% if current_user %}
+        <button class='btn btn-publish'>发布</button>
+      {% else %}
+        <button class='btn btn-publish' disabled>发布</button>
+      {% end %}
+
   </div>
 </div>
 <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -74,9 +84,11 @@
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+
     <button type="submit" class="btn btn-primary">发表</button>
+
   </div>
   </form>
 </div>
-<script data-main="{{ static_url("js/app/post") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="{{ static_url("js/app/post.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

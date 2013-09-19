@@ -17685,3 +17685,581 @@
 [I 130919 15:27:16 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
 [I 130919 15:27:16 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
 [I 130919 15:27:16 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.37ms
+[I 130919 15:29:36 main:48]  PDFLabs running server on 5000
+[I 130919 15:29:38 web:1635] 304 GET / (127.0.0.1) 31.74ms
+[I 130919 15:29:38 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.82ms
+[I 130919 15:29:38 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.47ms
+[I 130919 15:29:38 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.49ms
+[I 130919 15:29:38 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 15:29:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.28ms
+[I 130919 15:29:38 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.26ms
+[E 130919 15:29:49 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130919 15:29:49 web:1635] 304 GET /book/20429677 (127.0.0.1) 27.49ms
+[W 130919 15:29:50 web:1635] 404 GET /modules/book.js (127.0.0.1) 2.22ms
+[I 130919 15:29:50 web:1635] 304 GET /static/js/bootstrap/bootstrap.js (127.0.0.1) 1.47ms
+[E 130919 15:29:50 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:29:50 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 14.45ms
+[E 130919 15:30:32 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/book'
+[I 130919 15:30:32 web:1635] 304 GET /book/20429677 (127.0.0.1) 25.67ms
+[I 130919 15:30:32 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.79ms
+[I 130919 15:30:32 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 15:30:32 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.36ms
+[I 130919 15:30:32 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 15:30:32 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.40ms
+[I 130919 15:30:32 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.63ms
+[I 130919 15:30:32 web:1635] 200 GET /static/js/app/book.js (127.0.0.1) 1.34ms
+[I 130919 15:30:32 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.15ms
+[I 130919 15:30:32 web:1635] 200 GET /static/js/module/book.js (127.0.0.1) 1.30ms
+[W 130919 15:30:32 web:1635] 404 GET /modules/book.js (127.0.0.1) 1.71ms
+[E 130919 15:30:33 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:30:33 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 3.95ms
+[I 130919 15:31:36 web:1635] 200 GET /book/20429677 (127.0.0.1) 21.07ms
+[I 130919 15:31:36 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 15:31:36 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.28ms
+[I 130919 15:31:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130919 15:31:36 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130919 15:31:36 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.34ms
+[I 130919 15:31:36 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.52ms
+[I 130919 15:31:36 web:1635] 200 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.32ms
+[I 130919 15:31:36 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 1.16ms
+[E 130919 15:31:37 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:31:37 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 7.67ms
+[I 130919 15:32:14 web:1635] 304 GET /book/20429677 (127.0.0.1) 26.37ms
+[I 130919 15:32:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 15:32:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:32:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.54ms
+[I 130919 15:32:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.41ms
+[I 130919 15:32:14 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.30ms
+[I 130919 15:32:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.66ms
+[I 130919 15:32:15 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.22ms
+[E 130919 15:32:15 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:32:15 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 5.77ms
+[I 130919 15:32:16 web:1635] 302 GET /book/find (127.0.0.1) 0.86ms
+[I 130919 15:32:16 web:1635] 304 GET /sigin?next=%2Fbook%2Ffind (127.0.0.1) 3.98ms
+[E 130919 15:32:19 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:32:19 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 5.18ms
+[I 130919 15:32:20 web:1635] 304 GET /book/20429677 (127.0.0.1) 35.53ms
+[I 130919 15:32:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 15:32:20 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.30ms
+[I 130919 15:32:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.81ms
+[I 130919 15:32:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.19ms
+[I 130919 15:32:20 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.32ms
+[I 130919 15:32:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.39ms
+[I 130919 15:32:21 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.21ms
+[E 130919 15:32:21 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:32:21 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 7.49ms
+[I 130919 15:35:49 web:1635] 304 GET /book/20429677 (127.0.0.1) 31.68ms
+[I 130919 15:35:49 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 15:35:49 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.29ms
+[I 130919 15:35:49 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130919 15:35:49 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.41ms
+[I 130919 15:35:49 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.36ms
+[I 130919 15:35:49 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 15:35:50 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.25ms
+[I 130919 15:35:50 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 1.14ms
+[I 130919 15:35:50 web:1635] 304 GET /book/20429677 (127.0.0.1) 31.94ms
+[E 130919 15:35:51 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:35:51 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 8.40ms
+[I 130919 15:35:55 web:1635] 304 GET /book/20429677 (127.0.0.1) 28.51ms
+[I 130919 15:35:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 15:35:55 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 15:35:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.25ms
+[I 130919 15:35:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130919 15:35:55 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.34ms
+[I 130919 15:35:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 15:35:55 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.60ms
+[E 130919 15:35:56 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:35:56 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 8.62ms
+[I 130919 15:36:23 web:1635] 304 GET /book/20429677 (127.0.0.1) 30.17ms
+[I 130919 15:36:23 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.72ms
+[I 130919 15:36:23 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.13ms
+[I 130919 15:36:23 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.88ms
+[I 130919 15:36:23 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 15:36:23 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.51ms
+[I 130919 15:36:23 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 15:36:24 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.26ms
+[E 130919 15:36:24 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:36:24 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 5.17ms
+[I 130919 15:36:32 web:1635] 200 GET /book/20429677 (127.0.0.1) 29.30ms
+[I 130919 15:36:32 web:1635] 200 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.23ms
+[I 130919 15:36:32 web:1635] 200 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.33ms
+[I 130919 15:36:32 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.12ms
+[I 130919 15:36:32 web:1635] 200 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.52ms
+[I 130919 15:36:32 web:1635] 200 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.45ms
+[I 130919 15:36:32 web:1635] 200 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.89ms
+[I 130919 15:36:33 web:1635] 200 GET /static/img/bookcase.jpg (127.0.0.1) 1.14ms
+[I 130919 15:36:33 web:1635] 200 GET /static/img/glyphicons-halflings.png (127.0.0.1) 0.99ms
+[I 130919 15:36:33 web:1635] 200 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.09ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.39ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 3.01ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/module/book.js (127.0.0.1) 0.95ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/lib/application.js (127.0.0.1) 1.19ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/module/ajax_client.js (127.0.0.1) 1.36ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/lib/flexpaper_handlers.js (127.0.0.1) 1.20ms
+[I 130919 15:36:33 web:1635] 200 GET /static/js/lib/flexpaper.js (127.0.0.1) 1.48ms
+[E 130919 15:36:33 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:36:33 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 5.28ms
+[E 130919 15:37:28 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 15:37:28 web:1635] 200 GET /group/gs (127.0.0.1) 35.48ms
+[I 130919 15:37:28 web:1635] 200 GET /static/images/avatar.jpg (127.0.0.1) 1.26ms
+[I 130919 15:37:28 web:1635] 200 GET /static/js/app/group.js (127.0.0.1) 1.31ms
+[I 130919 15:37:28 web:1635] 200 GET /static/js/module/logs.js (127.0.0.1) 1.28ms
+[W 130919 15:37:28 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.71ms
+[I 130919 15:37:29 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.21ms
+[I 130919 15:37:50 web:1635] 200 GET /group/gs (127.0.0.1) 26.44ms
+[I 130919 15:37:50 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 15:37:50 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 15:37:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.51ms
+[I 130919 15:37:50 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130919 15:37:50 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.37ms
+[I 130919 15:37:50 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.93ms
+[I 130919 15:37:50 web:1635] 200 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.77ms
+[I 130919 15:37:51 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.18ms
+[I 130919 15:38:24 web:1635] 304 GET /group/gs (127.0.0.1) 23.18ms
+[I 130919 15:38:24 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.45ms
+[I 130919 15:38:24 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 15:38:24 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 15:38:24 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.05ms
+[I 130919 15:38:24 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.31ms
+[I 130919 15:38:24 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130919 15:38:24 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.22ms
+[I 130919 15:38:25 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.11ms
+[I 130919 15:38:26 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 23.68ms
+[I 130919 15:38:26 web:1635] 200 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.35ms
+[I 130919 15:38:36 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 26.51ms
+[I 130919 15:38:36 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.82ms
+[I 130919 15:38:36 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 15:38:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.09ms
+[I 130919 15:38:36 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 15:38:36 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 15:38:36 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 15:38:36 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 0.96ms
+[I 130919 15:38:37 web:1635] 200 GET / (127.0.0.1) 36.77ms
+[I 130919 15:38:38 web:1635] 200 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.42ms
+[I 130919 15:38:39 web:1635] 200 GET /book/10945606 (127.0.0.1) 22.11ms
+[I 130919 15:38:39 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 1.12ms
+[I 130919 15:38:39 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.07ms
+[E 130919 15:38:39 web:1228] Uncaught exception GET /api/book/10945606 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/10945606', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/10945606', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/douban.py", line 15, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 15:38:39 web:1635] 500 GET /api/book/10945606 (127.0.0.1) 8.76ms
+[W 130919 15:38:41 web:1635] 403 POST /api/want/10945606 (127.0.0.1) 1.16ms
+[W 130919 15:38:52 web:1635] 403 POST /api/want/10945606 (127.0.0.1) 1.45ms
+[I 130919 15:38:56 web:1635] 304 GET /group/gs (127.0.0.1) 27.99ms
+[I 130919 15:38:57 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.92ms
+[I 130919 15:38:59 web:1635] 200 GET /group/rs (127.0.0.1) 21.61ms
+[I 130919 15:39:01 web:1635] 304 GET /group/gs (127.0.0.1) 25.84ms
+[I 130919 15:39:03 web:1635] 304 GET /group/rs (127.0.0.1) 21.92ms
+[I 130919 15:39:08 web:1635] 304 GET /group/gs (127.0.0.1) 25.63ms
+[I 130919 15:39:08 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.12ms
+[I 130919 15:39:10 web:1635] 304 GET /group/rs (127.0.0.1) 22.58ms
+[I 130919 15:39:13 web:1635] 304 GET /group/gs (127.0.0.1) 26.21ms
+[I 130919 15:39:13 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.94ms
+[I 130919 15:39:15 web:1635] 304 GET /group/rs (127.0.0.1) 30.93ms
+[I 130919 15:39:19 web:1635] 304 GET /group/gs (127.0.0.1) 31.46ms
+[W 130919 15:40:13 web:1635] 403 POST /group/gs (127.0.0.1) 2.52ms
+[I 130919 15:40:18 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.92ms
+[I 130919 15:40:18 web:1635] 304 GET /group/gs (127.0.0.1) 31.45ms
+[I 130919 15:40:18 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.95ms
+[I 130919 15:40:18 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.28ms
+[I 130919 15:40:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.44ms
+[I 130919 15:40:18 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.41ms
+[I 130919 15:40:18 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.64ms
+[I 130919 15:40:18 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 15:40:18 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 15:42:23 web:1635] 304 GET /group/gs (127.0.0.1) 30.29ms
+[I 130919 15:42:23 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.80ms
+[I 130919 15:42:23 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.28ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.41ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 15:42:23 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.30ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.21ms
+[I 130919 15:42:23 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.24ms
+[I 130919 15:42:24 web:1635] 304 GET /group/gs (127.0.0.1) 24.76ms
+[I 130919 15:42:24 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 15:42:24 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 15:42:24 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 15:42:24 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.34ms
+[I 130919 15:42:24 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.51ms
+[I 130919 15:42:24 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 15:42:24 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 15:42:44 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 24.08ms
+[I 130919 15:42:45 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 20.97ms
+[I 130919 15:42:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.76ms
+[I 130919 15:42:45 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 15:42:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 15:42:45 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 4.15ms
+[I 130919 15:42:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.99ms
+[I 130919 15:42:45 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.73ms
+[I 130919 15:42:46 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.24ms
+[I 130919 15:42:47 web:1635] 304 GET /group/gs (127.0.0.1) 27.67ms
+[I 130919 15:43:13 web:1635] 200 GET /group/gs (127.0.0.1) 23.31ms
+[I 130919 15:43:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.77ms
+[I 130919 15:43:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.14ms
+[I 130919 15:43:13 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 15:43:13 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:43:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.70ms
+[I 130919 15:43:13 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.26ms
+[I 130919 15:43:13 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.21ms
+[I 130919 15:43:14 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.17ms
+[I 130919 15:43:20 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.86ms
+[I 130919 15:44:14 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 20.54ms
+[I 130919 15:44:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 15:44:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.46ms
+[I 130919 15:44:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.35ms
+[I 130919 15:44:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 15:44:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.25ms
+[I 130919 15:44:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130919 15:44:14 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.32ms
+[I 130919 15:44:15 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.55ms
+[I 130919 15:44:16 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.81ms
+[I 130919 15:44:16 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 15:44:16 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.33ms
+[I 130919 15:44:16 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130919 15:44:16 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.56ms
+[I 130919 15:44:16 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.94ms
+[I 130919 15:44:16 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130919 15:44:16 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.26ms
+[I 130919 15:44:39 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 22.26ms
+[I 130919 15:44:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 15:44:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 15:44:39 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:44:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 15:44:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.51ms
+[I 130919 15:44:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.22ms
+[I 130919 15:44:39 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.38ms
+[I 130919 15:44:39 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.36ms
+[I 130919 15:44:40 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.67ms
+[I 130919 15:44:40 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.74ms
+[I 130919 15:44:40 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.47ms
+[I 130919 15:44:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 15:44:40 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.58ms
+[I 130919 15:44:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130919 15:44:40 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 15:44:40 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.30ms
+[I 130919 15:44:51 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 22.18ms
+[I 130919 15:44:51 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.81ms
+[I 130919 15:44:51 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.42ms
+[I 130919 15:44:51 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.31ms
+[I 130919 15:44:51 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130919 15:44:51 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 15:44:51 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 15:44:51 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.26ms
+[I 130919 15:45:02 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 19.29ms
+[I 130919 15:45:02 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.75ms
+[I 130919 15:45:02 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.20ms
+[I 130919 15:45:02 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 15:45:02 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.45ms
+[I 130919 15:45:02 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 15:45:02 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.26ms
+[I 130919 15:45:03 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130919 15:45:03 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.17ms
+[I 130919 15:45:04 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 24.98ms
+[I 130919 15:45:04 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.37ms
+[I 130919 15:45:04 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.36ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.27ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 15:45:04 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.51ms
+[I 130919 15:45:04 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.67ms
+[I 130919 15:45:04 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.76ms
+[I 130919 15:45:04 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.61ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 15:45:04 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 15:45:04 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.41ms
+[I 130919 15:45:05 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 19.79ms
+[I 130919 15:45:05 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.76ms
+[I 130919 15:45:05 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.33ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.97ms
+[I 130919 15:45:05 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.20ms
+[I 130919 15:45:05 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.50ms
+[I 130919 15:45:05 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.75ms
+[I 130919 15:45:05 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.22ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 5.16ms
+[I 130919 15:45:05 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130919 15:45:05 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.29ms
+[I 130919 15:45:07 web:1635] 304 GET /group/gs (127.0.0.1) 25.02ms
+[I 130919 15:45:38 web:1635] 304 GET /group/gs (127.0.0.1) 31.58ms
+[I 130919 15:45:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.45ms
+[I 130919 15:45:39 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 15:45:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 15:45:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130919 15:45:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 15:45:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 15:45:39 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.22ms
+[I 130919 15:45:39 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 20.83ms
+[I 130919 15:46:25 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 24.29ms
+[I 130919 15:46:25 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.61ms
+[I 130919 15:46:25 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 15:46:25 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130919 15:46:25 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.36ms
+[I 130919 15:46:25 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.20ms
+[I 130919 15:46:25 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.20ms
+[I 130919 15:46:26 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.24ms
+[I 130919 15:46:26 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.16ms
+[I 130919 15:46:32 web:1635] 304 GET /group/gs (127.0.0.1) 24.82ms
+[I 130919 15:47:01 web:1635] 304 GET / (127.0.0.1) 35.69ms
+[I 130919 15:47:04 web:1635] 304 GET /group/gs (127.0.0.1) 27.51ms
+[I 130919 15:47:04 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.19ms
+[I 130919 15:47:06 web:1635] 200 GET /group/rs (127.0.0.1) 23.23ms

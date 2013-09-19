@@ -3,7 +3,11 @@
 {% block body %}
 <div class="row-fluid group">
   <h5>{{ _group.name }}</h5>
-  <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+ {% if current_user %}
+      <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+  {% else %}
+      <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
+  {% end %}
   <br/>
   <span class="subtitle">{{ _group.description }}</span>
   <hr>
@@ -60,5 +64,5 @@
   </div>
   </form>
 </div>
-<script data-main="{{ static_url("js/app/group") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="{{ static_url("js/app/group.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

@@ -9,7 +9,7 @@
 define(["jquery"],function($){
 
     /**********************
-    *** Jquery Ajax Utils  
+    *** Jquery Ajax Utils
     ***********************/
     var _http_client = (function() {
 
@@ -24,10 +24,6 @@ define(["jquery"],function($){
 			timeout:1000000,
 			error:function(jqXHR,textStatus,errorThrown){
 				console.log(textStatus);
-				application.alert(textStatus,'error');
-				setTimeout(function(){
-					application.hide_alert();
-				},1000);
 			}
 			},option));
 		}
@@ -56,7 +52,6 @@ define(["jquery"],function($){
     	}else{
     		console.log('...')
     	}
-     	
 
      });
 
@@ -106,7 +101,7 @@ define(["jquery"],function($){
 
 		});
 	}
-	
+
 
     }
 
