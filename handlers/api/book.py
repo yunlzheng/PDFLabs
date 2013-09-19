@@ -17,14 +17,14 @@ class IWantApi(BaseHandler):
             I want some book
             argument bookid : the book uuid in douban
         '''
-        http_client = AsyncHTTPClient()
-        response = yield http_client.fetch("https://api.douban.com/v2/book/"+bookid)
-        book_details = json.loads(response.body)
         try:
-            book = Book.objects(bid=book_details['id'])[0]
+            book = Book.objects(bid=bookid)[0]
             #book.image = book_details['images']['large']
         except Exception, e:
             app_log.error(e)
+            http_client = AsyncHTTPClient()
+            response = yield http_client.fetch("https://api.douban.com/v2/book/"+bookid)
+            book_details = json.loads(response.body)
             book = Book(bid = book_details['id'],
                 title=book_details['title'],
                 image=book_details['images']['large'],

@@ -19103,3 +19103,1454 @@
 [I 130919 17:22:37 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
 [I 130919 17:22:37 main:47]  PDFLabs running server on 5000
 [I 130919 17:22:43 main:47]  PDFLabs running server on 5000
+[I 130919 17:24:37 web:1635] 304 GET /book?tag=hot (127.0.0.1) 169.12ms
+[I 130919 17:24:37 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 7.48ms
+[I 130919 17:24:37 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 17:24:37 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 17:24:37 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130919 17:24:41 web:1635] 304 GET /book?tag=shared (127.0.0.1) 27.32ms
+[I 130919 17:24:43 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 31.82ms
+[I 130919 17:24:46 web:1635] 304 GET /book?tag=hot (127.0.0.1) 151.53ms
+[I 130919 17:24:55 web:1635] 304 GET /group/gs (127.0.0.1) 26.53ms
+[I 130919 17:24:55 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 0.89ms
+[I 130919 17:24:56 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.00ms
+[I 130919 17:24:57 web:1635] 304 GET /group/rs (127.0.0.1) 22.88ms
+[I 130919 17:25:04 web:1635] 304 GET /book?tag=shared (127.0.0.1) 28.16ms
+[I 130919 17:25:07 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 27.71ms
+[I 130919 17:25:12 web:1635] 304 GET /book?tag=hot (127.0.0.1) 157.00ms
+[I 130919 17:25:22 web:1635] 304 GET /book/find (127.0.0.1) 15.90ms
+[I 130919 17:25:22 web:1635] 304 GET /static/js/module/find.js (127.0.0.1) 1.23ms
+[I 130919 17:25:24 web:1635] 304 GET /group/gs (127.0.0.1) 24.21ms
+[I 130919 17:25:26 web:1635] 304 GET /book?tag=shared (127.0.0.1) 30.82ms
+[I 130919 17:25:27 web:1635] 304 GET / (127.0.0.1) 35.77ms
+[I 130919 19:17:11 web:1635] 304 GET /group/rs (127.0.0.1) 20.75ms
+[I 130919 19:17:11 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.19ms
+[I 130919 19:17:11 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.15ms
+[I 130919 19:20:36 web:1635] 200 GET /group/rs (127.0.0.1) 23.03ms
+[I 130919 19:20:36 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 19:20:36 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 19:20:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 19:20:36 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.59ms
+[I 130919 19:20:36 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.57ms
+[I 130919 19:20:36 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 19:20:36 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.26ms
+[I 130919 19:20:40 web:1635] 200 GET /group/th (127.0.0.1) 20.53ms
+[I 130919 19:20:43 web:1635] 304 GET /sigin (127.0.0.1) 5.39ms
+[I 130919 19:21:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/book.py modified; restarting server
+[I 130919 19:21:59 main:47]  PDFLabs running server on 5000
+[I 130919 19:22:05 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/book.py modified; restarting server
+[I 130919 19:22:06 main:47]  PDFLabs running server on 5000
+[I 130919 19:25:11 web:1635] 200 GET /sigin (127.0.0.1) 5.14ms
+[I 130919 19:25:11 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.63ms
+[I 130919 19:25:11 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 19:25:11 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.12ms
+[I 130919 19:25:11 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.17ms
+[I 130919 19:26:03 web:1635] 200 GET /sigin (127.0.0.1) 5.56ms
+[I 130919 19:26:03 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 19:26:03 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 19:26:03 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.06ms
+[I 130919 19:26:03 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.85ms
+[I 130919 19:26:29 web:1635] 200 GET /sigin (127.0.0.1) 5.00ms
+[I 130919 19:26:29 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 19:26:29 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.14ms
+[I 130919 19:26:29 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.36ms
+[I 130919 19:26:29 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.86ms
+[I 130919 19:26:50 web:1635] 200 GET /sigin (127.0.0.1) 5.11ms
+[I 130919 19:26:50 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 19:26:50 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 19:26:50 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.11ms
+[I 130919 19:26:50 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.86ms
+[I 130919 19:27:04 web:1635] 200 GET /sigin (127.0.0.1) 4.24ms
+[I 130919 19:27:04 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.61ms
+[I 130919 19:27:04 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.18ms
+[I 130919 19:27:04 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.01ms
+[I 130919 19:27:04 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.01ms
+[I 130919 19:27:59 web:1635] 200 GET /sigin (127.0.0.1) 12.22ms
+[I 130919 19:27:59 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.04ms
+[I 130919 19:27:59 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 19:27:59 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 19:27:59 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 19:27:59 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.06ms
+[I 130919 19:28:00 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.16ms
+[I 130919 19:28:55 web:1635] 200 GET /sigin (127.0.0.1) 8.14ms
+[I 130919 19:28:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 19:28:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.65ms
+[I 130919 19:28:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130919 19:28:55 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 19:28:55 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.50ms
+[I 130919 19:28:55 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.17ms
+[I 130919 19:29:09 web:1635] 200 GET /sigin (127.0.0.1) 7.51ms
+[I 130919 19:29:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130919 19:29:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.30ms
+[I 130919 19:29:09 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 19:29:09 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.14ms
+[I 130919 19:29:09 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.14ms
+[I 130919 19:29:09 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.38ms
+[I 130919 19:30:20 web:1635] 200 GET /sigin (127.0.0.1) 16.91ms
+[I 130919 19:30:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 19:30:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 19:30:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.47ms
+[I 130919 19:30:20 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.20ms
+[I 130919 19:30:20 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.14ms
+[I 130919 19:30:20 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.09ms
+[I 130919 19:30:42 web:1635] 304 GET /sigin (127.0.0.1) 9.24ms
+[I 130919 19:30:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 19:30:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 19:30:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 19:30:42 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 19:30:42 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 0.89ms
+[I 130919 19:30:42 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.85ms
+[I 130919 19:32:57 web:1635] 304 GET /sigin (127.0.0.1) 5.30ms
+[I 130919 19:32:57 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.89ms
+[I 130919 19:32:57 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 19:32:57 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.33ms
+[I 130919 19:32:57 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.12ms
+[I 130919 19:32:57 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.09ms
+[I 130919 19:32:58 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.23ms
+[I 130919 19:33:07 web:1635] 200 GET /sigin (127.0.0.1) 7.50ms
+[I 130919 19:33:07 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 19:33:07 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130919 19:33:07 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.77ms
+[I 130919 19:33:07 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.33ms
+[I 130919 19:33:07 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.12ms
+[I 130919 19:33:07 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.16ms
+[I 130919 19:34:41 web:1635] 200 GET /sigin (127.0.0.1) 5.50ms
+[I 130919 19:34:41 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.02ms
+[I 130919 19:34:41 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130919 19:34:41 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.37ms
+[I 130919 19:34:41 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 19:34:41 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 0.90ms
+[I 130919 19:34:41 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.07ms
+[I 130919 19:36:29 web:1635] 200 GET /sigin (127.0.0.1) 8.50ms
+[I 130919 19:36:29 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.85ms
+[I 130919 19:36:29 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130919 19:36:29 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 19:36:29 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130919 19:36:29 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.07ms
+[I 130919 19:36:29 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.89ms
+[I 130919 19:37:47 web:1635] 200 GET /sigin (127.0.0.1) 5.30ms
+[I 130919 19:37:48 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 19:37:48 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.29ms
+[I 130919 19:37:48 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.08ms
+[I 130919 19:37:48 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.59ms
+[I 130919 19:37:48 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.08ms
+[I 130919 19:37:48 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.17ms
+[I 130919 19:39:26 web:1635] 304 GET /sigin (127.0.0.1) 5.68ms
+[I 130919 19:39:26 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.39ms
+[I 130919 19:39:26 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130919 19:39:26 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.11ms
+[I 130919 19:39:26 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 19:39:26 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 2.37ms
+[I 130919 19:39:26 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.17ms
+[I 130919 19:40:01 web:1635] 200 GET /sigin (127.0.0.1) 6.15ms
+[I 130919 19:40:02 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130919 19:40:02 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.85ms
+[I 130919 19:40:02 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.86ms
+[I 130919 19:40:02 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.94ms
+[I 130919 19:40:02 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 2.99ms
+[I 130919 19:40:02 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.20ms
+[I 130919 19:40:16 web:1635] 304 GET /sigin (127.0.0.1) 8.27ms
+[I 130919 19:40:16 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 19:40:16 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.23ms
+[I 130919 19:40:16 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.49ms
+[I 130919 19:40:16 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 19:40:16 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 0.98ms
+[I 130919 19:40:16 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.10ms
+[I 130919 19:40:20 web:1635] 304 GET /sigin (127.0.0.1) 8.27ms
+[I 130919 19:40:54 web:1635] 200 GET /sigin (127.0.0.1) 7.10ms
+[I 130919 19:40:54 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.29ms
+[I 130919 19:40:54 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 19:40:54 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.58ms
+[I 130919 19:40:54 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.75ms
+[I 130919 19:40:54 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.14ms
+[I 130919 19:40:55 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.00ms
+[I 130919 19:41:54 autoreload:186] /home/zheng/github/PDFLabs/models/users.py modified; restarting server
+[I 130919 19:49:09 main:47]  PDFLabs running server on 5000
+[I 130919 19:49:12 web:1635] 200 GET /sigin (127.0.0.1) 6.75ms
+[I 130919 19:49:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 6.27ms
+[I 130919 19:49:12 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 19:49:12 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.72ms
+[I 130919 19:49:12 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 19:49:12 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 0.88ms
+[I 130919 19:49:12 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.93ms
+[I 130919 19:49:46 web:1635] 200 GET /sigin (127.0.0.1) 5.91ms
+[I 130919 19:49:46 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130919 19:49:46 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 19:49:46 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 19:49:46 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.57ms
+[I 130919 19:49:46 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.04ms
+[I 130919 19:49:46 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.10ms
+[I 130919 19:50:08 web:1635] 304 GET /sigin (127.0.0.1) 5.58ms
+[I 130919 19:50:08 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.11ms
+[I 130919 19:50:08 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 19:50:08 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.65ms
+[I 130919 19:50:08 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130919 19:50:08 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 2.74ms
+[I 130919 19:50:08 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.24ms
+[I 130919 19:50:45 web:1635] 200 GET /sigin (127.0.0.1) 8.55ms
+[I 130919 19:50:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130919 19:50:45 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.41ms
+[I 130919 19:50:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.85ms
+[I 130919 19:50:45 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.80ms
+[I 130919 19:50:45 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.01ms
+[I 130919 19:50:45 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.13ms
+[I 130919 19:52:06 web:1635] 200 GET /sigin (127.0.0.1) 10.96ms
+[I 130919 19:52:06 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 19:52:06 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130919 19:52:06 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 19:52:06 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 19:52:06 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.09ms
+[I 130919 19:52:06 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.10ms
+[I 130919 19:52:14 web:1635] 200 GET /sigin (127.0.0.1) 7.42ms
+[I 130919 19:52:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.44ms
+[I 130919 19:52:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 19:52:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.60ms
+[I 130919 19:52:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 19:52:14 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.09ms
+[I 130919 19:52:14 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.13ms
+[I 130919 19:52:23 web:1635] 200 GET /sigin (127.0.0.1) 6.59ms
+[I 130919 19:52:23 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.42ms
+[I 130919 19:52:23 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 19:52:23 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130919 19:52:23 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.31ms
+[I 130919 19:52:23 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.01ms
+[I 130919 19:52:23 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.16ms
+[I 130919 19:52:24 web:1635] 304 GET /sigin (127.0.0.1) 8.44ms
+[I 130919 19:52:24 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.54ms
+[I 130919 19:52:24 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.90ms
+[I 130919 19:52:24 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 19:52:24 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.16ms
+[I 130919 19:52:24 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.02ms
+[I 130919 19:52:24 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.09ms
+[I 130919 19:52:40 web:1635] 200 GET /sigin (127.0.0.1) 7.00ms
+[I 130919 19:52:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.09ms
+[I 130919 19:52:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 19:52:40 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 19:52:40 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 3.48ms
+[I 130919 19:52:40 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.07ms
+[I 130919 19:52:40 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.28ms
+[I 130919 19:53:11 web:1635] 200 GET /sigin (127.0.0.1) 5.65ms
+[I 130919 19:53:11 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.09ms
+[I 130919 19:53:11 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.41ms
+[I 130919 19:53:11 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.59ms
+[I 130919 19:53:11 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130919 19:53:11 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.13ms
+[I 130919 19:53:11 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.13ms
+[I 130919 19:53:35 web:1635] 200 GET /sigin (127.0.0.1) 5.74ms
+[I 130919 19:53:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.01ms
+[I 130919 19:53:35 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 19:53:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 19:53:35 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.57ms
+[I 130919 19:53:35 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.17ms
+[I 130919 19:53:35 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 0.87ms
+[I 130919 19:54:40 web:1635] 200 GET /sigin (127.0.0.1) 5.43ms
+[I 130919 19:54:41 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130919 19:54:41 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.49ms
+[I 130919 19:54:41 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 19:54:41 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.25ms
+[I 130919 19:54:41 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.22ms
+[I 130919 19:54:41 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.09ms
+[I 130919 19:54:59 web:1635] 200 GET /sigin (127.0.0.1) 6.57ms
+[I 130919 19:54:59 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 19:54:59 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130919 19:54:59 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.18ms
+[I 130919 19:54:59 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.65ms
+[I 130919 19:54:59 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.14ms
+[I 130919 19:54:59 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.16ms
+[I 130919 19:55:16 web:1635] 200 GET /sigin (127.0.0.1) 8.29ms
+[I 130919 19:55:16 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 19:55:16 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 19:55:16 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.34ms
+[I 130919 19:55:16 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.32ms
+[I 130919 19:55:16 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.02ms
+[I 130919 19:55:16 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.16ms
+[I 130919 19:55:17 web:1635] 200 GET / (127.0.0.1) 36.11ms
+[I 130919 19:55:19 web:1635] 304 GET /sigin (127.0.0.1) 4.70ms
+[I 130919 19:55:27 web:1635] 200 GET /sigin?email=yunl.zheng%40gmail.com&password=zhyl87225028 (127.0.0.1) 5.55ms
+[I 130919 19:55:47 web:1635] 200 GET /sigin?email=yunl.zheng%40gmail.com&password=zhyl87225028 (127.0.0.1) 11.36ms
+[I 130919 19:55:47 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.96ms
+[I 130919 19:55:47 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.80ms
+[I 130919 19:55:47 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 19:55:47 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.37ms
+[I 130919 19:55:47 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.21ms
+[I 130919 19:55:47 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.26ms
+[I 130919 19:55:51 web:1635] 200 GET /sigin (127.0.0.1) 7.95ms
+[I 130919 19:55:51 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.34ms
+[I 130919 19:55:51 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 3.95ms
+[I 130919 19:55:51 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 19:55:51 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 19:55:51 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.18ms
+[I 130919 19:55:51 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.18ms
+[E 130919 19:55:58 web:1228] Uncaught exception POST /sigin (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/sigin', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '50', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 35, in post
+        user = User.objects(email=email, password=password)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130919 19:55:58 web:1635] 500 POST /sigin (127.0.0.1) 5.37ms
+[I 130919 19:56:29 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:56:29 main:47]  PDFLabs running server on 5000
+[E 130919 19:56:34 web:1228] Uncaught exception POST /sigin (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/sigin', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '50', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 37, in post
+        user = User.objects(email=email, password=password)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130919 19:56:34 web:1635] 500 POST /sigin (127.0.0.1) 16.34ms
+[I 130919 19:57:42 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:57:42 main:47]  PDFLabs running server on 5000
+[I 130919 19:57:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:57:43 main:47]  PDFLabs running server on 5000
+[I 130919 19:57:50 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:57:50 main:47]  PDFLabs running server on 5000
+[I 130919 19:57:56 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:57:56 main:47]  PDFLabs running server on 5000
+[I 130919 19:57:58 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:57:58 main:47]  PDFLabs running server on 5000
+[E 130919 19:58:02 web:1228] Uncaught exception POST /sigin (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/sigin', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '50', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 35, in post
+        user = User.objects(email=email, password=password)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130919 19:58:02 web:1635] 500 POST /sigin (127.0.0.1) 12.28ms
+[I 130919 19:58:14 web:1635] 304 GET /sigin (127.0.0.1) 7.23ms
+[I 130919 19:58:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 6.12ms
+[I 130919 19:58:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 19:58:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 19:58:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.46ms
+[I 130919 19:58:14 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.15ms
+[I 130919 19:58:14 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.13ms
+[I 130919 19:58:20 web:1635] 302 POST /sigin (127.0.0.1) 2.69ms
+[I 130919 19:58:21 web:1635] 304 GET / (127.0.0.1) 37.06ms
+[I 130919 19:58:39 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 19:58:40 main:47]  PDFLabs running server on 5000
+[I 130919 19:58:42 web:1635] 304 GET / (127.0.0.1) 37.97ms
+[I 130919 19:58:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 8.71ms
+[I 130919 19:58:42 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.03ms
+[I 130919 19:58:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 19:58:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 19:58:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 19:58:42 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.26ms
+[I 130919 19:58:43 web:1635] 200 GET /sigin (127.0.0.1) 5.12ms
+[I 130919 19:58:49 web:1635] 302 POST /sigin (127.0.0.1) 2.78ms
+[I 130919 19:58:49 web:1635] 304 GET / (127.0.0.1) 37.32ms
+[I 130919 19:58:53 web:1635] 200 GET /sigin (127.0.0.1) 9.23ms
+[E 130919 19:58:56 web:1228] Uncaught exception POST /sigin (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/sigin', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '38', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/sigin', 'Cache-Control': 'max-age=0', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/auth.py", line 35, in post
+        user = User.objects(email=email, password=password)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130919 19:58:56 web:1635] 500 POST /sigin (127.0.0.1) 7.71ms
+[I 130919 19:59:14 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 20:00:06 main:47]  PDFLabs running server on 5000
+[E 130919 20:00:47 auth:40] no such item for Cursor instance
+[I 130919 20:00:47 web:1635] 302 POST /sigin (127.0.0.1) 6.83ms
+[I 130919 20:00:47 web:1635] 200 GET /sigin (127.0.0.1) 8.98ms
+[I 130919 20:00:47 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.78ms
+[I 130919 20:00:47 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 20:00:47 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 20:00:47 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.33ms
+[I 130919 20:00:47 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.00ms
+[I 130919 20:00:47 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.00ms
+[E 130919 20:00:55 auth:40] no such item for Cursor instance
+[I 130919 20:00:55 web:1635] 302 POST /sigin (127.0.0.1) 3.83ms
+[I 130919 20:00:55 web:1635] 200 GET /sigin (127.0.0.1) 5.69ms
+[I 130919 20:00:57 web:1635] 304 GET /sigin (127.0.0.1) 6.52ms
+[I 130919 20:00:57 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 20:00:57 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.51ms
+[I 130919 20:00:57 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.51ms
+[I 130919 20:00:57 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.30ms
+[I 130919 20:00:57 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.12ms
+[I 130919 20:00:57 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.22ms
+[I 130919 20:01:07 web:1635] 302 POST /sigin (127.0.0.1) 3.51ms
+[I 130919 20:01:07 web:1635] 304 GET / (127.0.0.1) 39.98ms
+[I 130919 20:01:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 20:01:43 main:47]  PDFLabs running server on 5000
+[I 130919 20:01:44 autoreload:186] /home/zheng/github/PDFLabs/handlers/auth.py modified; restarting server
+[I 130919 20:01:45 main:47]  PDFLabs running server on 5000
+[I 130919 20:01:53 web:1635] 304 GET / (127.0.0.1) 39.00ms
+[I 130919 20:01:53 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 10.14ms
+[I 130919 20:01:53 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.72ms
+[I 130919 20:01:53 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.30ms
+[I 130919 20:01:53 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 20:01:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 20:01:53 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.52ms
+[I 130919 20:01:56 web:1635] 200 GET /sigin (127.0.0.1) 5.86ms
+[I 130919 20:02:05 web:1635] 302 POST /sigin (127.0.0.1) 5.46ms
+[I 130919 20:02:05 web:1635] 200 GET / (127.0.0.1) 39.63ms
+[I 130919 20:02:05 web:1635] 200 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.09ms
+[I 130919 20:02:09 web:1635] 200 GET /static/img/glyphicons-halflings-white.png (127.0.0.1) 1.75ms
+[I 130919 20:02:15 web:1635] 304 GET / (127.0.0.1) 51.59ms
+[I 130919 20:02:15 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 20:02:15 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.30ms
+[I 130919 20:02:15 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.29ms
+[I 130919 20:02:15 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.59ms
+[I 130919 20:02:15 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 20:02:15 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.18ms
+[I 130919 20:02:15 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.36ms
+[I 130919 20:02:44 web:1635] 304 GET / (127.0.0.1) 33.85ms
+[I 130919 20:02:44 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 20:02:44 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.31ms
+[I 130919 20:02:44 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.32ms
+[I 130919 20:02:44 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.54ms
+[I 130919 20:02:44 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130919 20:02:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.55ms
+[I 130919 20:02:45 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.22ms
+[I 130919 20:02:59 web:1635] 200 GET /group/gs (127.0.0.1) 30.22ms
+[I 130919 20:02:59 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.23ms
+[I 130919 20:03:00 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.06ms
+[I 130919 20:03:00 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 3.70ms
+[I 130919 20:03:19 web:1635] 304 GET / (127.0.0.1) 37.43ms
+[I 130919 20:05:13 web:1635] 200 GET / (127.0.0.1) 35.15ms
+[I 130919 20:05:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 20:05:13 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.02ms
+[I 130919 20:05:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 20:05:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130919 20:05:13 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 20:05:13 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130919 20:05:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 20:05:14 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.28ms
+[I 130919 20:05:14 web:1635] 200 GET /static/js/app/home.js?v=6f7822c15d08ce9832de025b4ac789de (127.0.0.1) 1.33ms
+[I 130919 20:05:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.86ms
+[I 130919 20:05:34 web:1635] 200 GET /book?tag=shared (127.0.0.1) 29.73ms
+[I 130919 20:05:36 web:1635] 200 GET /book?tag=waiting (127.0.0.1) 26.53ms
+[I 130919 20:05:38 web:1635] 200 GET /book?tag=hot (127.0.0.1) 156.43ms
+[I 130919 20:05:39 web:1635] 304 GET / (127.0.0.1) 37.90ms
+[I 130919 20:05:40 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.69ms
+[I 130919 20:06:06 web:1635] 200 GET / (127.0.0.1) 37.23ms
+[I 130919 20:06:06 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 20:06:06 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 20:06:06 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130919 20:06:06 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 20:06:06 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130919 20:06:06 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 20:06:06 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.23ms
+[I 130919 20:06:06 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.35ms
+[I 130919 20:06:06 web:1635] 304 GET /static/js/app/home.js?v=6f7822c15d08ce9832de025b4ac789de (127.0.0.1) 1.22ms
+[I 130919 20:06:06 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.09ms
+[I 130919 20:06:14 web:1635] 200 GET /book/20429677 (127.0.0.1) 24.50ms
+[I 130919 20:06:14 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 1.21ms
+[I 130919 20:06:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.78ms
+[E 130919 20:06:14 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:06:14 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 27.26ms
+[I 130919 20:06:23 web:1635] 304 GET /book?tag=shared (127.0.0.1) 29.35ms
+[I 130919 20:06:25 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 27.54ms
+[I 130919 20:06:28 web:1635] 304 GET /book?tag=hot (127.0.0.1) 158.32ms
+[I 130919 20:06:30 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 27.92ms
+[I 130919 20:06:32 web:1635] 304 GET /book?tag=shared (127.0.0.1) 27.89ms
+[I 130919 20:06:33 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 26.37ms
+[I 130919 20:06:36 web:1635] 304 GET /book?tag=hot (127.0.0.1) 161.31ms
+[I 130919 20:06:37 web:1635] 304 GET /group/gs (127.0.0.1) 35.96ms
+[I 130919 20:06:38 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.57ms
+[I 130919 20:06:40 web:1635] 200 GET /group/th (127.0.0.1) 19.57ms
+[I 130919 20:06:40 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.66ms
+[I 130919 20:08:14 web:1635] 302 POST /group/th (127.0.0.1) 7.21ms
+[I 130919 20:08:14 web:1635] 200 GET /group/th (127.0.0.1) 21.78ms
+[I 130919 20:08:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.58ms
+[I 130919 20:08:16 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.52ms
+[I 130919 20:08:17 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.83ms
+[I 130919 20:08:19 web:1635] 304 GET /group/th (127.0.0.1) 20.63ms
+[I 130919 20:08:20 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.02ms
+[I 130919 20:08:21 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.94ms
+[I 130919 20:08:21 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.42ms
+[I 130919 20:08:24 web:1635] 304 GET /group/th (127.0.0.1) 23.26ms
+[I 130919 20:08:24 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.82ms
+[I 130919 20:08:25 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.46ms
+[I 130919 20:08:26 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.77ms
+[I 130919 20:08:44 web:1635] 304 GET /group/th (127.0.0.1) 21.15ms
+[I 130919 20:08:44 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.56ms
+[I 130919 20:08:46 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.84ms
+[I 130919 20:08:46 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.65ms
+[I 130919 20:08:47 web:1635] 304 GET /group/th (127.0.0.1) 23.73ms
+[I 130919 20:08:47 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 6.52ms
+[I 130919 20:08:48 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.31ms
+[I 130919 20:08:49 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.49ms
+[I 130919 20:09:11 web:1635] 302 POST /group/th/523ae92edc266554780ee282 (127.0.0.1) 5.78ms
+[I 130919 20:09:11 web:1635] 200 GET /group/th (127.0.0.1) 23.66ms
+[I 130919 20:09:11 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.16ms
+[I 130919 20:09:13 web:1635] 200 GET /group/th/523ae967dc266554780ee283 (127.0.0.1) 22.72ms
+[I 130919 20:09:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.35ms
+[I 130919 20:09:17 web:1635] 304 GET /group/th (127.0.0.1) 22.83ms
+[I 130919 20:09:17 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.79ms
+[I 130919 20:09:36 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.56ms
+[I 130919 20:09:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.29ms
+[I 130919 20:09:39 web:1635] 304 GET /group/th (127.0.0.1) 23.14ms
+[I 130919 20:09:40 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.98ms
+[I 130919 20:09:41 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.62ms
+[I 130919 20:09:41 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.06ms
+[I 130919 20:09:44 web:1635] 304 GET /group/th (127.0.0.1) 23.85ms
+[I 130919 20:09:45 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.99ms
+[I 130919 20:09:47 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.15ms
+[I 130919 20:09:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.72ms
+[I 130919 20:09:49 web:1635] 304 GET /group/th (127.0.0.1) 22.06ms
+[I 130919 20:09:49 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.87ms
+[I 130919 20:09:51 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.39ms
+[I 130919 20:09:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[I 130919 20:09:53 web:1635] 304 GET /group/th (127.0.0.1) 24.73ms
+[I 130919 20:09:53 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.80ms
+[I 130919 20:09:55 web:1635] 304 GET / (127.0.0.1) 36.57ms
+[I 130919 20:09:55 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.69ms
+[I 130919 20:10:08 web:1635] 200 GET /book/find (127.0.0.1) 14.62ms
+[I 130919 20:10:09 web:1635] 304 GET /static/js/module/find.js (127.0.0.1) 0.99ms
+[I 130919 20:10:09 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.78ms
+[I 130919 20:10:12 web:1635] 304 GET /group/gs (127.0.0.1) 28.75ms
+[I 130919 20:10:12 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.64ms
+[I 130919 20:10:14 web:1635] 200 GET /group/rs (127.0.0.1) 24.29ms
+[I 130919 20:10:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.70ms
+[I 130919 20:10:16 web:1635] 304 GET /group/th (127.0.0.1) 25.35ms
+[I 130919 20:10:16 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.62ms
+[I 130919 20:10:18 web:1635] 304 GET /group/rs (127.0.0.1) 22.88ms
+[I 130919 20:10:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.47ms
+[I 130919 20:10:21 web:1635] 304 GET /group/th (127.0.0.1) 24.44ms
+[I 130919 20:10:21 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.40ms
+[I 130919 20:10:23 web:1635] 304 GET /group/th/523ae967dc266554780ee283 (127.0.0.1) 20.16ms
+[I 130919 20:10:24 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.63ms
+[I 130919 20:11:03 web:1635] 304 GET /book?tag=shared (127.0.0.1) 30.19ms
+[I 130919 20:11:05 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 30.18ms
+[I 130919 20:11:16 web:1635] 304 GET /book?tag=shared (127.0.0.1) 28.88ms
+[I 130919 20:11:25 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 29.59ms
+[I 130919 20:11:32 web:1635] 200 GET /book/1229923 (127.0.0.1) 27.32ms
+[I 130919 20:11:32 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.48ms
+[E 130919 20:11:32 web:1228] Uncaught exception GET /api/book/1229923 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/1229923', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/1229923', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:11:32 web:1635] 500 GET /api/book/1229923 (127.0.0.1) 11.34ms
+[I 130919 20:11:36 web:1635] 304 GET / (127.0.0.1) 37.57ms
+[I 130919 20:11:37 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.72ms
+[I 130919 20:11:45 web:1635] 304 GET /book/1229923 (127.0.0.1) 22.17ms
+[I 130919 20:11:46 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.61ms
+[E 130919 20:11:46 web:1228] Uncaught exception GET /api/book/1229923 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/1229923', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/1229923', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:11:46 web:1635] 500 GET /api/book/1229923 (127.0.0.1) 9.72ms
+[I 130919 20:11:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.64ms
+[I 130919 20:11:51 web:1635] 200 GET /book/4262627 (127.0.0.1) 30.10ms
+[I 130919 20:11:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.71ms
+[E 130919 20:11:51 web:1228] Uncaught exception GET /api/book/4262627 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/4262627', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/4262627', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:11:51 web:1635] 500 GET /api/book/4262627 (127.0.0.1) 16.05ms
+[I 130919 20:11:56 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.59ms
+[I 130919 20:12:01 web:1635] 304 GET /book/1229923 (127.0.0.1) 22.45ms
+[I 130919 20:12:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.52ms
+[E 130919 20:12:01 web:1228] Uncaught exception GET /api/book/1229923 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/1229923', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/1229923', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:12:01 web:1635] 500 GET /api/book/1229923 (127.0.0.1) 8.43ms
+[I 130919 20:12:05 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 4.11ms
+[I 130919 20:12:08 web:1635] 304 GET /group/gs (127.0.0.1) 29.59ms
+[I 130919 20:12:08 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.62ms
+[I 130919 20:12:15 web:1635] 304 GET /group/rs (127.0.0.1) 23.55ms
+[I 130919 20:12:15 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.71ms
+[I 130919 20:12:17 web:1635] 304 GET /group/th (127.0.0.1) 24.88ms
+[I 130919 20:12:18 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.44ms
+[I 130919 20:12:20 web:1635] 304 GET /group/rs (127.0.0.1) 23.86ms
+[I 130919 20:12:20 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.99ms
+[I 130919 20:20:55 web:1635] 302 POST /group/rs (127.0.0.1) 5.92ms
+[I 130919 20:20:55 web:1635] 200 GET /group/rs (127.0.0.1) 21.52ms
+[I 130919 20:20:55 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.83ms
+[I 130919 20:20:57 web:1635] 200 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 22.02ms
+[I 130919 20:20:58 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.75ms
+[I 130919 20:21:00 web:1635] 304 GET /group/rs (127.0.0.1) 23.54ms
+[I 130919 20:21:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.25ms
+[I 130919 20:21:02 web:1635] 200 GET /group/rs/523a9930dc26653242cbea26 (127.0.0.1) 22.19ms
+[I 130919 20:21:03 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.52ms
+[I 130919 20:21:04 web:1635] 304 GET /group/rs (127.0.0.1) 23.12ms
+[I 130919 20:21:04 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.40ms
+[I 130919 20:21:06 web:1635] 304 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 27.47ms
+[I 130919 20:21:06 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.71ms
+[I 130919 20:21:06 web:1635] 304 GET /group/rs (127.0.0.1) 23.35ms
+[I 130919 20:21:07 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.94ms
+[I 130919 20:21:40 web:1635] 304 GET / (127.0.0.1) 35.09ms
+[I 130919 20:21:41 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.50ms
+[I 130919 20:21:41 web:1635] 200 GET /static/img/bookcase_max_767.jpg (127.0.0.1) 1.36ms
+[I 130919 20:22:48 web:1635] 304 GET /book/find (127.0.0.1) 22.79ms
+[I 130919 20:22:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 5.60ms
+[I 130919 20:22:52 web:1635] 304 GET /group/gs (127.0.0.1) 31.10ms
+[I 130919 20:22:52 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.26ms
+[I 130919 20:22:55 web:1635] 304 GET /book?tag=shared (127.0.0.1) 37.36ms
+[I 130919 20:23:38 web:1635] 304 GET /group/gs (127.0.0.1) 31.12ms
+[I 130919 20:23:39 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.54ms
+[I 130919 20:24:18 web:1635] 304 GET /group/gs (127.0.0.1) 25.82ms
+[I 130919 20:24:18 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.94ms
+[I 130919 20:24:18 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.39ms
+[I 130919 20:24:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.98ms
+[I 130919 20:24:18 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 3.18ms
+[I 130919 20:24:18 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 20:24:18 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 20:24:18 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130919 20:24:18 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 0.98ms
+[I 130919 20:24:18 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.46ms
+[I 130919 20:24:20 web:1635] 304 GET /group/gs (127.0.0.1) 29.38ms
+[I 130919 20:24:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 20:24:20 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.50ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.44ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.55ms
+[I 130919 20:24:20 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 20:24:20 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.59ms
+[I 130919 20:24:20 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.67ms
+[I 130919 20:24:20 web:1635] 304 GET /group/gs (127.0.0.1) 29.67ms
+[I 130919 20:24:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.49ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.64ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 4.18ms
+[I 130919 20:24:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.26ms
+[I 130919 20:24:20 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.94ms
+[I 130919 20:24:20 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.03ms
+[I 130919 20:24:20 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 20:24:21 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 20:24:21 web:1635] 304 GET /group/gs (127.0.0.1) 31.31ms
+[I 130919 20:24:21 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 20:24:21 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 20:24:21 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.69ms
+[I 130919 20:24:21 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130919 20:24:21 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.23ms
+[I 130919 20:24:21 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.54ms
+[I 130919 20:24:21 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 20:24:21 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 20:24:48 web:1635] 200 GET /group/gs (127.0.0.1) 30.27ms
+[I 130919 20:24:48 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 20:24:48 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 3.97ms
+[I 130919 20:24:48 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 20:24:48 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 20:24:48 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 5.40ms
+[I 130919 20:24:48 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 2.59ms
+[I 130919 20:24:48 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 2.43ms
+[I 130919 20:24:48 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.19ms
+[I 130919 20:24:58 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 20.38ms
+[I 130919 20:25:01 web:1635] 304 GET /group/gs (127.0.0.1) 30.03ms
+[I 130919 20:25:02 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 20.77ms
+[I 130919 20:25:04 web:1635] 304 GET /group/gs (127.0.0.1) 28.98ms
+[I 130919 20:25:08 web:1635] 200 GET /group/gs/523a9870dc26653242cbea24 (127.0.0.1) 21.17ms
+[I 130919 20:25:11 web:1635] 304 GET /group/gs (127.0.0.1) 31.14ms
+[I 130919 20:25:18 web:1635] 304 GET /group/gs/523a9870dc26653242cbea24 (127.0.0.1) 21.53ms
+[I 130919 20:25:21 web:1635] 304 GET /group/gs (127.0.0.1) 29.43ms
+[I 130919 20:25:24 web:1635] 200 GET /group/rs (127.0.0.1) 27.75ms
+[I 130919 20:25:26 web:1635] 200 GET /group/th (127.0.0.1) 26.77ms
+[I 130919 20:25:31 web:1635] 304 GET /group/gs (127.0.0.1) 33.04ms
+[I 130919 20:25:33 web:1635] 304 GET /group/rs (127.0.0.1) 26.44ms
+[I 130919 20:25:37 web:1635] 304 GET /group/th (127.0.0.1) 26.41ms
+[I 130919 20:25:39 web:1635] 304 GET /group/rs (127.0.0.1) 28.05ms
+[I 130919 20:25:41 web:1635] 304 GET /group/gs (127.0.0.1) 33.94ms
+[I 130919 20:25:42 web:1635] 304 GET /group/rs (127.0.0.1) 33.05ms
+[I 130919 20:25:46 web:1635] 304 GET /group/th (127.0.0.1) 28.20ms
+[I 130919 20:25:48 web:1635] 304 GET /group/rs (127.0.0.1) 26.20ms
+[I 130919 20:25:50 web:1635] 304 GET /group/gs (127.0.0.1) 28.66ms
+[I 130919 20:25:53 web:1635] 304 GET /group/rs (127.0.0.1) 26.69ms
+[I 130919 20:25:55 web:1635] 304 GET /group/th (127.0.0.1) 24.45ms
+[I 130919 20:25:56 web:1635] 304 GET /book/find (127.0.0.1) 17.70ms
+[I 130919 20:25:59 web:1635] 304 GET /group/gs (127.0.0.1) 30.57ms
+[I 130919 20:26:01 web:1635] 304 GET /group/rs (127.0.0.1) 26.31ms
+[I 130919 20:26:03 web:1635] 304 GET /group/th (127.0.0.1) 24.25ms
+[I 130919 20:26:05 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 29.57ms
+[I 130919 20:26:09 web:1635] 304 GET /book?tag=shared (127.0.0.1) 29.67ms
+[I 130919 20:26:11 web:1635] 304 GET /book?tag=hot (127.0.0.1) 168.54ms
+[I 130919 20:26:13 web:1635] 304 GET / (127.0.0.1) 38.59ms
+[I 130919 20:26:32 web:1635] 200 GET /book/6021440 (127.0.0.1) 22.04ms
+[E 130919 20:26:33 web:1228] Uncaught exception GET /api/book/6021440 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/6021440', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/6021440', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:26:33 web:1635] 500 GET /api/book/6021440 (127.0.0.1) 8.47ms
+[I 130919 20:27:17 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/book.py modified; restarting server
+[I 130919 20:27:17 main:47]  PDFLabs running server on 5000
+[I 130919 20:27:28 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/book.py modified; restarting server
+[I 130919 20:27:29 main:47]  PDFLabs running server on 5000
+[I 130919 20:27:32 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/book.py modified; restarting server
+[I 130919 20:27:32 main:47]  PDFLabs running server on 5000
+[I 130919 20:27:40 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/book.py modified; restarting server
+[I 130919 20:27:40 main:47]  PDFLabs running server on 5000
+[I 130919 20:27:49 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/book.py modified; restarting server
+[I 130919 20:27:49 main:47]  PDFLabs running server on 5000
+[I 130919 20:27:51 web:1635] 304 GET /book/6021440 (127.0.0.1) 26.37ms
+[I 130919 20:27:51 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 7.33ms
+[I 130919 20:27:51 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.30ms
+[I 130919 20:27:51 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 20:27:51 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.25ms
+[I 130919 20:27:51 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.23ms
+[I 130919 20:27:51 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 20:27:51 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130919 20:27:51 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.29ms
+[E 130919 20:27:51 web:1228] Uncaught exception GET /api/book/6021440 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/6021440', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/6021440', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:27:51 web:1635] 500 GET /api/book/6021440 (127.0.0.1) 21.31ms
+[I 130919 20:28:01 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 4.84ms
+[I 130919 20:28:07 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 4.59ms
+[I 130919 20:28:10 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 5.75ms
+[I 130919 20:28:10 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 6.36ms
+[I 130919 20:28:18 web:1635] 304 GET /book/6021440 (127.0.0.1) 25.42ms
+[I 130919 20:28:18 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.65ms
+[I 130919 20:28:18 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.34ms
+[I 130919 20:28:18 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 20:28:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.75ms
+[I 130919 20:28:18 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.32ms
+[I 130919 20:28:18 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.57ms
+[I 130919 20:28:18 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130919 20:28:18 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.26ms
+[E 130919 20:28:19 web:1228] Uncaught exception GET /api/book/6021440 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/6021440', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/6021440', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:28:19 web:1635] 500 GET /api/book/6021440 (127.0.0.1) 8.31ms
+[I 130919 20:28:29 web:1635] 200 POST /api/want/6021440 (127.0.0.1) 6.09ms
+[I 130919 20:28:34 web:1635] 200 GET / (127.0.0.1) 37.34ms
+[I 130919 20:29:05 web:1635] 304 GET /group/gs (127.0.0.1) 34.08ms
+[I 130919 20:29:12 web:1635] 304 GET /group/rs (127.0.0.1) 24.62ms
+[I 130919 20:29:15 web:1635] 304 GET /group/th (127.0.0.1) 25.36ms
+[I 130919 20:29:18 web:1635] 304 GET /group/rs (127.0.0.1) 24.56ms
+[I 130919 20:29:20 web:1635] 200 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 22.56ms
+[I 130919 20:29:22 web:1635] 304 GET /group/rs (127.0.0.1) 26.99ms
+[I 130919 20:29:24 web:1635] 304 GET /group/gs (127.0.0.1) 28.84ms
+[I 130919 20:29:36 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.70ms
+[I 130919 20:29:49 web:1635] 304 GET /group/gs (127.0.0.1) 31.57ms
+[I 130919 20:29:50 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.17ms
+[I 130919 20:29:51 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 21.64ms
+[I 130919 20:29:56 web:1635] 304 GET /group/gs (127.0.0.1) 28.84ms
+[I 130919 20:32:03 web:1635] 200 GET /group/gs (127.0.0.1) 31.39ms
+[I 130919 20:32:03 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.45ms
+[I 130919 20:32:03 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.37ms
+[I 130919 20:32:03 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.49ms
+[I 130919 20:32:03 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130919 20:32:03 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.18ms
+[I 130919 20:32:03 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.12ms
+[I 130919 20:32:03 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.02ms
+[I 130919 20:32:03 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.31ms
+[I 130919 20:32:03 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 0.92ms
+[I 130919 20:32:41 web:1635] 304 GET /group/gs (127.0.0.1) 25.99ms
+[I 130919 20:32:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.44ms
+[I 130919 20:32:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 20:32:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.41ms
+[I 130919 20:32:42 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 20:32:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 20:32:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.95ms
+[I 130919 20:32:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130919 20:32:42 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 20:33:15 web:1635] 200 GET /group/gs (127.0.0.1) 32.41ms
+[I 130919 20:33:15 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.60ms
+[I 130919 20:33:15 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 20:33:15 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 20:33:15 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 20:33:15 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 20:33:15 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.00ms
+[I 130919 20:33:15 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.42ms
+[I 130919 20:33:16 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.23ms
+[I 130919 20:33:40 web:1635] 200 GET /group/gs (127.0.0.1) 26.47ms
+[I 130919 20:33:40 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.58ms
+[I 130919 20:33:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130919 20:33:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.11ms
+[I 130919 20:33:40 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 20:33:40 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.18ms
+[I 130919 20:33:40 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.03ms
+[I 130919 20:33:40 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 20:33:40 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.14ms
+[I 130919 20:34:42 web:1635] 304 GET /group/gs (127.0.0.1) 31.65ms
+[I 130919 20:34:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.65ms
+[I 130919 20:34:42 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.29ms
+[I 130919 20:34:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 20:34:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 20:34:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 20:34:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.10ms
+[I 130919 20:34:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.03ms
+[I 130919 20:34:42 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.17ms
+[I 130919 20:34:45 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 19.34ms
+[I 130919 20:34:49 web:1635] 304 GET /group/gs (127.0.0.1) 32.38ms
+[I 130919 20:35:02 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 21.08ms
+[I 130919 20:35:06 web:1635] 304 GET /group/gs (127.0.0.1) 31.04ms
+[I 130919 20:35:08 web:1635] 200 GET /group/rs (127.0.0.1) 29.27ms
+[I 130919 20:35:11 web:1635] 200 GET /group/th (127.0.0.1) 25.33ms
+[I 130919 20:35:13 web:1635] 304 GET /group/rs (127.0.0.1) 23.27ms
+[I 130919 20:35:16 web:1635] 304 GET /group/gs (127.0.0.1) 28.72ms
+[I 130919 20:35:17 web:1635] 304 GET /group/rs (127.0.0.1) 23.47ms
+[I 130919 20:35:19 web:1635] 304 GET /group/th (127.0.0.1) 24.00ms
+[I 130919 20:35:21 web:1635] 304 GET /group/rs (127.0.0.1) 34.38ms
+[I 130919 20:35:22 web:1635] 304 GET /group/gs (127.0.0.1) 29.85ms
+[I 130919 20:35:26 web:1635] 304 GET /group/gs (127.0.0.1) 34.37ms
+[I 130919 20:35:29 web:1635] 304 GET /group/rs (127.0.0.1) 22.72ms
+[I 130919 20:35:31 web:1635] 304 GET /group/th (127.0.0.1) 27.31ms
+[I 130919 20:35:34 web:1635] 304 GET /group/gs (127.0.0.1) 33.01ms
+[I 130919 20:35:37 web:1635] 304 GET /group/rs (127.0.0.1) 24.67ms
+[I 130919 20:35:39 web:1635] 304 GET /group/th (127.0.0.1) 23.17ms
+[I 130919 20:35:41 web:1635] 304 GET /group/rs (127.0.0.1) 26.38ms
+[I 130919 20:35:42 web:1635] 304 GET /group/gs (127.0.0.1) 31.47ms
+[I 130919 20:35:45 web:1635] 304 GET /group/rs (127.0.0.1) 28.30ms
+[I 130919 20:35:47 web:1635] 304 GET /group/rs (127.0.0.1) 29.83ms
+[I 130919 20:35:50 web:1635] 304 GET /group/th (127.0.0.1) 23.69ms
+[I 130919 20:35:55 web:1635] 304 GET /group/gs (127.0.0.1) 31.22ms
+[I 130919 20:35:58 web:1635] 304 GET /group/rs (127.0.0.1) 27.79ms
+[I 130919 20:36:00 web:1635] 304 GET /group/th (127.0.0.1) 24.86ms
+[I 130919 20:36:02 web:1635] 304 GET /group/gs (127.0.0.1) 32.48ms
+[I 130919 20:36:04 web:1635] 304 GET /book?tag=shared (127.0.0.1) 28.26ms
+[I 130919 20:36:07 web:1635] 200 GET /book?tag=waiting (127.0.0.1) 29.75ms
+[I 130919 20:36:09 web:1635] 200 GET /book?tag=hot (127.0.0.1) 158.02ms
+[I 130919 20:36:11 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 28.74ms
+[I 130919 20:36:15 web:1635] 304 GET /book?tag=shared (127.0.0.1) 29.18ms
+[I 130919 20:36:16 web:1635] 304 GET / (127.0.0.1) 34.66ms
+[I 130919 20:36:28 web:1635] 304 GET /book/find (127.0.0.1) 17.69ms
+[I 130919 20:36:44 web:1635] 304 GET /book?tag=shared (127.0.0.1) 33.79ms
+[I 130919 20:37:56 web:1635] 304 GET /group/gs (127.0.0.1) 31.56ms
+[I 130919 20:37:59 web:1635] 304 GET /group/rs (127.0.0.1) 25.37ms
+[I 130919 20:38:03 web:1635] 304 GET /group/th (127.0.0.1) 27.84ms
+[I 130919 20:38:06 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.25ms
+[I 130919 20:38:25 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.51ms
+[I 130919 20:38:25 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.75ms
+[I 130919 20:38:25 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.12ms
+[I 130919 20:38:25 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.26ms
+[I 130919 20:38:25 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 20:38:25 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 20:38:25 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130919 20:38:25 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.45ms
+[I 130919 20:38:25 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.19ms
+[I 130919 20:38:28 web:1635] 304 GET /group/th (127.0.0.1) 23.76ms
+[I 130919 20:38:42 web:1635] 200 GET /group/th (127.0.0.1) 24.93ms
+[I 130919 20:38:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.81ms
+[I 130919 20:38:42 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.32ms
+[I 130919 20:38:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.31ms
+[I 130919 20:38:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130919 20:38:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.28ms
+[I 130919 20:38:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 20:38:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130919 20:38:42 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 20:38:45 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.93ms
+[I 130919 20:38:47 web:1635] 304 GET /group/th (127.0.0.1) 24.49ms
+[I 130919 20:38:50 web:1635] 304 GET / (127.0.0.1) 36.29ms
+[I 130919 20:38:52 web:1635] 304 GET /book/20429677 (127.0.0.1) 24.76ms
+[I 130919 20:38:52 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 0.92ms
+[E 130919 20:38:52 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 20:38:52 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 6.03ms
+[I 130919 20:38:58 web:1635] 200 GET /group/rs (127.0.0.1) 24.28ms
+[I 130919 20:38:59 web:1635] 304 GET /group/th (127.0.0.1) 24.84ms
+[I 130919 20:39:01 web:1635] 200 GET /group/gs (127.0.0.1) 29.44ms
+[I 130919 20:39:02 web:1635] 304 GET /book/find (127.0.0.1) 14.21ms
+[I 130919 20:39:02 web:1635] 304 GET /static/js/module/find.js (127.0.0.1) 1.14ms
+[I 130919 20:39:04 web:1635] 304 GET /group/gs (127.0.0.1) 29.76ms
+[I 130919 20:39:05 web:1635] 304 GET /group/rs (127.0.0.1) 26.33ms
+[I 130919 20:39:08 web:1635] 304 GET /group/th (127.0.0.1) 24.55ms
+[I 130919 20:39:10 web:1635] 304 GET /group/rs (127.0.0.1) 28.33ms
+[I 130919 20:39:11 web:1635] 304 GET /group/gs (127.0.0.1) 30.65ms
+[I 130919 20:39:13 web:1635] 304 GET /group/rs (127.0.0.1) 26.58ms
+[I 130919 20:39:17 web:1635] 304 GET /book?tag=shared (127.0.0.1) 25.64ms
+[I 130919 20:39:20 web:1635] 304 GET /group/th (127.0.0.1) 27.15ms
+[I 130919 20:39:26 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.43ms
+[I 130919 20:41:38 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 20.35ms
+[I 130919 20:41:38 web:1635] 200 GET /static/style/custom.css?v=330e84ef01e0b6c16b1d2560bb5c5767 (127.0.0.1) 1.04ms
+[I 130919 20:41:38 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.92ms
+[I 130919 20:41:38 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.31ms
+[I 130919 20:41:38 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 20:41:38 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.02ms
+[I 130919 20:41:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130919 20:41:38 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.13ms
+[I 130919 20:41:38 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.07ms
+[I 130919 20:41:39 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.00ms
+[I 130919 20:41:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.20ms
+[I 130919 20:41:39 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.12ms
+[I 130919 20:41:54 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.42ms
+[I 130919 20:41:54 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 20:41:54 web:1635] 200 GET /static/style/custom.css?v=f6f2e6aee2a9328325c1825c04ca93c9 (127.0.0.1) 1.31ms
+[I 130919 20:41:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 20:41:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.26ms
+[I 130919 20:41:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130919 20:41:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 20:41:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.03ms
+[I 130919 20:41:55 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.20ms
+[I 130919 20:41:55 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 20:42:05 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.83ms
+[I 130919 20:42:05 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.86ms
+[I 130919 20:42:05 web:1635] 200 GET /static/style/custom.css?v=7d9ef9c8da9fb0b7c42360cea20ddcaf (127.0.0.1) 1.31ms
+[I 130919 20:42:05 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130919 20:42:05 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.85ms
+[I 130919 20:42:05 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.31ms
+[I 130919 20:42:05 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.22ms
+[I 130919 20:42:05 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 20:42:05 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.15ms
+[I 130919 20:42:05 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.24ms
+[I 130919 20:42:06 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 20.96ms
+[I 130919 20:42:06 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 20:42:06 web:1635] 304 GET /static/style/custom.css?v=7d9ef9c8da9fb0b7c42360cea20ddcaf (127.0.0.1) 2.14ms
+[I 130919 20:42:06 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130919 20:42:06 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 11.19ms
+[I 130919 20:42:06 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 20:42:06 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.23ms
+[I 130919 20:42:06 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 20:42:06 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 20:42:22 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.30ms
+[I 130919 20:42:22 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 20:42:22 web:1635] 200 GET /static/style/custom.css?v=8e97094d36a631d282c7d9eae0e9ab61 (127.0.0.1) 1.42ms
+[I 130919 20:42:22 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 20:42:22 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.42ms
+[I 130919 20:42:22 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 20:42:22 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.18ms
+[I 130919 20:42:22 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.03ms
+[I 130919 20:42:22 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 0.98ms
+[I 130919 20:42:22 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 20:42:36 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.80ms
+[I 130919 20:42:36 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.64ms
+[I 130919 20:42:36 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130919 20:42:36 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.64ms
+[I 130919 20:42:36 web:1635] 200 GET /static/style/custom.css?v=f078dcced1deacc707043306316de9dd (127.0.0.1) 1.33ms
+[I 130919 20:42:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 20:42:36 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 20:42:36 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.18ms
+[I 130919 20:42:36 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 0.92ms
+[I 130919 20:42:36 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 0.96ms
+[I 130919 20:42:46 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.54ms
+[I 130919 20:42:46 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.45ms
+[I 130919 20:42:46 web:1635] 200 GET /static/style/custom.css?v=0b0fcd1bf4472003d9c74b62781caa19 (127.0.0.1) 1.47ms
+[I 130919 20:42:46 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 20:42:46 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 20:42:46 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 20:42:46 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 20:42:46 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130919 20:42:46 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.19ms
+[I 130919 20:42:46 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.16ms
+[I 130919 20:42:55 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.12ms
+[I 130919 20:42:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.62ms
+[I 130919 20:42:55 web:1635] 200 GET /static/style/custom.css?v=2efc8872fa04a6e1232e4516e9040b67 (127.0.0.1) 1.16ms
+[I 130919 20:42:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 3.50ms
+[I 130919 20:42:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.44ms
+[I 130919 20:42:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 20:42:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 20:42:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 20:42:55 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.12ms
+[I 130919 20:42:55 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.23ms
+[I 130919 20:43:22 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.59ms
+[I 130919 20:43:22 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.74ms
+[I 130919 20:43:22 web:1635] 200 GET /static/style/custom.css?v=3cc49ed1a0190826b8abe12b583d62bd (127.0.0.1) 4.87ms
+[I 130919 20:43:22 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.68ms
+[I 130919 20:43:22 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 20:43:22 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 20:43:22 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130919 20:43:22 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.33ms
+[I 130919 20:43:22 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.16ms
+[I 130919 20:43:22 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 20:43:33 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.18ms
+[I 130919 20:43:33 web:1635] 200 GET /static/style/custom.css?v=93b691463d530d90304e7b606aa87c97 (127.0.0.1) 1.47ms
+[I 130919 20:43:33 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 20:43:33 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 20:43:33 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130919 20:43:33 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 20:43:33 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 20:43:33 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 20:43:33 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.23ms
+[I 130919 20:43:33 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.23ms
+[I 130919 20:43:40 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.45ms
+[I 130919 20:43:40 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.38ms
+[I 130919 20:43:40 web:1635] 200 GET /static/style/custom.css?v=328f41cae4809828a053f1d9a6f71259 (127.0.0.1) 1.23ms
+[I 130919 20:43:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 20:43:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 20:43:40 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 20:43:40 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.00ms
+[I 130919 20:43:40 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130919 20:43:40 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.19ms
+[I 130919 20:43:40 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.21ms
+[I 130919 20:44:39 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.58ms
+[I 130919 20:44:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.20ms
+[I 130919 20:44:39 web:1635] 200 GET /static/style/custom.css?v=759339f531d953d49215a78f344ff33d (127.0.0.1) 1.98ms
+[I 130919 20:44:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.56ms
+[I 130919 20:44:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.58ms
+[I 130919 20:44:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.78ms
+[I 130919 20:44:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130919 20:44:39 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 20:44:39 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.29ms
+[I 130919 20:44:39 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.28ms
+[I 130919 20:44:42 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.39ms
+[I 130919 20:44:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.52ms
+[I 130919 20:44:42 web:1635] 304 GET /static/style/custom.css?v=759339f531d953d49215a78f344ff33d (127.0.0.1) 1.12ms
+[I 130919 20:44:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 3.41ms
+[I 130919 20:44:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.26ms
+[I 130919 20:44:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 20:44:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.11ms
+[I 130919 20:44:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 20:44:42 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130919 20:44:53 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.85ms
+[I 130919 20:44:53 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.89ms
+[I 130919 20:44:53 web:1635] 200 GET /static/style/custom.css?v=49ca0c913017038a2a2e4e597a4de308 (127.0.0.1) 1.30ms
+[I 130919 20:44:53 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.28ms
+[I 130919 20:44:53 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 20:44:53 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.72ms
+[I 130919 20:44:53 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130919 20:44:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.24ms
+[I 130919 20:44:53 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 0.95ms
+[I 130919 20:44:53 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.33ms
+[I 130919 20:45:35 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.88ms
+[I 130919 20:45:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.43ms
+[I 130919 20:45:35 web:1635] 200 GET /static/style/custom.css?v=a68bfe5660885d210d96a3b3ec92a76d (127.0.0.1) 1.42ms
+[I 130919 20:45:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.47ms
+[I 130919 20:45:35 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130919 20:45:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.07ms
+[I 130919 20:45:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 20:45:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.13ms
+[I 130919 20:45:35 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.17ms
+[I 130919 20:45:35 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.21ms
+[I 130919 20:46:46 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 20.81ms
+[I 130919 20:46:46 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 20:46:46 web:1635] 200 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 2.07ms
+[I 130919 20:46:46 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.35ms
+[I 130919 20:46:46 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 20:46:46 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.78ms
+[I 130919 20:46:46 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 20:46:46 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 20:46:46 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.16ms
+[I 130919 20:46:47 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.21ms
+[I 130919 20:46:58 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.11ms
+[I 130919 20:46:58 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 20:46:58 web:1635] 200 GET /static/style/custom.css?v=1e26045a80e65721cc4975e7a50bcff2 (127.0.0.1) 1.38ms
+[I 130919 20:46:58 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130919 20:46:58 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130919 20:46:58 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 20:46:58 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.97ms
+[I 130919 20:46:58 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130919 20:46:58 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.15ms
+[I 130919 20:46:58 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.29ms
+[I 130919 20:47:28 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 27.29ms
+[I 130919 20:47:28 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 20:47:28 web:1635] 200 GET /static/style/custom.css?v=c22725918dfca36b84355d24851c1eda (127.0.0.1) 2.02ms
+[I 130919 20:47:29 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130919 20:47:29 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.60ms
+[I 130919 20:47:29 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 20:47:29 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.27ms
+[I 130919 20:47:29 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130919 20:47:29 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.12ms
+[I 130919 20:47:29 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.24ms
+[I 130919 20:47:30 web:1635] 304 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.54ms
+[I 130919 20:47:30 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.56ms
+[I 130919 20:47:30 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 20:47:30 web:1635] 304 GET /static/style/custom.css?v=c22725918dfca36b84355d24851c1eda (127.0.0.1) 1.19ms
+[I 130919 20:47:30 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130919 20:47:30 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 20:47:30 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.21ms
+[I 130919 20:47:30 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.13ms
+[I 130919 20:47:30 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.22ms
+[I 130919 20:47:42 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 23.67ms
+[I 130919 20:47:42 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.78ms
+[I 130919 20:47:42 web:1635] 200 GET /static/style/custom.css?v=128456546f97bd4b507d755853046469 (127.0.0.1) 1.37ms
+[I 130919 20:47:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 20:47:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.53ms
+[I 130919 20:47:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130919 20:47:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.21ms
+[I 130919 20:47:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 20:47:42 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.18ms
+[I 130919 20:47:42 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.14ms
+[I 130919 20:47:49 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.57ms
+[I 130919 20:47:49 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.46ms
+[I 130919 20:47:49 web:1635] 200 GET /static/style/custom.css?v=953c81127004707bb93b478f0de82f94 (127.0.0.1) 1.35ms
+[I 130919 20:47:49 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 20:47:50 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130919 20:47:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130919 20:47:50 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130919 20:47:50 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 20:47:50 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.22ms
+[I 130919 20:47:50 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.19ms
+[I 130919 20:48:02 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.37ms
+[I 130919 20:48:02 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 20:48:02 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130919 20:48:02 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.37ms
+[I 130919 20:48:02 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 20:48:02 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 20:48:02 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.27ms
+[I 130919 20:48:02 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 20:48:02 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.41ms
+[I 130919 20:48:34 web:1635] 200 GET /group/th (127.0.0.1) 24.41ms
+[I 130919 20:49:10 web:1635] 304 GET /group/th (127.0.0.1) 26.60ms
+[I 130919 20:49:10 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.13ms
+[I 130919 20:49:10 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.20ms
+[I 130919 20:49:10 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.29ms
+[I 130919 20:49:10 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 3.02ms
+[I 130919 20:49:10 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 5.48ms
+[I 130919 20:49:10 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.19ms
+[I 130919 20:49:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 20:49:10 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 20:49:13 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.73ms
+[W 130919 20:50:23 web:1635] 404 POST /group/ (127.0.0.1) 1.98ms
+[I 130919 20:51:16 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 21.35ms
+[I 130919 20:51:16 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.36ms
+[I 130919 20:51:16 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.23ms
+[I 130919 20:51:16 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 20:51:16 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.63ms
+[I 130919 20:51:16 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 20:51:16 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 20:51:16 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 20:51:17 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.20ms
+[I 130919 20:51:48 web:1635] 302 POST /group/th (127.0.0.1) 6.15ms
+[I 130919 20:51:48 web:1635] 200 GET /group/th (127.0.0.1) 37.17ms
+[I 130919 20:51:52 web:1635] 200 GET /group/th/523af364dc266554781f434e (127.0.0.1) 21.17ms
+[I 130919 20:52:34 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 20:52:34 main:47]  PDFLabs running server on 5000
+[I 130919 20:52:57 web:1635] 304 GET /group/th (127.0.0.1) 28.63ms
+[I 130919 20:52:59 web:1635] 304 GET /group/th (127.0.0.1) 36.41ms
+[I 130919 20:52:59 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 8.51ms
+[I 130919 20:52:59 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.50ms
+[I 130919 20:52:59 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 20:52:59 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 20:52:59 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.27ms
+[I 130919 20:52:59 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 20:52:59 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.45ms
+[I 130919 20:52:59 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130919 20:53:15 web:1635] 200 GET / (127.0.0.1) 35.93ms
+[I 130919 20:53:46 web:1635] 200 GET /group/gs (127.0.0.1) 31.23ms
+[E 130919 20:54:11 web:1228] Uncaught exception POST /group/gs (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/group/gs', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '277', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 2297, in wrapper
+        return method(self, *args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/group/group_handler.py", line 44, in post
+        self.redirect("/group/"+tag+"/"+post.id)
+    TypeError: coercing to Unicode: need string or buffer, ObjectId found
+[E 130919 20:54:11 web:1635] 500 POST /group/gs (127.0.0.1) 10.56ms
+[I 130919 20:54:29 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 20:54:39 main:47]  PDFLabs running server on 5000
+[I 130919 20:55:20 web:1635] 200 GET /group/gs (127.0.0.1) 30.39ms
+[I 130919 20:55:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 7.72ms
+[I 130919 20:55:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.24ms
+[I 130919 20:55:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 20:55:20 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.18ms
+[I 130919 20:55:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 20:55:20 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 20:55:20 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.12ms
+[I 130919 20:55:20 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.18ms
+[I 130919 20:55:40 web:1635] 302 POST /group/gs (127.0.0.1) 5.94ms
+[I 130919 20:55:40 web:1635] 200 GET /group/gs/523af44cdc26655c5abbc099 (127.0.0.1) 22.24ms
+[I 130919 20:55:44 web:1635] 200 GET /group/gs (127.0.0.1) 33.22ms
+[I 130919 20:55:47 web:1635] 200 GET /group/gs/523af3f3dc26655478f67edb (127.0.0.1) 22.64ms
+[I 130919 20:56:20 web:1635] 302 POST /group/gs (127.0.0.1) 5.72ms
+[I 130919 20:56:20 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 21.49ms
+[I 130919 20:58:31 autoreload:186] /home/zheng/github/PDFLabs/models/posts.py modified; restarting server
+[I 130919 20:58:31 main:47]  PDFLabs running server on 5000
+[I 130919 20:59:33 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 20:59:33 main:47]  PDFLabs running server on 5000
+[I 130919 20:59:34 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 20:59:35 main:47]  PDFLabs running server on 5000
+[I 130919 20:59:38 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 25.70ms
+[I 130919 20:59:38 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.63ms
+[I 130919 20:59:38 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.66ms
+[I 130919 20:59:38 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.49ms
+[I 130919 20:59:38 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 8.50ms
+[I 130919 20:59:38 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.53ms
+[I 130919 20:59:38 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130919 20:59:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 20:59:38 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.19ms
+[I 130919 20:59:39 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.13ms
+[I 130919 20:59:53 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 20:59:53 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:00:00 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:05 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:00:05 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:08 web:1635] 302 POST /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 1.71ms
+[I 130919 21:00:08 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 28.18ms
+[I 130919 21:00:35 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:00:35 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:41 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:00:41 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:00:43 main:47]  PDFLabs running server on 5000
+[I 130919 21:00:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 21:02:50 main:47]  PDFLabs running server on 5000
+[I 130919 21:02:52 web:1635] 304 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 22.95ms
+[I 130919 21:02:52 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.34ms
+[I 130919 21:02:52 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 4.51ms
+[I 130919 21:02:52 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 21:02:52 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.70ms
+[I 130919 21:02:53 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130919 21:02:53 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 21:02:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130919 21:02:53 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.30ms
+[I 130919 21:03:07 web:1635] 302 POST /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 6.71ms
+[I 130919 21:03:07 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 20.60ms
+[I 130919 21:03:31 web:1635] 302 POST /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 6.68ms
+[I 130919 21:03:31 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 25.87ms
+[I 130919 21:03:46 web:1635] 302 POST /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 7.98ms
+[I 130919 21:03:46 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 29.13ms
+[I 130919 21:05:13 web:1635] 304 GET / (127.0.0.1) 37.24ms
+[I 130919 21:05:15 web:1635] 200 GET /book/10945606 (127.0.0.1) 25.19ms
+[E 130919 21:05:16 web:1228] Uncaught exception GET /api/book/10945606 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/10945606', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/10945606', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 21:05:16 web:1635] 500 GET /api/book/10945606 (127.0.0.1) 20.53ms
+[I 130919 21:05:20 web:1635] 200 GET /group/rs (127.0.0.1) 28.38ms
+[I 130919 21:05:22 web:1635] 200 GET /group/gs (127.0.0.1) 36.81ms
+[I 130919 21:05:24 web:1635] 304 GET /group/rs (127.0.0.1) 24.22ms
+[I 130919 21:05:26 web:1635] 304 GET /group/th (127.0.0.1) 27.19ms
+[I 130919 21:05:30 web:1635] 304 GET /group/rs (127.0.0.1) 25.13ms
+[I 130919 21:05:32 web:1635] 304 GET /group/gs (127.0.0.1) 39.10ms
+[I 130919 21:05:34 web:1635] 304 GET /group/rs (127.0.0.1) 23.09ms
+[I 130919 21:05:36 web:1635] 304 GET /group/th (127.0.0.1) 28.14ms
+[I 130919 21:05:40 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.05ms
+[I 130919 21:08:50 web:1635] 302 POST /group/th/523ae92edc266554780ee282 (127.0.0.1) 7.49ms
+[I 130919 21:08:50 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 39.57ms
+[I 130919 21:08:53 web:1635] 302 POST /group/th/523ae92edc266554780ee282 (127.0.0.1) 7.35ms
+[I 130919 21:08:53 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 24.64ms
+[I 130919 21:09:39 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 19.81ms
+[I 130919 21:09:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 21:09:39 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.18ms
+[I 130919 21:09:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 21:09:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 21:09:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 21:09:39 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 21:09:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.97ms
+[I 130919 21:09:39 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130919 21:09:50 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 25.91ms
+[I 130919 21:09:50 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.71ms
+[I 130919 21:09:50 web:1635] 304 GET /static/style/custom.css?v=60ab941eca754ef8f385765b2368a618 (127.0.0.1) 1.28ms
+[I 130919 21:09:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.42ms
+[I 130919 21:09:50 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.54ms
+[I 130919 21:09:50 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 21:09:50 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 21:09:50 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.02ms
+[I 130919 21:09:50 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.25ms
+[I 130919 21:10:37 web:1635] 302 POST /group/th/523ae92edc266554780ee282 (127.0.0.1) 11.34ms
+[I 130919 21:10:37 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 22.07ms
+[I 130919 21:10:49 web:1635] 302 POST /group/th/523ae92edc266554780ee282 (127.0.0.1) 7.56ms
+[I 130919 21:10:49 web:1635] 200 GET /group/th/523ae92edc266554780ee282 (127.0.0.1) 45.25ms
+[I 130919 21:10:53 web:1635] 200 GET /group/th (127.0.0.1) 30.48ms

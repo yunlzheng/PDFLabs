@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
+import datetime
 import urllib
 import urllib2
 import tornado.web
 import tornado.gen
 import tornado.httpclient
-import datetime
 from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import *
@@ -28,6 +28,21 @@ class AuthenticateHandler(BaseHandler):
             "sigin.html",
             page_heading='PDFLabs 登录'
         )
+
+    def post(self):
+        email = self.get_argument('email').decode()
+        password = self.get_argument('password').decode()
+        try:
+            user = User.objects(email=email, password=password)[0]
+            if not user:
+                self.redirect('/sigin')
+        except Exception as ex:
+            app_log.error(ex)
+            self.redirect('/sigin')
+        else:
+            self.set_secure_cookie('userid', user.uid)
+            self.redirect('/')
+
 
 class LogoutHandler(BaseHandler):
 

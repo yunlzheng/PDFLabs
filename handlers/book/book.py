@@ -47,7 +47,7 @@ class PreviewHandler(BaseHandler):
     def get(self, bookid):
         book = Book.objects(bid = bookid)[0]
         self.render(
-            "preview.html",
+            "book/preview.html",
             page_heading=book['title'],
             book=book,
             groups = self.get_groups()

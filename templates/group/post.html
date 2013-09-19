@@ -1,6 +1,8 @@
 {% extends "../main.html" %}
 {% autoescape None %}
 {% block body %}
+<div class="row-fluid">
+<div class="span9">
 <div class="row-fluid group">
   <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
   {% if current_user %}
@@ -22,7 +24,7 @@
           <a>{{ post.title }}</a>
         </div>
         <div class="post-info">
-          <span class="post-author">huiyunlau</span>
+          <span class="post-author">post.author.name</span>
           <div class="post-last-comment">
               22天前
           </div>
@@ -44,7 +46,7 @@
     <h8><b class="icon-list-alt"></b>回复:</h8>
     {% for comment in post.comments %}
       <div class="comment">
-        <h2>{{ comment }}</h2>
+        <p>{{ comment.content }}</p>
       </div>
     {% end %}
     {% if not post.comments %}
@@ -52,17 +54,18 @@
     {% end %}
   </div>
   <div class="comment-publish">
-      <textarea class="comment-content"></textarea>
+    <form action="" method="post">
+      <textarea class="comment-content" name="content"></textarea>
       {% if current_user %}
-        <button class='btn btn-publish'>发布</button>
+        <button type="submit" class='btn btn-publish'>发布</button>
       {% else %}
         <button class='btn btn-publish' disabled>发布</button>
       {% end %}
-
+    </form>
   </div>
 </div>
 <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <form id="publish-post-form" class="form-horizontal" action="" method="post">
+  <form id="publish-post-form" class="form-horizontal" action="/group/{{ post.group.tag}}" method="post">
   <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
     <h4 >发表帖子</h4>
@@ -84,11 +87,14 @@
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
-
     <button type="submit" class="btn btn-primary">发表</button>
-
   </div>
   </form>
+</div>
+</div>
+<div class="span3">
+    <!-- guang gao wei-->
+</div>
 </div>
 <script data-main="{{ static_url("js/app/post.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

@@ -7,7 +7,6 @@ from models.groups import Group
 
 class Comment(EmbeddedDocument):
     content = StringField()
-    name = StringField(max_length=120)
     author = ReferenceField(User)
     create_at = DateTimeField()
     praise = IntField(default=0)

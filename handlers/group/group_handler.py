@@ -41,4 +41,4 @@ class GroupHandler(BaseHandler):
             post.save()
         except Exception as ex:
             app_log.error(ex)
-        self.redirect("/group/"+tag)
+        self.redirect("/group/"+tag+"/"+str(post.id))

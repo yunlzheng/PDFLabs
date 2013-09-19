@@ -15,7 +15,7 @@
 	    	      {% if book.files %}
 	    	     	<span class='stack'>现货</span>
 	    	     {% else %}
-	    	     	<span class='wait'>等待</span>
+	    	     	<span class='wait'>期待中</span>
 	    	     {% end %}
 	    	    </div>
 	          	    <a href="/book/{{ book.bid }}">
@@ -136,4 +136,5 @@
 	</div>
   </div>
 </div>
+<script data-main="{{ static_url("js/app/home.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

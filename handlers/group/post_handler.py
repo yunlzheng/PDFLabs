@@ -5,6 +5,7 @@ import tornado.web
 from tornado.log import app_log
 
 from models.posts import Post
+from models.posts import Comment
 from models.groups import Group
 from handlers import BaseHandler
 
@@ -22,20 +23,14 @@ class PostHandler(BaseHandler):
 
     @tornado.web.authenticated
     def post(self,tag,uuid):
-        group = Group.objects(tag = tag)[0]
-        title = self.get_argument('title')
         content = self.get_argument('content')
         now = datetime.datetime.now()
-        post = Post(group=group,
-            author = self.get_curent_user_model(),
-            title=title,
-            content=content,
+        comment = Comment(content=content,
+            author=self.get_curent_user_model(),
             create_at=now,
-            update_at=now
-        )
-        try:
-            post.save()
-        except Exception as ex:
-            app_log.error(ex)
-        self.redirect("/group/"+tag)
+            update_at=now)
+        post = Post.objects(id=uuid)[0]
+        post.comments.append(comment)
+        post.save()
+        self.redirect("/group/"+tag+"/"+uuid)
 
