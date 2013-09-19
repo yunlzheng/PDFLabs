@@ -42,11 +42,17 @@
       <hr/>
       <br/>
   </div>
+  <h8><b class="icon-list-alt"></b>回复:</h8>
   <div class="comments">
-    <h8><b class="icon-list-alt"></b>回复:</h8>
     {% for comment in post.comments %}
       <div class="comment">
-        <p>{{ comment.content }}</p>
+        <div class="row-fluid">
+          <div class="span1"><img src="{{ comment.author.avatar }}"/></div>
+          <div class="span11">
+              <p class="comment-info"><b>{{comment.author.name}}</b> 发表与 <b>{{ comment.create_at }}</b></p>
+              <p>{{ comment.content }}</p>
+          </div>
+        </div>
       </div>
     {% end %}
     {% if not post.comments %}
