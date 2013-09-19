@@ -1,0 +1,38 @@
+{% extends "../main.html" %}
+{% autoescape None %}
+{% block body %}
+<div class="row-fluid">
+<div id="divHomeCarousel" class="carousel slide custom-carousel ">
+    <h5>现货</h5>
+     <hr>
+    <div class="row-fluid">
+        <div class="bookstore bookrow">
+        {% for i in xrange(len(books)) %}
+                <div class="span3">
+                    <div class="book_thing">
+                        <div class="pre_ribbon">
+                              {% if books[i].files %}
+                                <span class='stack'>现货</span>
+                             {% else %}
+                                <span class='wait'>期待中</span>
+                             {% end %}
+                        </div>
+                    <a href="/book/{{ books[i].bid }}">
+                        <img class="img"  src="{{ books[i].image }}">
+                        <div class="book_intro">{{ books[i].title }}</div>
+                        </a>
+                    </div>
+                </div>
+            {% if (i+1)%4==0 %}
+                     <div class="clearfix"></div>
+                </div>
+                </div>
+                <br/>
+                <div class="row-fluid">
+            <div class="bookstore bookrow">
+            {% end %}
+        {% end %}
+    </div>
+  </div>
+</div>
+{% end %}

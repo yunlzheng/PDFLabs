@@ -15,7 +15,6 @@ from handlers import BaseHandler
 class FindHandler(BaseHandler):
 
     ''' contribute new book resources handler '''
-    @tornado.web.authenticated
     def get(self):
         self.render(
             "book/find.html",

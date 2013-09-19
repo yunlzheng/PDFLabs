@@ -8,11 +8,13 @@ from handlers import BaseHandler
 class BooksHandler(BaseHandler):
 
     @tornado.gen.coroutine
-    def get(self, type):
+    def get(self):
+        tags = ['shared', 'waiting']
+        tag = self.get_arguments('tag')
         books = Book.objects()
         self.render(
             "book/books.html",
-            page_heading=type,
+            page_heading='test',
             books=books,
             groups = self.get_groups()
         )

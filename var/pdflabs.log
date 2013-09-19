@@ -18263,3 +18263,281 @@
 [I 130919 15:47:04 web:1635] 304 GET /group/gs (127.0.0.1) 27.51ms
 [I 130919 15:47:04 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.19ms
 [I 130919 15:47:06 web:1635] 200 GET /group/rs (127.0.0.1) 23.23ms
+[I 130919 15:47:40 main:48]  PDFLabs running server on 5000
+[I 130919 15:47:44 web:1635] 304 GET /group/rs (127.0.0.1) 21.30ms
+[I 130919 15:47:44 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.99ms
+[I 130919 15:47:44 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.09ms
+[I 130919 15:47:44 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 15:47:44 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130919 15:47:44 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 15:47:44 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 15:47:44 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.22ms
+[I 130919 15:47:44 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.12ms
+[I 130919 15:47:45 web:1635] 304 GET / (127.0.0.1) 33.93ms
+[I 130919 15:48:07 web:1635] 200 GET / (127.0.0.1) 38.56ms
+[I 130919 15:48:07 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.76ms
+[I 130919 15:48:07 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.88ms
+[I 130919 15:48:07 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 15:48:07 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.22ms
+[I 130919 15:48:07 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 15:48:07 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.19ms
+[I 130919 15:48:15 web:1635] 200 GET /static/img/icon_weibo_558_hover.png (127.0.0.1) 21.38ms
+[I 130919 15:48:32 web:1635] 200 GET /sigin (127.0.0.1) 4.44ms
+[I 130919 15:48:33 web:1635] 200 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.23ms
+[I 130919 15:48:33 web:1635] 200 GET /static/img/raster.png (127.0.0.1) 1.20ms
+[I 130919 15:48:35 web:1635] 304 GET / (127.0.0.1) 38.39ms
+[I 130919 15:48:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 15:48:35 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 5.60ms
+[I 130919 15:48:35 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.53ms
+[I 130919 15:48:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.31ms
+[I 130919 15:48:36 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.18ms
+[I 130919 15:48:36 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.38ms
+[I 130919 15:48:38 web:1635] 304 GET /sigin (127.0.0.1) 3.41ms
+[I 130919 15:48:41 web:1635] 304 GET /sigin (127.0.0.1) 2.90ms
+[I 130919 15:52:24 web:1635] 304 GET / (127.0.0.1) 38.24ms
+[I 130919 15:52:24 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.48ms
+[I 130919 15:52:24 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.25ms
+[I 130919 15:52:24 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130919 15:52:24 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130919 15:52:24 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 15:52:24 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.82ms
+[I 130919 15:52:54 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 15:52:54 main:48]  PDFLabs running server on 5000
+[I 130919 15:53:09 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 15:53:45 main:48]  PDFLabs running server on 5000
+[I 130919 15:53:47 web:1635] 304 GET / (127.0.0.1) 33.71ms
+[I 130919 15:53:47 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.14ms
+[I 130919 15:53:47 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 15:53:47 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.37ms
+[I 130919 15:53:47 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.77ms
+[I 130919 15:53:47 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.22ms
+[I 130919 15:53:47 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.32ms
+[E 130919 15:53:56 web:1228] Uncaught exception GET /book (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/book', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 208, in wrapper
+        result = func(*args, **kwargs)
+    TypeError: get() takes exactly 2 arguments (1 given)
+[E 130919 15:53:56 web:1635] 500 GET /book (127.0.0.1) 4.32ms
+[I 130919 15:54:04 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 15:54:04 main:48]  PDFLabs running server on 5000
+[I 130919 15:54:15 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:54:15 main:48]  PDFLabs running server on 5000
+[I 130919 15:54:19 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:54:20 main:48]  PDFLabs running server on 5000
+[I 130919 15:54:23 web:1635] 200 GET /book (127.0.0.1) 174.63ms
+[I 130919 15:54:24 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.82ms
+[I 130919 15:54:24 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:54:24 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.49ms
+[I 130919 15:54:24 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 15:54:39 web:1635] 304 GET / (127.0.0.1) 35.41ms
+[I 130919 15:54:43 web:1635] 304 GET / (127.0.0.1) 35.47ms
+[I 130919 15:54:56 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:54:56 main:48]  PDFLabs running server on 5000
+[I 130919 15:55:06 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:55:06 main:48]  PDFLabs running server on 5000
+[I 130919 15:55:07 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:55:07 main:48]  PDFLabs running server on 5000
+[I 130919 15:55:08 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:55:08 main:48]  PDFLabs running server on 5000
+[I 130919 15:55:11 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:55:11 main:48]  PDFLabs running server on 5000
+[I 130919 15:55:13 web:1635] 304 GET / (127.0.0.1) 34.36ms
+[I 130919 15:55:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.45ms
+[I 130919 15:55:13 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:55:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 15:55:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.12ms
+[I 130919 15:55:13 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 15:55:13 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.22ms
+[I 130919 15:55:58 web:1635] 200 GET / (127.0.0.1) 40.46ms
+[I 130919 15:55:58 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.41ms
+[I 130919 15:55:58 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:55:58 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 15:55:58 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.06ms
+[I 130919 15:55:58 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 15:55:58 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.19ms
+[I 130919 15:56:00 web:1635] 200 GET /book (127.0.0.1) 185.91ms
+[I 130919 15:56:03 web:1635] 304 GET /book (127.0.0.1) 194.28ms
+[I 130919 15:56:21 web:1635] 200 GET /book (127.0.0.1) 180.75ms
+[I 130919 15:56:21 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 15:56:21 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 15:56:21 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 6.24ms
+[I 130919 15:56:21 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 15:56:22 web:1635] 304 GET / (127.0.0.1) 35.01ms
+[I 130919 15:56:27 web:1635] 304 GET /book (127.0.0.1) 184.37ms
+[I 130919 15:56:29 web:1635] 304 GET /book (127.0.0.1) 199.69ms
+[I 130919 15:56:31 web:1635] 304 GET /book (127.0.0.1) 192.06ms
+[I 130919 15:56:51 web:1635] 200 GET /book (127.0.0.1) 181.38ms
+[I 130919 15:56:51 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 15:56:51 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 15:56:51 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130919 15:56:51 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.17ms
+[I 130919 15:56:54 web:1635] 304 GET / (127.0.0.1) 36.03ms
+[I 130919 15:56:57 web:1635] 304 GET /book (127.0.0.1) 183.06ms
+[I 130919 15:56:59 web:1635] 304 GET /book (127.0.0.1) 187.85ms
+[I 130919 15:57:02 web:1635] 304 GET /book (127.0.0.1) 187.04ms
+[I 130919 15:57:29 web:1635] 304 GET /book (127.0.0.1) 184.70ms
+[I 130919 15:57:29 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.83ms
+[I 130919 15:57:29 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.37ms
+[I 130919 15:57:29 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.15ms
+[I 130919 15:57:29 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130919 15:57:31 web:1635] 304 GET /book (127.0.0.1) 195.12ms
+[I 130919 15:57:33 web:1635] 304 GET /book (127.0.0.1) 188.01ms
+[I 130919 15:57:37 web:1635] 304 GET /book (127.0.0.1) 185.81ms
+[I 130919 15:57:40 web:1635] 304 GET /book (127.0.0.1) 193.15ms
+[I 130919 15:57:41 web:1635] 304 GET / (127.0.0.1) 33.34ms
+[I 130919 15:57:44 web:1635] 304 GET /book (127.0.0.1) 194.62ms
+[I 130919 15:57:47 web:1635] 304 GET /book (127.0.0.1) 188.58ms
+[I 130919 15:57:50 web:1635] 304 GET /book (127.0.0.1) 178.97ms
+[I 130919 15:58:19 web:1635] 304 GET /book (127.0.0.1) 182.62ms
+[I 130919 15:58:19 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.99ms
+[I 130919 15:58:19 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 15:58:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.30ms
+[I 130919 15:58:19 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 3.37ms
+[I 130919 15:58:20 web:1635] 304 GET /book (127.0.0.1) 176.63ms
+[I 130919 15:58:20 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.61ms
+[I 130919 15:58:20 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 15:58:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.59ms
+[I 130919 15:58:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.56ms
+[I 130919 15:58:49 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:58:49 main:48]  PDFLabs running server on 5000
+[I 130919 15:58:51 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:58:52 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:07 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:07 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:11 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:11 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:13 web:1635] 304 GET /book (127.0.0.1) 226.87ms
+[I 130919 15:59:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.85ms
+[I 130919 15:59:13 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 15:59:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130919 15:59:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.59ms
+[I 130919 15:59:19 web:1635] 200 GET /book?tag=hot (127.0.0.1) 206.61ms
+[I 130919 15:59:30 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:30 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:39 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:39 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:41 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:41 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:58 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 15:59:58 main:48]  PDFLabs running server on 5000
+[I 130919 15:59:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:00 main:48]  PDFLabs running server on 5000
+[I 130919 16:00:02 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:02 main:48]  PDFLabs running server on 5000
+[I 130919 16:00:03 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:03 main:48]  PDFLabs running server on 5000
+[I 130919 16:00:36 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:36 main:48]  PDFLabs running server on 5000
+[I 130919 16:00:40 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:40 main:48]  PDFLabs running server on 5000
+[I 130919 16:00:52 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:00:52 main:48]  PDFLabs running server on 5000
+[I 130919 16:01:06 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:01:06 main:48]  PDFLabs running server on 5000
+[I 130919 16:01:31 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:01:32 main:48]  PDFLabs running server on 5000
+[I 130919 16:01:42 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:01:57 main:48]  PDFLabs running server on 5000
+[I 130919 16:02:00 web:1635] 304 GET /book?tag=hot (127.0.0.1) 189.66ms
+[I 130919 16:02:00 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.76ms
+[I 130919 16:02:00 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.28ms
+[I 130919 16:02:00 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.79ms
+[I 130919 16:02:00 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130919 16:02:08 web:1635] 200 GET /book?tag=shared (127.0.0.1) 187.04ms
+[I 130919 16:02:19 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:02:19 main:48]  PDFLabs running server on 5000
+[I 130919 16:02:21 web:1635] 304 GET /book?tag=shared (127.0.0.1) 175.36ms
+[I 130919 16:02:21 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.66ms
+[I 130919 16:02:21 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 16:02:21 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 7.25ms
+[I 130919 16:02:21 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.58ms
+[I 130919 16:02:41 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:02:41 main:48]  PDFLabs running server on 5000
+[I 130919 16:02:46 web:1635] 304 GET /book?tag=shared (127.0.0.1) 195.09ms
+[I 130919 16:02:46 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.65ms
+[I 130919 16:02:46 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 16:02:46 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 16:02:46 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.24ms
+[I 130919 16:02:57 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:02:57 main:48]  PDFLabs running server on 5000
+[I 130919 16:03:09 web:1635] 304 GET /book?tag=shared (127.0.0.1) 222.50ms
+[I 130919 16:03:09 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.79ms
+[I 130919 16:03:09 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.28ms
+[I 130919 16:03:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 16:03:09 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.54ms
+[I 130919 16:03:39 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:03:39 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:04 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:05 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:06 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:06 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:08 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:08 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:09 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:09 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:16 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:16 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:17 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:18 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:26 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:26 main:48]  PDFLabs running server on 5000
+[I 130919 16:04:27 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/books.py modified; restarting server
+[I 130919 16:04:27 main:48]  PDFLabs running server on 5000
+[I 130919 16:05:12 web:1635] 200 GET /book?tag=shared (127.0.0.1) 184.80ms
+[I 130919 16:05:13 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 6.43ms
+[I 130919 16:05:13 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.44ms
+[I 130919 16:05:13 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.95ms
+[I 130919 16:05:13 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.52ms
+[I 130919 16:05:17 web:1635] 304 GET /book?tag=shared (127.0.0.1) 223.87ms
+[I 130919 16:05:19 web:1635] 200 GET /book?tag=waiting (127.0.0.1) 190.34ms
+[I 130919 16:05:22 web:1635] 200 GET /book?tag=hot (127.0.0.1) 185.49ms
+[I 130919 16:05:24 web:1635] 200 GET /group/gs (127.0.0.1) 26.43ms
+[I 130919 16:05:24 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.22ms
+[I 130919 16:05:25 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.92ms
+[I 130919 16:05:28 web:1635] 200 GET /group/rs (127.0.0.1) 22.65ms
+[I 130919 16:05:30 web:1635] 304 GET /group/gs (127.0.0.1) 26.13ms
+[I 130919 16:05:34 web:1635] 304 GET /group/rs (127.0.0.1) 31.15ms
+[I 130919 16:05:35 web:1635] 302 GET /book/find (127.0.0.1) 1.14ms
+[I 130919 16:05:35 web:1635] 200 GET /sigin?next=%2Fbook%2Ffind (127.0.0.1) 3.36ms
+[I 130919 16:05:39 web:1635] 304 GET /group/rs (127.0.0.1) 20.93ms
+[I 130919 16:05:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 16:05:39 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.32ms
+[I 130919 16:05:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.21ms
+[I 130919 16:05:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130919 16:05:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 16:05:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 16:05:39 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.29ms
+[I 130919 16:05:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/find.py modified; restarting server
+[I 130919 16:05:59 main:48]  PDFLabs running server on 5000
+[I 130919 16:06:03 web:1635] 304 GET /group/rs (127.0.0.1) 29.28ms
+[I 130919 16:06:03 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 6.57ms
+[I 130919 16:06:03 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 16:06:03 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130919 16:06:03 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.39ms
+[I 130919 16:06:03 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 16:06:03 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 16:06:03 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.23ms
+[I 130919 16:06:05 web:1635] 200 GET /book/find (127.0.0.1) 14.16ms
+[I 130919 16:06:05 web:1635] 200 GET /static/js/app/find.js?v=c6561f0f6f3c6ef5fa7489d94b3f2d02 (127.0.0.1) 1.40ms
+[I 130919 16:06:06 web:1635] 200 GET /static/js/module/find.js (127.0.0.1) 1.20ms
+[I 130919 16:06:11 web:1635] 304 GET /group/gs (127.0.0.1) 24.84ms
+[I 130919 16:06:13 web:1635] 304 GET /group/rs (127.0.0.1) 23.75ms
+[I 130919 16:06:15 web:1635] 304 GET /book?tag=shared (127.0.0.1) 186.97ms
+[I 130919 16:06:17 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 178.30ms
+[I 130919 16:06:20 web:1635] 304 GET /book?tag=hot (127.0.0.1) 178.38ms
+[I 130919 16:06:22 web:1635] 304 GET /book?tag=shared (127.0.0.1) 181.36ms
+[I 130919 16:06:25 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 185.49ms
+[I 130919 16:06:29 web:1635] 304 GET /book?tag=hot (127.0.0.1) 181.20ms
+[I 130919 16:06:32 web:1635] 304 GET /group/gs (127.0.0.1) 28.17ms
+[I 130919 16:06:34 web:1635] 304 GET /group/rs (127.0.0.1) 20.31ms
+[I 130919 16:06:37 web:1635] 304 GET /group/rs (127.0.0.1) 22.60ms
+[I 130919 16:06:39 web:1635] 304 GET /group/gs (127.0.0.1) 25.59ms
+[I 130919 16:06:41 web:1635] 304 GET /group/rs (127.0.0.1) 26.41ms
+[I 130919 16:06:43 web:1635] 304 GET /group/gs (127.0.0.1) 31.98ms
+[I 130919 16:06:45 web:1635] 304 GET /group/rs (127.0.0.1) 23.68ms
+[I 130919 16:06:47 web:1635] 304 GET /book/find (127.0.0.1) 13.94ms

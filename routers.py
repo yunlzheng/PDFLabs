@@ -12,6 +12,7 @@ from handlers import MainHandler
 from handlers.web import  AuthenticateHandler, LogsHandler
 from handlers.web import PreviewHandler
 from handlers.book import BookHandler
+from handlers.book import BooksHandler
 from handlers.book import FindHandler
 from handlers.group import GroupHandler
 from handlers.group import PostHandler
@@ -28,6 +29,7 @@ router = [
       (r"/", MainHandler),
       (r"/logs", LogsHandler),
       (r'/book/find', FindHandler),
+      (r"/book", BooksHandler),
       (r"/book/([0-9]+)", BookHandler),
       (r"/preview/([0-9]+)", PreviewHandler),
       (r"/callback", DoubanCallbackHandler),
