@@ -2,9 +2,13 @@
 
 from mongoengine import *
 from mongoengine.fields import *
-
-from models.book_comments import BookComment
+from models.users import User
 from models.files import File
+
+class Comment(EmbeddedDocument):
+    content = StringField()
+    name = StringField(max_length=120)
+    author = ReferenceField(User)
 
 class Book(Document):
     bid = StringField(required=True)
@@ -14,7 +18,7 @@ class Book(Document):
     publisher = StringField()
     create_at = DateTimeField()
     update_at = DateTimeField()
-    comments = ListField(EmbeddedDocumentField(BookComment))
+    comments = ListField(EmbeddedDocumentField(Comment))
     files = ListField(EmbeddedDocumentField(File))
     wcount = IntField(default=0)
     dcount = IntField()

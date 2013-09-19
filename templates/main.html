@@ -32,7 +32,7 @@
                       <ul class="dropdown-menu">
 			     <li><a href="/home"><i class="icon-home"></i>个人主页</a></li>
                         <li><a href="/profile"><i class="icon-cog"></i>个人资料</a></li>
-                        <li><a href="/contribute"><i class="icon-bookmark"></i>发现/共享</a></li>
+                        <li><a href="/find"><i class="icon-bookmark"></i>发现/共享</a></li>
                         <li class="divider"></li>
                         <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
                       </ul>
@@ -42,7 +42,6 @@
               {% end %}
               <div class="nav-collapse collapse">
                 <ul id="main_nav" class="nav">
-                   <li><a href="/contribute">发现</a></li>
                    <li class="dropdown">
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">资源
                         <b class="caret"></b>
@@ -59,12 +58,13 @@
                       </a>
                       <ul class="dropdown-menu">
 
-                          {% for bbs in bbss %}
-                            <li><a href="/bbs/topic/{{ bbs.tag }}">{{bbs.name}}</a></li>
+                          {% for group in groups %}
+                            <li><a href="/group/{{ group.tag }}">{{group.name}}</a></li>
                           {% end %}
 
                       </ul>
                    </li>
+                   <li><a href="/find">发现</a></li>
 
 		       <!-- <li><a href="#data">数据统计</a></li>
                    <li><a href="/logs">更新日志</a></li> -->
@@ -119,7 +119,7 @@
           var scrtop =document.documentElement.scrollTop||document.body.scrollTop;
           var height = document.documentElement.clientHeight||document.body.clientHeight;
 
-          if(scrtop>50){
+          /*if(scrtop>50){
 
                if (scrtop > sign) {
                   sign = scrtop;
@@ -134,12 +134,7 @@
                 }
 
           }
-
-          if(scrtop>50){
-            //footer.setAttribute("style","display:none");
-          }else{
-            //footer.setAttribute("style","display:block");
-          }
+*/
 
         }
       </script>

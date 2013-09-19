@@ -6,7 +6,7 @@ import tornado.httpclient
 
 from tornado.log import app_log
 from tornado.httpclient import *
-from models.bbs import Bbs
+from models.groups import Group
 from models.users import User
 from models.admin import Admin
 
@@ -18,8 +18,8 @@ class UUIDMixin():
 
 class BBSMixin():
 
-    def get_bbs(self):
-        return Bbs.objects()
+    def get_groups(self):
+        return Group.objects()
 
 class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
 

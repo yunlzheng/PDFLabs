@@ -8,9 +8,9 @@ from handlers.service import AccountAPI, IWantService
 from handlers.auth import GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
 from handlers.web import MainHandler, AuthenticateHandler, LogsHandler
 import tornado.web
-from handlers.web import BookHandler, PreviewHandler, ContributeHandler
-from handlers.bbs_handler import BbsHandler
-from handlers.post_handler import PostHandler
+from handlers.web import BookHandler, PreviewHandler, FindHandler
+from handlers.group.group_handler import GroupHandler
+from handlers.group.post_handler import PostHandler
 
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 static_dir_dict = dict(path=static_dir)
@@ -23,14 +23,14 @@ router = [
       # handlers
       (r"/", MainHandler),
       (r"/logs", LogsHandler),
-      (r'/contribute', ContributeHandler),
+      (r'/find', FindHandler),
       (r"/book/([0-9]+)", BookHandler),
       (r"/preview/([0-9]+)", PreviewHandler),
       (r"/callback", DoubanCallbackHandler),
       (r"/sigin", AuthenticateHandler),
       (r"/sigout", LogoutHandler),
-      (r"/bbs/topic/([0-9a-zA-Z\-]+)", BbsHandler),
-      (r"/bbs/topic/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)", PostHandler),
+      (r"/group/([0-9a-zA-Z\-]+)", GroupHandler),
+      (r"/group/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)", PostHandler),
       (r"/sigin/google", GoogleLoginHandler),
       (r"/sigin/douban", DoubanSiginHandler),
       (r"/api/account/([\s\S]*)", AccountAPI),

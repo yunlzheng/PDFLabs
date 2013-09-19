@@ -30,7 +30,7 @@ class MainHandler(BaseHandler):
             page_heading='PDFLabs',
             books=books,
             hot_books=hot_books,
-            bbss = self.get_bbs()
+            groups = self.get_groups()
         )
 
 class BookHandler(BaseHandler):
@@ -42,7 +42,7 @@ class BookHandler(BaseHandler):
             "book.html",
             page_heading=book.title,
             book=book,
-            bbss = self.get_bbs()
+            groups = self.get_groups()
         )
 
     @tornado.web.authenticated
@@ -73,7 +73,7 @@ class PreviewHandler(BaseHandler):
             "preview.html",
             page_heading=book['title'],
             book=book,
-            bbss = self.get_bbs()
+            groups = self.get_groups()
         )
 
 
@@ -96,18 +96,18 @@ class LogsHandler(BaseHandler):
         self.render(
             "logs.html",
             page_heading='PDFLabs 更新日志',
-            bbss = self.get_bbs()
+            groups = self.get_groups()
         )
 
-class ContributeHandler(BaseHandler):
+class FindHandler(BaseHandler):
 
     ''' contribute new book resources handler '''
     @tornado.web.authenticated
     def get(self):
         self.render(
-            "contribute_book.html",
+            "find.html",
             page_heading='cuttle | contribute book',
-            bbss = self.get_bbs()
+            groups = self.get_groups()
         )
 
     def share_network_file(self, book, resource_url):
