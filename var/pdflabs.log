@@ -18770,3 +18770,6 @@
 [I 130919 16:32:26 web:1635] 304 GET /book?tag=shared (127.0.0.1) 190.79ms
 [I 130919 16:32:28 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 181.26ms
 [I 130919 16:32:30 web:1635] 304 GET /book?tag=hot (127.0.0.1) 186.08ms
+[I 130919 16:33:30 main:48]  PDFLabs running server on 5000
+[I 130919 16:36:23 autoreload:186] ./main.py modified; restarting server
+[I 130919 16:36:24 main:47]  PDFLabs running server on 5000
