@@ -3,7 +3,7 @@ var books;
 
 function iWant(id){
 
-	var book = books[id];	
+	var book = books[id];
       $.ajax({
           type:"post",
           url:"/api/want/"+book.id,
@@ -20,32 +20,32 @@ function iWant(id){
               },2000)
           }
       });
-      
+
 
 }
 
 function iHave(id){
-	var book = books[id];	
+	var book = books[id];
 	$(".info-book-name").each(function(){
-		$(this).val(book.title);	
+		$(this).val(book.title);
 	});;
-	$("#contribute-book-id").val(book.id);     
-	$("#contribute-book-title").val(book.title);     
-	$("#contriibute-book-image").val(book.images.large);     
-	$("#contribute-book-isbn13").val(book.isbn13);     
-	$("#contribute-book-publisher").val(book.publisher);    
+	$("#contribute-book-id").val(book.id);
+	$("#contribute-book-title").val(book.title);
+	$("#contriibute-book-image").val(book.images.large);
+	$("#contribute-book-isbn13").val(book.isbn13);
+	$("#contribute-book-publisher").val(book.publisher);
 }
 
-define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], function($,application,client) {
+define(["jquery","lib/application", "module/ajax_client" ], function($,application,client) {
     //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
     $(function() {
-    	
+
     	$("#btn_search").click(function(){
 
     	     var keyword = $("#txt_key").val();
            application.alert('Loading...')
     	     client.seach_book(keyword,success)
-    		 
+
     	});
 
       $("#contribute-submit").click(function(){
@@ -100,7 +100,7 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], fu
                 })(i);
 
                 application.hide_alert();
-              
+
            }
     }
 

@@ -2,15 +2,19 @@
 import os
 import os.path
 
+import tornado.web
+
 from handlers.weixin import WeiXinHandler
 from handlers.douban import BookDetailHandler, BookSearchHandler
 from handlers.service import AccountAPI, IWantService
 from handlers.auth import GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
-from handlers.web import MainHandler, AuthenticateHandler, LogsHandler
-import tornado.web
-from handlers.web import BookHandler, PreviewHandler, FindHandler
-from handlers.group.group_handler import GroupHandler
-from handlers.group.post_handler import PostHandler
+from handlers import MainHandler
+from handlers.web import  AuthenticateHandler, LogsHandler
+from handlers.web import PreviewHandler
+from handlers.book import BookHandler
+from handlers.book import FindHandler
+from handlers.group import GroupHandler
+from handlers.group import PostHandler
 
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 static_dir_dict = dict(path=static_dir)
@@ -23,7 +27,7 @@ router = [
       # handlers
       (r"/", MainHandler),
       (r"/logs", LogsHandler),
-      (r'/find', FindHandler),
+      (r'/book/find', FindHandler),
       (r"/book/([0-9]+)", BookHandler),
       (r"/preview/([0-9]+)", PreviewHandler),
       (r"/callback", DoubanCallbackHandler),

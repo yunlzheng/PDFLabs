@@ -14,7 +14,7 @@ class GroupHandler(BaseHandler):
         group = Group.objects(tag = tag)[0]
         posts = Post.objects(group=group)
         self.render(
-            "groups.html",
+            "group/groups.html",
             page_heading=group.name,
             _group = group,
             posts = posts,

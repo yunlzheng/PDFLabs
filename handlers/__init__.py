@@ -6,6 +6,8 @@ import tornado.httpclient
 
 from tornado.log import app_log
 from tornado.httpclient import *
+
+from models.books import Book
 from models.groups import Group
 from models.users import User
 from models.admin import Admin
@@ -49,4 +51,23 @@ class AdminBaseHandler(BaseHandler):
             app_log.error(ex)
         else:
             return admin
+
+class MainHandler(BaseHandler):
+
+    @tornado.gen.coroutine
+    def get(self):
+
+        books = []
+        hot_books = Book.objects().order_by('-wcount')[:8]
+        for book in Book.objects().order_by('+update_at'):
+            books.append(book)
+
+        books.reverse()
+        self.render(
+            "home.html",
+            page_heading='PDFLabs',
+            books=books,
+            hot_books=hot_books,
+            groups = self.get_groups()
+        )
 

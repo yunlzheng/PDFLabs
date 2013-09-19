@@ -1,7 +1,7 @@
-define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], function($,application,client) {
+define(["jquery","application", "module/ajax_client"], function($,application,client) {
     //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
    $(function() {
-    	
+
     	application.navigationTo('dashbord');
 
     	$('#btn_trash').click(function(e){
@@ -23,12 +23,12 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap"], fu
 	       	    }else{
 	       	    	alert("delete error")
 	       	    }
-    	       		
+
     	       	},function(jqXHR,textStatus,errorThrown){
     	       		alert("delete error")
     	       	}
     	       )
-    	       
+
 
     	});
 

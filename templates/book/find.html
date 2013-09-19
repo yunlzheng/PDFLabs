@@ -1,4 +1,4 @@
-{% extends "main.html" %}
+{% extends "../main.html" %}
 {% autoescape None %}
 {% block body %}
 <div id="alert-ilike-success" class="alert alert-success" style="display:none">
@@ -62,5 +62,5 @@
     <button id="contribute-submit" class="btn btn-primary">共享</button>
   </div>
 </div>
-<script data-main="{{ static_url("js/app/contributeBook") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="{{ static_url("js/app/find") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

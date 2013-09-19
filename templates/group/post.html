@@ -1,26 +1,25 @@
-{% extends "main.html" %}
+{% extends "../main.html" %}
 {% autoescape None %}
 {% block body %}
 <div class="row-fluid group">
-  <h5>{{ _group.name }}</h5>
+  <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
   <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
   <br/>
-  <span class="subtitle">{{ _group.description }}</span>
+  <span class="subtitle">{{ post.group.description }}</span>
   <hr>
   <div class="post-list">
-    {% for post in posts%}
     <div class="post-item">
       <div class="post-image">
           <img src="/static/images/avatar.jpg"/>
       </div>
       <div class="post">
         <div class="post-title">
-          <a href="{{post.group.tag}}/{{ post.id }}">{{ post.title[:25] }}....</a>
+          <a>{{ post.title }}</a>
         </div>
         <div class="post-info">
           <span class="post-author">huiyunlau</span>
           <div class="post-last-comment">
-              最后由 <span class="comment-author">海洋封</span> 于22天前回复
+              22天前
           </div>
         </div>
       </div>
@@ -29,8 +28,27 @@
       </div>
       <div class='clearfix'></div>
     </div>
-    <hr/>
+  </div>
+  <div class="post-content">
+      <hr/>
+      <p class="">{{ post.content }}</p>
+      <hr/>
+      <br/>
+  </div>
+  <div class="comments">
+    <h8><b class="icon-list-alt"></b>回复:</h8>
+    {% for comment in post.comments %}
+      <div class="comment">
+        <h2>{{ comment }}</h2>
+      </div>
     {% end %}
+    {% if not post.comments %}
+        <p>快来抢沙发了</p>
+    {% end %}
+  </div>
+  <div class="comment-publish">
+      <textarea class="comment-content"></textarea>
+      <button class='btn btn-publish'>发布</button>
   </div>
 </div>
 <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -60,5 +78,5 @@
   </div>
   </form>
 </div>
-<script data-main="{{ static_url("js/app/group") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="{{ static_url("js/app/post") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

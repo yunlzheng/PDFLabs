@@ -6,7 +6,6 @@ requirejs.config({
     "baseUrl": "/static/js/lib",
     "paths": {
       "module": "../module" ,
-      "bootstrap": "../bootstrap",
       "app": "../app",
       "jquery": "jquery-1.10.2"
     }
