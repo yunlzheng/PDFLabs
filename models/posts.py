@@ -21,3 +21,7 @@ class Post(Document):
     create_at = DateTimeField()
     update_at = DateTimeField()
 
+    meta = {
+        'ordering' : ['-create_at']
+    }
+

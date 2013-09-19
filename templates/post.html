@@ -3,7 +3,7 @@
 {% block body %}
 <div class="row-fluid group">
   <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
-  <button class="btn"><b class="icon-edit"></b>发帖</button>
+  <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
   <br/>
   <span class="subtitle">{{ post.group.description }}</span>
   <hr>
@@ -50,6 +50,33 @@
       <textarea class="comment-content"></textarea>
       <button class='btn btn-publish'>发布</button>
   </div>
+</div>
+<div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <form id="publish-post-form" class="form-horizontal" action="" method="post">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 >发表帖子</h4>
+  </div>
+  <div class="modal-body">
+      <div class="control-group">
+        <label class="control-label">标题</label>
+        <div class="controls">
+          <input type="text" name="title" class="input-large" laceholder="帖子的标题">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">内容</label>
+        <div class="controls">
+          <textarea name="content" class="input-large" placeholder="帖子的内容"  rows=8></textarea>
+        </div>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button type="submit" class="btn btn-primary">发表</button>
+  </div>
+  </form>
 </div>
 <script data-main="{{ static_url("js/app/post") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

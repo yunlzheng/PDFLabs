@@ -74,4 +74,6 @@ p{text-indent:2em}
 .group .post-list .post-item .post-comments-count{float:left;font-size:18px;color:#98989b;font-weight:bold;line-height:30px}
 .group .post-list .post-item .post-judge{float:left}
 .group .post-list .post-item .post-date{float:left;line-height:30px}
+.model-large{left:43%;width:700px}.model-large .control-label{width:100px}
+.model-large .controls{margin-left:120px}.model-large .controls .input-large{width:420px}
 @media (min-width:1200px){}@media (max-width:767px){body{padding-left:0;padding-right:0} .navbar-fixed-top{margin-bottom:0} .min-hidden{display:none} .bookstore{background:none;padding-bottom:40px}.bookstore .pre_ribbon{position:absolute;top:0;height:100px;width:100px;overflow:hidden;color:#fff;font-weight:bold;letter-spacing:.5em}.bookstore .pre_ribbon span{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg)} .bookstore .span3{text-align:center}.bookstore .span3 .book_intro{text-align:center;width:180px;margin:0 auto;margin-top:10px;margin-bottom:20px;font-size:18px;font-weight:100;overflow:hidden} .bookstore .span3 img{width:312px;height:428px}}@media (min-width:768px) and (max-width:979px){.navbar-fixed-top{margin-bottom:0} .bookstore{background:url('/static/img/bookcase_max_767.jpg') no-repeat 0 210px;padding-bottom:40px}.bookstore .span3{}}

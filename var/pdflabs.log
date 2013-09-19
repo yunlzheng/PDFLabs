@@ -15678,3 +15678,749 @@
 [E 130919 12:37:02 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
 [I 130919 12:37:02 web:1635] 304 GET /find (127.0.0.1) 19.45ms
 [I 130919 12:37:02 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[I 130919 12:39:53 main:48]  PDFLabs running server on 5000
+[E 130919 12:39:56 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:39:56 web:1635] 304 GET /group/gs (127.0.0.1) 28.35ms
+[I 130919 12:39:56 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.37ms
+[I 130919 12:39:56 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.06ms
+[I 130919 12:39:56 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.32ms
+[I 130919 12:39:56 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.65ms
+[I 130919 12:39:56 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.19ms
+[I 130919 12:39:56 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 12:39:56 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.30ms
+[W 130919 12:39:56 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.78ms
+[I 130919 12:39:57 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.50ms
+[E 130919 12:40:41 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:40:41 web:1635] 304 GET /group/gs (127.0.0.1) 30.35ms
+[W 130919 12:40:42 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.31ms
+[I 130919 12:40:42 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.25ms
+[E 130919 12:40:43 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:40:43 web:1635] 304 GET /group/rs (127.0.0.1) 25.44ms
+[W 130919 12:40:43 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.31ms
+[I 130919 12:40:44 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 12:41:34 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:34 web:1635] 304 GET /group/gs (127.0.0.1) 22.51ms
+[W 130919 12:41:34 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.67ms
+[I 130919 12:41:35 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.24ms
+[E 130919 12:41:36 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:36 web:1635] 304 GET /group/rs (127.0.0.1) 22.25ms
+[W 130919 12:41:36 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.42ms
+[I 130919 12:41:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.49ms
+[E 130919 12:41:38 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:38 web:1635] 304 GET /group/gs (127.0.0.1) 30.54ms
+[W 130919 12:41:38 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.83ms
+[I 130919 12:41:38 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.29ms
+[E 130919 12:41:41 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:41 web:1635] 304 GET /group/rs (127.0.0.1) 19.33ms
+[W 130919 12:41:41 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.32ms
+[I 130919 12:41:41 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 12:41:47 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:47 web:1635] 304 GET /group/gs (127.0.0.1) 25.02ms
+[W 130919 12:41:47 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.90ms
+[I 130919 12:41:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[E 130919 12:41:50 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:50 web:1635] 304 GET /group/rs (127.0.0.1) 18.65ms
+[W 130919 12:41:51 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.72ms
+[I 130919 12:41:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.24ms
+[E 130919 12:41:59 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:41:59 web:1635] 304 GET /group/rs (127.0.0.1) 24.16ms
+[W 130919 12:42:00 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.48ms
+[I 130919 12:42:00 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.31ms
+[I 130919 12:42:47 web:1635] 304 GET / (127.0.0.1) 35.91ms
+[W 130919 12:42:48 web:1635] 404 GET /modules/home.js (127.0.0.1) 2.27ms
+[I 130919 12:42:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.61ms
+[I 130919 12:43:55 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 12:43:55 main:48]  PDFLabs running server on 5000
+[I 130919 12:44:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 12:44:00 main:48]  PDFLabs running server on 5000
+[E 130919 12:59:43 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/contributeBook'
+[I 130919 12:59:43 web:1635] 304 GET /find (127.0.0.1) 24.00ms
+[I 130919 12:59:44 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.93ms
+[E 130919 12:59:45 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:59:45 web:1635] 304 GET /group/gs (127.0.0.1) 28.40ms
+[I 130919 12:59:45 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 6.37ms
+[W 130919 12:59:45 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.52ms
+[I 130919 12:59:45 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.55ms
+[E 130919 12:59:46 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:59:46 web:1635] 304 GET /group/rs (127.0.0.1) 21.28ms
+[W 130919 12:59:46 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.03ms
+[I 130919 12:59:46 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.25ms
+[E 130919 12:59:48 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 12:59:48 web:1635] 304 GET /group/gs (127.0.0.1) 24.33ms
+[W 130919 12:59:48 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.79ms
+[I 130919 12:59:49 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 13:03:21 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:03:21 web:1635] 200 GET /group/gs (127.0.0.1) 24.43ms
+[I 130919 13:03:21 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 13:03:21 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.24ms
+[I 130919 13:03:21 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 13:03:21 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.45ms
+[I 130919 13:03:21 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.10ms
+[I 130919 13:03:21 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 13:03:22 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.91ms
+[W 130919 13:03:22 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.65ms
+[I 130919 13:03:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.35ms
+[E 130919 13:03:55 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:03:55 web:1635] 200 GET /group/gs (127.0.0.1) 27.89ms
+[I 130919 13:03:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 13:03:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 13:03:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 13:03:55 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.18ms
+[I 130919 13:03:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.00ms
+[I 130919 13:03:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 13:03:56 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.14ms
+[W 130919 13:03:56 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.25ms
+[I 130919 13:03:56 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.53ms
+[E 130919 13:05:22 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:05:22 web:1635] 200 GET /group/gs (127.0.0.1) 21.79ms
+[I 130919 13:05:22 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 13:05:22 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.15ms
+[I 130919 13:05:22 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 13:05:22 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130919 13:05:22 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 13:05:22 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.29ms
+[I 130919 13:05:22 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.32ms
+[W 130919 13:05:22 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.73ms
+[I 130919 13:05:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.34ms
+[I 130919 13:05:37 web:1635] 304 GET / (127.0.0.1) 39.63ms
+[W 130919 13:05:37 web:1635] 404 GET /modules/home.js (127.0.0.1) 1.70ms
+[I 130919 13:05:37 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 13:06:01 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:06:01 web:1635] 200 GET /group/gs (127.0.0.1) 26.11ms
+[W 130919 13:06:01 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.06ms
+[I 130919 13:06:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.35ms
+[E 130919 13:06:01 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:06:01 web:1635] 304 GET /group/gs (127.0.0.1) 21.28ms
+[I 130919 13:06:01 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.83ms
+[I 130919 13:06:01 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 0.98ms
+[I 130919 13:06:01 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130919 13:06:01 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.66ms
+[I 130919 13:06:01 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.15ms
+[I 130919 13:06:01 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 2.66ms
+[I 130919 13:06:01 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.23ms
+[W 130919 13:06:02 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.43ms
+[I 130919 13:06:02 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.49ms
+[E 130919 13:06:14 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:06:14 web:1635] 200 GET /group/gs (127.0.0.1) 23.70ms
+[I 130919 13:06:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.39ms
+[I 130919 13:06:14 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.19ms
+[I 130919 13:06:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 13:06:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.62ms
+[I 130919 13:06:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.98ms
+[I 130919 13:06:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 13:06:14 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.94ms
+[W 130919 13:06:14 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.33ms
+[I 130919 13:06:14 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.39ms
+[E 130919 13:07:04 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:07:04 web:1635] 200 GET /group/gs (127.0.0.1) 21.34ms
+[I 130919 13:07:04 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.59ms
+[I 130919 13:07:04 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.22ms
+[I 130919 13:07:04 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 13:07:04 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.08ms
+[I 130919 13:07:04 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130919 13:07:04 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 13:07:05 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.20ms
+[W 130919 13:07:05 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.99ms
+[I 130919 13:07:05 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[E 130919 13:07:34 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:07:34 web:1635] 200 GET /group/gs (127.0.0.1) 19.61ms
+[I 130919 13:07:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 2.89ms
+[I 130919 13:07:35 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.23ms
+[I 130919 13:07:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.43ms
+[I 130919 13:07:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.12ms
+[I 130919 13:07:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 13:07:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 13:07:35 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.16ms
+[W 130919 13:07:35 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.27ms
+[I 130919 13:07:35 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.28ms
+[E 130919 13:07:55 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:07:55 web:1635] 200 GET /group/gs (127.0.0.1) 22.33ms
+[I 130919 13:07:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 13:07:55 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.01ms
+[I 130919 13:07:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.61ms
+[I 130919 13:07:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 13:07:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 13:07:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 13:07:55 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.91ms
+[W 130919 13:07:55 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.75ms
+[I 130919 13:07:55 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.41ms
+[E 130919 13:09:44 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:09:44 web:1635] 200 GET /group/gs (127.0.0.1) 21.64ms
+[I 130919 13:09:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 13:09:45 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130919 13:09:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.02ms
+[I 130919 13:09:45 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.21ms
+[I 130919 13:09:45 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.06ms
+[I 130919 13:09:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130919 13:09:45 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.14ms
+[W 130919 13:09:45 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.39ms
+[I 130919 13:09:45 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.39ms
+[E 130919 13:09:53 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:09:53 web:1635] 200 GET /group/gs (127.0.0.1) 24.94ms
+[I 130919 13:09:53 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.69ms
+[I 130919 13:09:53 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130919 13:09:53 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.47ms
+[I 130919 13:09:53 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.21ms
+[I 130919 13:09:53 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.28ms
+[I 130919 13:09:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.02ms
+[I 130919 13:09:53 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.15ms
+[W 130919 13:09:53 web:1635] 404 GET /modules/group.js (127.0.0.1) 3.12ms
+[I 130919 13:09:53 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.42ms
+[E 130919 13:10:39 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:10:39 web:1635] 304 GET /group/gs (127.0.0.1) 29.37ms
+[I 130919 13:10:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.37ms
+[I 130919 13:10:39 web:1635] 304 GET /static/style/custom.css?v=afac9ed853f2728103fe2bda153624aa (127.0.0.1) 1.26ms
+[I 130919 13:10:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 13:10:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.53ms
+[I 130919 13:10:39 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 13:10:39 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130919 13:10:39 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.97ms
+[I 130919 13:10:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.75ms
+[I 130919 13:10:39 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.07ms
+[W 130919 13:10:39 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.37ms
+[I 130919 13:10:40 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.76ms
+[E 130919 13:14:50 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:14:50 web:1635] 200 GET /group/gs (127.0.0.1) 21.01ms
+[I 130919 13:14:50 web:1635] 200 GET /static/style/custom.css?v=27c185b447ebf759c6ccd73293715905 (127.0.0.1) 1.34ms
+[I 130919 13:14:50 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.61ms
+[I 130919 13:14:50 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.46ms
+[I 130919 13:14:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 13:14:50 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130919 13:14:50 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 13:14:50 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.18ms
+[I 130919 13:14:51 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.04ms
+[W 130919 13:14:51 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.70ms
+[I 130919 13:14:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.66ms
+[E 130919 13:15:34 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:15:34 web:1635] 200 GET /group/gs (127.0.0.1) 23.81ms
+[I 130919 13:15:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 13:15:35 web:1635] 200 GET /static/style/custom.css?v=42b7fae79f9172ab9b8fd6fd2bfff045 (127.0.0.1) 1.41ms
+[I 130919 13:15:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.23ms
+[I 130919 13:15:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 13:15:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.12ms
+[I 130919 13:15:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 13:15:35 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.17ms
+[I 130919 13:15:35 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.09ms
+[W 130919 13:15:35 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.64ms
+[I 130919 13:15:35 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.72ms
+[E 130919 13:15:59 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:15:59 web:1635] 200 GET /group/gs (127.0.0.1) 22.54ms
+[I 130919 13:15:59 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.67ms
+[I 130919 13:15:59 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.25ms
+[I 130919 13:15:59 web:1635] 304 GET /static/style/custom.css?v=42b7fae79f9172ab9b8fd6fd2bfff045 (127.0.0.1) 1.28ms
+[I 130919 13:15:59 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130919 13:15:59 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 13:15:59 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130919 13:16:00 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.12ms
+[W 130919 13:16:00 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.77ms
+[I 130919 13:16:00 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[E 130919 13:16:31 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:16:31 web:1635] 200 GET /group/gs (127.0.0.1) 24.58ms
+[I 130919 13:16:31 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.62ms
+[I 130919 13:16:31 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 13:16:31 web:1635] 304 GET /static/style/custom.css?v=27c185b447ebf759c6ccd73293715905 (127.0.0.1) 1.20ms
+[I 130919 13:16:31 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 13:16:31 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130919 13:16:31 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 13:16:32 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.17ms
+[W 130919 13:16:32 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.64ms
+[I 130919 13:16:32 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.61ms
+[E 130919 13:17:27 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:17:27 web:1635] 200 GET /group/gs (127.0.0.1) 23.75ms
+[I 130919 13:17:27 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.78ms
+[I 130919 13:17:27 web:1635] 200 GET /static/style/custom.css?v=0cc7dd76178b4e1e086f3b3e87783afc (127.0.0.1) 1.38ms
+[I 130919 13:17:27 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 13:17:27 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130919 13:17:27 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130919 13:17:27 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130919 13:17:27 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.31ms
+[I 130919 13:17:28 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.05ms
+[W 130919 13:17:28 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.49ms
+[I 130919 13:17:28 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.37ms
+[E 130919 13:18:16 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:18:16 web:1635] 200 GET /group/gs (127.0.0.1) 31.83ms
+[I 130919 13:18:16 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.41ms
+[I 130919 13:18:16 web:1635] 200 GET /static/style/custom.css?v=62adb97010294a6e40f0314d2b7c2566 (127.0.0.1) 1.18ms
+[I 130919 13:18:16 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.82ms
+[I 130919 13:18:16 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 13:18:16 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 13:18:16 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.19ms
+[I 130919 13:18:16 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.13ms
+[I 130919 13:18:16 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.16ms
+[W 130919 13:18:16 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.76ms
+[I 130919 13:18:17 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.72ms
+[E 130919 13:20:14 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:20:14 web:1635] 200 GET /group/gs (127.0.0.1) 22.23ms
+[I 130919 13:20:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 13:20:14 web:1635] 200 GET /static/style/custom.css?v=e1925cac58d16c6f3cbe6f1f9792d174 (127.0.0.1) 1.37ms
+[I 130919 13:20:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.33ms
+[I 130919 13:20:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.63ms
+[I 130919 13:20:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.12ms
+[I 130919 13:20:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.09ms
+[I 130919 13:20:14 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.23ms
+[I 130919 13:20:14 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.12ms
+[W 130919 13:20:15 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.66ms
+[I 130919 13:20:15 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.78ms
+[E 130919 13:52:35 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:52:35 web:1635] 200 GET /group/gs (127.0.0.1) 21.50ms
+[I 130919 13:52:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.68ms
+[I 130919 13:52:35 web:1635] 200 GET /static/style/custom.css?v=ddb6d4669209fae335e245101e57858c (127.0.0.1) 1.12ms
+[I 130919 13:52:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.59ms
+[I 130919 13:52:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.99ms
+[I 130919 13:52:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 13:52:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 13:52:35 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.14ms
+[I 130919 13:52:35 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.06ms
+[W 130919 13:52:36 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.52ms
+[I 130919 13:52:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.37ms
+[E 130919 13:52:45 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:52:45 web:1635] 200 GET /group/gs (127.0.0.1) 22.28ms
+[I 130919 13:52:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.50ms
+[I 130919 13:52:45 web:1635] 200 GET /static/style/custom.css?v=b195534958a678b809b0eb8cec5eb98d (127.0.0.1) 1.38ms
+[I 130919 13:52:45 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 13:52:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 13:52:45 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 13:52:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.97ms
+[I 130919 13:52:45 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.17ms
+[I 130919 13:52:46 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.10ms
+[W 130919 13:52:46 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.15ms
+[I 130919 13:52:46 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.30ms
+[E 130919 13:53:02 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:53:02 web:1635] 200 GET /group/gs (127.0.0.1) 26.04ms
+[I 130919 13:53:02 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 13:53:02 web:1635] 200 GET /static/style/custom.css?v=8e3afbefbc61c36ac30403a816e15cbf (127.0.0.1) 1.34ms
+[I 130919 13:53:02 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 13:53:02 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.21ms
+[I 130919 13:53:02 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.01ms
+[I 130919 13:53:02 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.42ms
+[I 130919 13:53:02 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.11ms
+[I 130919 13:53:02 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.07ms
+[W 130919 13:53:03 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.68ms
+[I 130919 13:53:03 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.05ms
+[E 130919 13:53:18 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:53:18 web:1635] 200 GET /group/gs (127.0.0.1) 23.32ms
+[I 130919 13:53:18 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 13:53:18 web:1635] 200 GET /static/style/custom.css?v=3847dc8753a22ac55c5de8758982dda9 (127.0.0.1) 1.33ms
+[I 130919 13:53:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 13:53:18 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.47ms
+[I 130919 13:53:18 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 13:53:18 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130919 13:53:18 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.24ms
+[I 130919 13:53:19 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.10ms
+[W 130919 13:53:19 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.76ms
+[I 130919 13:53:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.39ms
+[E 130919 13:53:29 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:53:29 web:1635] 200 GET /group/gs (127.0.0.1) 23.36ms
+[I 130919 13:53:29 web:1635] 200 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.13ms
+[I 130919 13:53:29 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 13:53:29 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.05ms
+[I 130919 13:53:29 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 13:53:29 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130919 13:53:29 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 13:53:29 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.17ms
+[I 130919 13:53:29 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.08ms
+[W 130919 13:53:29 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.43ms
+[I 130919 13:53:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.42ms
+[E 130919 13:53:52 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:53:52 web:1635] 200 GET /group/gs (127.0.0.1) 19.47ms
+[I 130919 13:53:52 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.33ms
+[I 130919 13:53:52 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.19ms
+[I 130919 13:53:52 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.64ms
+[I 130919 13:53:52 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 7.91ms
+[I 130919 13:53:52 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.10ms
+[I 130919 13:53:52 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 13:53:52 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.08ms
+[W 130919 13:53:52 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.19ms
+[I 130919 13:53:52 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.44ms
+[E 130919 13:55:35 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:55:35 web:1635] 200 GET /group/gs (127.0.0.1) 22.95ms
+[I 130919 13:55:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.53ms
+[I 130919 13:55:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.05ms
+[I 130919 13:55:35 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 13:55:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.47ms
+[I 130919 13:55:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.05ms
+[I 130919 13:55:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.04ms
+[I 130919 13:55:35 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.89ms
+[W 130919 13:55:36 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.73ms
+[I 130919 13:55:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.26ms
+[W 130919 13:55:39 web:1635] 405 POST /group/gs (127.0.0.1) 1.41ms
+[W 130919 13:55:43 web:1635] 404 GET /modules/group.js (127.0.0.1) 0.79ms
+[I 130919 13:55:44 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.17ms
+[E 130919 13:56:10 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 13:56:10 web:1635] 200 GET /group/gs (127.0.0.1) 19.19ms
+[I 130919 13:56:10 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.73ms
+[I 130919 13:56:10 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.35ms
+[I 130919 13:56:10 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.65ms
+[I 130919 13:56:10 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.44ms
+[I 130919 13:56:10 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 13:56:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130919 13:56:10 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.13ms
+[W 130919 13:56:10 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.64ms
+[I 130919 13:56:10 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.28ms
+[W 130919 13:56:12 web:1635] 405 POST /group/gs (127.0.0.1) 1.04ms
+[I 130919 13:56:27 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 13:56:27 main:48]  PDFLabs running server on 5000
+[I 130919 13:56:29 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 13:56:29 main:48]  PDFLabs running server on 5000
+[I 130919 13:56:40 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 13:56:40 main:48]  PDFLabs running server on 5000
+[I 130919 13:56:49 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:08 main:48]  PDFLabs running server on 5000
+[E 130919 14:03:10 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:03:10 web:1635] 200 GET /group/gs (127.0.0.1) 27.04ms
+[I 130919 14:03:10 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.79ms
+[I 130919 14:03:10 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.01ms
+[I 130919 14:03:10 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.39ms
+[I 130919 14:03:10 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.60ms
+[I 130919 14:03:10 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130919 14:03:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.18ms
+[I 130919 14:03:10 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.13ms
+[W 130919 14:03:10 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.13ms
+[I 130919 14:03:11 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.71ms
+[I 130919 14:03:21 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:21 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:24 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:25 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:26 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:26 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:28 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:28 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:29 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:30 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:31 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:31 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:33 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:33 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:36 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:36 main:48]  PDFLabs running server on 5000
+[I 130919 14:03:38 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:03:39 main:48]  PDFLabs running server on 5000
+[I 130919 14:04:10 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:04:52 main:48]  PDFLabs running server on 5000
+[E 130919 14:04:55 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:04:55 web:1635] 304 GET /group/gs (127.0.0.1) 36.11ms
+[I 130919 14:04:55 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 6.07ms
+[I 130919 14:04:55 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.62ms
+[I 130919 14:04:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130919 14:04:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.11ms
+[I 130919 14:04:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 14:04:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.62ms
+[I 130919 14:04:55 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.17ms
+[W 130919 14:04:55 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.15ms
+[I 130919 14:04:56 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.28ms
+[I 130919 14:05:23 web:1635] 302 POST /group/gs (127.0.0.1) 5.67ms
+[E 130919 14:05:23 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:05:23 web:1635] 200 GET /group/gs (127.0.0.1) 25.06ms
+[W 130919 14:05:23 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.70ms
+[I 130919 14:05:24 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.34ms
+[E 130919 14:05:25 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:05:25 web:1635] 200 GET /group/gs/523a9423dc266530772f2dd0 (127.0.0.1) 20.15ms
+[I 130919 14:05:25 web:1635] 304 GET /static/js/app/post.js (127.0.0.1) 1.12ms
+[W 130919 14:05:25 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.42ms
+[I 130919 14:05:25 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.24ms
+[E 130919 14:06:17 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:06:17 web:1635] 304 GET /group/gs/523a9423dc266530772f2dd0 (127.0.0.1) 20.75ms
+[I 130919 14:06:17 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.63ms
+[I 130919 14:06:17 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.69ms
+[I 130919 14:06:17 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 14:06:17 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 14:06:17 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.21ms
+[I 130919 14:06:17 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.21ms
+[I 130919 14:06:17 web:1635] 304 GET /static/js/app/post.js (127.0.0.1) 1.25ms
+[W 130919 14:06:17 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.50ms
+[I 130919 14:06:17 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.17ms
+[E 130919 14:06:19 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:06:19 web:1635] 304 GET /group/gs (127.0.0.1) 24.23ms
+[W 130919 14:06:19 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.83ms
+[I 130919 14:06:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.62ms
+[E 130919 14:06:21 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:06:21 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 19.27ms
+[W 130919 14:06:22 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.73ms
+[I 130919 14:06:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.47ms
+[E 130919 14:06:25 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:06:25 web:1635] 304 GET /group/gs (127.0.0.1) 25.39ms
+[W 130919 14:06:25 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.81ms
+[I 130919 14:06:25 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.53ms
+[E 130919 14:06:29 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:06:29 web:1635] 200 GET /group/gs/523a6ef2dc2665166ea930d5 (127.0.0.1) 19.90ms
+[W 130919 14:06:29 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.66ms
+[I 130919 14:06:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.47ms
+[E 130919 14:06:30 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:06:30 web:1635] 304 GET /group/gs (127.0.0.1) 24.11ms
+[W 130919 14:06:31 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.80ms
+[I 130919 14:06:31 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 3.44ms
+[E 130919 14:06:32 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:06:32 web:1635] 304 GET /group/gs/523a9423dc266530772f2dd0 (127.0.0.1) 20.57ms
+[W 130919 14:06:32 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.79ms
+[I 130919 14:06:32 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.41ms
+[E 130919 14:06:33 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:06:33 web:1635] 304 GET /group/gs (127.0.0.1) 21.88ms
+[W 130919 14:06:34 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.76ms
+[I 130919 14:06:34 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.03ms
+[E 130919 14:06:35 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:06:35 web:1635] 304 GET /group/gs/523a6ef2dc2665166ea930d5 (127.0.0.1) 21.02ms
+[W 130919 14:06:35 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.81ms
+[I 130919 14:06:35 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.34ms
+[E 130919 14:06:36 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:06:36 web:1635] 304 GET /group/gs (127.0.0.1) 22.21ms
+[W 130919 14:06:36 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.89ms
+[I 130919 14:06:36 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[I 130919 14:06:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:06:43 main:48]  PDFLabs running server on 5000
+[I 130919 14:06:54 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:06:54 main:48]  PDFLabs running server on 5000
+[I 130919 14:06:55 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:06:55 main:48]  PDFLabs running server on 5000
+[I 130919 14:07:00 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:07:00 main:48]  PDFLabs running server on 5000
+[E 130919 14:07:06 web:1228] Uncaught exception GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/523a6afedc2665166ea930d4', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs', 'Cookie': 'type=ZG91YmFu|1379344051|5349381be7ebcdc8c4484c6895d83a85aa1c141d; userid=MjAxMzA5MTYyM3gwNzI4|1379344051|50c5880467edc069e47774fa1218c3c47f16d45a', 'If-None-Match': '"8451dff567dc07fe1ab438dcaa17fa3dbefa6b1f"'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 12, in get
+        page_heading=post.title,
+    AttributeError: 'QuerySet' object has no attribute 'title'
+[E 130919 14:07:06 web:1635] 500 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 8.22ms
+[I 130919 14:07:14 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:07:14 main:48]  PDFLabs running server on 5000
+[I 130919 14:07:16 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:07:17 main:48]  PDFLabs running server on 5000
+[E 130919 14:07:18 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:07:18 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 26.64ms
+[I 130919 14:07:18 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.95ms
+[I 130919 14:07:18 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 14:07:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.31ms
+[I 130919 14:07:18 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 14:07:18 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.97ms
+[I 130919 14:07:18 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.02ms
+[I 130919 14:07:19 web:1635] 304 GET /static/js/app/post.js (127.0.0.1) 1.31ms
+[W 130919 14:07:19 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.67ms
+[I 130919 14:07:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 14:07:21 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:07:21 web:1635] 304 GET /group/gs (127.0.0.1) 24.55ms
+[W 130919 14:07:21 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.66ms
+[I 130919 14:07:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.06ms
+[E 130919 14:07:23 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:07:23 web:1635] 200 GET /group/gs/523a6ef2dc2665166ea930d5 (127.0.0.1) 20.46ms
+[W 130919 14:07:23 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.12ms
+[I 130919 14:07:23 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.43ms
+[E 130919 14:07:25 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:07:25 web:1635] 304 GET /group/gs (127.0.0.1) 23.32ms
+[W 130919 14:07:26 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.37ms
+[I 130919 14:07:26 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.41ms
+[E 130919 14:07:28 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:07:28 web:1635] 200 GET /group/gs/523a9423dc266530772f2dd0 (127.0.0.1) 24.31ms
+[W 130919 14:07:28 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.15ms
+[I 130919 14:07:28 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.20ms
+[E 130919 14:07:29 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:07:29 web:1635] 304 GET /group/gs (127.0.0.1) 23.53ms
+[W 130919 14:07:30 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.87ms
+[I 130919 14:07:30 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.28ms
+[E 130919 14:07:31 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:07:31 web:1635] 304 GET /group/gs/523a6ef2dc2665166ea930d5 (127.0.0.1) 22.14ms
+[W 130919 14:07:31 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.41ms
+[I 130919 14:07:31 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.41ms
+[E 130919 14:07:33 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:07:33 web:1635] 304 GET /group/gs (127.0.0.1) 23.75ms
+[W 130919 14:07:33 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.81ms
+[I 130919 14:07:33 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.40ms
+[E 130919 14:08:27 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:08:27 web:1635] 304 GET /group/gs (127.0.0.1) 22.84ms
+[I 130919 14:08:28 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 14:08:28 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.55ms
+[I 130919 14:08:28 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130919 14:08:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.12ms
+[I 130919 14:08:28 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130919 14:08:28 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.13ms
+[I 130919 14:08:28 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.14ms
+[W 130919 14:08:28 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.33ms
+[I 130919 14:08:28 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.24ms
+[E 130919 14:08:28 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:08:28 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 22.78ms
+[W 130919 14:08:29 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.87ms
+[I 130919 14:08:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.59ms
+[E 130919 14:09:04 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:09:04 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 20.59ms
+[I 130919 14:09:04 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.81ms
+[I 130919 14:09:04 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 2.45ms
+[I 130919 14:09:04 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.20ms
+[I 130919 14:09:04 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 5.30ms
+[I 130919 14:09:04 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.68ms
+[I 130919 14:09:04 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 14:09:04 web:1635] 304 GET /static/js/app/post.js (127.0.0.1) 0.89ms
+[W 130919 14:09:04 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.52ms
+[I 130919 14:09:04 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.57ms
+[W 130919 14:09:19 web:1635] 405 POST /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 5.15ms
+[I 130919 14:09:59 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130919 14:11:27 main:48]  PDFLabs running server on 5000
+[I 130919 14:11:30 web:1635] 302 POST /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 12.95ms
+[E 130919 14:11:30 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:11:30 web:1635] 200 GET /group/gs (127.0.0.1) 28.09ms
+[W 130919 14:11:30 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.46ms
+[I 130919 14:11:30 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.52ms
+[E 130919 14:11:31 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:11:31 web:1635] 304 GET /group/gs (127.0.0.1) 38.71ms
+[I 130919 14:11:31 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.16ms
+[I 130919 14:11:31 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.23ms
+[I 130919 14:11:31 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130919 14:11:31 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130919 14:11:31 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 14:11:31 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 14:11:31 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.29ms
+[W 130919 14:11:31 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.77ms
+[I 130919 14:11:32 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[I 130919 14:19:55 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:19:55 main:48]  PDFLabs running server on 5000
+[I 130919 14:20:11 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130919 14:22:26 main:48]  PDFLabs running server on 5000
+[E 130919 14:22:28 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:22:28 web:1635] 200 GET /group/gs (127.0.0.1) 26.60ms
+[I 130919 14:22:28 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.26ms
+[I 130919 14:22:28 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.29ms
+[I 130919 14:22:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130919 14:22:28 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.44ms
+[I 130919 14:22:28 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.14ms
+[I 130919 14:22:28 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.12ms
+[I 130919 14:22:28 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.15ms
+[W 130919 14:22:28 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.23ms
+[I 130919 14:22:28 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.46ms
+[E 130919 14:22:34 group_handler:43] title is none
+[I 130919 14:22:34 web:1635] 302 POST /group/gs (127.0.0.1) 3.33ms
+[E 130919 14:22:34 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:22:34 web:1635] 200 GET /group/gs (127.0.0.1) 24.41ms
+[W 130919 14:22:34 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.24ms
+[I 130919 14:22:34 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.21ms
+[E 130919 14:22:37 group_handler:43] title is none
+[I 130919 14:22:37 web:1635] 302 POST /group/gs (127.0.0.1) 3.32ms
+[E 130919 14:22:37 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:22:37 web:1635] 200 GET /group/gs (127.0.0.1) 29.28ms
+[W 130919 14:22:37 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.37ms
+[I 130919 14:22:37 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.23ms
+[I 130919 14:22:59 autoreload:186] /home/zheng/github/PDFLabs/models/posts.py modified; restarting server
+[I 130919 14:22:59 main:48]  PDFLabs running server on 5000
+[I 130919 14:23:02 autoreload:186] /home/zheng/github/PDFLabs/models/posts.py modified; restarting server
+[I 130919 14:23:03 main:48]  PDFLabs running server on 5000
+[E 130919 14:23:05 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:23:05 web:1635] 200 GET /group/gs (127.0.0.1) 26.10ms
+[I 130919 14:23:05 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.60ms
+[I 130919 14:23:05 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.29ms
+[I 130919 14:23:05 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 14:23:05 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130919 14:23:05 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130919 14:23:05 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130919 14:23:05 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.14ms
+[W 130919 14:23:05 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.33ms
+[I 130919 14:23:05 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.51ms
+[I 130919 14:23:44 web:1635] 302 POST /group/gs (127.0.0.1) 7.31ms
+[E 130919 14:23:44 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:23:44 web:1635] 200 GET /group/gs (127.0.0.1) 28.26ms
+[W 130919 14:23:44 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.33ms
+[I 130919 14:23:45 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.40ms
+[I 130919 14:24:30 web:1635] 302 POST /group/gs (127.0.0.1) 6.30ms
+[E 130919 14:24:30 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:24:30 web:1635] 200 GET /group/gs (127.0.0.1) 31.71ms
+[W 130919 14:24:30 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.62ms
+[I 130919 14:24:30 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.30ms
+[E 130919 14:25:14 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:25:14 web:1635] 200 GET /group/gs (127.0.0.1) 25.96ms
+[I 130919 14:25:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.49ms
+[I 130919 14:25:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.01ms
+[I 130919 14:25:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 14:25:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.35ms
+[I 130919 14:25:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.96ms
+[I 130919 14:25:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 14:25:14 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.13ms
+[W 130919 14:25:14 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.50ms
+[I 130919 14:25:15 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.29ms
+[E 130919 14:25:26 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:25:26 web:1635] 200 GET /group/gs (127.0.0.1) 34.90ms
+[I 130919 14:25:26 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.66ms
+[I 130919 14:25:26 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130919 14:25:26 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.22ms
+[I 130919 14:25:26 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 14:25:26 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.95ms
+[I 130919 14:25:26 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.12ms
+[I 130919 14:25:27 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.87ms
+[W 130919 14:25:27 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.76ms
+[I 130919 14:25:27 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.42ms
+[E 130919 14:25:35 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:25:35 web:1635] 200 GET /group/gs (127.0.0.1) 29.29ms
+[I 130919 14:25:35 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.70ms
+[I 130919 14:25:35 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.09ms
+[I 130919 14:25:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 14:25:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.46ms
+[I 130919 14:25:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.18ms
+[I 130919 14:25:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.08ms
+[I 130919 14:25:35 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 1.18ms
+[W 130919 14:25:35 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.19ms
+[I 130919 14:25:35 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.45ms
+[E 130919 14:25:49 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:25:49 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 22.55ms
+[W 130919 14:25:49 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 2.26ms
+[I 130919 14:25:49 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.54ms
+[E 130919 14:25:51 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:25:51 web:1635] 304 GET /group/gs (127.0.0.1) 32.05ms
+[W 130919 14:25:51 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.86ms
+[I 130919 14:25:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.48ms
+[E 130919 14:25:54 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:25:54 web:1635] 200 GET /group/rs (127.0.0.1) 22.43ms
+[W 130919 14:25:54 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.68ms
+[I 130919 14:25:54 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.27ms
+[I 130919 14:26:56 web:1635] 302 POST /group/rs (127.0.0.1) 5.64ms
+[E 130919 14:26:56 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:26:56 web:1635] 200 GET /group/rs (127.0.0.1) 26.69ms
+[W 130919 14:26:56 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.62ms
+[I 130919 14:26:56 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.35ms
+[E 130919 14:27:01 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:27:01 web:1635] 304 GET /group/gs (127.0.0.1) 26.79ms
+[W 130919 14:27:01 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.86ms
+[I 130919 14:27:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.07ms
+[E 130919 14:27:45 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:27:45 web:1635] 200 GET /group/gs (127.0.0.1) 27.74ms
+[I 130919 14:27:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.35ms
+[I 130919 14:27:45 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.20ms
+[I 130919 14:27:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130919 14:27:45 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.72ms
+[I 130919 14:27:45 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130919 14:27:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130919 14:27:45 web:1635] 304 GET /static/js/app/group.js (127.0.0.1) 0.96ms
+[W 130919 14:27:45 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.43ms
+[I 130919 14:27:46 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.36ms
+[W 130919 14:27:53 web:1635] 404 GET /home (127.0.0.1) 0.82ms
+[W 130919 14:27:56 web:1635] 404 GET /modules/group.js (127.0.0.1) 0.85ms
+[I 130919 14:27:56 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.41ms
+[E 130919 14:27:58 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:27:58 web:1635] 304 GET /group/gs (127.0.0.1) 27.72ms
+[W 130919 14:27:59 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.43ms
+[I 130919 14:27:59 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.07ms
+[E 130919 14:28:01 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:28:01 web:1635] 200 GET /group/rs (127.0.0.1) 23.12ms
+[W 130919 14:28:01 web:1635] 404 GET /modules/group.js (127.0.0.1) 2.26ms
+[I 130919 14:28:01 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.49ms
+[E 130919 14:28:02 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:28:02 web:1635] 304 GET /group/gs (127.0.0.1) 31.83ms
+[W 130919 14:28:03 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.63ms
+[I 130919 14:28:03 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.34ms
+[E 130919 14:28:05 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:28:05 web:1635] 304 GET /group/rs (127.0.0.1) 22.82ms
+[W 130919 14:28:05 web:1635] 404 GET /modules/group.js (127.0.0.1) 3.29ms
+[I 130919 14:28:05 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.40ms
+[E 130919 14:28:06 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:28:06 web:1635] 304 GET /group/gs (127.0.0.1) 29.18ms
+[W 130919 14:28:07 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.83ms
+[I 130919 14:28:07 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.25ms
+[E 130919 14:28:12 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:28:12 web:1635] 200 GET /group/gs/523a9870dc26653242cbea24 (127.0.0.1) 25.74ms
+[W 130919 14:28:13 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.70ms
+[I 130919 14:28:13 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.74ms
+[E 130919 14:28:18 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/group'
+[I 130919 14:28:18 web:1635] 304 GET /group/gs (127.0.0.1) 26.11ms
+[W 130919 14:28:18 web:1635] 404 GET /modules/group.js (127.0.0.1) 1.79ms
+[I 130919 14:28:19 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.44ms
+[E 130919 14:28:22 web:2148] Could not open static file '/home/zheng/github/PDFLabs/static/js/app/post'
+[I 130919 14:28:22 web:1635] 304 GET /group/gs/523a9870dc26653242cbea24 (127.0.0.1) 21.19ms
+[W 130919 14:28:22 web:1635] 404 GET /group/modules/post.js (127.0.0.1) 1.74ms
+[I 130919 14:28:22 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 6.01ms
