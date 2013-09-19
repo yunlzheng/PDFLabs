@@ -39,3 +39,16 @@ class BookHandler(BaseHandler):
                 book.update_at=datetime.datetime.now()
                 book.save()
         self.redirect("/book/" + bookid)
+
+
+class PreviewHandler(BaseHandler):
+
+    @tornado.gen.coroutine
+    def get(self, bookid):
+        book = Book.objects(bid = bookid)[0]
+        self.render(
+            "preview.html",
+            page_heading=book['title'],
+            book=book,
+            groups = self.get_groups()
+        )

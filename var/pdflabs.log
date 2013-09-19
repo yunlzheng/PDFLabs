@@ -18604,3 +18604,169 @@
 [I 130919 16:20:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
 [I 130919 16:20:14 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.18ms
 [I 130919 16:20:14 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.06ms
+[I 130919 16:26:08 main:48]  PDFLabs running server on 5000
+[I 130919 16:26:10 web:1635] 304 GET /sigin (127.0.0.1) 4.26ms
+[I 130919 16:26:11 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.78ms
+[I 130919 16:26:11 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.26ms
+[I 130919 16:26:11 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.09ms
+[I 130919 16:26:11 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 2.77ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.15ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.10ms
+[I 130919 16:26:12 web:1635] 304 GET /group/rs (127.0.0.1) 20.02ms
+[I 130919 16:26:12 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.72ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.27ms
+[I 130919 16:26:12 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.50ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.35ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.48ms
+[I 130919 16:26:12 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130919 16:26:12 web:1635] 304 GET /static/js/app/group.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.26ms
+[I 130919 16:26:13 web:1635] 200 GET / (127.0.0.1) 35.77ms
+[I 130919 16:26:15 web:1635] 304 GET /book?tag=shared (127.0.0.1) 184.59ms
+[I 130919 16:26:16 web:1635] 304 GET /group/gs (127.0.0.1) 31.03ms
+[I 130919 16:26:16 web:1635] 304 GET /book/find (127.0.0.1) 16.29ms
+[I 130919 16:26:16 web:1635] 304 GET /static/js/module/find.js (127.0.0.1) 1.20ms
+[I 130919 16:26:18 web:1635] 304 GET /group/rs (127.0.0.1) 21.20ms
+[I 130919 16:26:19 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 181.84ms
+[I 130919 16:26:20 web:1635] 304 GET / (127.0.0.1) 33.22ms
+[I 130919 16:26:21 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 182.53ms
+[I 130919 16:26:23 web:1635] 304 GET /group/rs (127.0.0.1) 22.72ms
+[I 130919 16:26:23 web:1635] 304 GET /book/find (127.0.0.1) 19.27ms
+[I 130919 16:26:25 web:1635] 304 GET / (127.0.0.1) 38.44ms
+[I 130919 16:26:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/web.py modified; restarting server
+[I 130919 16:30:14 main:48]  PDFLabs running server on 5000
+[I 130919 16:30:17 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 16:30:17 main:48]  PDFLabs running server on 5000
+[I 130919 16:30:41 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/book.py modified; restarting server
+[I 130919 16:30:42 main:48]  PDFLabs running server on 5000
+[I 130919 16:30:45 autoreload:186] /home/zheng/github/PDFLabs/handlers/book/book.py modified; restarting server
+[I 130919 16:30:45 main:48]  PDFLabs running server on 5000
+[I 130919 16:30:52 web:1635] 304 GET / (127.0.0.1) 39.84ms
+[I 130919 16:30:53 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 4.76ms
+[I 130919 16:30:53 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.21ms
+[I 130919 16:30:53 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130919 16:30:53 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130919 16:30:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.20ms
+[I 130919 16:30:53 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.35ms
+[I 130919 16:30:55 web:1635] 200 GET /book/20429677 (127.0.0.1) 22.59ms
+[I 130919 16:30:56 web:1635] 304 GET /static/js/module/book.js (127.0.0.1) 0.97ms
+[E 130919 16:30:56 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 16:30:56 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 14.31ms
+[I 130919 16:31:20 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 16:31:21 main:48]  PDFLabs running server on 5000
+[I 130919 16:31:23 autoreload:186] /home/zheng/github/PDFLabs/routers.py modified; restarting server
+[I 130919 16:31:23 main:48]  PDFLabs running server on 5000
+[I 130919 16:31:57 web:1635] 304 GET /book/20429677 (127.0.0.1) 23.26ms
+[I 130919 16:31:57 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.63ms
+[I 130919 16:31:57 web:1635] 304 GET /static/style/flexpaper.css?v=04ab4c6ccb8e5892910c3a7a1dab4148 (127.0.0.1) 1.28ms
+[I 130919 16:31:57 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.47ms
+[I 130919 16:31:57 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.05ms
+[I 130919 16:31:57 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.37ms
+[I 130919 16:31:57 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.58ms
+[I 130919 16:31:57 web:1635] 304 GET /static/js/app/book.js?v=5259a5eb918870b19040898e56eb1e09 (127.0.0.1) 1.29ms
+[I 130919 16:31:57 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.94ms
+[E 130919 16:31:57 web:1228] Uncaught exception GET /api/book/20429677 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/20429677', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/20429677', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 16:31:57 web:1635] 500 GET /api/book/20429677 (127.0.0.1) 23.85ms
+[I 130919 16:32:05 web:1635] 304 GET / (127.0.0.1) 36.48ms
+[I 130919 16:32:07 web:1635] 200 GET /book/4262627 (127.0.0.1) 25.27ms
+[E 130919 16:32:07 web:1228] Uncaught exception GET /api/book/4262627 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/4262627', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/4262627', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 16:32:07 web:1635] 500 GET /api/book/4262627 (127.0.0.1) 7.73ms
+[I 130919 16:32:09 web:1635] 304 GET / (127.0.0.1) 35.82ms
+[I 130919 16:32:16 web:1635] 200 GET /book/3420144 (127.0.0.1) 24.20ms
+[E 130919 16:32:16 web:1228] Uncaught exception GET /api/book/3420144 (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/api/book/3420144', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/book/3420144', 'Content-Type': 'application/json'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1144, in _when_complete
+        if result.result() is not None:
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 129, in result
+        raise_exc_info(self.__exc_info)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/stack_context.py", line 302, in wrapped
+        ret = fn(*args, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 550, in inner
+        self.set_result(key, result)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 476, in set_result
+        self.run()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 505, in run
+        yielded = self.gen.throw(*exc_info)
+      File "/home/zheng/github/PDFLabs/handlers/api/book.py", line 49, in get
+        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 496, in run
+        next = self.yield_point.get_result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/gen.py", line 395, in get_result
+        return self.runner.pop_result(self.key).result()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/concurrent.py", line 65, in result
+        raise self._exception
+    gaierror: [Errno -5] No address associated with hostname
+[E 130919 16:32:16 web:1635] 500 GET /api/book/3420144 (127.0.0.1) 7.53ms
+[I 130919 16:32:22 web:1635] 304 GET / (127.0.0.1) 35.10ms
+[I 130919 16:32:26 web:1635] 304 GET /book?tag=shared (127.0.0.1) 190.79ms
+[I 130919 16:32:28 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 181.26ms
+[I 130919 16:32:30 web:1635] 304 GET /book?tag=hot (127.0.0.1) 186.08ms

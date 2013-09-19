@@ -19,6 +19,16 @@ class UUIDMixin():
         date = datetime.datetime.now()
         return date.strftime("%Y%m%d%Hx%M%S")
 
+
+class AuthenticateHandler(BaseHandler):
+
+    ''' redirect to the login page '''
+    def get(self):
+        self.render(
+            "sigin.html",
+            page_heading='PDFLabs 登录'
+        )
+
 class LogoutHandler(BaseHandler):
 
     # clear the cookie and redirect to home page'
