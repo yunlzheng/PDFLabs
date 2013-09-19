@@ -18541,3 +18541,66 @@
 [I 130919 16:06:43 web:1635] 304 GET /group/gs (127.0.0.1) 31.98ms
 [I 130919 16:06:45 web:1635] 304 GET /group/rs (127.0.0.1) 23.68ms
 [I 130919 16:06:47 web:1635] 304 GET /book/find (127.0.0.1) 13.94ms
+[I 130919 16:07:36 main:48]  PDFLabs running server on 5000
+[I 130919 16:07:39 web:1635] 304 GET /book/find (127.0.0.1) 17.56ms
+[I 130919 16:07:39 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.24ms
+[I 130919 16:07:39 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.53ms
+[I 130919 16:07:39 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130919 16:07:39 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.27ms
+[I 130919 16:07:39 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130919 16:07:40 web:1635] 304 GET /static/js/app/find.js?v=c6561f0f6f3c6ef5fa7489d94b3f2d02 (127.0.0.1) 1.29ms
+[I 130919 16:07:43 web:1635] 304 GET /group/gs (127.0.0.1) 29.39ms
+[I 130919 16:07:45 web:1635] 304 GET /group/rs (127.0.0.1) 22.26ms
+[I 130919 16:07:49 web:1635] 304 GET /book?tag=shared (127.0.0.1) 180.92ms
+[I 130919 16:07:51 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 182.47ms
+[I 130919 16:07:53 web:1635] 304 GET /book?tag=hot (127.0.0.1) 186.13ms
+[I 130919 16:07:55 web:1635] 304 GET /group/rs (127.0.0.1) 25.30ms
+[I 130919 16:07:57 web:1635] 304 GET /group/gs (127.0.0.1) 25.61ms
+[I 130919 16:07:58 web:1635] 304 GET /book/find (127.0.0.1) 14.20ms
+[I 130919 16:08:00 web:1635] 304 GET /book/find (127.0.0.1) 13.45ms
+[I 130919 16:08:00 web:1635] 304 GET /book/find (127.0.0.1) 14.68ms
+[I 130919 16:08:01 web:1635] 304 GET /book/find (127.0.0.1) 15.90ms
+[I 130919 16:08:01 web:1635] 304 GET /book/find (127.0.0.1) 22.43ms
+[I 130919 16:08:01 web:1635] 304 GET /book/find (127.0.0.1) 19.69ms
+[I 130919 16:08:01 web:1635] 304 GET /book/find (127.0.0.1) 20.34ms
+[I 130919 16:08:22 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 208.68ms
+[I 130919 16:08:24 web:1635] 304 GET /book?tag=shared (127.0.0.1) 207.24ms
+[I 130919 16:08:27 web:1635] 304 GET /book?tag=hot (127.0.0.1) 186.08ms
+[I 130919 16:08:45 web:1635] 200 GET /book?tag=hot (127.0.0.1) 179.93ms
+[I 130919 16:08:45 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 1.77ms
+[I 130919 16:08:45 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.22ms
+[I 130919 16:08:45 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.10ms
+[I 130919 16:08:45 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.53ms
+[I 130919 16:08:48 web:1635] 200 GET /book?tag=waiting (127.0.0.1) 187.04ms
+[I 130919 16:08:51 web:1635] 200 GET /book?tag=shared (127.0.0.1) 187.48ms
+[I 130919 16:08:53 web:1635] 304 GET /book?tag=hot (127.0.0.1) 191.56ms
+[I 130919 16:08:56 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 185.21ms
+[I 130919 16:08:58 web:1635] 304 GET /book?tag=shared (127.0.0.1) 180.52ms
+[I 130919 16:10:37 web:1635] 304 GET /book?tag=waiting (127.0.0.1) 175.96ms
+[I 130919 16:10:39 web:1635] 304 GET /group/gs (127.0.0.1) 29.32ms
+[I 130919 16:10:39 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.31ms
+[I 130919 16:10:40 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.12ms
+[I 130919 16:10:41 web:1635] 304 GET /group/rs (127.0.0.1) 23.54ms
+[I 130919 16:10:43 web:1635] 304 GET /group/gs (127.0.0.1) 27.00ms
+[I 130919 16:10:48 web:1635] 304 GET /group/rs (127.0.0.1) 22.64ms
+[I 130919 16:11:50 web:1635] 304 GET /sigin (127.0.0.1) 3.20ms
+[I 130919 16:14:08 autoreload:186] /home/zheng/github/PDFLabs/handlers/service.py modified; restarting server
+[I 130919 16:17:33 main:48]  PDFLabs running server on 5000
+[I 130919 16:17:45 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/user.py modified; restarting server
+[I 130919 16:17:45 main:48]  PDFLabs running server on 5000
+[I 130919 16:18:47 web:1635] 304 GET /sigin (127.0.0.1) 5.17ms
+[I 130919 16:18:47 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 5.31ms
+[I 130919 16:18:47 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.12ms
+[I 130919 16:18:47 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.23ms
+[I 130919 16:18:47 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 3.22ms
+[I 130919 16:20:02 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/user.py modified; restarting server
+[I 130919 16:20:03 main:48]  PDFLabs running server on 5000
+[I 130919 16:20:11 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/user.py modified; restarting server
+[I 130919 16:20:11 main:48]  PDFLabs running server on 5000
+[I 130919 16:20:12 autoreload:186] /home/zheng/github/PDFLabs/handlers/api/user.py modified; restarting server
+[I 130919 16:20:12 main:48]  PDFLabs running server on 5000
+[I 130919 16:20:14 web:1635] 304 GET /sigin (127.0.0.1) 4.94ms
+[I 130919 16:20:14 web:1635] 304 GET /static/style/bootstrap.css?v=557c5c26af5665b21808bf2e9c9b0e8d (127.0.0.1) 6.01ms
+[I 130919 16:20:14 web:1635] 304 GET /static/style/custom.css?v=0d74b645a9c06e88539f854db51e9679 (127.0.0.1) 1.24ms
+[I 130919 16:20:14 web:1635] 304 GET /static/img/Red-signin_Long_base_44dp.png (127.0.0.1) 1.18ms
+[I 130919 16:20:14 web:1635] 304 GET /static/img/raster.png (127.0.0.1) 1.06ms
