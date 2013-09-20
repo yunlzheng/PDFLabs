@@ -1,0 +1,106 @@
+{% extends "../main.html" %}
+{% autoescape None %}
+{% block body %}
+<div class="row-fluid">
+<div class="span9">
+<div class="row-fluid group">
+  <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
+  {% if current_user %}
+      <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+  {% else %}
+      <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
+  {% end %}
+
+  <br/>
+  <span class="subtitle">{{ post.group.description }}</span>
+  <hr>
+  <div class="post-list">
+    <div class="post-item">
+      <div class="post-image">
+          <img src="/static/images/avatar.jpg"/>
+      </div>
+      <div class="post">
+        <div class="post-title">
+          <a>{{ post.title }}</a>
+        </div>
+        <div class="post-info">
+          <span class="post-author">post.author.name</span>
+          <div class="post-last-comment">
+              22天前
+          </div>
+        </div>
+      </div>
+      <div class="post-comments-count">
+        <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
+      </div>
+      <div class='clearfix'></div>
+    </div>
+  </div>
+  <div class="post-content">
+      <hr/>
+      <p class="">{{ post.content }}</p>
+      <hr/>
+      <br/>
+  </div>
+  <h8><b class="icon-list-alt"></b>回复:</h8>
+  <div class="comments">
+    {% for comment in post.comments %}
+      <div class="comment">
+        <div class="row-fluid">
+          <div class="span1"><img src="{{ comment.author.avatar }}"/></div>
+          <div class="span11">
+              <p class="comment-info"><b>{{comment.author.name}}</b> 发表与 <b>{{ comment.create_at }}</b></p>
+              <p>{{ comment.content }}</p>
+          </div>
+        </div>
+      </div>
+    {% end %}
+    {% if not post.comments %}
+        <p>快来抢沙发了</p>
+    {% end %}
+  </div>
+  <div class="comment-publish">
+    <form action="" method="post">
+      <textarea class="comment-content" name="content"></textarea>
+      {% if current_user %}
+        <button type="submit" class='btn btn-publish'>发布</button>
+      {% else %}
+        <button class='btn btn-publish' disabled>发布</button>
+      {% end %}
+    </form>
+  </div>
+</div>
+<div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <form id="publish-post-form" class="form-horizontal" action="/group/{{ post.group.tag}}" method="post">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 >发表帖子</h4>
+  </div>
+  <div class="modal-body">
+      <div class="control-group">
+        <label class="control-label">标题</label>
+        <div class="controls">
+          <input type="text" name="title" class="input-large" laceholder="帖子的标题">
+        </div>
+      </div>
+      <div class="control-group">
+        <label class="control-label">内容</label>
+        <div class="controls">
+          <textarea name="content" class="input-large" placeholder="帖子的内容"  rows=8></textarea>
+        </div>
+      </div>
+
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button type="submit" class="btn btn-primary">发表</button>
+  </div>
+  </form>
+</div>
+</div>
+<div class="span3">
+    <!-- guang gao wei-->
+</div>
+</div>
+<script data-main="{{ static_url("js/app/post.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+{% end %}

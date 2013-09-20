@@ -1,4 +1,4 @@
-{% extends "main.html" %}
+{% extends "../main.html" %}
 {% autoescape None %}
 {% block body %}
 <script type="text/javascript">
@@ -22,7 +22,7 @@
 		<label id="book_authors"><b>作者:</b>
 		</label>
 		<label>
-			<b>出版商:</b><span id="book_publisher">{{ book.publisher }}</span>	
+			<b>出版商:</b><span id="book_publisher">{{ book.publisher }}</span>
 		</label>
 		<label>
 			<b>出版日期:</b><span id="book_publisher"></span>
@@ -38,7 +38,7 @@
 <br/>
 <div class="row-fulid">
    <h5>
-   	共享的文件  
+   	共享的文件
    	{% if current_user %}
    	<a class="btn" id="btn_share" title="我要分享" data-toggle='modal' href='#myModal'><i class="icon-hand-up"></i>我要分享
    	</a>
@@ -57,15 +57,15 @@
 	    		<button class="btn"><i class="icon-thumbs-down"></i></button>
 	    	</li>
 	    {% else %}
-	    	 <li>由{{ file.author.name }}提供   
+	    	 <li>由{{ file.author.name }}提供
 	          	<a href="/{{ file.file_address }}" target="_blank">下载</a>&nbsp;
-	          	<a href="/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li>
+	          	<a href="/book/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li>
 	          	&nbsp;&nbsp;&nbsp;
 	          	<button class="btn"><i class="icon-thumbs-up"></i></button>
 	    	<button class="btn"><i class="icon-thumbs-down"></i></button>
 	          	<br/>
 	    {% end %}
-	    
+
    	{% end %}
    {% else %}
    	暂时未提供相关分享
@@ -117,7 +117,7 @@
 	    </div>
 	  </div>
 	</div>
-	
+
    </form>
   </div>
   <div class="modal-footer">
@@ -126,5 +126,5 @@
   </div>
   </div>
  <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/flexpaper.css") }}">
-<script data-main="{{ static_url("js/app/book") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="{{ static_url("js/app/book.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

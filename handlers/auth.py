@@ -1,24 +1,48 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
+import datetime
 import urllib
 import urllib2
 import tornado.web
 import tornado.gen
 import tornado.httpclient
-import datetime
 from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import *
 
 from handlers import BaseHandler
-from models.users import User 
+from models.users import User
 
 class UUIDMixin():
 
     def generate_uuid(self):
-
         date = datetime.datetime.now()
         return date.strftime("%Y%m%d%Hx%M%S")
+
+
+class AuthenticateHandler(BaseHandler):
+
+    ''' redirect to the login page '''
+    def get(self):
+        self.render(
+            "sigin.html",
+            page_heading='PDFLabs 登录'
+        )
+
+    def post(self):
+        email = self.get_argument('email').decode()
+        password = self.get_argument('password').decode()
+        try:
+            user = User.objects(email=email, password=password)[0]
+            if not user:
+                self.redirect('/sigin')
+        except Exception as ex:
+            app_log.error(ex)
+            self.redirect('/sigin')
+        else:
+            self.set_secure_cookie('userid', user.uid)
+            self.redirect('/')
+
 
 class LogoutHandler(BaseHandler):
 
@@ -42,12 +66,12 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
                 user = User.objects(type='google', email=result['email'])[0]
             except Exception as ex:
                 app_log.error(ex)
-                user = User(uid=self.generate_uuid(), 
-                            type='google', 
-                            email=result['email'], 
+                user = User(uid=self.generate_uuid(),
+                            type='google',
+                            email=result['email'],
                             name=result['name'])
                 user.save()
-            
+
             self.set_secure_cookie('userid', user.uid)
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")
@@ -69,7 +93,7 @@ class DoubanCallbackHandler(BaseHandler):
     # get the params of douban callback
     @tornado.gen.coroutine
     def get(self):
-        
+
         code = self.get_argument('code')
         url = options.douban_auth_url + "/token"
         values = {
@@ -91,13 +115,13 @@ class DoubanCallbackHandler(BaseHandler):
             request2.add_header('Authorization', 'Bearer ' + access_token)
             response2 = urllib2.urlopen(request2)
             account = json.loads(response2.read())
-            
+
             try:
                 user = User.objects(type='douban', uid=uid)[0]
             except Exception, e:
                 app_log.error(e)
-                user = User(uid=account_json['uid'], 
-                        type='douban', 
+                user = User(uid=account_json['uid'],
+                        type='douban',
                         name=account['name'],
                         avatar=account['avatar'],
                         access_token=data['access_token'],
@@ -107,7 +131,7 @@ class DoubanCallbackHandler(BaseHandler):
                 user.refresh_token = refresh_token
             finally:
                 user.save()
-                
+
             self.set_secure_cookie('userid', user.uid)
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")

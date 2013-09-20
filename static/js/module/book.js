@@ -1,11 +1,11 @@
-define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap","flexpaper","flexpaper_handlers"], function($,application,client) {
+define(["jquery","application", "module/ajax_client" ,"flexpaper","flexpaper_handlers"], function($,application,client) {
     //the jquery.alpha.js and jquery.beta.js plugins have been loaded.
     $(function() {
             $("#alert-ilike-success").hide();
             client.load_book(bookid,success);
             $('#documentViewer').FlexPaperViewer(
                     { config : {
-                             
+
                              SwfFile : escape('/static/doc/'+bookid+'.swf'),
                              localeChain: '/en_US/'
             }});
@@ -37,10 +37,10 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap","fle
               });
 
             });
-            
+
     });
 
-   
+
 
     function success(result,statusText,jqXHR){
 
@@ -59,7 +59,7 @@ define(["jquery","application", "module/ajax_client" ,"bootstrap/bootstrap","fle
     	   var tag = result.tags[i];
            	   $("#book_tags").append('<span class="label">'+tag.name+'</span>&nbsp;');
 	}
-    	
+
     }
 
 });

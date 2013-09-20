@@ -8,7 +8,6 @@
 import os
 import os.path
 
-import motor
 import tornado.escape
 import tornado.httpserver
 import tornado.ioloop

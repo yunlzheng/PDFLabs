@@ -73,7 +73,7 @@ class WeiXinHandler(tornado.web.RequestHandler,):
                 del weather[2]
                 del weather[2]
                 del weather[6]
-                del weather[6]         
+                del weather[6]
                 for item in weather[0:-10]:
                     weather_content += item.firstChild.nodeValue + "\n"
                 weather_content = weather_content.encode('utf8')
@@ -81,12 +81,12 @@ class WeiXinHandler(tornado.web.RequestHandler,):
             else:
                 response_content = content
         response = '''<xml>
-		 <ToUserName><![CDATA[{0}]]></ToUserName>
-		 <FromUserName><![CDATA[gh_ca049f6f6b07]]></FromUserName>
-		 <CreateTime>12345678</CreateTime>
-		 <MsgType><![CDATA[{1}]]></MsgType>
-		 <Content><![CDATA[{2}]]></Content>
-	        </xml>'''
+         <ToUserName><![CDATA[{0}]]></ToUserName>
+         <FromUserName><![CDATA[gh_ca049f6f6b07]]></FromUserName>
+         <CreateTime>12345678</CreateTime>
+         <MsgType><![CDATA[{1}]]></MsgType>
+         <Content><![CDATA[{2}]]></Content>
+            </xml>'''
 
         response = response.format(
             fromUserName, msgType, response_content)

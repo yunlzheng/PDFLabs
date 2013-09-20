@@ -15,7 +15,7 @@
 	    	      {% if book.files %}
 	    	     	<span class='stack'>现货</span>
 	    	     {% else %}
-	    	     	<span class='wait'>等待</span>
+	    	     	<span class='wait'>期待中</span>
 	    	     {% end %}
 	    	    </div>
 	          	    <a href="/book/{{ book.bid }}">
@@ -48,7 +48,7 @@
 	        {% end %}
       	</div>
       </div>
-      
+
     </div>
 
     <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
@@ -59,7 +59,7 @@
 	<div class="row-fluid">
 		<div class="bookstore bookrow">
 		{% for i in xrange(len(books)) %}
-		    
+
 			    <div class="span3">
 			    	<div class="book_thing">
 				    	<div class="pre_ribbon">
@@ -122,7 +122,7 @@
 	     	     <span class="badge" title="贡献9本图书资源">9</span>
 	     	</a>
 	     </li>
-	   </ul>	
+	   </ul>
 	</div>
 	  <h5>微信公共帐号(Beta)</h5>
 	  <hr>
@@ -136,6 +136,5 @@
 	</div>
   </div>
 </div>
-<script data-main="static/js/app/home" src="{{ static_url("js/lib/require.js") }}"></script>
-
+<script data-main="{{ static_url("js/app/home.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

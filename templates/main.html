@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/bootstrap.css") }}">
      <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/custom.css") }}">
      <script src="{{ static_url("js/lib/jquery-1.10.2.js") }}"></script>
+     <script src="{{ static_url("js/bootstrap/bootstrap.js") }}"></script>
     <script type="text/javascript">
         USER_ID = '{{ current_user }}'
     </script>
@@ -30,9 +31,9 @@
                           <b class="caret"></b>
                         </a>
                       <ul class="dropdown-menu">
-			<li><a href="/home"><i class="icon-home"></i>个人主页</a></li>
+			     <li><a href="/home"><i class="icon-home"></i>个人主页</a></li>
                         <li><a href="/profile"><i class="icon-cog"></i>个人资料</a></li>
-                        <li><a href="/contribute"><i class="icon-bookmark"></i>发现/共享</a></li>
+                        <li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>
                         <li class="divider"></li>
                         <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
                       </ul>
@@ -42,8 +43,30 @@
               {% end %}
               <div class="nav-collapse collapse">
                 <ul id="main_nav" class="nav">
-                   <li><a href="/want">求共享</a></li>
-                   <!-- <li><a href="/dev">排行榜</a></li> -->
+                   <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">资源
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a href="/book?tag=shared">现货</a></li>
+                        <li><a href="/book?tag=waiting">期待中</a></li>
+                        <li><a href="/book?tag=hot">最热门</a></li>
+                      </ul>
+                    </li>
+                   <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">小组
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+
+                          {% for group in groups %}
+                            <li><a href="/group/{{ group.tag }}">{{group.name}}</a></li>
+                          {% end %}
+
+                      </ul>
+                   </li>
+                   <li><a href="/book/find">发现</a></li>
+
 		       <!-- <li><a href="#data">数据统计</a></li>
                    <li><a href="/logs">更新日志</a></li> -->
                 </ul>
@@ -75,8 +98,7 @@
                 </a>
               </div>
               <div class="clearfix"></div>
-              <div>Tell ME What You Want</div>
-              <div>I Give You What You Want</div>
+
 	      </p>
             </div>
           </div>
@@ -93,32 +115,8 @@
           var t = document.documentElement.scrollTop || document.body.scrollTop;
           var navbar = document.getElementById("navbar-top");
           var footer = document.getElementById("footer");
-
           var scrtop =document.documentElement.scrollTop||document.body.scrollTop;
           var height = document.documentElement.clientHeight||document.body.clientHeight;
-
-          if(scrtop>50){
-
-               if (scrtop > sign) {
-                  sign = scrtop;
-                  //document.title="向下"+scrtop;
-                  navbar.setAttribute("style","display:none");
-                }
-
-                if (scrtop < sign) {
-                        sign = scrtop;
-                        navbar.setAttribute("style","display:block");
-                        //document.title="向上"+scrtop;
-                }
-
-          }
-
-          if(scrtop>50){
-            //footer.setAttribute("style","display:none");
-          }else{
-            //footer.setAttribute("style","display:block");
-          }
-
         }
       </script>
       <script>
@@ -126,10 +124,8 @@
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
         ga('create', 'UA-37439567-2', 'pdflabs.herokuapp.com');
         ga('send', 'pageview');
-
       </script>
   </body>
 </html>
