@@ -4,11 +4,21 @@
 <div class="row-fluid group">
   <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
   {% if current_user %}
-      <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+      <a id="btn-create" class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+      {% if current_user == post.author.uid%}
+          <div class="btn-group">
+            <a id="btn-edit" class="btn " data-toggle='modal' href='#myModal'>编辑</a>
+            <button class="btn dropdown-toggle " data-toggle="dropdown">
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a id="btn_delete_post" href="#">删除本帖</a></li>
+            </ul>
+          </div>
+      {% end %}
   {% else %}
       <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
   {% end %}
-
   <br/>
   <span class="subtitle">{{ post.group.description }}</span>
   <hr>
@@ -19,7 +29,7 @@
       </div>
       <div class="post">
         <div class="post-title">
-          <a>{{ post.title }}</a>
+          <a id="old_post_title">{{ post.title }}</a>
         </div>
         <div class="post-info">
           <span class="post-author">post.author.name</span>
@@ -36,7 +46,7 @@
   </div>
   <div class="post-content">
       <hr/>
-      <p class="">{{ post.content }}</p>
+      <div id="old_post_content">{{ post.content }}</div>
       <hr/>
       <br/>
   </div>
@@ -58,7 +68,7 @@
     {% end %}
   </div>
   <div class="comment-publish">
-    <form action="" method="post">
+    <form id="comment-publish-form" action="" method="post">
       <textarea class="comment-content" name="content"></textarea>
       {% if current_user %}
         <button type="submit" class='btn btn-publish'>发布</button>
@@ -68,5 +78,35 @@
     </form>
   </div>
 </div>
+  <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <form id="publish-post-form" class="form-horizontal" action="/group/{{ post.group.tag }}" method="post">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      <h4 id="model_title">发表帖子</h4>
+    </div>
+    <div class="modal-body">
+        <div class="control-group">
+          <label class="control-label">标题</label>
+          <div class="controls">
+            <input id="post_title" type="text" name="title" class="input-large" laceholder="帖子的标题">
+            <input type="hidden" name="id" value="{{ post.id }}">
+            <input id="post-mode" type="hidden" name="type" value="new">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">内容</label>
+          <div class="controls">
+                <textarea id="editor_content" name="content" style="display:none"></textarea>
+               {% module Editor() %}
+          </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+      <button type="submit" class="btn btn-primary">发表</button>
+    </div>
+    </form>
+    <form id="delete_post_form" action="" method="delete"></form>
+  </div>
 <script data-main="{{ static_url("js/app/post.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

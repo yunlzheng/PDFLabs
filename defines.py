@@ -4,9 +4,9 @@ from tornado.options import define
 
 define("port", default=5000, help="run on the given port", type=int)
 define("root", help="application url")
-define("cookie_secret", help="application secret cookie")
+#define("cookie_secret", help="application secret cookie")
 define('driver_url', help="mongo db driver_url", default='mongodb://zheng:123456@ds041198.mongolab.com:41198/heroku_app17595021')
-#define('driver_url', help="mongo db driver_url", default='mongodb://localhost:27017')
+define('driver_url', help="mongo db driver_url", default='mongodb://localhost:27017')
 define('database', default="test", help="mongo db collection")
 define('douban_app_key',  help="your douban app key")
 define('douban_app_secret', help="you douban app secret")

@@ -22664,3 +22664,1173 @@
 [I 130920 18:28:30 web:1635] 200 GET /book?tag=hot (127.0.0.1) 194.05ms
 [I 130920 18:28:31 web:1635] 200 GET /group/rs (127.0.0.1) 33.56ms
 [I 130920 18:35:46 main:48]  PDFLabs running server on 5000
+[I 130920 19:05:07 main:48]  PDFLabs running server on 5000
+[I 130920 19:05:17 main:48]  PDFLabs running server on 5000
+[I 130920 19:05:19 web:1635] 200 GET / (127.0.0.1) 1150.81ms
+[I 130920 19:05:19 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 5.46ms
+[I 130920 19:05:19 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.30ms
+[I 130920 19:05:19 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.25ms
+[I 130920 19:05:19 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.52ms
+[I 130920 19:05:19 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.33ms
+[I 130920 19:05:19 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130920 19:05:19 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.08ms
+[I 130920 19:05:20 web:1635] 304 GET /static/img/bookcase.jpg (127.0.0.1) 43.66ms
+[I 130920 19:05:20 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 0.97ms
+[I 130920 19:05:20 web:1635] 304 GET /static/img/qrcode_for_gh_ca049f6f6b07_430.jpg (127.0.0.1) 1.77ms
+[I 130920 19:05:20 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.00ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/app/home.js?v=6f7822c15d08ce9832de025b4ac789de (127.0.0.1) 1.24ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.12ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.00ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.07ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.11ms
+[I 130920 19:05:20 web:1635] 304 GET /static/js/app/home.js?v=6f7822c15d08ce9832de025b4ac789de (127.0.0.1) 1.14ms
+[I 130920 19:05:23 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 272.21ms
+[I 130920 19:05:32 web:1635] 200 GET /group/bugs (127.0.0.1) 4518.47ms
+[I 130920 19:05:33 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.12ms
+[E 130920 19:05:38 web:1228] Uncaught exception GET /group/bugs/523c05aee32843000297639e (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/523c05aee32843000297639e', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'If-None-Match': '"929ef92efdc0c1fdad0bdc3df290e42f482e1cfc"'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 21, in get
+        groups = self.get_groups()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 538, in render
+        html = self.render_string(template_name, **kwargs)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 645, in render_string
+        return t.generate(**namespace)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/template.py", line 273, in generate
+        return execute()
+      File "group/_post_html.generated.py", line 96, in _tt_execute
+        _tt_tmp = post.author.emial  # group/_post.html:8 (via group/base.html:7, main.html:84)
+    AttributeError: 'User' object has no attribute 'emial'
+[E 130920 19:05:38 web:1635] 500 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1110.09ms
+[I 130920 19:05:49 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1130.02ms
+[I 130920 19:05:49 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.68ms
+[I 130920 19:05:49 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.25ms
+[I 130920 19:05:49 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.15ms
+[I 130920 19:05:49 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.25ms
+[I 130920 19:05:49 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.27ms
+[I 130920 19:05:49 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.25ms
+[I 130920 19:05:49 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.79ms
+[I 130920 19:05:49 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130920 19:05:49 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.00ms
+[I 130920 19:05:49 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130920 19:05:50 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.07ms
+[I 130920 19:05:50 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130920 19:05:50 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.10ms
+[I 130920 19:05:50 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.14ms
+[I 130920 19:05:50 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.10ms
+[I 130920 19:05:50 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 0.95ms
+[I 130920 19:05:51 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 274.89ms
+[I 130920 19:06:08 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1116.59ms
+[I 130920 19:06:08 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.70ms
+[I 130920 19:06:08 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.26ms
+[I 130920 19:06:08 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.21ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.35ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.51ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.50ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.42ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.49ms
+[I 130920 19:06:08 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.39ms
+[I 130920 19:06:08 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.40ms
+[I 130920 19:06:08 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.38ms
+[I 130920 19:06:09 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 578.05ms
+[I 130920 19:06:56 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1126.78ms
+[I 130920 19:06:56 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.63ms
+[I 130920 19:06:56 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.15ms
+[I 130920 19:06:56 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.79ms
+[I 130920 19:06:56 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.47ms
+[I 130920 19:06:56 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.18ms
+[I 130920 19:06:56 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130920 19:06:56 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.38ms
+[I 130920 19:06:56 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.66ms
+[I 130920 19:06:56 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.64ms
+[I 130920 19:06:56 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130920 19:06:57 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.01ms
+[I 130920 19:06:57 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.50ms
+[I 130920 19:06:57 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.16ms
+[I 130920 19:06:57 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 0.90ms
+[I 130920 19:06:57 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.23ms
+[I 130920 19:06:58 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 272.22ms
+[I 130920 19:07:21 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1140.32ms
+[I 130920 19:07:21 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.69ms
+[I 130920 19:07:21 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.25ms
+[I 130920 19:07:21 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 2.46ms
+[I 130920 19:07:21 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.29ms
+[I 130920 19:07:21 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130920 19:07:21 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130920 19:07:21 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.23ms
+[I 130920 19:07:21 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.22ms
+[I 130920 19:07:21 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.30ms
+[I 130920 19:07:21 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.55ms
+[I 130920 19:07:22 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.27ms
+[I 130920 19:07:23 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 275.81ms
+[I 130920 19:08:05 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1192.05ms
+[I 130920 19:08:05 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.70ms
+[I 130920 19:08:05 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.45ms
+[I 130920 19:08:05 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.33ms
+[I 130920 19:08:05 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 6.65ms
+[I 130920 19:08:05 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130920 19:08:05 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.81ms
+[I 130920 19:08:05 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.45ms
+[I 130920 19:08:05 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.20ms
+[I 130920 19:08:05 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.05ms
+[I 130920 19:08:05 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130920 19:08:13 web:1635] 304 GET /static/img/glyphicons-halflings.png (127.0.0.1) 1.56ms
+[I 130920 19:08:16 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 299.21ms
+[I 130920 19:08:41 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1329.11ms
+[I 130920 19:08:42 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.74ms
+[I 130920 19:08:42 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.26ms
+[I 130920 19:08:42 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.18ms
+[I 130920 19:08:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130920 19:08:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.40ms
+[I 130920 19:08:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.25ms
+[I 130920 19:08:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.64ms
+[I 130920 19:08:42 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.25ms
+[I 130920 19:08:42 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.35ms
+[I 130920 19:08:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130920 19:08:47 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 0.97ms
+[I 130920 19:08:48 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 272.35ms
+[I 130920 19:09:26 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1534.68ms
+[I 130920 19:09:26 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.72ms
+[I 130920 19:09:26 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.45ms
+[I 130920 19:09:26 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.19ms
+[I 130920 19:09:26 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130920 19:09:26 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130920 19:09:26 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.21ms
+[I 130920 19:09:26 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.24ms
+[I 130920 19:09:26 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.27ms
+[I 130920 19:09:26 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.43ms
+[I 130920 19:09:26 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130920 19:09:28 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 0.97ms
+[I 130920 19:09:29 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 273.89ms
+[I 130920 19:09:57 web:1635] 304 GET /group/bugs (127.0.0.1) 3561.98ms
+[I 130920 19:10:01 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1710.36ms
+[I 130920 19:10:02 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 458.25ms
+[I 130920 19:11:20 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1503.13ms
+[I 130920 19:11:20 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.44ms
+[I 130920 19:11:20 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.24ms
+[I 130920 19:11:20 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.19ms
+[I 130920 19:11:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.36ms
+[I 130920 19:11:20 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.15ms
+[I 130920 19:11:20 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.25ms
+[I 130920 19:11:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.54ms
+[I 130920 19:11:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.48ms
+[I 130920 19:11:21 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130920 19:11:21 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.83ms
+[I 130920 19:11:27 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.15ms
+[I 130920 19:11:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.45ms
+[I 130920 19:11:28 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.11ms
+[I 130920 19:11:28 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 376.96ms
+[I 130920 19:12:52 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 2154.23ms
+[I 130920 19:12:52 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.67ms
+[I 130920 19:12:52 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.41ms
+[I 130920 19:12:52 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.24ms
+[I 130920 19:12:52 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130920 19:12:52 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 7.27ms
+[I 130920 19:12:52 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.25ms
+[I 130920 19:12:52 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.15ms
+[I 130920 19:12:52 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.72ms
+[I 130920 19:12:53 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.22ms
+[I 130920 19:12:53 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 5.21ms
+[I 130920 19:12:53 web:1635] 304 GET /static/js/app/post.js?v=302b7ab230ea6a80af634cff7a4ae7c5 (127.0.0.1) 1.23ms
+[I 130920 19:12:53 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.20ms
+[I 130920 19:12:53 web:1635] 304 GET /static/js/module/logs.js (127.0.0.1) 1.12ms
+[I 130920 19:12:53 web:1635] 304 GET /static/js/lib/application.js (127.0.0.1) 1.15ms
+[I 130920 19:12:53 web:1635] 304 GET /static/js/module/ajax_client.js (127.0.0.1) 1.07ms
+[I 130920 19:12:54 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 372.15ms
+[I 130920 19:15:45 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:15:58 main:48]  PDFLabs running server on 5000
+[I 130920 19:16:09 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:16:12 main:48]  PDFLabs running server on 5000
+[I 130920 19:16:24 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:16:27 main:48]  PDFLabs running server on 5000
+[I 130920 19:16:30 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:26:48 main:48]  PDFLabs running server on 5000
+[I 130920 19:26:54 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 2969.19ms
+[I 130920 19:26:54 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 8.73ms
+[I 130920 19:26:54 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.19ms
+[I 130920 19:26:54 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.18ms
+[I 130920 19:26:54 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.99ms
+[I 130920 19:26:54 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 5.85ms
+[I 130920 19:26:54 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.52ms
+[I 130920 19:26:54 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.30ms
+[I 130920 19:26:54 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.57ms
+[I 130920 19:26:54 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130920 19:26:54 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.22ms
+[I 130920 19:26:55 web:1635] 304 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.14ms
+[I 130920 19:26:55 web:1635] 200 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.50ms
+[I 130920 19:26:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.16ms
+[I 130920 19:26:55 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.30ms
+[I 130920 19:27:27 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 3239.57ms
+[I 130920 19:27:27 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.68ms
+[I 130920 19:27:27 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.39ms
+[I 130920 19:27:27 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.23ms
+[I 130920 19:27:27 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.92ms
+[I 130920 19:27:27 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.13ms
+[I 130920 19:27:27 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.20ms
+[I 130920 19:27:27 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.95ms
+[I 130920 19:27:27 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.17ms
+[I 130920 19:27:28 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.20ms
+[I 130920 19:27:28 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.21ms
+[I 130920 19:27:28 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.33ms
+[I 130920 19:27:28 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 0.97ms
+[I 130920 19:28:47 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1561.75ms
+[I 130920 19:28:47 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.92ms
+[I 130920 19:28:47 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.24ms
+[I 130920 19:28:47 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.21ms
+[I 130920 19:28:47 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.14ms
+[I 130920 19:28:47 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.46ms
+[I 130920 19:28:47 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.78ms
+[I 130920 19:28:47 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.10ms
+[I 130920 19:28:47 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130920 19:28:48 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.26ms
+[I 130920 19:28:48 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.20ms
+[I 130920 19:28:48 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.26ms
+[I 130920 19:28:48 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.07ms
+[I 130920 19:28:48 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 2.44ms
+[I 130920 19:29:01 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 2681.14ms
+[I 130920 19:29:02 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.73ms
+[I 130920 19:29:02 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.28ms
+[I 130920 19:29:02 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.43ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.28ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.29ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.28ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 2.16ms
+[I 130920 19:29:02 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.19ms
+[I 130920 19:29:02 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130920 19:29:02 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 0.97ms
+[I 130920 19:29:02 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.42ms
+[I 130920 19:29:44 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 4422.12ms
+[I 130920 19:29:44 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.52ms
+[I 130920 19:29:44 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.28ms
+[I 130920 19:29:44 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.35ms
+[I 130920 19:29:44 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.15ms
+[I 130920 19:29:44 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.54ms
+[I 130920 19:29:44 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.06ms
+[I 130920 19:29:44 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.26ms
+[I 130920 19:29:44 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.70ms
+[I 130920 19:29:45 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130920 19:29:45 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.20ms
+[I 130920 19:29:45 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.23ms
+[I 130920 19:29:45 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.33ms
+[I 130920 19:30:14 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 3381.78ms
+[I 130920 19:30:14 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.69ms
+[I 130920 19:30:14 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.34ms
+[I 130920 19:30:14 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.23ms
+[I 130920 19:30:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.14ms
+[I 130920 19:30:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.62ms
+[I 130920 19:30:14 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.06ms
+[I 130920 19:30:14 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.30ms
+[I 130920 19:30:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.42ms
+[I 130920 19:30:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.14ms
+[I 130920 19:30:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.05ms
+[I 130920 19:30:15 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.23ms
+[I 130920 19:30:15 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.26ms
+[I 130920 19:31:33 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1723.44ms
+[I 130920 19:31:33 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.70ms
+[I 130920 19:31:33 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.47ms
+[I 130920 19:31:33 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.87ms
+[I 130920 19:31:33 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.19ms
+[I 130920 19:31:33 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.34ms
+[I 130920 19:31:33 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 3.34ms
+[I 130920 19:31:33 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.34ms
+[I 130920 19:31:33 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.43ms
+[I 130920 19:31:33 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.37ms
+[I 130920 19:31:33 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[I 130920 19:31:34 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.27ms
+[I 130920 19:31:34 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.13ms
+[I 130920 19:31:34 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.42ms
+[I 130920 19:31:55 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 3597.36ms
+[I 130920 19:31:55 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.67ms
+[I 130920 19:31:55 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.22ms
+[I 130920 19:31:55 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.20ms
+[I 130920 19:31:55 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130920 19:31:55 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.47ms
+[I 130920 19:31:55 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.43ms
+[I 130920 19:31:55 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.22ms
+[I 130920 19:31:55 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.57ms
+[I 130920 19:31:55 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.28ms
+[I 130920 19:31:55 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[I 130920 19:31:56 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.58ms
+[I 130920 19:31:56 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.35ms
+[I 130920 19:31:56 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.15ms
+[I 130920 19:32:18 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1118.92ms
+[I 130920 19:32:18 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.74ms
+[I 130920 19:32:18 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.65ms
+[I 130920 19:32:18 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.27ms
+[I 130920 19:32:18 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.80ms
+[I 130920 19:32:18 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.45ms
+[I 130920 19:32:18 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.50ms
+[I 130920 19:32:19 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.17ms
+[I 130920 19:32:19 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.56ms
+[I 130920 19:32:19 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130920 19:32:19 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130920 19:32:19 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.10ms
+[I 130920 19:32:19 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.18ms
+[I 130920 19:33:40 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1123.49ms
+[I 130920 19:33:40 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.71ms
+[I 130920 19:33:40 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.20ms
+[I 130920 19:33:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.18ms
+[I 130920 19:33:40 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.24ms
+[I 130920 19:33:40 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.23ms
+[I 130920 19:33:40 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.28ms
+[I 130920 19:33:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.57ms
+[I 130920 19:33:40 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130920 19:33:40 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.26ms
+[I 130920 19:33:40 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130920 19:33:41 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.24ms
+[I 130920 19:33:41 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.03ms
+[I 130920 19:33:41 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.43ms
+[I 130920 19:33:52 web:1635] 200 GET /group/gs (127.0.0.1) 1390.12ms
+[I 130920 19:33:52 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.15ms
+[W 130920 19:35:02 web:1225] 400 POST /group/gs (127.0.0.1): Missing argument type
+[W 130920 19:35:02 web:1635] 400 POST /group/gs (127.0.0.1) 1036.89ms
+[I 130920 19:35:43 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:35:46 main:48]  PDFLabs running server on 5000
+[I 130920 19:35:54 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:36:16 main:48]  PDFLabs running server on 5000
+[W 130920 19:37:17 web:1225] 400 POST /group/gs (127.0.0.1): Missing argument type
+[W 130920 19:37:17 web:1635] 400 POST /group/gs (127.0.0.1) 5921.94ms
+[I 130920 19:37:38 web:1635] 200 GET /group/gs (127.0.0.1) 7561.90ms
+[I 130920 19:37:38 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 9.14ms
+[I 130920 19:37:38 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.25ms
+[I 130920 19:37:38 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.79ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.08ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.69ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.08ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 3.53ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130920 19:37:38 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 0.95ms
+[I 130920 19:37:38 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.59ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.25ms
+[I 130920 19:37:38 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.04ms
+[I 130920 19:37:42 web:1635] 200 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 1129.20ms
+[I 130920 19:37:43 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.04ms
+[E 130920 19:40:26 web:1228] Uncaught exception POST /group/gs/523c049ee32843000297639d (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='POST', uri='/group/gs/523c049ee32843000297639d', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Content-Length': '2131', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Content-Type': 'application/x-www-form-urlencoded'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 2297, in wrapper
+        return method(self, *args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 29, in post
+        author=self.get_curent_user_model(),
+      File "/home/zheng/github/PDFLabs/handlers/__init__.py", line 36, in get_curent_user_model
+        except Except as ex:
+    NameError: global name 'Except' is not defined
+[E 130920 19:40:26 web:1635] 500 POST /group/gs/523c049ee32843000297639d (127.0.0.1) 67940.84ms
+[I 130920 19:40:29 web:1635] 302 POST /group/gs/523c049ee32843000297639d (127.0.0.1) 2327.29ms
+[I 130920 19:40:33 web:1635] 200 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 4420.75ms
+[I 130920 19:40:33 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.78ms
+[I 130920 19:40:33 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.26ms
+[I 130920 19:40:33 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.28ms
+[I 130920 19:40:33 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.17ms
+[I 130920 19:40:33 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.52ms
+[I 130920 19:40:33 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130920 19:40:33 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.26ms
+[I 130920 19:40:33 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.33ms
+[E 130920 19:40:33 web:1228] Uncaught exception GET /group/gs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:40:33 web:1635] 500 GET /group/gs/None (127.0.0.1) 5.73ms
+[I 130920 19:40:33 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.36ms
+[I 130920 19:40:33 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.26ms
+[I 130920 19:40:34 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.29ms
+[I 130920 19:40:34 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.41ms
+[I 130920 19:40:34 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.27ms
+[I 130920 19:41:14 autoreload:186] /home/zheng/github/PDFLabs/handlers/__init__.py modified; restarting server
+[I 130920 19:41:16 main:48]  PDFLabs running server on 5000
+[I 130920 19:41:21 autoreload:186] /home/zheng/github/PDFLabs/handlers/__init__.py modified; restarting server
+[I 130920 19:41:35 main:48]  PDFLabs running server on 5000
+[I 130920 19:41:51 web:1635] 304 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 1397.58ms
+[I 130920 19:41:51 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 9.41ms
+[I 130920 19:41:51 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.27ms
+[I 130920 19:41:51 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.55ms
+[I 130920 19:41:51 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.37ms
+[I 130920 19:41:51 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.43ms
+[I 130920 19:41:51 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.18ms
+[I 130920 19:41:51 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.24ms
+[I 130920 19:41:51 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.67ms
+[I 130920 19:41:52 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.16ms
+[I 130920 19:41:52 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.06ms
+[E 130920 19:41:52 web:1228] Uncaught exception GET /group/gs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:41:52 web:1635] 500 GET /group/gs/None (127.0.0.1) 7.34ms
+[I 130920 19:41:52 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.27ms
+[I 130920 19:41:52 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.14ms
+[I 130920 19:41:52 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.46ms
+[I 130920 19:42:04 web:1635] 302 POST /group/gs/523c049ee32843000297639d (127.0.0.1) 883.91ms
+[I 130920 19:42:06 web:1635] 200 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 1682.08ms
+[E 130920 19:42:06 web:1228] Uncaught exception GET /group/gs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:42:06 web:1635] 500 GET /group/gs/None (127.0.0.1) 5.13ms
+[I 130920 19:42:30 web:1635] 304 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 1679.47ms
+[I 130920 19:42:30 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.75ms
+[I 130920 19:42:30 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.28ms
+[I 130920 19:42:30 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.30ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.24ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.03ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.13ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.24ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 4.88ms
+[I 130920 19:42:30 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.33ms
+[I 130920 19:42:30 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.21ms
+[E 130920 19:42:30 web:1228] Uncaught exception GET /group/gs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:42:30 web:1635] 500 GET /group/gs/None (127.0.0.1) 7.85ms
+[I 130920 19:42:30 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.09ms
+[I 130920 19:42:48 web:1635] 304 GET / (127.0.0.1) 1176.41ms
+[I 130920 19:42:49 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 281.47ms
+[I 130920 19:42:51 web:1635] 200 GET /group/gs (127.0.0.1) 1394.16ms
+[I 130920 19:42:54 web:1635] 304 GET /group/gs/523c049ee32843000297639d (127.0.0.1) 1675.33ms
+[E 130920 19:42:54 web:1228] Uncaught exception GET /group/gs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs/523c049ee32843000297639d', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:42:54 web:1635] 500 GET /group/gs/None (127.0.0.1) 4.41ms
+[I 130920 19:42:54 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.16ms
+[I 130920 19:43:16 web:1635] 200 GET /group/bugs (127.0.0.1) 1397.52ms
+[I 130920 19:43:19 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1113.91ms
+[I 130920 19:43:38 web:1635] 302 POST /group/bugs/523c05aee32843000297639e (127.0.0.1) 831.00ms
+[I 130920 19:43:40 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1886.75ms
+[E 130920 19:43:40 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:43:40 web:1635] 500 GET /group/bugs/None (127.0.0.1) 8.31ms
+[I 130920 19:44:00 web:1635] 304 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1401.66ms
+[I 130920 19:44:00 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.88ms
+[I 130920 19:44:00 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.30ms
+[I 130920 19:44:00 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 4.68ms
+[I 130920 19:44:00 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.47ms
+[I 130920 19:44:00 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.48ms
+[I 130920 19:44:00 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.25ms
+[I 130920 19:44:00 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.31ms
+[I 130920 19:44:00 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.53ms
+[I 130920 19:44:00 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.31ms
+[E 130920 19:44:00 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:44:00 web:1635] 500 GET /group/bugs/None (127.0.0.1) 8.99ms
+[I 130920 19:44:00 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 2.47ms
+[I 130920 19:44:01 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.27ms
+[I 130920 19:44:01 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.95ms
+[I 130920 19:44:01 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.22ms
+[I 130920 19:44:16 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:44:22 main:48]  PDFLabs running server on 5000
+[I 130920 19:44:33 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:44:34 main:48]  PDFLabs running server on 5000
+[I 130920 19:45:17 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:45:19 main:48]  PDFLabs running server on 5000
+[I 130920 19:45:52 web:1635] 302 POST /group/bugs/523c05aee32843000297639e (127.0.0.1) 6413.34ms
+[I 130920 19:45:54 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 2099.14ms
+[E 130920 19:45:54 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:45:54 web:1635] 500 GET /group/bugs/None (127.0.0.1) 5.53ms
+[I 130920 19:45:54 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 12.33ms
+[I 130920 19:46:02 web:1635] 302 POST /group/bugs/523c05aee32843000297639e (127.0.0.1) 1316.79ms
+[I 130920 19:46:06 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 4099.33ms
+[E 130920 19:46:06 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:46:06 web:1635] 500 GET /group/bugs/None (127.0.0.1) 8.47ms
+[I 130920 19:48:15 web:1635] 302 POST /group/bugs/523c05aee32843000297639e (127.0.0.1) 1350.24ms
+[I 130920 19:48:19 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 3792.40ms
+[E 130920 19:48:19 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:48:19 web:1635] 500 GET /group/bugs/None (127.0.0.1) 8.01ms
+[I 130920 19:48:20 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.17ms
+[I 130920 19:50:10 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 3868.03ms
+[I 130920 19:50:10 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.41ms
+[I 130920 19:50:10 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 2.23ms
+[I 130920 19:50:10 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 4.20ms
+[I 130920 19:50:10 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 2.89ms
+[I 130920 19:50:10 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.37ms
+[I 130920 19:50:10 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 2.75ms
+[I 130920 19:50:10 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.21ms
+[I 130920 19:50:10 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 3.36ms
+[I 130920 19:50:10 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.22ms
+[I 130920 19:50:10 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.16ms
+[E 130920 19:50:10 web:1228] Uncaught exception GET /group/bugs/None (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/None', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'image/webp,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1172, in _cursor
+        self._cursor_obj = self._collection.find(self._query,
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 1205, in _query
+        self._mongo_query = self._query_obj.to_query(self._document)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 92, in to_query
+        query = query.accept(QueryCompilerVisitor(document))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 157, in accept
+        return visitor.visit_query(self)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/visitor.py", line 80, in visit_query
+        return transform.query(self.document, **query.query)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/transform.py", line 87, in query
+        value = field.prepare_query_value(op, value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 406, in prepare_query_value
+        return self.to_mongo(value)
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 402, in to_mongo
+        self.error(unicode(e))
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/base/fields.py", line 125, in error
+        raise ValidationError(message, errors=errors, field_name=field_name)
+    ValidationError: None is not a valid ObjectId
+[E 130920 19:50:10 web:1635] 500 GET /group/bugs/None (127.0.0.1) 12.10ms
+[I 130920 19:50:11 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.28ms
+[I 130920 19:50:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.10ms
+[I 130920 19:50:12 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.70ms
+[I 130920 19:56:26 main:48]  PDFLabs running server on 5000
+[I 130920 19:56:40 main:48]  PDFLabs running server on 5000
+[I 130920 19:56:42 web:1635] 200 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 1181.93ms
+[I 130920 19:56:42 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 9.19ms
+[I 130920 19:56:42 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.75ms
+[I 130920 19:56:42 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.23ms
+[I 130920 19:56:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 6.15ms
+[I 130920 19:56:42 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 2.96ms
+[I 130920 19:56:42 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.16ms
+[I 130920 19:56:42 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.10ms
+[I 130920 19:56:42 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.85ms
+[I 130920 19:56:42 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.07ms
+[I 130920 19:56:42 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130920 19:56:43 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.22ms
+[I 130920 19:56:43 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.91ms
+[I 130920 19:56:43 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.27ms
+[I 130920 19:57:08 main:48]  PDFLabs running server on 5000
+[E 130920 19:57:09 web:1228] Uncaught exception GET /group/bugs/523c05aee32843000297639e (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/bugs/523c05aee32843000297639e', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/bugs/523c05aee32843000297639e', 'Cache-Control': 'max-age=0', 'If-None-Match': '"f8fa73a1264aa7213cd7a6f3d9d727ce9cf7b37b"', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130920 19:57:09 web:1635] 500 GET /group/bugs/523c05aee32843000297639e (127.0.0.1) 6.20ms
+[I 130920 19:57:15 web:1635] 200 GET / (127.0.0.1) 48.05ms
+[I 130920 19:57:15 web:1635] 200 GET /api/account/2013091623x0728 (127.0.0.1) 2.53ms
+[I 130920 19:57:17 web:1635] 200 GET /group/gs (127.0.0.1) 52.76ms
+[I 130920 19:57:17 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 4.67ms
+[I 130920 19:57:18 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 31.74ms
+[I 130920 19:57:25 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 8.85ms
+[I 130920 19:57:25 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 35.13ms
+[I 130920 19:57:26 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.48ms
+[I 130920 19:57:26 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.15ms
+[I 130920 19:57:50 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 7.46ms
+[I 130920 19:57:50 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 58.79ms
+[I 130920 19:58:11 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 7.14ms
+[I 130920 19:58:11 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 44.61ms
+[I 130920 19:58:12 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.20ms
+[I 130920 19:59:14 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:59:14 main:48]  PDFLabs running server on 5000
+[I 130920 19:59:22 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 11.72ms
+[I 130920 19:59:23 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 47.62ms
+[I 130920 19:59:23 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 7.82ms
+[I 130920 19:59:37 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:59:37 main:48]  PDFLabs running server on 5000
+[I 130920 19:59:38 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/group_handler.py modified; restarting server
+[I 130920 19:59:39 main:48]  PDFLabs running server on 5000
+[I 130920 20:00:13 web:1635] 304 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 36.59ms
+[I 130920 20:00:14 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 8.65ms
+[I 130920 20:00:14 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 2.34ms
+[I 130920 20:00:14 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.18ms
+[I 130920 20:00:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.27ms
+[I 130920 20:00:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.58ms
+[I 130920 20:00:14 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.18ms
+[I 130920 20:00:14 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.41ms
+[I 130920 20:00:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.38ms
+[I 130920 20:00:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.29ms
+[I 130920 20:00:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.30ms
+[I 130920 20:00:15 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 0.98ms
+[I 130920 20:00:15 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.01ms
+[I 130920 20:00:15 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.48ms
+[I 130920 20:00:27 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 12.32ms
+[I 130920 20:00:27 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 43.55ms
+[I 130920 20:00:27 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.16ms
+[I 130920 20:00:47 web:1635] 302 POST /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 9.08ms
+[I 130920 20:00:48 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 45.90ms
+[I 130920 20:00:48 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 0.92ms
+[I 130920 20:01:56 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 58.77ms
+[I 130920 20:01:56 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.60ms
+[I 130920 20:01:56 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.35ms
+[I 130920 20:01:56 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.32ms
+[I 130920 20:01:56 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.13ms
+[I 130920 20:01:56 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 3.58ms
+[I 130920 20:01:56 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.17ms
+[I 130920 20:01:56 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.21ms
+[I 130920 20:01:56 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.56ms
+[I 130920 20:01:56 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.56ms
+[I 130920 20:01:56 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.11ms
+[I 130920 20:01:57 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.28ms
+[I 130920 20:01:57 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.12ms
+[I 130920 20:01:57 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.09ms
+[I 130920 20:02:21 web:1635] 302 POST /group/gs (127.0.0.1) 5.98ms
+[I 130920 20:02:22 web:1635] 200 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 30.31ms
+[I 130920 20:02:22 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 0.95ms
+[I 130920 20:02:25 web:1635] 200 GET /group/gs (127.0.0.1) 51.11ms
+[I 130920 20:02:30 web:1635] 304 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 33.19ms
+[I 130920 20:02:41 web:1635] 302 POST /group/gs (127.0.0.1) 5.89ms
+[I 130920 20:02:41 web:1635] 200 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 32.93ms
+[I 130920 20:02:41 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.19ms
+[I 130920 20:02:45 web:1635] 200 GET /group/gs (127.0.0.1) 51.45ms
+[I 130920 20:02:47 web:1635] 304 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 33.98ms
+[I 130920 20:02:59 web:1635] 302 POST /group/gs (127.0.0.1) 6.26ms
+[I 130920 20:02:59 web:1635] 200 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 33.74ms
+[I 130920 20:02:59 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 0.92ms
+[I 130920 20:03:05 web:1635] 200 GET /group/gs (127.0.0.1) 50.05ms
+[I 130920 20:03:10 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 32.55ms
+[I 130920 20:03:28 web:1635] 304 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 28.51ms
+[I 130920 20:03:28 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.79ms
+[I 130920 20:03:28 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.80ms
+[I 130920 20:03:28 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.25ms
+[I 130920 20:03:28 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.29ms
+[I 130920 20:03:28 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 2.37ms
+[I 130920 20:03:28 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 5.20ms
+[I 130920 20:03:28 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.64ms
+[I 130920 20:03:28 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.21ms
+[I 130920 20:03:28 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.23ms
+[I 130920 20:03:28 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.00ms
+[I 130920 20:03:30 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.35ms
+[I 130920 20:03:30 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.52ms
+[I 130920 20:03:30 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.33ms
+[I 130920 20:03:38 web:1635] 302 POST /group/gs/523a989edc26653242cbea25 (127.0.0.1) 10.83ms
+[I 130920 20:03:38 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 45.02ms
+[I 130920 20:03:38 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.15ms
+[I 130920 20:03:59 web:1635] 304 GET / (127.0.0.1) 39.71ms
+[I 130920 20:04:00 web:1635] 304 GET /api/account/2013091623x0728 (127.0.0.1) 2.92ms
+[I 130920 20:04:02 web:1635] 200 GET /group/rs (127.0.0.1) 32.59ms
+[I 130920 20:04:04 web:1635] 200 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 39.34ms
+[I 130920 20:04:05 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.18ms
+[I 130920 20:04:26 web:1635] 302 POST /group/rs (127.0.0.1) 5.88ms
+[I 130920 20:04:26 web:1635] 200 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 29.82ms
+[I 130920 20:04:26 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 1.91ms
+[I 130920 20:04:26 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.52ms
+[I 130920 20:05:35 web:1635] 200 GET /group/rs/523aec27dc266554780ee284 (127.0.0.1) 32.35ms
+[I 130920 20:05:35 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.78ms
+[I 130920 20:05:35 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.27ms
+[I 130920 20:05:35 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.22ms
+[I 130920 20:05:35 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.44ms
+[I 130920 20:05:35 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.16ms
+[I 130920 20:05:35 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.23ms
+[I 130920 20:05:35 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.18ms
+[I 130920 20:05:35 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.53ms
+[I 130920 20:05:35 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.01ms
+[I 130920 20:05:35 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.07ms
+[I 130920 20:05:36 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.30ms
+[I 130920 20:05:36 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.85ms
+[I 130920 20:05:36 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.45ms
+[I 130920 20:05:38 web:1635] 200 GET /group/rs/523aec27dc266554780ee284? (127.0.0.1) 44.02ms
+[I 130920 20:05:39 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.20ms
+[I 130920 20:05:44 web:1635] 304 GET /group/rs/523aec27dc266554780ee284? (127.0.0.1) 38.30ms
+[I 130920 20:05:45 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.13ms
+[I 130920 20:06:20 web:1635] 304 GET /group/rs/523aec27dc266554780ee284? (127.0.0.1) 27.53ms
+[I 130920 20:06:20 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.68ms
+[I 130920 20:06:20 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.30ms
+[I 130920 20:06:20 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.28ms
+[I 130920 20:06:20 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.34ms
+[I 130920 20:06:20 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130920 20:06:20 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.23ms
+[I 130920 20:06:20 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.18ms
+[I 130920 20:06:20 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.52ms
+[I 130920 20:06:20 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130920 20:06:20 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.42ms
+[I 130920 20:06:22 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.30ms
+[I 130920 20:06:22 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.12ms
+[I 130920 20:06:22 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.29ms
+[I 130920 20:06:26 web:1635] 304 GET /group/rs/523aec27dc266554780ee284? (127.0.0.1) 41.12ms
+[I 130920 20:06:26 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.06ms
+[I 130920 20:08:58 web:1635] 304 GET /group/rs/523aec27dc266554780ee284? (127.0.0.1) 36.97ms
+[I 130920 20:08:58 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.83ms
+[I 130920 20:08:58 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.15ms
+[I 130920 20:08:58 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.28ms
+[I 130920 20:08:58 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 2.29ms
+[I 130920 20:08:58 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130920 20:08:58 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.56ms
+[I 130920 20:08:58 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.16ms
+[I 130920 20:08:58 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.53ms
+[I 130920 20:08:58 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.28ms
+[I 130920 20:08:58 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.17ms
+[I 130920 20:09:00 web:1635] 304 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 0.98ms
+[I 130920 20:09:00 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.87ms
+[I 130920 20:09:00 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.30ms
+[I 130920 20:09:02 web:1635] 200 GET /group/gs (127.0.0.1) 56.02ms
+[I 130920 20:09:02 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.00ms
+[I 130920 20:09:04 web:1635] 200 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 35.60ms
+[I 130920 20:09:04 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.20ms
+[W 130920 20:09:06 web:1635] 405 DELETE /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 1.91ms
+[W 130920 20:09:10 web:1635] 405 DELETE /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 0.96ms
+[I 130920 20:10:22 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:12:17 main:48]  PDFLabs running server on 5000
+[I 130920 20:12:22 web:1635] 302 DELETE /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 8.25ms
+[W 130920 20:12:22 web:1635] 405 DELETE /group/gs (127.0.0.1) 2.11ms
+[E 130920 20:12:26 web:1228] Uncaught exception DELETE /group/gs/523c22bddc2665297bc055cc (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='DELETE', uri='/group/gs/523c22bddc2665297bc055cc', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Origin': 'http://localhost:5000', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': '*/*', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'X-Requested-With': 'XMLHttpRequest', 'Referer': 'http://localhost:5000/group/gs/523c22bddc2665297bc055cc', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 2297, in wrapper
+        return method(self, *args, **kwargs)
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 39, in delete
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130920 20:12:26 web:1635] 500 DELETE /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 6.95ms
+[E 130920 20:12:36 web:1228] Uncaught exception GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/523c22bddc2665297bc055cc', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36', 'Connection': 'keep-alive', 'Referer': 'http://localhost:5000/group/gs', 'Cache-Control': 'max-age=0', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130920 20:12:36 web:1635] 500 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 5.22ms
+[E 130920 20:12:42 web:1228] Uncaught exception GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1)
+    HTTPRequest(protocol='http', host='localhost:5000', method='GET', uri='/group/gs/523c22bddc2665297bc055cc', version='HTTP/1.1', remote_ip='127.0.0.1', headers={'Connection': 'keep-alive', 'Accept-Language': 'en-US,en;q=0.8,zh-CN;q=0.6,zh;q=0.4', 'Accept-Encoding': 'gzip,deflate,sdch', 'Cookie': 'userid=MjAxMzA5MTYyM3gwNzI4|1379592125|598ff6003a41560fab62002e1eb73b98e704c672', 'Host': 'localhost:5000', 'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/29.0.1547.65 Safari/537.36'})
+    Traceback (most recent call last):
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1141, in _when_complete
+        callback()
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/tornado/web.py", line 1162, in _execute_method
+        self._when_complete(method(*self.path_args, **self.path_kwargs),
+      File "/home/zheng/github/PDFLabs/handlers/group/post_handler.py", line 16, in get
+        post = Post.objects(id=uuid)[0]
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/mongoengine/queryset/base.py", line 150, in __getitem__
+        return queryset._document._from_son(queryset._cursor[key],
+      File "/home/zheng/.virtualenvs/pdf/local/lib/python2.7/site-packages/pymongo/cursor.py", line 472, in __getitem__
+        raise IndexError("no such item for Cursor instance")
+    IndexError: no such item for Cursor instance
+[E 130920 20:12:42 web:1635] 500 GET /group/gs/523c22bddc2665297bc055cc (127.0.0.1) 7.63ms
+[I 130920 20:12:48 web:1635] 200 GET /group/gs (127.0.0.1) 71.23ms
+[I 130920 20:12:48 web:1635] 200 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 13.53ms
+[I 130920 20:12:48 web:1635] 200 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.35ms
+[I 130920 20:12:48 web:1635] 200 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.68ms
+[I 130920 20:12:48 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 5.58ms
+[I 130920 20:12:48 web:1635] 200 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.80ms
+[I 130920 20:12:48 web:1635] 200 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.37ms
+[I 130920 20:12:48 web:1635] 200 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.76ms
+[I 130920 20:12:48 web:1635] 200 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 7.18ms
+[I 130920 20:12:48 web:1635] 200 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.35ms
+[I 130920 20:12:48 web:1635] 200 GET /static/images/avatar.jpg (127.0.0.1) 1.21ms
+[I 130920 20:12:52 web:1635] 200 GET /static/img/glyphicons-halflings.png (127.0.0.1) 1.26ms
+[I 130920 20:12:55 web:1635] 200 GET /static/img/icon_weibo_558.png (127.0.0.1) 1.38ms
+[I 130920 20:12:55 web:1635] 200 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.27ms
+[I 130920 20:12:55 web:1635] 200 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 5.09ms
+[I 130920 20:12:55 web:1635] 200 GET /static/js/module/group.js (127.0.0.1) 1.18ms
+[I 130920 20:12:57 web:1635] 200 GET /group/gs/523c20d9dc2665281793e39e (127.0.0.1) 30.07ms
+[I 130920 20:12:58 web:1635] 200 GET /static/js/app/post.js?v=2416d6561845bf8ffa2680f558783cc3 (127.0.0.1) 1.39ms
+[I 130920 20:12:58 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.20ms
+[I 130920 20:12:59 web:1635] 302 DELETE /group/gs/523c20d9dc2665281793e39e (127.0.0.1) 4.01ms
+[W 130920 20:12:59 web:1635] 405 DELETE /group/gs (127.0.0.1) 1.70ms
+[I 130920 20:13:07 web:1635] 200 GET /group/gs (127.0.0.1) 48.74ms
+[I 130920 20:13:07 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 2.37ms
+[I 130920 20:13:07 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.28ms
+[I 130920 20:13:07 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.21ms
+[I 130920 20:13:07 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.24ms
+[I 130920 20:13:07 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.38ms
+[I 130920 20:13:07 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.19ms
+[I 130920 20:13:07 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.20ms
+[I 130920 20:13:07 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.39ms
+[I 130920 20:13:07 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.17ms
+[I 130920 20:13:07 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.21ms
+[I 130920 20:13:08 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.26ms
+[I 130920 20:13:09 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.56ms
+[I 130920 20:13:09 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.13ms
+[I 130920 20:13:15 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:13:16 main:48]  PDFLabs running server on 5000
+[I 130920 20:13:28 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:13:28 main:48]  PDFLabs running server on 5000
+[I 130920 20:13:39 web:1635] 200 GET /group/gs/523c2113dc2665281793e39f (127.0.0.1) 33.60ms
+[I 130920 20:13:40 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 9.06ms
+[I 130920 20:13:42 web:1635] 200 DELETE /group/gs/523c2113dc2665281793e39f (127.0.0.1) 5.40ms
+[I 130920 20:14:31 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:14:31 main:48]  PDFLabs running server on 5000
+[I 130920 20:14:46 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:14:46 main:48]  PDFLabs running server on 5000
+[I 130920 20:15:08 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:15:08 main:48]  PDFLabs running server on 5000
+[I 130920 20:15:09 autoreload:186] /home/zheng/github/PDFLabs/handlers/group/post_handler.py modified; restarting server
+[I 130920 20:15:10 main:48]  PDFLabs running server on 5000
+[E 130920 20:15:13 post_handler:25] no such item for Cursor instance
+[I 130920 20:15:13 web:1635] 302 GET /group/gs/523c2113dc2665281793e39f (127.0.0.1) 5.75ms
+[I 130920 20:15:13 web:1635] 200 GET /group/gs (127.0.0.1) 46.98ms
+[I 130920 20:15:14 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 9.57ms
+[I 130920 20:15:14 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.26ms
+[I 130920 20:15:14 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.25ms
+[I 130920 20:15:14 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.50ms
+[I 130920 20:15:14 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.19ms
+[I 130920 20:15:14 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.78ms
+[I 130920 20:15:14 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.55ms
+[I 130920 20:15:14 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.22ms
+[I 130920 20:15:14 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.24ms
+[I 130920 20:15:14 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.33ms
+[I 130920 20:15:17 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.28ms
+[I 130920 20:15:17 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.01ms
+[I 130920 20:15:17 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 0.94ms
+[I 130920 20:16:01 web:1635] 304 GET /group/gs (127.0.0.1) 47.43ms
+[I 130920 20:16:01 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.64ms
+[I 130920 20:16:01 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.43ms
+[I 130920 20:16:01 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.25ms
+[I 130920 20:16:01 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.46ms
+[I 130920 20:16:01 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.64ms
+[I 130920 20:16:01 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.41ms
+[I 130920 20:16:01 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.10ms
+[I 130920 20:16:01 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 2.36ms
+[I 130920 20:16:01 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.29ms
+[I 130920 20:16:01 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 2.02ms
+[I 130920 20:16:04 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.28ms
+[I 130920 20:16:04 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.37ms
+[I 130920 20:16:04 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.24ms
+[I 130920 20:16:06 web:1635] 304 GET /group/gs (127.0.0.1) 51.25ms
+[I 130920 20:16:08 web:1635] 200 GET /group/gs/523c1f1adc26652817c3e240 (127.0.0.1) 32.53ms
+[I 130920 20:16:09 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.13ms
+[I 130920 20:16:10 web:1635] 200 DELETE /group/gs/523c1f1adc26652817c3e240 (127.0.0.1) 4.70ms
+[E 130920 20:16:10 post_handler:25] no such item for Cursor instance
+[I 130920 20:16:10 web:1635] 302 GET /group/gs/523c1f1adc26652817c3e240 (127.0.0.1) 2.32ms
+[I 130920 20:16:10 web:1635] 200 GET /group/gs (127.0.0.1) 50.07ms
+[I 130920 20:16:10 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.75ms
+[I 130920 20:16:11 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 1.10ms
+[I 130920 20:16:11 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.35ms
+[I 130920 20:16:11 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.62ms
+[I 130920 20:16:11 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 1.43ms
+[I 130920 20:16:11 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.29ms
+[I 130920 20:16:11 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 2.29ms
+[I 130920 20:16:11 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.51ms
+[I 130920 20:16:11 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.22ms
+[I 130920 20:16:11 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.15ms
+[I 130920 20:16:12 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.32ms
+[I 130920 20:16:12 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 2.20ms
+[I 130920 20:16:12 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.11ms
+[I 130920 20:17:39 web:1635] 304 GET /group/gs (127.0.0.1) 46.04ms
+[I 130920 20:17:40 web:1635] 304 GET /static/style/bootstrap.css?v=08f2256002f66a415dbc2e8afb722d70 (127.0.0.1) 1.46ms
+[I 130920 20:17:40 web:1635] 304 GET /static/js/bootstrap/bootstrap.js?v=dd6d6a4089f708eff142194df1f1135c (127.0.0.1) 1.41ms
+[I 130920 20:17:40 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js?v=b36eb23c18580f715487f3907d39da9e (127.0.0.1) 3.17ms
+[I 130920 20:17:40 web:1635] 304 GET /static/style/custom.css?v=51cd0f73b77691a455d35ac4a4c9ad95 (127.0.0.1) 1.24ms
+[I 130920 20:17:40 web:1635] 304 GET /static/style/bootstrap-responsive.min.css?v=365a247af4036532701d83957e490adc (127.0.0.1) 5.54ms
+[I 130920 20:17:40 web:1635] 304 GET /static/js/lib/external/jquery.hotkeys.js?v=0297fddaacc8e269b110026750394b25 (127.0.0.1) 1.46ms
+[I 130920 20:17:40 web:1635] 304 GET /static/js/lib/bootstrap-wysiwyg.js?v=da5cda3eb3b68d1a03deb3cf0b51cbc3 (127.0.0.1) 3.34ms
+[I 130920 20:17:40 web:1635] 304 GET /static/js/lib/require.js?v=5d0408926b69adbf55ee1056a4590d02 (127.0.0.1) 1.49ms
+[I 130920 20:17:40 web:1635] 304 GET /static/images/avatar.jpg?v=166227014121bea0e84b54071d15d53d (127.0.0.1) 1.28ms
+[I 130920 20:17:40 web:1635] 304 GET /static/images/avatar.jpg (127.0.0.1) 1.10ms
+[I 130920 20:17:42 web:1635] 304 GET /static/js/app/group.js?v=3c9080b712b18ae02ed29dbf6f6adbbe (127.0.0.1) 1.25ms
+[I 130920 20:17:42 web:1635] 304 GET /static/js/lib/jquery-1.10.2.js (127.0.0.1) 1.91ms
+[I 130920 20:17:42 web:1635] 304 GET /static/js/module/group.js (127.0.0.1) 1.26ms
+[I 130920 20:17:43 web:1635] 200 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 36.32ms
+[I 130920 20:17:44 web:1635] 200 GET /static/js/module/post.js (127.0.0.1) 1.07ms
+[I 130920 20:17:51 web:1635] 304 GET /group/gs (127.0.0.1) 48.94ms
+[I 130920 20:17:55 web:1635] 200 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 32.15ms
+[I 130920 20:17:56 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.24ms
+[I 130920 20:17:57 web:1635] 304 GET /group/gs (127.0.0.1) 43.88ms
+[I 130920 20:17:59 web:1635] 200 GET /group/gs/523a989edc26653242cbea25 (127.0.0.1) 31.91ms
+[I 130920 20:18:00 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.77ms
+[I 130920 20:18:01 web:1635] 304 GET /group/gs (127.0.0.1) 42.55ms
+[I 130920 20:18:03 web:1635] 200 GET /group/gs/523a6afedc2665166ea930d4 (127.0.0.1) 33.07ms
+[I 130920 20:18:03 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.23ms
+[I 130920 20:18:04 web:1635] 304 GET /group/gs (127.0.0.1) 48.76ms
+[I 130920 20:18:10 web:1635] 304 GET /group/gs/523c394ddc26653747589039 (127.0.0.1) 34.35ms
+[I 130920 20:18:11 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 1.22ms
+[I 130920 20:18:12 web:1635] 304 GET /group/gs (127.0.0.1) 45.10ms
+[I 130920 20:18:13 web:1635] 304 GET /group/gs/523af474dc26655c5abbc09a (127.0.0.1) 33.47ms
+[I 130920 20:18:14 web:1635] 304 GET /group/gs (127.0.0.1) 49.33ms
+[I 130920 20:18:16 web:1635] 200 GET /group/gs/523af3f3dc26655478f67edb (127.0.0.1) 32.90ms
+[I 130920 20:18:17 web:1635] 304 GET /static/js/module/post.js (127.0.0.1) 0.93ms
+[I 130920 20:18:17 web:1635] 304 GET /group/gs (127.0.0.1) 43.52ms
