@@ -22663,3 +22663,6 @@
 [I 130920 18:28:29 web:1635] 200 GET /book?tag=waiting (127.0.0.1) 33.51ms
 [I 130920 18:28:30 web:1635] 200 GET /book?tag=hot (127.0.0.1) 194.05ms
 [I 130920 18:28:31 web:1635] 200 GET /group/rs (127.0.0.1) 33.56ms
+[I 130920 18:36:22 main:48]  PDFLabs running server on 5000
+[I 130920 18:36:27 autoreload:186] /home/zheng/github/PDFLabs/defines.py modified; restarting server
+[I 130920 18:36:29 main:48]  PDFLabs running server on 5000
