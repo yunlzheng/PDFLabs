@@ -64,9 +64,9 @@ p{text-indent:2em}
 .group{background:#fff;padding:20px;border-radius:10px;box-shadow:rgba(0,0,0,0.1) 1px 1px 10px;margin-bottom:40px}.group h5{display:inline-block;padding-right:20px;margin:0;vertical-align:middle}
 .group h8{color:#98989b;font-size:14px}
 .group .subtitle{display:inline-block;margin-top:10px;color:#8c8b8d}
-.group .post-content{line-height:15px;font-size:16px;padding:20px}
+.group .post-content{line-height:29px;padding:20px;font:14px Helvetica,Arial,sans-serif}
 .group .comments{padding-top:10px}.group .comments .comment{padding-top:10px;padding-bottom:10px;border-bottom:1px solid #ddd}.group .comments .comment img{border-radius:10px;display:inline-block}
-.group .comments .comment p{text-indent:0}
+.group .comments .comment p{text-indent:0;font:13px Helvetica,Arial,sans-serif}
 .group .comments .comment .comment-info{color:#258fca}
 .group .comments .comment .content{display:inline-block}
 .group .comments .comment .span11{text-align:left}
