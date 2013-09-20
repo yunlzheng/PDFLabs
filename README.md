@@ -4,11 +4,11 @@ PDFLabs [![Build Status](https://travis-ci.org/yunlzheng/PDFLabs.png?branch=mast
 
 Share PDF files on the Internet
 
- ![image](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/home.png)
+ ![screenshot](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/home.png)
 
- ![image](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/book.png)
+ ![screenshot](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/book.png)
 
- ![image](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/group.png)
+ ![screenshot](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/group.png)
 
 LICENSE
 --------------------
