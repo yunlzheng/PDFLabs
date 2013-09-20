@@ -1,8 +1,6 @@
-{% extends "../main.html" %}
+{% extends "base.html" %}
 {% autoescape None %}
-{% block body %}
-<div class="row-fluid">
-<div class="span9">
+{% block group %}
 <div class="row-fluid group">
   <h5>{{ _group.name }}</h5>
  {% if current_user %}
@@ -38,38 +36,6 @@
     <hr/>
     {% end %}
   </div>
-</div>
-<div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <form id="publish-post-form" class="form-horizontal" action="" method="post">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 >发表帖子</h4>
-  </div>
-  <div class="modal-body">
-      <div class="control-group">
-        <label class="control-label">标题</label>
-        <div class="controls">
-          <input type="text" name="title" class="input-large" laceholder="帖子的标题">
-        </div>
-      </div>
-      <div class="control-group">
-        <label class="control-label">内容</label>
-        <div class="controls">
-          <textarea name="content" class="input-large" placeholder="帖子的内容"  rows=8></textarea>
-        </div>
-      </div>
-
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
-    <button type="submit" class="btn btn-primary">发表</button>
-  </div>
-  </form>
-</div>
-</div>
-<div class="span3">
-  <!--guang gao wei keyi ma?-->
-</div>
 </div>
 <script data-main="{{ static_url("js/app/group.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
 {% end %}

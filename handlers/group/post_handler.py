@@ -15,7 +15,7 @@ class PostHandler(BaseHandler):
     def get(self, tag, uuid):
         post = Post.objects(id=uuid)[0]
         self.render(
-            "group/post.html",
+            "group/_post.html",
             page_heading=post.title,
             post = post,
             groups = self.get_groups()

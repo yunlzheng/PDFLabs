@@ -21,7 +21,7 @@ from tornado.options import options
 
 import defines
 from routers import router
-
+from handlers.uimodules.editor import EditorModule
 # application settings and handle mapping info
 
 class Application(tornado.web.Application):
@@ -37,7 +37,8 @@ class Application(tornado.web.Application):
             cookie_secret=options.cookie_secret,
             login_url="/sigin",
             debug=True,
-            root=options.root
+            root=options.root,
+            ui_modules = {'Editor': EditorModule}
         )
         tornado.web.Application.__init__(self, handlers, **settings)
 

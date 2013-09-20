@@ -12,4 +12,4 @@ requirejs.config({
 });
 
 // Load the main app module to start the app
-requirejs(["jquery","module/logs"]);
+requirejs(["jquery","module/group"]);

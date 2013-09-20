@@ -14,7 +14,7 @@ class GroupHandler(BaseHandler):
         group = Group.objects(tag = tag)[0]
         posts = Post.objects(group=group)
         self.render(
-            "group/groups.html",
+            "group/_groups.html",
             page_heading=group.name,
             _group = group,
             posts = posts,
@@ -39,6 +39,8 @@ class GroupHandler(BaseHandler):
                 update_at=now
             )
             post.save()
+            self.redirect("/group/"+tag+"/"+str(post.id))
         except Exception as ex:
             app_log.error(ex)
-        self.redirect("/group/"+tag+"/"+str(post.id))
+            self.redirect("/group/"+tag)
+

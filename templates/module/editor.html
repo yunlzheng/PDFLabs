@@ -1,0 +1,34 @@
+<script src="{{ static_url("js/lib/external/jquery.hotkeys.js") }}"></script>
+<script src="{{ static_url("js/lib/bootstrap-wysiwyg.js") }}"></script>
+<div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
+  <div class="btn-group">
+    <a class="btn" data-edit="bold" title="粗体 (Ctrl/Cmd+B)"><i class="icon-bold"></i></a>
+    <a class="btn" data-edit="italic" title="斜体 (Ctrl/Cmd+I)"><i class="icon-italic"></i></a>
+    <a class="btn" data-edit="strikethrough" title="删除线"><i class="icon-strikethrough"></i></a>
+    <a class="btn" data-edit="underline" title="下划线 (Ctrl/Cmd+U)"><i class="icon-underline"></i></a>
+  </div>
+  <div class="btn-group">
+    <a class="btn" data-edit="insertunorderedlist" title="无需列表"><i class="icon-list-ul"></i></a>
+    <a class="btn" data-edit="insertorderedlist" title="有序列表"><i class="icon-list-ol"></i></a>
+    <a class="btn" data-edit="indent" title="缩进 (Tab)"><i class="icon-indent-right"></i></a>
+    <a class="btn" data-edit="outdent" title="减少缩进 (Shift+Tab)"><i class="icon-indent-left"></i></a>
+  </div>
+  <div class="btn-group">
+      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" title="插入超链接"><i class="icon-link"></i></a>
+      <div class="dropdown-menu">
+	    <input class="span2" placeholder="http://" type="text" data-edit="createLink" style="width:200px"/>
+	    <button class="btn" type="button">插入</button>
+      </div>
+  </div>
+  <div class="btn-group">
+    <a class="btn" data-edit="undo" title="撤销 (Ctrl/Cmd+Z)"><i class="icon-undo"></i></a>
+    <a class="btn" data-edit="redo" title="重做 (Ctrl/Cmd+Y)"><i class="icon-repeat"></i></a>
+  </div>
+</div>
+<div id="editor">
+</div>
+<script type="text/javascript">
+    $(function(){
+      $('#editor').wysiwyg();
+    })
+</script>
