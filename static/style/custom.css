@@ -61,7 +61,7 @@ p{text-indent:2em}
 .book_thing{position:relative}.book_thing .pre_ribbon{position:absolute;top:0;left:0;height:100px;width:100px;overflow:hidden;color:#fff;font-weight:bold;letter-spacing:.5em}.book_thing .pre_ribbon .stack{background:#46a546}
 .book_thing .pre_ribbon .wait{background:#f89406}
 .book_thing .pre_ribbon span{filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);opacity:.8;display:block;width:150px;padding-left:10px;padding-top:5px;padding-bottom:3px;position:relative;left:-40px;top:75px;text-align:center;-webkit-transform-origin:0 0;-moz-transform-origin:0 0;-ms-transform-origin:0 0;-o-transform-origin:0 0;transform-origin:0 0;-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-box-shadow:rgba(0,0,0,0.3) 1px 1px 10px;-moz-box-shadow:rgba(0,0,0,0.3) 1px 1px 10px;box-shadow:rgba(0,0,0,0.3) 1px 1px 10px}
-.group h5{display:inline-block;padding-right:20px;margin:0;vertical-align:middle}
+.group{background:#fff;padding:10px;padding-top:15px;border-radius:10px;box-shadow:rgba(0,0,0,0.1) 1px 1px 10px}.group h5{display:inline-block;padding-right:20px;margin:0;vertical-align:middle}
 .group h8{color:#98989b;font-size:14px}
 .group .subtitle{display:inline-block;margin-top:10px;color:#8c8b8d}
 .group .post-content{line-height:15px;font-size:16px}
