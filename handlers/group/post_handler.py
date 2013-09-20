@@ -13,13 +13,18 @@ from handlers import BaseHandler
 class PostHandler(BaseHandler):
 
     def get(self, tag, uuid):
-        post = Post.objects(id=uuid)[0]
-        self.render(
-            "group/_post.html",
-            page_heading=post.title,
-            post = post,
-            groups = self.get_groups()
-        )
+        try:
+            post = Post.objects(id=uuid)[0]
+            self.render(
+                "group/_post.html",
+                page_heading=post.title,
+                post = post,
+                groups = self.get_groups()
+            )
+        except Exception as ex:
+            app_log.error(ex)
+            self.redirect('/group/'+tag)
+
 
     @tornado.web.authenticated
     def post(self,tag,uuid):
@@ -33,4 +38,10 @@ class PostHandler(BaseHandler):
         post.comments.append(comment)
         post.save()
         self.redirect("/group/"+tag+"/"+uuid)
+
+    @tornado.web.authenticated
+    def delete(self, tag, uuid):
+        post = Post.objects(id=uuid)[0]
+        post.delete()
+        self.write('success')
 

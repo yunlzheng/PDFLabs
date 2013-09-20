@@ -33,7 +33,7 @@ class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
         uid = self.get_current_user()
         try:
         	user = User.objects(uid=uid)[0]
-        except Except as ex:
+        except Exception as ex:
         	app_log.error(ex)
         else:
         	return user
@@ -47,7 +47,7 @@ class AdminBaseHandler(BaseHandler):
         admin_id =self.get_current_user()
         try:
             admin = Admin.objects(uuid=admin_id)[0]
-        except Except as ex:
+        except Exception as ex:
             app_log.error(ex)
         else:
             return admin
