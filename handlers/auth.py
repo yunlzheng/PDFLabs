@@ -113,7 +113,7 @@ class DoubanCallbackHandler(BaseHandler):
             data = json.loads(response.read())
             # read account info
             request2 = urllib2.Request(options.douban_account_info)
-            request2.add_header('Authorization', 'Bearer ' + access_token)
+            request2.add_header('Authorization', 'Bearer ' + data['access_token'])
             response2 = urllib2.urlopen(request2)
             account = json.loads(response2.read())
 
