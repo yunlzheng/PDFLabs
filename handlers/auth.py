@@ -121,7 +121,7 @@ class DoubanCallbackHandler(BaseHandler):
                 user = User.objects(type='douban', uid=uid)[0]
             except Exception, e:
                 app_log.error(e)
-                user = User(uid=account_json['uid'],
+                user = User(uid=account['uid'],
                         type='douban',
                         name=account['name'],
                         avatar=account['avatar'],
