@@ -5,7 +5,7 @@ from mongoengine import *
 class User(Document):
     uid = StringField(required=True)
     type = StringField(required=True)
-    email = StringField(required=True)
+    email = StringField()
     password =StringField(min_length=6)
     name = StringField(max_length=50)
     avatar = URLField()
