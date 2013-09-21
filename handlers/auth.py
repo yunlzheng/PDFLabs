@@ -128,8 +128,8 @@ class DoubanCallbackHandler(BaseHandler):
                         access_token=data['access_token'],
                         refresh_token=data['refresh_token'])
             else:
-                user.access_token=access_token
-                user.refresh_token = refresh_token
+                user.access_token=data['access_token']
+                user.refresh_token=data['refresh_token']
             finally:
                 user.save()
 
