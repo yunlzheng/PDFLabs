@@ -10,7 +10,6 @@ from tornado.httpclient import *
 from models.books import Book
 from models.groups import Group
 from models.users import User
-from models.admin import Admin
 
 class UUIDMixin():
 
@@ -38,19 +37,34 @@ class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
         else:
         	return user
 
-class AdminBaseHandler(BaseHandler):
+    def is_admin(self):
+        pass
 
-    def get_current_user(self):
-        return self.get_secure_cookie("adminid")
+class MakoHandler(BaseHandler):
+    '''
+        该类继承自BaseHandler 复写了tornado默认的调用模板的方法，转向使用moka模板引擎
+    '''
+    
+    def initialize(self, lookup):
+        self._lookup = lookup
 
-    def get_current_admin_model(self):
-        admin_id =self.get_current_user()
-        try:
-            admin = Admin.objects(uuid=admin_id)[0]
-        except Exception as ex:
-            app_log.error(ex)
-        else:
-            return admin
+    def render_string(self, filename, **kwargs):
+        template = self._lookup.get_template(filename)  
+        env_kwargs = dict(  
+            handler = self,  
+            request = self.request,  
+            current_user = self.current_user,  
+            locale = self.locale,  
+            _ = self.locale.translate,  
+            static_url = self.static_url,  
+            xsrf_form_html = self.xsrf_form_html,  
+            reverse_url = self.application.reverse_url,  
+        )  
+        env_kwargs.update(kwargs)  
+        return template.render(**env_kwargs)
+
+    def render(self, filename, **kwargs):  
+        self.finish(self.render_string(filename, **kwargs))
 
 class MainHandler(BaseHandler):
 
