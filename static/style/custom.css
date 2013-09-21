@@ -1,6 +1,7 @@
 h5{font-size:24px;font-weight:100;font-family:"微软雅黑","Arial"}
 hr{margin:10px 0 15px 0}
 p{text-indent:2em}
+#main_nav{margin-top:5px}
 #page{margin-bottom:140px;-webkit-transition:background .7s;-moz-transition:background .7s;-o-transition:background .7s;background-color:#fff;box-shadow:0 2px 10px #000}
 #navbar-top{-webkit-transition:display .5s;-moz-transition:display .5s;-o-transition:display .5s}
 #footer{-webkit-transition:display .5s;-moz-transition:display .5s;-o-transition:display .5s;background-color:#292929;height:150px;z-index:-9999;position:fixed}
@@ -28,7 +29,7 @@ p{text-indent:2em}
 .form_table dl{display:block;clear:both}
 .form_table dt{width:140px;color:#666;text-align:right;padding-right:15px;white-space:nowrap;color:#999;float:left;line-height:25px}
 .form_table dd{color:#333;word-break:break-all;word-wrap:break-word;float:left;line-height:25px}
-.navbar .rbrand{float:right;display:block;padding:5px 20px 1px;margin-left:-20px;font-size:14px;font-weight:200;text-shadow:0 1px 0 #fff;line-height:33px}.navbar .rbrand img{border-radius:50%;height:30px;width:30px}
+.navbar .rbrand{float:right;display:block;padding:5px 20px 1px;margin-left:-20px;font-size:14px;font-weight:200;text-shadow:0 1px 0 #fff;line-height:33px;margin-top:5px}.navbar .rbrand img{border-radius:50%;height:30px;width:30px}
 .navbar .rbrand .caret{margin-top:15px}
 .custom-carousel .carousel-control{position:absolute;top:60px;left:0;width:30px;height:none;margin-top:-20px;font-size:60px;font-weight:100;line-height:150px;color:#000;text-align:center;background:none;border:none;-webkit-border-radius:0;-moz-border-radius:23px;border-radius:0;opacity:.5;filter:alpha(opacity=50);bottom:0;vertical-align:middle}
 .custom-carousel .carousel-control.right{left:auto;right:25px}
