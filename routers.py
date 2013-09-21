@@ -4,7 +4,6 @@ import os.path
 
 import tornado.web
 
-from handlers.auth import AuthenticateHandler, GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
 from handlers import MainHandler
 from handlers.web import  LogsHandler
 from handlers.book import PreviewHandler
@@ -17,6 +16,9 @@ from handlers.api import UserAPI
 from handlers.api import IWantApi
 from handlers.api import BookDetailHandler, BookSearchHandler
 from handlers.api import WeiXinHandler
+from handlers.api import MongoBackboneHandler
+
+from handlers.auth import AuthenticateHandler, GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
 
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 static_dir_dict = dict(path=static_dir)
@@ -39,6 +41,8 @@ router = [
       (r"/api/book/search/([\s\S]*)", BookSearchHandler),
       (r"/api/book/([0-9]+)", BookDetailHandler),
       (r"/api/want/([0-9]+)", IWantApi),
+      (r"/api/rest/([a-z]+)", MongoBackboneHandler),
+      (r"/api/rest/([a-z]+)/(.+)", MongoBackboneHandler),
       (r"/callback", DoubanCallbackHandler),
       (r"/sigin", AuthenticateHandler),
       (r"/sigout", LogoutHandler),

@@ -39,6 +39,11 @@ class IWantApi(BaseHandler):
             book.update_at=datetime.datetime.now()
             book.save()
 
+class BookApiHandler(BaseHandler):
+
+    def get(self,id):
+        book = Book.objects(bid=id)[0]
+        self.write(book.to_json())
 
 class BookDetailHandler(BaseHandler):
 

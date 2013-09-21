@@ -18,6 +18,7 @@ import tornado.auth
 
 from tornado.log import app_log
 from tornado.options import options
+from mongoengine import connect
 
 import defines
 from routers import router
@@ -27,7 +28,7 @@ from handlers.uimodules.editor import EditorModule
 class Application(tornado.web.Application):
 
     def __init__(self):
-
+        connect('heroku_app17595021', host=options.driver_url)
         static_dir = os.path.join(os.path.dirname(__file__), "static")
         handlers = router
         settings = dict(

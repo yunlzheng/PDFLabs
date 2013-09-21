@@ -1,6 +1,7 @@
 # -*- coding : utf-8 -*-
 from tornado.options import options
 
-from mongoengine import connect
-
-connect('heroku_app17595021', host=options.driver_url)
+from models.admin import Admin as admin
+from models.books import Book as book
+from models.groups import Group as group
+from models.posts import Post as post

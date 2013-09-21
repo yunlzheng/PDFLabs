@@ -24,7 +24,9 @@
         <div class="post-info">
           <span class="post-author">{{ post.author.name }}</span>
           <div class="post-last-comment">
-              最后由 <span class="comment-author">海洋封</span> 于22天前回复
+            {% if post.comments %}
+              最后由 <span class="comment-author">{{ post.comments[0].author.name }}</span> 于{{ post.comments[0].create_at.strftime('%Y-%m-%d %H:%M:%S') }}回复
+            {% end %}
           </div>
         </div>
       </div>
