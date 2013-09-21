@@ -5,10 +5,32 @@ import resource
 import functools
 import traceback
 import socket
+import tornado.web
+from tornado.util import import_object
 from tornado.log import app_log
 
+def load_model(func):
+    """注入一个Model参数给函数."""
+    @functools.wraps(func)
+    def wrapper(self, *args, **kwargs):
+        #setattr(self, 'session', "session")
+        app_log.info('revice request args: {0} kwargs: {1}'.format(args, kwargs))
+        model_class = "models.{0}".format(args[0])
+        try:
+            model = import_object(model_class)
+            app_log.info(model)
+            setattr(self, 'model', model)
+        except Exception as ex:
+            app_log.error(ex)
+            raise tornado.web.HTTPError(404)
+        app_log.info('revice request args: {0} kwargs: {1}'.format(args, kwargs))
+        return func(self, *args, **kwargs)
+    return wrapper
+
+
 def log_exception(view_func):
-    """ log exception decorator for a view,
+    """ 
+    log exception decorator for a view,
     """
     def _decorator(self, *args, **kwargs):
         try:

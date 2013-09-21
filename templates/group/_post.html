@@ -32,9 +32,9 @@
           <a id="old_post_title">{{ post.title }}</a>
         </div>
         <div class="post-info">
-          <span class="post-author">post.author.name</span>
+          <span class="post-author">{{post.author.name}}</span>
           <div class="post-last-comment">
-              22天前
+            {{ post.create_at.strftime('%Y-%m-%d %H:%M:%S') }}       
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@
 
           </div>
           <div class="span11">
-              <p class="comment-info"><b>{{comment.author.name}}</b> 发表与 <b>{{ comment.create_at }}</b></p>
+              <p class="comment-info"><b>{{ comment.author.name }}</b> 发表与 <b>{{ comment.create_at.strftime('%Y-%m-%d %H:%M:%S') }}</b> &nbsp;<a href="#"><b class="icon-share-alt"></b>回复</a> &nbsp;<a href="#"><b class="icon-heart"></b>顶</a></p>
               <p>{{ comment.content }}</p>
           </div>
         </div>
