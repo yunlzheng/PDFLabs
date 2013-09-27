@@ -19,6 +19,7 @@ sdist
 develop-eggs
 .installed.cfg
 lib64
+.idea
 
 # Installer logs
 pip-log.txt
