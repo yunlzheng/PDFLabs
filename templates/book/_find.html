@@ -1,0 +1,102 @@
+{% extends "../main.html" %}
+{% autoescape None %}
+{% block body %}
+<div id="alert-ilike-success" class="alert alert-success" style="display:none">
+	<button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>恭喜</strong>  点击喜欢的次数越多，该本书得到分享的机会也就越来大.
+ </div>
+ <div id="alert-error" class="alert alert-error" style="display:none">
+	  <strong>抱歉 </strong>与服务器进行数据传输时出现的错误
+</div>
+<div id="form-search" class="form-search" style="text-align:center;margin-bottom: 20px;">
+
+</div>
+<div class="container" id="books">
+</div>
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h4 >资源相关信息</h4>
+  </div>
+  <div class="modal-body">
+    <form id="form-contribute" class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+
+
+   </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+    <button id="contribute-submit" class="btn btn-primary">共享</button>
+  </div>
+</div>
+
+<script type="text/template" id="tpl-contribute-form">
+
+   <input id="contribute-book-id" type="hidden" name="id" value=""/>
+   <input id="contribute-book-title" type="hidden" name="title" value=""/>
+   <input id="contriibute-book-image" type="hidden" name="image" value=""/>
+   <input id="contribute-book-isbn13" type="hidden" name="isbn13" value=""/>
+   <input id="contribute-book-publisher" type="hidden" name="publisher" value=""/>
+	<div class="tabbable">
+	  <ul class="nav nav-tabs">
+	    <li class="active"><a href="#tab1" data-toggle="tab">网盘资源</a></li>
+	    <li><a href="#tab2" data-toggle="tab">本地上传</a></li>
+	  </ul>
+	  <div class="tab-content">
+	    <div class="tab-pane active" id="tab1">
+              <div class="control-group"><label class="control-label">我要共享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly"></div></div>
+	      <div class="control-group">
+		    <label class="control-label">网盘下载地址</label>
+		    <div class="controls">
+		      <input type="text" name="resource_url" placeholder="资源下载地址">
+		    </div>
+		</div>
+	    </div>
+	    <div class="tab-pane" id="tab2">
+	     <div class="control-group"><label class="control-label">我要共享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly"></div></div>
+	     <div class="control-group">
+		    <label class="control-label">直接上传文件</label>
+		   <div class="controls">
+	   	    <input type="file" name="file" />
+		    </div>
+		</div>
+	    </div>
+	  </div>
+	</div>
+
+</script>
+
+<script type="text/template" id="tpl-search-input">
+  <div class="input-append">
+    <input id="txt_key" type="text" class="span2 search-query" placeholder="搜索图书名称/ISBN">
+    <button id="btn_search" type="button" class="btn">Search</button>
+  </div>
+</script>
+
+<script type="text/template" id="tpl-book-item">
+
+      <div class='span2'><img src="<%=image%>"></div>
+      <div class='span8'>
+        <h4><%= title %></title></h4>
+        <label><b>作者</b>:<%=author %></label>
+        <label><b>出版社</b>:<%=publisher %></label>
+        <label><b>ISBN</b>:<%=isbn13 %></label>
+      </div>
+      <div class='span2'>
+          <div class='btn-group'>
+            <a id='want-<%=id %>' value='<%=title %>' class='btn btn-success'>我想要</a>
+            <button class='btn btn-success dropdown-toggle' data-toggle='dropdown'>
+                <span class='caret'></span>
+            </button>
+              <ul class='dropdown-menu'>
+                   <li>
+                       <a class="have" data-toggle='modal' href='#myModal'>我有</a>
+                    </li>
+              </ul>
+           </div>
+      </div>
+
+</script>
+
+<script type="text/javascript" src="/static/js/backbone/finds.js"></script>
+{% end %}

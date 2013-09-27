@@ -17,7 +17,7 @@ class FindHandler(BaseHandler):
     ''' contribute new book resources handler '''
     def get(self):
         self.render(
-            "book/find.html",
+            "book/_find.html",
             page_heading='cuttle | contribute book',
             groups = self.get_groups()
         )
