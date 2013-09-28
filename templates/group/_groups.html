@@ -15,7 +15,7 @@
     {% for post in posts%}
     <div class="post-item">
       <div class="post-image">
-          <img src="/static/images/avatar.jpg"/>
+          <img src="{{ post.author.avatar }}"/>
       </div>
       <div class="post">
         <div class="post-title">

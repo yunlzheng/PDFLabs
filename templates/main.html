@@ -33,7 +33,7 @@
                       <a class="dropdown-toggle"
                          data-toggle="dropdown"
                          href="#">
-                          <img id="account_info" title="{{ current_user }}" src="{{ static_url('images/avatar.jpg') }}"/>
+                          <img id="account_info" title="{{ current_user }}" src=""/>
                           <b class="caret"></b>
                         </a>
                       <ul class="dropdown-menu">
@@ -113,8 +113,6 @@
      </div>
 
        <script type="text/javascript">
-
-
         var sign = 0;
 
         window.onscroll = function(e){
@@ -124,8 +122,29 @@
           var scrtop =document.documentElement.scrollTop||document.body.scrollTop;
           var height = document.documentElement.clientHeight||document.body.clientHeight;
         }
+
+        $(function(){
+
+            if(USER_ID!='None'){
+                $.ajax({
+                    type:'get',
+                    url:"/api/account/"+USER_ID,
+                    success:function(result,statusText,jqXHR){
+
+                    $("#account_info")
+                        .attr('title', result['name'])
+                        .attr('src', result['avatar']);
+                    },
+                    error:function(error,jqXHR){
+                        console.log(error);
+                    }
+                });
+            }
+
+        });
+
       </script>
-      <script>
+      <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
