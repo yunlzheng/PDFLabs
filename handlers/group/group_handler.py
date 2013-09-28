@@ -7,6 +7,7 @@ from tornado.log import app_log
 from models.posts import Post
 from models.groups import Group
 from handlers import BaseHandler
+from decorators import authenticated
 
 class GroupHandler(BaseHandler):
 
@@ -21,7 +22,7 @@ class GroupHandler(BaseHandler):
             groups = self.get_groups()
         )
 
-    @tornado.web.authenticated
+    @authenticated
     def post(self,tag):
         group = Group.objects(tag = tag)[0]
         title = self.get_argument('title')

@@ -8,6 +8,7 @@ from tornado.log import app_log
 from models.books import Book
 from models.files import File
 from handlers import BaseHandler
+from decorators import authenticated
 
 class BookHandler(BaseHandler):
 
@@ -21,7 +22,7 @@ class BookHandler(BaseHandler):
             groups = self.get_groups()
         )
 
-    @tornado.web.authenticated
+    @authenticated
     def post(self, bookid):
         resource_url = self.get_argument('resource_url', None)
         if resource_url:

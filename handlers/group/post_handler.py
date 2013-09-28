@@ -8,6 +8,7 @@ from models.posts import Post
 from models.posts import Comment
 from models.groups import Group
 from handlers import BaseHandler
+from tornado.web import authenticated
 
 
 class PostHandler(BaseHandler):
@@ -26,7 +27,7 @@ class PostHandler(BaseHandler):
             self.redirect('/group/'+tag)
 
 
-    @tornado.web.authenticated
+    @authenticated
     def post(self,tag,uuid):
         content = self.get_argument('content')
         now = datetime.datetime.now()
@@ -39,7 +40,7 @@ class PostHandler(BaseHandler):
         post.save()
         self.redirect("/group/"+tag+"/"+uuid)
 
-    @tornado.web.authenticated
+    @authenticated
     def delete(self, tag, uuid):
         post = Post.objects(id=uuid)[0]
         post.delete()

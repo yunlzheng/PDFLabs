@@ -7,14 +7,16 @@ import tornado.gen
 import tornado.httpclient
 from tornado.log import app_log
 from tornado.httpclient import *
+
 from models.books import Book
 from models.files import File
 from handlers import BaseHandler
-
+from decorators import authenticated
 
 class FindHandler(BaseHandler):
 
     ''' contribute new book resources handler '''
+    @authenticated
     def get(self):
         self.render(
             "book/_find.html",
@@ -58,7 +60,7 @@ class FindHandler(BaseHandler):
             app_log.error(ex)
         self.redirect("/book/" + str(book.bid))
 
-    @tornado.web.authenticated
+    @authenticated
     @tornado.gen.coroutine
     def post(self):
 

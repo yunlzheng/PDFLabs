@@ -5,6 +5,9 @@ import resource
 import functools
 import traceback
 import socket
+import urllib
+import urlparse
+
 import tornado.web
 from tornado.util import import_object
 from tornado.log import app_log
@@ -69,3 +72,28 @@ def log_exception(view_func):
             raise
         return response
     return functools.wraps(view_func)(_decorator)
+
+def authenticated(method):
+    """
+    自定义登录验证
+    @param method:
+    """
+    @functools.wraps(method)
+    def wrapper(self, *args, **kwargs):
+        if self.current_user is None:
+            if self.request.method in ("GET", "POST"):
+                url = self.get_login_url()
+                if "?" not in url:
+                    if urlparse.urlsplit(url).scheme:
+                        next_url = self.request.full_url()
+                    else:
+                        next_url = self.request.uri
+
+                    url += "?" + urllib.urlencode(dict(next=next_url))
+                self.redirect(url)
+            raise tornado.web.HTTPError(403)
+            return
+        else:
+            return method(self, *args, **kwargs)
+
+    return wrapper

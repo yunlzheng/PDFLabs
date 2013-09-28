@@ -33,6 +33,8 @@ class AuthenticateHandler(BaseHandler):
     def post(self):
         email = self.get_argument('email').decode()
         password = self.get_argument('password').decode()
+        next = self.get_argument('next')
+        print next
         try:
             user = User.objects(email=email, password=password)[0]
             if not user:
@@ -42,7 +44,10 @@ class AuthenticateHandler(BaseHandler):
             self.redirect('/sigin')
         else:
             self.set_secure_cookie('userid', user.uid)
-            self.redirect('/')
+            if next:
+                self.redirect(next)
+            else:
+                self.redirect('/')
 
 
 class LogoutHandler(BaseHandler):
