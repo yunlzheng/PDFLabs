@@ -16,42 +16,13 @@ var BookCollection = Backbone.Collection.extend({
 
 });
 
-app.books = new BookCollection();
 
 //视图
-
-var ConView = Backbone.View.extend({
-
-    el: $("#form-contribute"),
-
-    template: _.template( $("#tpl-contribute-form").html() ),
-
-    initialize: function(){
-
-        this.on('have:book', this.triggerHave);
-
-    },
-
-    triggerHave: function(model){
-
-        alert('trigger');
-        this.model = model;
-        this.render();
-    },
-
-    render: function(){
-
-        this.$el.html( this.template( this.model.toJSON() ) );
-
-    }
-
-});
-
-var conView = new ConView();
-
 var BookView = Backbone.View.extend({
 
     template: _.template( $("#tpl-book-item").html() ),
+
+    contribute_template: _.template( $("#tpl-contribute-form").html() ),
 
     className: "well row-fluid",
 
@@ -70,6 +41,10 @@ var BookView = Backbone.View.extend({
        this.$el.html( this.template( this.model.toJSON() ) );
        return this;
 
+    },
+
+    remove: function(){
+        alert("")
     },
 
     clear: function(){
@@ -101,7 +76,7 @@ var BookView = Backbone.View.extend({
 
     have: function(){
 
-        this.trigger('have:book', this.model);
+        $("#form-contribute").html( this.contribute_template(this.model.toJSON()) );
 
     }
 
@@ -146,6 +121,7 @@ var SearchInputView = Backbone.View.extend({
         var keyword = $("#txt_key").val().trim();
         if(keyword){
             $("#ajax_message").fadeIn(500);
+
             Backbone.ajax({
                 type:"get",
                 contentType:'application/json',
@@ -153,7 +129,9 @@ var SearchInputView = Backbone.View.extend({
                 timeout:1000000,
                 success:function(result,textStatus, jqXHR){
 
+                    app.books.remove(app.books.slice(0));
                     $("#ajax_message").fadeOut(400);
+                    $("#books").empty();
                     books = $.parseJSON(result).books;
                     for(var index in books){
 
@@ -175,4 +153,15 @@ var SearchInputView = Backbone.View.extend({
 
 });
 
-app.searchInputView = new SearchInputView().render();
+
+
+$(function(){
+
+    app.books = new BookCollection();
+    app.searchInputView = new SearchInputView().render();
+    $("#contribute-submit").click(function(){
+        $("#form-contribute").submit();
+    });
+
+});
+

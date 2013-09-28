@@ -20,7 +20,7 @@ class BooksHandler(BaseHandler):
 
         self.render(
             "book/books.html",
-            page_heading='test',
+            page_heading=tag,
             books=books,
             groups = self.get_groups()
         )

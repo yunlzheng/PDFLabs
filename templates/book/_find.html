@@ -20,9 +20,7 @@
   </div>
   <div class="modal-body">
     <form id="form-contribute" class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-
-
-   </form>
+    </form>
   </div>
   <div class="modal-footer">
     <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
@@ -32,11 +30,11 @@
 
 <script type="text/template" id="tpl-contribute-form">
 
-   <input id="contribute-book-id" type="hidden" name="id" value=""/>
-   <input id="contribute-book-title" type="hidden" name="title" value=""/>
-   <input id="contriibute-book-image" type="hidden" name="image" value=""/>
-   <input id="contribute-book-isbn13" type="hidden" name="isbn13" value=""/>
-   <input id="contribute-book-publisher" type="hidden" name="publisher" value=""/>
+   <input id="contribute-book-id" type="hidden" name="id" value="<%=id %>"/>
+   <input id="contribute-book-title" type="hidden" name="title" value="<%=title %>"/>
+   <input id="contriibute-book-image" type="hidden" name="image" value="<%=images.large %>"/>
+   <input id="contribute-book-isbn13" type="hidden" name="isbn13" value="<%= isbn13 %>"/>
+   <input id="contribute-book-publisher" type="hidden" name="publisher" value="<%=publisher %>"/>
 	<div class="tabbable">
 	  <ul class="nav nav-tabs">
 	    <li class="active"><a href="#tab1" data-toggle="tab">网盘资源</a></li>
@@ -44,7 +42,11 @@
 	  </ul>
 	  <div class="tab-content">
 	    <div class="tab-pane active" id="tab1">
-              <div class="control-group"><label class="control-label">我要共享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly"></div></div>
+              <div class="control-group"><label class="control-label">我要共享的</label>
+                  <div class="controls">
+                      <input type="text" class="info-book-name" value="<%= title %>" readonly="readonly">
+                  </div>
+              </div>
 	      <div class="control-group">
 		    <label class="control-label">网盘下载地址</label>
 		    <div class="controls">
@@ -53,7 +55,12 @@
 		</div>
 	    </div>
 	    <div class="tab-pane" id="tab2">
-	     <div class="control-group"><label class="control-label">我要共享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly"></div></div>
+	     <div class="control-group">
+             <label class="control-label">我要共享的</label>
+             <div class="controls">
+                 <input type="text" class="info-book-name" value="<%= title %>" readonly="readonly">
+             </div>
+         </div>
 	     <div class="control-group">
 		    <label class="control-label">直接上传文件</label>
 		   <div class="controls">
