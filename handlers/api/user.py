@@ -8,10 +8,10 @@ from util.gravatar import getAvatar
 class UserAPI(tornado.web.RequestHandler):
 
     @tornado.gen.coroutine
-    def get(self, uid):
+    def get(self, id):
         self.set_header('Content-Type', 'application/json')
         try:
-            user = User.objects(uid=uid)[0]
+            user = User.objects(id=id)[0]
             # Set your variables here
             email = user.email
             gravatar_url = getAvatar(email)

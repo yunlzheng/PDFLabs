@@ -1,6 +1,7 @@
 h5{font-size:24px;font-weight:100;font-family:"微软雅黑","Arial"}
 hr{margin:10px 0 15px 0}
 p{text-indent:2em}
+#go_top{display:none;position:fixed;bottom:5%;right:5%;cursor:pointer;filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);opacity:.5}
 #main_nav{margin-top:5px}
 #page{margin-bottom:140px;-webkit-transition:background .7s;-moz-transition:background .7s;-o-transition:background .7s;background-color:#fff;box-shadow:0 2px 10px #000}
 #navbar-top{-webkit-transition:display .5s;-moz-transition:display .5s;-o-transition:display .5s}
@@ -79,6 +80,7 @@ p{text-indent:2em}
 .group .post-list .post-item .post-comments-count{float:left;font-size:18px;color:#98989b;font-weight:bold;line-height:30px}
 .group .post-list .post-item .post-judge{float:left}
 .group .post-list .post-item .post-date{float:left;line-height:30px}
+#user_home .span8,#user_home .span4{background-color:#fff;-webkit-border-radius:8px;-moz-border-radius:8px;-ms-border-radius:8px;-o-border-radius:8px;border-radius:8px;-webkit-box-shadow:rgba(0,0,0,0.1) 1px 1px 10px;-moz-box-shadow:rgba(0,0,0,0.1) 1px 1px 10px;box-shadow:rgba(0,0,0,0.1) 1px 1px 10px;padding:10px}
 .model-large{left:33%;width:75%}.model-large .control-label{width:100px}
 .model-large .controls{margin-left:120px}.model-large .controls .input-large{width:80%}
 #editor{width:80%;max-height:250px;height:250px;background-color:#fff;border-collapse:separate;border:1px solid #ccc;padding:4px;box-sizing:content-box;-webkit-box-shadow:rgba(0,0,0,0.0745098) 0 1px 1px 0 inset;box-shadow:rgba(0,0,0,0.0745098) 0 1px 1px 0 inset;border-top-right-radius:3px;border-bottom-right-radius:3px;border-bottom-left-radius:3px;border-top-left-radius:3px;overflow:scroll;outline:none}

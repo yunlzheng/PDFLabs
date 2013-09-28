@@ -43,7 +43,7 @@ class AuthenticateHandler(BaseHandler):
             app_log.error(ex)
             self.redirect('/sigin')
         else:
-            self.set_secure_cookie('userid', user.uid)
+            self.set_secure_cookie('userid', str(user.id))
             try:
                 next = self.get_argument('next')
                 if next:
@@ -83,7 +83,7 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
                             name=result['name'])
                 user.save()
 
-            self.set_secure_cookie('userid', user.uid)
+            self.set_secure_cookie('userid', str(user.id))
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")
         else:
@@ -143,7 +143,7 @@ class DoubanCallbackHandler(BaseHandler):
             finally:
                 user.save()
 
-            self.set_secure_cookie('userid', user.uid)
+            self.set_secure_cookie('userid', str(user.id))
             self.set_secure_cookie('type', 'douban')
             self.redirect("/")
 

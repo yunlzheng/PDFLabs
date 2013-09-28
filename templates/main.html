@@ -37,7 +37,7 @@
                           <b class="caret"></b>
                         </a>
                       <ul class="dropdown-menu">
-			     <li><a href="/home"><i class="icon-home"></i>个人主页</a></li>
+			     <li><a href="/users/{{ current_user }}"><i class="icon-home"></i>个人主页</a></li>
                         <li><a href="/profile"><i class="icon-cog"></i>个人资料</a></li>
                         <li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>
                         <li class="divider"></li>
@@ -87,6 +87,9 @@
           <div class="container" >
               {% block body %}{% end %}
          </div>
+         <aside id="go_top" style="display: none;">
+             <i class="icon-circle-arrow-up icon-2x"></i>
+         </aside>
           <div id="footer" class="footer">
             <div class="container" style="padding-top:25px;color:#777">
               <div class="navs">
@@ -121,9 +124,25 @@
           var footer = document.getElementById("footer");
           var scrtop =document.documentElement.scrollTop||document.body.scrollTop;
           var height = document.documentElement.clientHeight||document.body.clientHeight;
+
+          if (t>100){
+            $("#go_top").fadeIn(500);
+          }else{
+            $("#go_top").fadeOut(500);
+          }
+
+
         }
 
         $(function(){
+
+            $("#go_top").click(function(){
+
+                $('body').animate({
+                    scrollTop: 0
+                },500);
+
+            });
 
             if(USER_ID!='None'){
                 $.ajax({
