@@ -4,7 +4,7 @@
 <div class="row-fluid group">
   <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
   {% if current_user %}
-      <a id="btn-create" class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+      <a id="btn-create" class="btn btn-info" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
       {% if current_user == post.author.uid%}
           <div class="btn-group">
             <a id="btn-edit" class="btn " data-toggle='modal' href='#myModal'>编辑</a>
@@ -27,7 +27,7 @@
       <div class="post-image">
           <img src="{{ post.author.avatar }}"/>
       </div>
-      <div class="post">
+      <div class="post span9">
         <div class="post-title">
           <a id="old_post_title">{{ post.title }}</a>
         </div>

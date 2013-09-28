@@ -6,7 +6,7 @@
  {% if current_user %}
       <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
   {% else %}
-      <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
+      <a class="btn btn-info" disabled><b class="icon-edit"></b>发帖</a>
   {% end %}
   <br/>
   <span class="subtitle">{{ _group.description }}</span>
@@ -17,7 +17,7 @@
       <div class="post-image">
           <img src="{{ post.author.avatar }}"/>
       </div>
-      <div class="post">
+      <div class="post span9">
         <div class="post-title">
           <a href="{{post.group.tag}}/{{ post.id }}">{{ post.title[:25] }}....</a>
         </div>
@@ -35,7 +35,6 @@
       </div>
       <div class='clearfix'></div>
     </div>
-    <hr/>
     {% end %}
   </div>
 </div>

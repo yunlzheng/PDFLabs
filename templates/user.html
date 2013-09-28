@@ -1,0 +1,36 @@
+{% extends "main.html" %}
+{% autoescape None %}
+{% block body %}
+<div id="user_home" class="row-fluid">
+    <div class="span8">
+       <div class="tabbable"> <!-- Only required for left/right tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">喜欢</a></li>
+            <li><a href="#tab2" data-toggle="tab">想要</a></li>
+            <li><a href="#tab3" data-toggle="tab">分享</a></li>
+            <li><a href="#tab4" data-toggle="tab">参与</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+
+            </div>
+            <div class="tab-pane" id="tab2">
+
+            </div>
+            <div class="tab-pane" id="tab3">
+
+            </div>
+            <div class="tab-pane" id="tab4">
+
+            </div>
+          </div>
+       </div>
+    </div>
+    <div class="span4">
+        <div>
+            <img src="{{ user.avatar }}">
+        </div>
+        <b>{{ user.name }}</b>
+    </div>
+</div>
+{% end %}
