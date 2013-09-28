@@ -10,26 +10,25 @@ from models.books import Book
 
 class IWantApi(BaseHandler):
 
-    @tornado.web.authenticated
     @tornado.gen.coroutine
     def post(self, bookid):
-        '''
-            I want some book
-            argument bookid : the book uuid in douban
-        '''
+
+        image = self.get_argument('images[large]')
+        title = self.get_argument('title')
+        isbn13 = self.get_argument('isbn13')
+        bid = self.get_argument('id')
+        publisher = self.get_argument('publisher')
+
         try:
             book = Book.objects(bid=bookid)[0]
             #book.image = book_details['images']['large']
         except Exception, e:
             app_log.error(e)
-            http_client = AsyncHTTPClient()
-            response = yield http_client.fetch("https://api.douban.com/v2/book/"+bookid)
-            book_details = json.loads(response.body)
-            book = Book(bid = book_details['id'],
-                title=book_details['title'],
-                image=book_details['images']['large'],
-                isbn13=book_details['isbn13'],
-                publisher=book_details['publisher'],
+            book = Book(bid = bid,
+                title=title,
+                image=image,
+                isbn13=isbn13,
+                publisher=publisher,
                 wcount=0,
                 dcount=0
             )
