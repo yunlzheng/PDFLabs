@@ -5,6 +5,7 @@ from tornado.log import app_log
 
 from .user import UserAPI
 from .book import IWantApi
+from .book import LikeApiHandler
 from .book import BookApiHandler
 from .book import BookDetailHandler
 from .book import BookSearchHandler

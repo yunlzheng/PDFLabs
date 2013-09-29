@@ -22,6 +22,10 @@ class Book(Document):
     files = ListField(EmbeddedDocumentField(File))
     wcount = IntField(default=0)
     dcount = IntField()
+    # the liked user List
+    likes = ListField()
+    # the user list who want this book
+    wants = ListField()
 
     meta = {
         'ordering' : ['-update_at']

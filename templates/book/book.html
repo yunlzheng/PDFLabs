@@ -17,7 +17,13 @@
 	</div>
 	<div class="span8">
 		<div class="span8">
-		<h5>{{ book.title }}  <button id="btn_ilike" class="btn" title="喜欢"><i class="icon-heart"></i></button></h5><h6 id="book_subtitle"> </h6>
+		<h5>{{ book.title }}
+            <button id="btn_ilike" class="btn" title="喜欢">
+                <i class="icon-heart-empty"></i>
+                <!-- <i class="icon-heart-empty"></i> -->
+            </button>
+        </h5>
+        <h6 id="book_subtitle"></h6>
 
 		<label id="book_authors"><b>作者:</b>
 		</label>
@@ -40,7 +46,9 @@
    <h5>
    	共享的文件
    	{% if current_user %}
-   	<a class="btn" id="btn_share" title="我要分享" data-toggle='modal' href='#myModal'><i class="icon-hand-up"></i>我要分享
+   	<a class="btn" id="btn_share" title="我要分享" data-toggle='modal' href='#myModal'>
+        <i class="icon-hand-up"></i>
+        我要分享
    	</a>
    	{% end %}
    </h5>

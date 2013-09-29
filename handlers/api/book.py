@@ -7,10 +7,14 @@ from tornado.httpclient import AsyncHTTPClient
 from tornado.log import app_log
 from handlers import BaseHandler
 from models.books import Book
+from decorators import authenticated
 
 class IWantApi(BaseHandler):
 
-    @tornado.gen.coroutine
+    def get(self, id):
+        self.redirect("/book/"+id)
+
+    @authenticated
     def post(self, bookid):
 
         image = self.get_argument('images[large]')
@@ -21,7 +25,6 @@ class IWantApi(BaseHandler):
 
         try:
             book = Book.objects(bid=bookid)[0]
-            #book.image = book_details['images']['large']
         except Exception, e:
             app_log.error(e)
             book = Book(bid = bid,
@@ -37,6 +40,16 @@ class IWantApi(BaseHandler):
         finally:
             book.update_at=datetime.datetime.now()
             book.save()
+
+class LikeApiHandler(BaseHandler):
+
+    def get(self, id):
+        self.redirect("/book/"+id)
+
+    @authenticated
+    def post(self, id):
+        book = Book.objects(id=id)[0]
+        user = self.get_curent_user_model()
 
 class BookApiHandler(BaseHandler):
 

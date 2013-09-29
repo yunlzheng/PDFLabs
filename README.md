@@ -3,6 +3,7 @@
 分享互联网上的PDF
 
 Share PDF files on the Internet
+项目Demo：[heroku]
 
  ![screenshot](https://github.com/yunlzheng/PDFLabs/raw/master/static/img/home.png)
 
@@ -41,3 +42,5 @@ Share PDF files on the Internet
 [changelog]
 
 [changelog]: http://pdflabs.herokuapp.com/group/logs
+
+[heroku]: http://pdflabs.herokuapp.com

@@ -15,6 +15,7 @@ from handlers.group import GroupHandler
 from handlers.group import PostHandler
 from handlers.api import UserAPI
 from handlers.api import IWantApi
+from handlers.api import LikeApiHandler
 from handlers.api import BookDetailHandler, BookSearchHandler
 from handlers.api import WeiXinHandler
 from handlers.api import MongoBackboneHandler
@@ -43,6 +44,7 @@ router = [
       (r"/api/book/search/([\s\S]*)", BookSearchHandler),
       (r"/api/book/([0-9]+)", BookDetailHandler),
       (r"/api/want/([0-9]+)", IWantApi),
+      (r"/api/like/([0-9]+)", LikeApiHandler),
       (r"/api/rest/([a-z]+)", MongoBackboneHandler),
       (r"/api/rest/([a-z]+)/(.+)", MongoBackboneHandler),
       (r"/callback", DoubanCallbackHandler),

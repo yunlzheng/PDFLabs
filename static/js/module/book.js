@@ -20,12 +20,15 @@ define(["jquery","application", "module/ajax_client" ,"flexpaper","flexpaper_han
 
                 $.ajax({
                   type:"post",
-                  url:"/api/want/"+bookid,
+                  url:"/api/like/"+bookid,
                   success:function(result,statusText,jqXHR){
-                      $("#alert-ilike-success").show();
+
+                      console.log(statusText);
+                      console.log(jqXHR);
+                      /*$("#alert-ilike-success").show();
                       setTimeout(function(){
-                        $("#alert-ilike-success").hide().remove();
-                      },2000)
+                           $("#alert-ilike-success").hide().remove();
+                      },2000)*/
                   },
                   error:function(error,jqXHR){
                       $("#alert-error").show();
