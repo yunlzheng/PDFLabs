@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 #*-* coding:utf-8 *-
+import datetime
 import tornado.web
 import tornado.gen
 import tornado.httpclient
@@ -29,13 +30,13 @@ class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
         return self.get_secure_cookie("userid")
 
     def get_curent_user_model(self):
-        uid = self.get_current_user()
+        id = self.get_current_user()
         try:
-        	user = User.objects(uid=uid)[0]
+            user = User.objects(id=id)[0]
         except Exception as ex:
-        	app_log.error(ex)
+            app_log.error(ex)
         else:
-        	return user
+            return user
 
     def is_admin(self):
         pass
@@ -44,7 +45,7 @@ class MakoHandler(BaseHandler):
     '''
         该类继承自BaseHandler 复写了tornado默认的调用模板的方法，转向使用moka模板引擎
     '''
-    
+
     def initialize(self, lookup):
         self._lookup = lookup
 
