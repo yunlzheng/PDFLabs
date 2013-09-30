@@ -12,11 +12,10 @@ class UserAPI(tornado.web.RequestHandler):
         self.set_header('Content-Type', 'application/json')
         try:
             user = User.objects(id=id)[0]
-            # Set your variables here
             email = user.email
-            gravatar_url = getAvatar(email)
+            avatar = user.avatar
+            gravatar_url = getAvatar(email, default=avatar)
             user.avatar=gravatar_url
-            user.save()
         except Exception as ex:
             app_log.error(ex)
             self.set_status(404)

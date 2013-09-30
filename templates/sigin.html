@@ -77,27 +77,17 @@
         <div class="tabbable">
           <ul class="nav nav-tabs">
             <li  class="active"><a href="#tab2" data-toggle="tab">登录</a></li>
-            <li ><a href="#tab1" data-toggle="tab">第三方</a></li>
           </ul>
           <div class="tab-content">
-            <div class="tab-pane" id="tab1">
-              <a href="/sigin/google">
-                <img src="/static/img/Red-signin_Long_base_44dp.png" width="176"/>
-              </a>
-              <br/>
-              <a href="/sigin/douban">
-                <img src="http://img3.douban.com/pics/douban-icons/login_with_douban_32.png" alt="32图标" title="32图标">
-              </a>
-            </div>
             <div class="tab-pane active" id="tab2">
               <div class="control-group">
                 <div class="controls">
-                  <input type="text" name="email" placeholder="email..."/>
+                  <input type="text" name="email" placeholder="注册的邮箱"/>
                 </div>
               </div>
               <div class="control-group">
                 <div class="controls">
-                  <input type="password" name="password" placeholder="password..."/>
+                  <input type="password" name="password" placeholder="登录密码"/>
                 </div>
                 <div class="control-group" style="text-align:center">
                     <button type="submit" class="btn btn-success" style="width:228px">登录</button>
@@ -106,7 +96,14 @@
                 <a href="/" class="btn" style="width:202px">取消</a>
                </div>
               </div>
-             
+              <div class="control-group">
+                  其他登录方式：
+                  <a href="/sigin/douban"><img src="/static/img/douban_24x24.png"></a>
+                  <a href="/sigin/google"><img src="/static/img/google_24x24.png"></a>
+                  <a href="/sigin/qq"><img src="/static/img/qq_24x24.png"></a>
+                  <a href="/sigin/weibo"><img src="/static/img/weibo_24x24.png"></a>
+              </div>
+
             </div>
           </div>
         </div>

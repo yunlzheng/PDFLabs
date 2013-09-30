@@ -20,7 +20,11 @@ from handlers.api import BookDetailHandler, BookSearchHandler
 from handlers.api import WeiXinHandler
 from handlers.api import MongoBackboneHandler
 
-from handlers.auth import AuthenticateHandler, GoogleLoginHandler, LogoutHandler, DoubanSiginHandler, DoubanCallbackHandler
+from handlers.auth import AuthenticateHandler
+from handlers.auth import GoogleLoginHandler
+from handlers.auth import DoubanSiginHandler, DoubanCallbackHandler
+from handlers.auth import TencentSiginHandler, TencentSiginCallbackHandler
+from handlers.auth import LogoutHandler
 
 static_dir = os.path.join(os.path.dirname(__file__), "static")
 static_dir_dict = dict(path=static_dir)
@@ -52,6 +56,8 @@ router = [
       (r"/sigout", LogoutHandler),
       (r"/sigin/google", GoogleLoginHandler),
       (r"/sigin/douban", DoubanSiginHandler),
+      (r"/sigin/qq", TencentSiginHandler),
+      (r"/callback/qq", TencentSiginCallbackHandler),
       (r"/weixin/service1", WeiXinHandler)
 
 ]
