@@ -15,12 +15,23 @@ class BookHandler(BaseHandler):
     @tornado.gen.coroutine
     def get(self, bookid):
         book = Book.objects(bid = bookid)[0]
-        self.render(
-            "book/book.html",
-            page_heading=book.title,
-            book=book,
-            groups = self.get_groups()
-        )
+
+        params = {
+            'book': book,
+            "groups": self.get_groups(),
+            "page_heading": book.title,
+            "like":"-empty"
+        }
+
+        try:
+            user = self.get_curent_user_model()
+            params['user'] = user
+            if user in book.likes:
+                params['like'] = ""
+        except Exception as ex:
+            app_log.exception(ex)
+
+        self.render("book/book.html",**params)
 
     @authenticated
     def post(self, bookid):

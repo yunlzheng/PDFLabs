@@ -23,7 +23,7 @@ class Book(Document):
     wcount = IntField(default=0)
     dcount = IntField()
     # the liked user List
-    likes = ListField()
+    likes = ListField(ReferenceField(User))
     # the user list who want this book
     wants = ListField()
 

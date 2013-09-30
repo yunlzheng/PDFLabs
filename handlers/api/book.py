@@ -48,8 +48,13 @@ class LikeApiHandler(BaseHandler):
 
     @authenticated
     def post(self, id):
-        book = Book.objects(id=id)[0]
+        book = Book.objects(bid=id)[0]
         user = self.get_curent_user_model()
+        if user not in book.likes:
+            book.likes.append(user)
+        else:
+            book.likes.remove(user)
+        book.save()
 
 class BookApiHandler(BaseHandler):
 

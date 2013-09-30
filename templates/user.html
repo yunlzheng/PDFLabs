@@ -12,7 +12,22 @@
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" id="tab1">
-
+                    {% for b1,b2 in bgs %}
+                    <div class="div-like-row">
+                       <div class="span6 book">
+                           <a href="/book/{{ b1.bid }}">
+                             <img src="{{ b1.image }}">
+                           </a>
+                           <!--{{ b1.title }}-->
+                       </div>
+                       <div class="span6 book">
+                           <a href="/book/{{ b2.bid }}">
+                            <img src="{{ b2.image }}">
+                           </a>
+                           <!--{{ b2.title }}-->
+                       </div>
+                    </div>
+                    {% end %}
             </div>
             <div class="tab-pane" id="tab2">
 
@@ -30,7 +45,12 @@
         <div>
             <img src="{{ user.avatar }}">
         </div>
-        <b>{{ user.name }}</b>
+        <div>
+            <b>{{ user.name }}</b>
+        </div>
+        <div>
+           来自：{{ user.type }}
+        </div>
     </div>
 </div>
 {% end %}
