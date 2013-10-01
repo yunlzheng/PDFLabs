@@ -41,6 +41,7 @@ class IWantApi(BaseHandler):
             book.update_at=datetime.datetime.now()
             book.save()
 
+
 class LikeApiHandler(BaseHandler):
 
     def get(self, id):
@@ -56,11 +57,6 @@ class LikeApiHandler(BaseHandler):
             book.likes.remove(user)
         book.save()
 
-class BookApiHandler(BaseHandler):
-
-    def get(self,id):
-        book = Book.objects(bid=id)[0]
-        self.write(book.to_json())
 
 class BookDetailHandler(BaseHandler):
 
@@ -71,6 +67,7 @@ class BookDetailHandler(BaseHandler):
         response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
         book_details = json.loads(response.body)
         self.write(book_details)
+
 
 class BookSearchHandler(BaseHandler):
 

@@ -13,7 +13,6 @@ from handlers.book import BooksHandler
 from handlers.book import FindHandler
 from handlers.group import GroupHandler
 from handlers.group import PostHandler
-from handlers.api import UserAPI
 from handlers.api import IWantApi
 from handlers.api import LikeApiHandler
 from handlers.api import BookDetailHandler, BookSearchHandler
@@ -44,18 +43,17 @@ router = [
       (r"/book/preview/([0-9]+)", PreviewHandler),
       (r"/group/([0-9a-zA-Z\-]+)", GroupHandler),
       (r"/group/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)", PostHandler),
-      (r"/api/account/(.*)", UserAPI),
       (r"/api/book/search/([\s\S]*)", BookSearchHandler),
       (r"/api/book/([0-9]+)", BookDetailHandler),
       (r"/api/want/([0-9]+)", IWantApi),
       (r"/api/like/([0-9]+)", LikeApiHandler),
       (r"/api/rest/([a-z]+)", MongoBackboneHandler),
       (r"/api/rest/([a-z]+)/(.+)", MongoBackboneHandler),
-      (r"/callback", DoubanCallbackHandler),
       (r"/sigin", AuthenticateHandler),
       (r"/sigout", LogoutHandler),
       (r"/sigin/google", GoogleLoginHandler),
       (r"/sigin/douban", DoubanSiginHandler),
+      (r"/callback", DoubanCallbackHandler),
       (r"/sigin/qq", TencentSiginHandler),
       (r"/callback/qq", TencentSiginCallbackHandler),
       (r"/weixin/service1", WeiXinHandler)

@@ -149,7 +149,7 @@
             if(USER_ID!='None'){
                 $.ajax({
                     type:'get',
-                    url:"/api/account/"+USER_ID,
+                    url:"/api/rest/users/"+USER_ID,
                     success:function(result,statusText,jqXHR){
 
                     $("#account_info")

@@ -1,91 +1,118 @@
-# coding : utf-8
+# coding: utf-8
+
 import json
 import tornado.web
 from tornado.log import app_log
-
-from .user import UserAPI
 from .book import IWantApi
 from .book import LikeApiHandler
-from .book import BookApiHandler
 from .book import BookDetailHandler
 from .book import BookSearchHandler
 from .weixin import WeiXinHandler
 
 from decorators import load_model
 
+__author__ = 'zheng'
+
+
 class BackboneHandler(tornado.web.RequestHandler):
 
-	def initialize(self, auth= False):
-		self.auth = auth
+    model = None
 
-	def prepare(self):
-		if self.auth:
-			if not self.current_user:
-				raise tornado.web.HTTPError(403)
+    def initialize(self, auth= False):
+        self.auth = auth
 
-	def encode(self, data):
-		return json.dumps(data)
+    def prepare(self):
+        if self.auth:
+            if not self.current_user:
+                raise tornado.web.HTTPError(403)
 
-	def decode(self, data):
-		return json.loads(data)
+    def encode(self, data):
+        return json.dumps(data)
 
-	def get(self, *args):
-		if self.is_get_collection(*args):
-			self.write(self.encode(self.get_collection(*args)))
-		else:
-			self.write(self.encode(self.get_model(*args)))
+    def decode(self, data):
+        return json.loads(data)
 
-	def post(self, *args):
-		model = self.decode(self.request.body)
-		resp = self.create_model(model, *args)
-		self.write(resp)
+    def get(self, *args):
+        self.set_header("Content-Type", "application/json; charset=UTF-8")
+        if self.is_get_collection(*args):
+            self.write(self.encode(self.get_collection(*args)))
+        else:
+            self.write(self.encode(self.get_model(*args)))
 
-	def put(self, *args):
-		model = self.decode(self.request.body)
-		resp = self.update_model(model, *args)
-		self.write(resp)
+    def post(self, *args):
+        resp = self.encode(self.create_model(*args))
+        self.write(resp)
 
-	def delete(self, *args):
-		self.delete_model(*args)
+    def put(self, *args):
+        resp = self.encode(self.update_model(*args))
+        self.write(resp)
 
-	def is_get_collection(self, *args):
-		return len(args) == 1
+    def delete(self, *args):
+        self.delete_model(*args)
 
-	def create_model(self, model, * args):
-		raise tornado.web.HTTPError(404)
+    def is_get_collection(self, *args):
+        return len(args) == 1
 
-	def get_collection(self, *args):
-		raise tornado.web.HTTPError(404)
+    def create_model(self, obj, *args):
+        raise tornado.web.HTTPError(404)
 
-	def get_model(self, *args):
-		raise tornado.web.HTTPError(404)
+    def get_collection(self, *args):
+        raise tornado.web.HTTPError(404)
 
-	def update_model(self, model, *args):
-		raise tornado.web.HTTPError(404)
+    def get_model(self, *args):
+        raise tornado.web.HTTPError(404)
 
-	def delete_model(self, * args):
-		raise tornado.web.HTTPError(404)
+    def update_model(self, obj, *args):
+        raise tornado.web.HTTPError(404)
+
+    def delete_model(self, *args):
+        raise tornado.web.HTTPError(404)
+
 
 class MongoBackboneHandler(BackboneHandler):
 
-	def encode(self,data):
-		result = {}
-		if isinstance(data, self.model):
-			result['data'] = data.to_json()
-		else:
-			resp = [obj.to_json() for obj in data]
-			result['data'] = resp
-		return result
+    def encode(self,data):
+        return data.to_json()
 
-	@load_model
-	def get_model(self, *args):
-		try:
-			instance = self.model.objects(id=args[1])[0]
-		except Exception as ex:
-			app_log.error(ex)
-			raise tornado.web.HTTPError(404)
-		else:
-			return instance
-	@load_model
-	def get_collection(self, *args):
-		return self.model.objects()
+    @load_model
+    def get_model(self, *args):
+        try:
+            instance = self.model.objects(id=args[1])[0]
+        except Exception as ex:
+            app_log.error(ex)
+            raise tornado.web.HTTPError(404)
+        else:
+            return instance
+
+    @load_model
+    def get_collection(self, *args):
+        return self.model.objects()
+
+    @load_model
+    def delete_model(self, *args):
+        try:
+            instance = self.model.objects(id=args[1])[0]
+            instance.delete()
+        except Exception, e:
+            raise e
+        else:
+            return instance
+
+    @load_model
+    def create_model(self, *args):
+        #print obj
+        obj = self.decode(self.request.body)
+        obj = self.model(**obj)
+        obj.save()
+        return obj
+
+    @load_model
+    def update_model(self, *args):
+        obj = self.decode(self.request.body)
+        instance = self.model.objects(id=args[1])[0]
+        for key in obj:
+            print key
+            if hasattr(instance, key):
+                setattr(instance, key, obj[key])
+        instance.save()
+        return instance

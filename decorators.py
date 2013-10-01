@@ -17,16 +17,17 @@ def load_model(func):
     @functools.wraps(func)
     def wrapper(self, *args, **kwargs):
         #setattr(self, 'session', "session")
-        app_log.info('revice request args: {0} kwargs: {1}'.format(args, kwargs))
+        print "revice args {0} kwargs {1}".format(args, kwargs)
         model_class = "models.{0}".format(args[0])
         try:
             model = import_object(model_class)
-            app_log.info(model)
+            print "import object {0}".format(model)
             setattr(self, 'model', model)
         except Exception as ex:
             app_log.error(ex)
+            print ex
             raise tornado.web.HTTPError(404)
-        app_log.info('revice request args: {0} kwargs: {1}'.format(args, kwargs))
+        print 'revice request args: {0} kwargs: {1}'.format(args, kwargs)
         return func(self, *args, **kwargs)
     return wrapper
 
