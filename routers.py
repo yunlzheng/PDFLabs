@@ -19,6 +19,8 @@ from handlers.api import BookDetailHandler, BookSearchHandler
 from handlers.api import WeiXinHandler
 from handlers.api import MongoBackboneHandler
 
+from handlers.chart import ChartHandler
+
 from handlers.auth import AuthenticateHandler
 from handlers.auth import GoogleLoginHandler
 from handlers.auth import DoubanSiginHandler, DoubanCallbackHandler
@@ -35,6 +37,7 @@ router = [
       (r"/(rebots\.xml)", tornado.web.StaticFileHandler, static_dir_dict),
       # handlers
       (r"/", MainHandler),
+      (r"/websocket", ChartHandler),
       (r"/logs", LogsHandler),
       (r'/users/(.+)', UserHandler),
       (r'/book/find', FindHandler),

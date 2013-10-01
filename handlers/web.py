@@ -10,7 +10,6 @@ class LogsHandler(BaseHandler):
     ''' redirect to the update logs page '''
     @log_exception
     def get(self):
-    	raise Exception('error message')
         self.render(
             "logs.html",
             page_heading='PDFLabs 更新日志',

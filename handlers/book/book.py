@@ -10,19 +10,18 @@ from models.files import File
 from handlers import BaseHandler
 from decorators import authenticated
 
+
 class BookHandler(BaseHandler):
 
     @tornado.gen.coroutine
-    def get(self, bookid):
-        book = Book.objects(bid = bookid)[0]
-
+    def get(self, id):
+        book = Book.objects(bid=id)[0]
         params = {
             'book': book,
             "groups": self.get_groups(),
             "page_heading": book.title,
             "like":"-empty"
         }
-
         try:
             user = self.get_curent_user_model()
             params['user'] = user
