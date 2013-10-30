@@ -1,5 +1,9 @@
 @import "variables.less";
 
+body{
+  overflow-x: hidden;
+}
+
 h5 {
   font-size: 24px;
   font-weight: 100;
@@ -29,19 +33,15 @@ p{
 }
 
 #page{
-  margin-bottom: 140px;
+
   -webkit-transition: background 0.7s;
   -moz-transition: background 0.7s;
   -o-transition: background 0.7s;
   background-color: rgba(255,255,255,1);
-  box-shadow: 0px 2px 10px #000;
-
-}
-
-#navbar-top{
-      -webkit-transition: display 0.5s;
-   -moz-transition: display 0.5s;
-   -o-transition: display 0.5s;
+  /*background: url("/static/images/background.png") repeat-y;*/
+  /*box-shadow: 0px 2px 10px #000;
+    margin-bottom: 140px;
+  */
 }
 
 #footer{
@@ -52,7 +52,16 @@ p{
     height: 150px;
     z-index:-9999;
     position: fixed;
+  display: none;
 }
+
+#navbar-top{
+      -webkit-transition: display 0.5s;
+   -moz-transition: display 0.5s;
+   -o-transition: display 0.5s;
+}
+
+
 
 .footer{
 
@@ -101,8 +110,7 @@ p{
 }
 
 #wrapper2{
-  /*background: url("/static/img/raster.png");*/
-  background-color: rgba(246,244,245,.84);
+
 }
 
 #wrapper{
@@ -388,10 +396,6 @@ padding: 9px 0;
 }
 
 
-.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
-  /*border-bottom: 3px solid #109AF6;*/
-}
-
 .span-border{
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
@@ -427,7 +431,7 @@ padding: 9px 0;
 
 .bookstore{
 
-   background: url('/static/img/bookcase.jpg') no-repeat 0px 210px;
+   background: url('/static/images/bookcase.png') no-repeat 0px 235px;
    padding-bottom: 40px;
    .span3{
       /*text-align: center;*/
@@ -531,10 +535,7 @@ padding: 9px 0;
     margin: 0px;
     vertical-align: middle;
   }
-  h8{
-    color:rgb(152, 152, 155);
-    font-size:14px;
-  }
+
   .subtitle{
     display: inline-block;
     margin-top: 10px;

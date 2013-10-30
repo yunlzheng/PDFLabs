@@ -5,6 +5,7 @@ from tornado.httpclient import *
 from handlers import BaseHandler
 from decorators import log_exception
 
+
 class LogsHandler(BaseHandler):
 
     ''' redirect to the update logs page '''
