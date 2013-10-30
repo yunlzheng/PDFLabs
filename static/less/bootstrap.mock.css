@@ -1,0 +1,36 @@
+.navbar .rbrand {
+  float: right;
+  display: block;
+  padding: 5px 20px 1px;
+  margin-left: -20px;
+  font-size: 14px;
+  font-weight: 200;
+  text-shadow: 0 1px 0 #FFF;
+  line-height: 33px;
+}
+.navbar .rbrand img {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.navbar .rbrand .caret {
+  margin-top: 15px;
+}
+.navbar-inner {
+  background-image: none;
+  max-height: 40px;
+}
+.navbar .brand {
+  display: block;
+  float: left;
+  padding: 10px 20px 10px;
+  margin-left: -20px;
+  font-size: 20px;
+  font-weight: 200;
+  color: #777;
+  text-shadow: 0 1px 0 #FFF;
+  margin-top: 2px;
+}
+.navbar .brand .icon-fire {
+  margin-right: 5px;
+}
