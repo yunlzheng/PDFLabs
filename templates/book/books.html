@@ -1,7 +1,11 @@
 {% extends "../main.html" %}
 {% autoescape None %}
 {% block body %}
-<div class="row-fluid">
+<div class="row-fluid" id="app-books">
+ <div id="page_search">
+    <input id="input_search" type="text" placeholder="检索"/>
+    <div class="clearfix"></div>
+</div>
 <div id="divHomeCarousel" class="carousel slide custom-carousel ">
      <hr>
     <div class="row-fluid">
@@ -34,4 +38,5 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="/static/js/backbone/books.js"></script>
 {% end %}

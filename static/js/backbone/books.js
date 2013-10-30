@@ -3,7 +3,7 @@
  */
 var Workspace = Backbone.View.extend({
 
-    el: $('#app_home'),
+    el: $('#app-books'),
     events: {
         "keypress #input_search": "search_page",
         "blur #input_search": "search_page"
@@ -12,15 +12,12 @@ var Workspace = Backbone.View.extend({
         console.log(this.el);
         return this;
     },
-    search_page: function(event){
+    search_page: function(){
 
         var value = $("#input_search").val().trim();
         $(".book_thing").removeClass('focus');
-        if(value){
-            $("#hot-container").hide();
-        }else{
+        if(!value){
             $("#input_search").attr('placeholder',"检索");
-            $("#hot-container").show();
             return;
         }
         $(".book_intro").each(function(){
