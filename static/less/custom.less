@@ -117,7 +117,7 @@ p{
 }
 
 #main-conatiner{
-   padding-top: 90px;
+   padding-top: 60px;
 }
 
 /* Custom container */
@@ -374,13 +374,13 @@ padding: 9px 0;
        text-decoration: none;
     }
   .book_intro{
-   width: 180px;
-   text-align: center;
-   margin-top: 48px;
-   margin-bottom: 20px;
-   font-size: 18px;
-   font-weight: 100;
-   overflow: hidden;
+     width: 180px;
+     text-align: center;
+     margin-top: 48px;
+     margin-bottom: 20px;
+     font-size: 18px;
+     font-weight: 100;
+     overflow: hidden;
   }
 }
 .img{
@@ -460,6 +460,18 @@ padding: 9px 0;
 
 .book_thing{
   position: relative;
+  &.focus{
+    img{
+      -webkit-box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
+      -moz-box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
+      box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
+      -webkit-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+    }
+  }
   .pre_ribbon{
       position: absolute;
       top: 0;
@@ -478,7 +490,6 @@ padding: 9px 0;
         background: rgb(248, 148, 6)
       }
       span{
-
           filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
           opacity: 0.8;
           display: block;
@@ -530,7 +541,6 @@ padding: 9px 0;
     color:rgb(140, 139, 141);
   }
   .post-content{
-        line-height:29px;
         padding: 20px;
         font: 14px Helvetica,Arial,sans-serif;
   }
@@ -637,11 +647,10 @@ padding: 9px 0;
   margin-bottom: 30px;
   .span8,.span4{
     background-color: #fff;
+    border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    border-radius: 8px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
     -moz-box-shadow: rgba(0,0,0,0.1) 1px 1px 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
