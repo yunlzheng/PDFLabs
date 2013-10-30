@@ -324,9 +324,6 @@ p {
 .img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
-.navbar-fixed-top {
-  opacity: 0.9;
-}
 .navbar-fixed-top .navbar-inner,
 .navbar-static-top .navbar-inner {
   /*border-bottom: 3px solid #109AF6;*/
@@ -349,23 +346,6 @@ p {
 }
 .row-margin {
   margin-top: 20px;
-}
-.navbar .nav > .active > a,
-.navbar .nav > .active > a:hover,
-.navbar .nav > .active > a:focus {
-  color: #fff;
-  text-decoration: none;
-  background-color: #109af6;
-  -webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  -moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
-  font-weight: bold;
-  text-shadow: none;
-}
-.well {
-  background-color: #fff;
-  box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
-  border: none;
 }
 .color-border {
   content: "";
@@ -635,70 +615,4 @@ p {
   border-top-left-radius: 3px;
   overflow: scroll;
   outline: none;
-}
-@media (min-width: 1200px) {
-  
-}
-@media (max-width: 767px) {
-  body {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-  .navbar-fixed-top {
-    margin-bottom: 0px;
-  }
-  .min-hidden {
-    display: none;
-  }
-  .bookstore {
-    background: none;
-    padding-bottom: 40px;
-  }
-  .bookstore .pre_ribbon {
-    position: absolute;
-    top: 0;
-    height: 100px;
-    width: 100px;
-    overflow: hidden;
-    color: #ffffff;
-    font-weight: bold;
-    letter-spacing: .5em;
-  }
-  .bookstore .pre_ribbon span {
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  .bookstore .span3 {
-    text-align: center;
-  }
-  .bookstore .span3 .book_intro {
-    text-align: center;
-    width: 180px;
-    margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    font-weight: 100;
-    overflow: hidden;
-  }
-  .bookstore .span3 img {
-    width: 312px;
-    height: 428px;
-  }
-}
-@media (min-width: 768px) and (max-width: 979px) {
-  .navbar-fixed-top {
-    margin-bottom: 0px;
-  }
-  .bookstore {
-    background: url('/static/img/bookcase_max_767.jpg') no-repeat 0px 210px;
-    padding-bottom: 40px;
-  }
-  .bookstore .span3 {
-    /*text-align: center;*/
-  
-  }
 }
