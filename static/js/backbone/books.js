@@ -13,11 +13,11 @@ var Workspace = Backbone.View.extend({
         return this;
     },
     search_page: function(){
-
-        var value = $("#input_search").val().trim();
+        var $input_search =  $("#input_search");
+        var value = $input_search.val().trim();
         $(".book_thing").removeClass('focus');
         if(!value){
-            $("#input_search").attr('placeholder',"检索");
+            $input_search.attr('placeholder',"检索");
             return;
         }
         $(".book_intro").each(function(){
