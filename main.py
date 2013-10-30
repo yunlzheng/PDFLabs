@@ -46,6 +46,7 @@ define('qq_auth_token', default=settings.QQ_AUTH_TOKEN)
 define('qq_auth_me', default=settings.QQ_AUTH_ME)
 define('qq_auth_user', default=settings.QQ_AUTH_USER)
 
+
 class Application(tornado.web.Application):
 
     def __init__(self):

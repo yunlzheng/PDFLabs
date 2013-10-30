@@ -60,5 +60,4 @@ router = [
       (r"/sigin/qq", TencentSiginHandler),
       (r"/callback/qq", TencentSiginCallbackHandler),
       (r"/weixin/service1", WeiXinHandler)
-
 ]

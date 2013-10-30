@@ -8,12 +8,14 @@ import urlparse
 import tornado.web
 import tornado.gen
 import tornado.httpclient
+import tornado.auth
 from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import AsyncHTTPClient
 
 from handlers import BaseHandler
 from models.users import User
+from util.gravatar import getAvatar
 
 
 def callback(_dict):
@@ -98,11 +100,13 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
                 user = User(uid=self.generate_uuid(),
                             type='google',
                             email=result['email'],
-                            name=result['name'])
+                            name=result['name'],
+                            avatar=getAvatar('email')
+                            )
                 user.save()
 
             self.set_secure_cookie('userid', str(user.id))
-            self.set_secure_cookie('type', 'douban')
+            self.set_secure_cookie('type', 'google')
             self.redirect("/")
         else:
             yield self.authenticate_redirect()
@@ -182,6 +186,7 @@ class DoubanCallbackHandler(BaseHandler):
         )
         return user
 
+
 class TencentSiginHandler(BaseHandler):
 
 
@@ -209,6 +214,7 @@ class TencentSiginHandler(BaseHandler):
         params = urllib.urlencode(params)
         request_url = auth_url+"?"+params
         return request_url
+
 
 class TencentSiginCallbackHandler(BaseHandler):
 
@@ -255,7 +261,7 @@ class TencentSiginCallbackHandler(BaseHandler):
             client_id=options.qq_app_key,
             client_secret=options.qq_app_secret,
             code=auth_code,
-            redirect_uri= options.qq_callback
+            redirect_uri=options.qq_callback
         )
         params = urllib.urlencode(params)
         request_url = token_url+"?"+params

@@ -33,25 +33,6 @@ define(["jquery"],function($){
 
     $(function(){
 
-    	if(USER_ID!='None'){
-    		_http_client.ajax({
-    		type:'get',
-            url:"/api/account/"+USER_ID,
-            success:function(result,statusText,jqXHR){
-
-			$("#account_info")
-				.attr('title', result['name'])
-				.attr('src', result['avatar']);
-
-
-            },
-            error:function(error,jqXHR){
-                console.log(error);
-            }
-            });
-    	}else{
-
-    	}
 
      });
 
