@@ -12,11 +12,11 @@ class BooksHandler(BaseHandler):
     def get(self):
         tag = self.get_arguments('tag')[0].decode()
         books = Book.objects()
-        if tag=='shared':
+        if tag == 'shared':
             books = [book for book in books if book.files]
-        elif tag=='waiting':
+        elif tag == 'waiting':
             books = [book for book in books if not book.files]
-        elif tag== 'hot':
+        elif tag == 'hot':
             books = Book.objects().order_by('-wcount')[:20]
 
         self.render(

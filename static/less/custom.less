@@ -37,11 +37,8 @@ p{
   -webkit-transition: background 0.7s;
   -moz-transition: background 0.7s;
   -o-transition: background 0.7s;
-  background-color: rgba(255,255,255,1);
-  /*background: url("/static/images/background.png") repeat-y;*/
-  /*box-shadow: 0px 2px 10px #000;
-    margin-bottom: 140px;
-  */
+
+  background: url("/static/images/background_2.png");
 }
 
 #footer{
@@ -287,12 +284,12 @@ padding: 9px 0;
       filter: alpha(opacity=50);
       bottom: 0;
       vertical-align: middle;
-}
+  }
 
-.carousel-control.right {
-  left: auto;
-  right: 25px;
-}
+  .carousel-control.right {
+    left: auto;
+    right: 0px;
+  }
 
 }
 
@@ -317,7 +314,6 @@ padding: 9px 0;
 }
 
 #ajax_message{
-
   background-color: #68AF02;
   width: 250px;
   margin: 0 auto;
@@ -353,49 +349,6 @@ padding: 9px 0;
   height:450px;
 }
 
-.span3 img{
-  height: 248px;
-  width:180px;
-  /*border: 5px solid #fff;*/
-   -webkit-transition: box-shadow 0.5s;
-   -moz-transition: box-shadow 0.5s;
-   -o-transition: box-shadow 0.5s;
-   box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-   background-color: #ddd;
-}
-
-.span3 img:hover{
-  border-color: #08C;
-  -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  /*border:5px solid rgba(255,255,255,0.5);*/
-  /*-webkit-transform: scale(1.02);
-  -moz-transform: scale(1.02);
-   -o-transform: scale(1.02);
-   transform: scale(1.02);*/
-   opacity: 0.8;
-}
-
-.span3{
-   a{
-       text-decoration: none;
-    }
-  .book_intro{
-     width: 180px;
-     text-align: center;
-     margin-top: 48px;
-     margin-bottom: 20px;
-     font-size: 18px;
-     font-weight: 100;
-     overflow: hidden;
-  }
-}
-.img{
-  box-shadow: 0 1px 3px rgba(0,0,0,0.3)
-}
-
-
 .span-border{
   border: 1px solid rgba(0,0,0,0.1);
   box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
@@ -429,21 +382,6 @@ padding: 9px 0;
 
 
 
-.bookstore{
-
-   background: url('/static/images/bookcase.png') no-repeat 0px 235px;
-   padding-bottom: 40px;
-   .span3{
-      /*text-align: center;*/
-   }
-
-}
-
-.bookrow{
-    padding-left: 40px;
-    padding-right: 50px;
-}
-
 #book_summary{
   color: #999;
   line-height: 26px;
@@ -457,70 +395,21 @@ padding: 9px 0;
   margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
-  background: url('/static/img/bookcase.jpg') no-repeat 0 210px;
+  background: url('/static/images/bookcase_2.png') no-repeat -40px 210px;
   padding-bottom: 100px;
   vertical-align: bottom;
-}
-
-.book_thing{
-  position: relative;
-  &.focus{
-    img{
-      -webkit-box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
-      -moz-box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
-      box-shadow: 0 10px 50px rgba(236, 245, 12, 0.5);
-      -webkit-transform: scale(1.05);
-      -moz-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      -o-transform: scale(1.05);
-      transform: scale(1.05);
+  .span3{
+    text-align: right;
+     #book_img{
+      height: 230px;
     }
   }
-  .pre_ribbon{
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100px;
-      width: 100px;
-      overflow: hidden;
-      color: rgb(255, 255, 255);
-      font-weight: bold;
-      letter-spacing: .5em;
-      .stack{
-             background: rgb(70, 165, 70);
-
-      }
-      .wait{
-        background: rgb(248, 148, 6)
-      }
-      span{
-          filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-          opacity: 0.8;
-          display: block;
-          width: 150px;
-          padding-left: 10px;
-          padding-top: 5px;
-          padding-bottom: 3px;
-          position: relative;
-          left: -40px;
-          top: 75px;
-          text-align: center;
-          -webkit-transform-origin: 0 0;
-          -moz-transform-origin: 0 0;
-          -ms-transform-origin: 0 0;
-          -o-transform-origin: 0 0;
-          transform-origin: 0 0;
-          -webkit-transform: rotate(-45deg);
-          -moz-transform: rotate(-45deg);
-          -ms-transform: rotate(-45deg);
-          -o-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-          -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
-          -moz-box-shadow: rgba(0,0,0,0.3) 1px 1px 10px;
-          box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
-      }
+  .span8{
+    text-align: left;
   }
+
 }
+
 
 .group{
 

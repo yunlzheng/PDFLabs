@@ -74,12 +74,12 @@ class MainHandler(BaseHandler):
     def get(self):
 
         result = {}
-        hot_books = Book.objects().order_by('-wcount')[:8]
+        hot_books = Book.objects().order_by('-wcount')[:12]
         query_books = Book.objects().order_by('-update_at')
-        rows = len(query_books) % 4
+        print len(query_books)
+        rows = int(len(query_books) / 4)
         for row in xrange(rows):
             offset = row * 4
-
             result[row] = query_books[offset:offset+4]
 
         self.render(
