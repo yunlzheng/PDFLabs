@@ -13,12 +13,13 @@ TEMPLATE_PATH = os.path.join(PROJECT_PATH, "templates")
 STATIC_PATH = os.path.join(PROJECT_PATH, "static")
 
 ###### database setting
-MONGO_DRIVER_URL = "mongodb://localhost:27017"
+#MONGO_DRIVER_URL = "mongodb://localhost:27017"
+MONGO_DRIVER_URL = "mongodb://zheng:123456@ds041198.mongolab.com:41198/heroku_app17595021"
 MONGO_COLLECTION = "heroku_app17595021"
 
 ###### douban oauth2 setting
-DOUBAN_APP_KEY = ""
-DOUBAN_APP_SECRET = ""
+DOUBAN_APP_KEY = "05a682aac674d51a10f38800535e7f4e"
+DOUBAN_APP_SECRET = "1b86275dcc1c5946"
 # 豆瓣登录的跳转地址
 DOUBAN_AUTH_URL = "https://www.douban.com/service/auth2/auth"
 # 豆瓣用户登录完成后的回调地址 并返回 auth_code信息
@@ -30,8 +31,8 @@ DOUBAN_AUTH_USER = "https://api.douban.com/v2/user/~me"
 
 
 ###### qq oauth2
-QQ_APP_KEY = ""
-QQ_APP_SECRET = ""
+QQ_APP_KEY = "100530962"
+QQ_APP_SECRET = "9140d3715d634c9917f84b9f6982bf53"
 # QQ 登录跳转地址
 QQ_AUTH_URL = "https://graph.qq.com/oauth2.0/authorize"
 # 登录完成后的回调地址 返回auth_code

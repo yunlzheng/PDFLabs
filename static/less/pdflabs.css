@@ -643,7 +643,7 @@ p {
   margin-right: 70px;
 }
 .bookstore {
-  background: url('/static/images/bookcase_2.png') no-repeat -40px 145px;
+  background: url('/static/images/bookcase_2.png') no-repeat -40px 175px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -651,6 +651,7 @@ p {
   position: relative;
   margin: 0 auto;
   width: 130px;
+  margin-top: 20px;
 }
 .bookstore .book_thing:hover img {
   -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
@@ -677,7 +678,7 @@ p {
   margin-bottom: 10px;
 }
 .bookstore .book_thing img {
-  height: 160px;
+  height: 170px;
   width: 130px;
   -webkit-box-shadow: 0 -1px 10px rgba(34, 25, 25, 0.4);
   -moz-box-shadow: 0 -1px 10px rgba(34, 25, 25, 0.4);
