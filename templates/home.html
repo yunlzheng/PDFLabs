@@ -1,140 +1,91 @@
 {% extends "main.html" %}
 {% autoescape None %}
 {% block body %}
-<div class="row-fluid">
-<div id="divHomeCarousel" class="carousel slide custom-carousel ">
-    <h5 class="min-hidden">最热门</h5>
-    <hr class="min-hidden">
-    <div class="carousel-inner bookstore min-hidden" >
-      <div class="item active">
- 	<div class="row-fluid ">
- 	{% for book in hot_books[0:4] %}
-	    <div class="span3">
-	    	<div class="book_thing">
-	    	    <div class="pre_ribbon">
-	    	      {% if book.files %}
-	    	     	<span class='stack'>现货</span>
-	    	     {% else %}
-	    	     	<span class='wait'>期待中</span>
-	    	     {% end %}
-	    	    </div>
-	          	    <a href="/book/{{ book.bid }}">
-	          	    <img alt="" src="{{ book.image }}">
-	          	    <div class="book_intro">{{ book.title }}</div>
-          		</div>
-          	    </a>
-          	    </div>
-             {% end %}
-      	</div>
-      </div>
-      <div class="item">
-      	<div class="row-fluid">
-	        {% for book in hot_books[4:8] %}
-		<div class="span3">
-		 <div class="book_thing">
-		       <div class="pre_ribbon">
-		    	      {% if book.files %}
-		    	     	<span class='stack'>现货</span>
-		    	     {% else %}
-		    	     	<span class='wait'>期待中</span>
-		    	     {% end %}
-		        </div>
-		       <a href="/book/{{ book.bid }}">
-		       <img  alt="" src="{{ book.image }}">
-		       <div class="book_intro">{{ book.title }}</div>
-		       </a>
-		 </div>
-	          	</div>
-	        {% end %}
-      	</div>
-      </div>
-
+<div class="row-fluid" id="app_home">
+    <div id="page_search">
+        <input id="input_search" type="text" placeholder="检索"/>
+        <div class="clearfix"></div>
     </div>
+    <div id="divHomeCarousel" class="carousel slide custom-carousel ">
+        <div id="hot-container">
+              <h5 class="min-hidden">最热门</h5>
+              <hr class="min-hidden">
+                <div class="carousel-inner bookstore min-hidden" >
+                      <div class="item active">
+                        <div class="row-fluid ">
+                        {% for book in hot_books[0:4] %}
+                        <div class="span3">
+                            <div class="book_thing">
+                                <div class="pre_ribbon">
+                                  {% if book.files %}
+                                    <span class='stack'>已分享</span>
+                                 {% else %}
+                                    <span class='wait'>期待中</span>
+                                 {% end %}
+                                </div>
+                                <a href="/book/{{ book.bid }}"><img alt="" src="{{ book.image }}"> </a>
+                                <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
 
-    <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
-    <a class="right carousel-control min-hidden" href="#divHomeCarousel" data-slide="next">›</a>
+                            </div>
+                         </div>
+                        {% end %}
 
-    <h5>最新共享</h5>
-     <hr>
-	<div class="row-fluid">
-		<div class="bookstore bookrow">
-		{% for i in xrange(len(books)) %}
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="row-fluid">
+                            {% for book in hot_books[4:8] %}
+                                <div class="span3">
+                                    <div class="book_thing">
+                                        <div class="pre_ribbon">
+                                              {% if book.files %}
+                                                <span class='stack'>已分享</span>
+                                             {% else %}
+                                                <span class='wait'>期待中</span>
+                                             {% end %}
+                                        </div>
+                                       <a href="/book/{{ book.bid }}"><img alt="" src="{{ book.image }}"> </a>
+                                       <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
+                                    </div>
+                                </div>
+                            {% end %}
+                        </div>
+                      </div>
+                </div>
+                <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
+                <a class="right carousel-control min-hidden" href="#divHomeCarousel" data-slide="next">›</a>
+        </div>
+        <div id="all-container">
+            <h5>最新共享</h5>
+            <hr>
+            	<div class="row-fluid">
+                    {% for key in result.keys() %}
+                        <div class="bookstore bookrow">
+                            {% for book in result[key] %}
+                                <div class="span3">
+                                    <div class="book_thing">
+                                        <div class="pre_ribbon">
+                                              {% if book.files %}
+                                                <span class='stack'>已分享</span>
+                                             {% else %}
+                                                <span class='wait'>期待中</span>
+                                             {% end %}
+                                        </div>
+                                        <a href="/book/{{ book.bid }}"><img class="img"  src="{{ book.image }}"></a>
+                                        <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
+                                        </a>
+                                        </div>
+                                </div>
+                            {% end %}
+                            <div class="clearfix"></div>
+                         </div>
+                    {% end %}
+              </div>
+        </div>
 
-			    <div class="span3">
-			    	<div class="book_thing">
-				    	<div class="pre_ribbon">
-				    	      {% if books[i].files %}
-				    	     	<span class='stack'>现货</span>
-				    	     {% else %}
-				    	     	<span class='wait'>期待中</span>
-				    	     {% end %}
-				    	</div>
-					<a href="/book/{{ books[i].bid }}">
-				    	<img class="img"  src="{{ books[i].image }}">
-				    	<div class="book_intro">{{ books[i].title }}</div>
-				    	</a>
-			    	</div>
-			    </div>
-		    {% if (i+1)%4==0 %}
-		    	     <div class="clearfix"></div>
-			    </div>
-			    </div>
-			    <br/>
-			    <div class="row-fluid">
-			<div class="bookstore bookrow">
-		    {% end %}
 
-		{% end %}
 
-	</div>
-  </div>
-  <div class="span4" style="display:none">
-     <h5>热门标签</h5>
-     <hr>
-     <div class="well" style="height: 140px;background-color:#fff">
-	<span class="label label-important">java</span>
-	<span class="label label-important">java</span>
-	<span class="label label-warning">web</span>
-	<span class="label label-warning">javascript</span>
-	<span class="label label-warning">javascript</span>
-	<span class="label label-success">python</span>
-	<span class="label label-success">tornado</span>
-	<span class="label label-success">java</span>
-	<span class="label label-success">java</span>
-	<span class="label">web</span>
-	<span class="label">spring mvc</span>
-	<span class="label">nodejs</span>
-	<span class="label">hibernate</span>
-     </div>
-     <h5>共享达人</h5>
-     <hr>
-	<div class="well" style="background-color:#fff">
-	  <ul id="contribution-name-list" class="nav">
-	     <li>
-	     	<a href="#">
-	     	     <img  class="avatar" src="/static/images/avatar.jpg"/>moyu_cuttle
-	     	     <span class="badge" title="贡献10本图书资源">10</span>
-	     	</a>
-	     </li>
-	     <li>
-	     	<a href="#">
-	     	     <img  class="avatar" src="/static/images/avatar.jpg"/>double_cuttle
-	     	     <span class="badge" title="贡献9本图书资源">9</span>
-	     	</a>
-	     </li>
-	   </ul>
-	</div>
-	  <h5>微信公共帐号(Beta)</h5>
-	  <hr>
-        <div class="well" style="padding:10px">
-		<img src="/static/img/qrcode_for_gh_ca049f6f6b07_430.jpg">
-	</div>
-	<h5>免责声明</h5>
-	<hr>
-	<div class="well" style="background-color:#fff">
-		<p>书籍均收集自互联网，仅供学习和研究使用。如有侵犯你的版权，请联系我们，本站将立即改正。本站对提供下载的书籍不拥有任何权利，其版权归该书籍的合法拥有者所有，所有下载资源只限用户交流学习之用，请莫用于商业用途。谢谢合作。</p>
-	</div>
-  </div>
+
 </div>
-<script data-main="{{ static_url("js/app/home.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script type="text/javascript" src="/static/js/backbone/home.js"></script>
 {% end %}

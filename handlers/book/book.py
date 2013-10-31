@@ -20,7 +20,7 @@ class BookHandler(BaseHandler):
             'book': book,
             "groups": self.get_groups(),
             "page_heading": book.title,
-            "like":"-empty"
+            "like": "-empty"
         }
         try:
             user = self.get_curent_user_model()
@@ -61,5 +61,5 @@ class PreviewHandler(BaseHandler):
             "book/preview.html",
             page_heading=book['title'],
             book=book,
-            groups = self.get_groups()
+            groups=self.get_groups()
         )

@@ -5,6 +5,7 @@ from tornado.httpclient import *
 from handlers import BaseHandler
 from decorators import log_exception
 
+
 class LogsHandler(BaseHandler):
 
     ''' redirect to the update logs page '''
@@ -13,5 +14,5 @@ class LogsHandler(BaseHandler):
         self.render(
             "logs.html",
             page_heading='PDFLabs 更新日志',
-            groups = self.get_groups()
+            groups=self.get_groups()
         )

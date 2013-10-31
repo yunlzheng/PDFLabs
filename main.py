@@ -4,7 +4,7 @@
 #	Author: Zheng yunlong
 #
 import os
-
+from os.path import abspath, dirname
 import tornado.escape
 import tornado.httpserver
 import tornado.ioloop
@@ -20,6 +20,7 @@ from mongoengine import connect
 from routers import router as handlers
 from handlers.uimodules.editor import EditorModule
 import settings
+
 
 define("port", default=settings.PORT, type=int)
 define("domain_name", default=settings.DOMAIN_NAME)
@@ -46,6 +47,10 @@ define('qq_auth_token', default=settings.QQ_AUTH_TOKEN)
 define('qq_auth_me', default=settings.QQ_AUTH_ME)
 define('qq_auth_user', default=settings.QQ_AUTH_USER)
 
+PROJECT_DIR = dirname(abspath(__file__))
+CONF_DIR = os.path.join(PROJECT_DIR, 'conf')
+CONF_FILE = CONF_DIR+os.path.sep+"application.conf"
+
 
 class Application(tornado.web.Application):
 
@@ -64,6 +69,9 @@ class Application(tornado.web.Application):
         tornado.web.Application.__init__(self, handlers, **settings)
 
 if __name__ == "__main__":
+    tornado.options.parse_command_line()
+    tornado.options.parse_config_file(CONF_FILE)
+    print options.mongo_driver_url
     port = os.environ.get("PORT", options.port)
     app_log.debug('PDFLabs running server on {0}'.format(port))
     http_server = tornado.httpserver.HTTPServer(Application())

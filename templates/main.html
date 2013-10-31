@@ -7,9 +7,9 @@
     <meta property="qc:admins" content="1414761143412360527351006375" />
     <!-- Bootstrap -->
     <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/bootstrap.css") }}">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/bootstrap-responsive.min.css") }}">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/custom.css") }}">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap-responsive.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/less/pdflabs.css">
 
      <script type="text/javascript" src="/static/js/lib/jquery-1.10.2.js"></script>
      <script type="text/javascript" src="/static/js/bootstrap/bootstrap.js"></script>
@@ -29,8 +29,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="brand" href="/"><b class="icon-fire icon-large"></b>PDFLabs</a>
-             {% if current_user %}
+              <a class="brand" href="/">
+                  <img class="logo" src="/static/images/logo.png" title=" PDFLabs"/>
+              </a>
+              {% if current_user %}
                     <li class="dropdown rbrand">
                       <a class="dropdown-toggle"
                          data-toggle="dropdown"
@@ -56,7 +58,7 @@
                         <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a href="/book?tag=shared"><b class="icon-bell-alt"></b>现货</a></li>
+                        <li><a href="/book?tag=shared"><b class="icon-bell-alt"></b>已分享</a></li>
                         <li><a href="/book?tag=waiting"><b class="icon-stethoscope"></b>期待中</a></li>
                         <li><a href="/book?tag=hot"><b class="icon-fighter-jet"></b>最热门</a></li>
                       </ul>
@@ -73,7 +75,7 @@
 
                       </ul>
                    </li>
-                   <li><a href="/book/find"><b class="icon-location-arrow icon-large "></b>发现</a></li>
+                   <li><a href="/book/find"><b class="icon-search icon-large "></b>发现</a></li>
 
 		       <!-- <li><a href="#data">数据统计</a></li>
                    <li><a href="/logs">更新日志</a></li> -->
@@ -103,13 +105,12 @@
                 © 墨鱼 2013
               </div>
               <div class="other">
-		     联系我
+		        <!--联系我-->
                 <a href="http://weibo.com/503error" target="_blank">
                   <span class="icon icon-weibo"></span>
                 </a>
               </div>
               <div class="clearfix"></div>
-
 	      </p>
             </div>
           </div>
