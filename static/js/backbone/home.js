@@ -9,12 +9,11 @@ var Workspace = Backbone.View.extend({
         "blur #input_search": "search_page"
     },
     initialize: function(){
-        console.log(this.el);
         return this;
     },
     search_page: function(event){
 
-        var value = $("#input_search").val().trim();
+        var value = $("#input_search").val().trim().toUpperCase();
         $(".book_thing").removeClass('focus');
         if(value){
             $("#hot-container").hide();
@@ -24,7 +23,7 @@ var Workspace = Backbone.View.extend({
             return;
         }
         $(".book_intro").each(function(){
-            var txt = $(this).html();
+            var txt = $(this).html().trim().toUpperCase();
             if(txt.indexOf(value)!=-1){
                 $(this).parents('.book_thing').addClass('focus');
             }

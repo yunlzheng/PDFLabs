@@ -73,23 +73,21 @@ class MainHandler(BaseHandler):
     @tornado.gen.coroutine
     def get(self):
 
-        books = []
-
+        result = {}
         hot_books = Book.objects().order_by('-wcount')[:8]
+        query_books = Book.objects().order_by('-update_at')
+        rows = len(query_books) % 4
+        for row in xrange(rows):
+            offset = row * 4
 
-        query_books = Book.objects().order_by('+update_at')
-        length =len(query_books)
-        rows = length%4
-        for book in query_books:
-            books.append(book)
+            result[row] = query_books[offset:offset+4]
 
-        books.reverse()
         self.render(
             "home.html",
             page_heading='PDFLabs',
-            books=books,
             rows=rows,
             hot_books=hot_books,
-            groups=self.get_groups()
+            groups=self.get_groups(),
+            result=result
         )
 

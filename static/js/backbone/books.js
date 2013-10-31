@@ -14,14 +14,14 @@ var Workspace = Backbone.View.extend({
     },
     search_page: function(){
         var $input_search =  $("#input_search");
-        var value = $input_search.val().trim();
+        var value = $input_search.val().trim().toUpperCase();
         $(".book_thing").removeClass('focus');
         if(!value){
             $input_search.attr('placeholder',"检索");
             return;
         }
         $(".book_intro").each(function(){
-            var txt = $(this).html();
+            var txt = $(this).html().trim().toUpperCase();
             if(txt.indexOf(value)!=-1){
                 $(this).parents('.book_thing').addClass('focus');
             }

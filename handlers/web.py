@@ -14,5 +14,5 @@ class LogsHandler(BaseHandler):
         self.render(
             "logs.html",
             page_heading='PDFLabs 更新日志',
-            groups = self.get_groups()
+            groups=self.get_groups()
         )

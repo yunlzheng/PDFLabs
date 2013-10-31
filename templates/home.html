@@ -62,34 +62,28 @@
             <h5>最新共享</h5>
             <hr>
             	<div class="row-fluid">
-                    <div class="bookstore bookrow">
-                    {% for i in xrange(len(books)) %}
-
-                            <div class="span3">
-                                <div class="book_thing">
-                                    <div class="pre_ribbon">
-                                          {% if books[i].files %}
-                                            <span class='stack'>已分享</span>
-                                         {% else %}
-                                            <span class='wait'>期待中</span>
-                                         {% end %}
-                                    </div>
-                                <a href="/book/{{ books[i].bid }}">
-                                    <img class="img"  src="{{ books[i].image }}">
-                                    <div class="book_intro">{{ books[i].title }}</div>
-                                    </a>
-                                </div>
-                            </div>
-                        {% if (i+1)%4==0 %}
-                                 <div class="clearfix"></div>
-                            </div>
-                            </div>
-                            <br/>
-                            <div class="row-fluid">
+                    {% for key in result.keys() %}
                         <div class="bookstore bookrow">
-                        {% end %}
+                            {% for book in result[key] %}
+                                <div class="span3">
+                                    <div class="book_thing">
+                                        <div class="pre_ribbon">
+                                              {% if book.files %}
+                                                <span class='stack'>已分享</span>
+                                             {% else %}
+                                                <span class='wait'>期待中</span>
+                                             {% end %}
+                                        </div>
+                                        <a href="/book/{{ book.bid }}">
+                                            <img class="img"  src="{{ book.image }}">
+                                            <div class="book_intro">{{ book.title }}</div>
+                                            </a>
+                                        </div>
+                                </div>
+                            {% end %}
+                            <div class="clearfix"></div>
+                         </div>
                     {% end %}
-                </div>
               </div>
         </div>
 

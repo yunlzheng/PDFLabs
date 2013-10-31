@@ -23,5 +23,5 @@ class BooksHandler(BaseHandler):
             "book/books.html",
             page_heading=tag,
             books=books,
-            groups = self.get_groups()
+            groups=self.get_groups()
         )
