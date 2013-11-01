@@ -9,7 +9,9 @@
   line-height: 33px;
 }
 .navbar .rbrand img {
-  border-radius: 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
   height: 28px;
   width: 28px;
   border: 2px #FFF solid;

@@ -5,7 +5,7 @@ import os.path
 import tornado.web
 
 from handlers import MainHandler
-from handlers.web import  LogsHandler
+from handlers.web import LogsHandler
 from handlers.user import UserHandler
 from handlers.book import PreviewHandler
 from handlers.book import BookHandler
@@ -13,6 +13,7 @@ from handlers.book import BooksHandler
 from handlers.book import FindHandler
 from handlers.group import GroupHandler
 from handlers.group import PostHandler
+from handlers.funny import UserGalleryHandler, UserGalleryApiHandler
 from handlers.api import IWantApi
 from handlers.api import LikeApiHandler
 from handlers.api import BookDetailHandler, BookSearchHandler
@@ -40,6 +41,8 @@ router = [
       (r"/websocket", ChartHandler),
       (r"/logs", LogsHandler),
       (r'/users/(.+)', UserHandler),
+      (r'/gallery', UserGalleryHandler),
+      (r"/gallery/api", UserGalleryApiHandler),
       (r'/book/find', FindHandler),
       (r"/book", BooksHandler),
       (r"/book/([0-9]+)", BookHandler),

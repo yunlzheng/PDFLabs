@@ -16,6 +16,7 @@
      <script type="text/javascript" src="/static/js/lib/underscore.js"></script>
      <script type="text/javascript" src="/static/js/lib/backbone.js"></script>
      <script type="text/javascript" src="/static/js/lib/backbone.localStorage.js"></script>
+     <script type="text/javascript" src="/static/js/lib/jquery.foggy.js"></script>
      <script type="text/javascript">
         USER_ID = '{{ current_user }}'
      </script>
@@ -120,7 +121,6 @@
 
        <script type="text/javascript">
         var sign = 0;
-
         window.onscroll = function(e){
           var t = document.documentElement.scrollTop || document.body.scrollTop;
           var navbar = document.getElementById("navbar-top");
@@ -133,11 +133,11 @@
           }else{
             $("#go_top").fadeOut(500);
           }
-
-
         }
 
         $(function(){
+
+            //$('#page').foggy(false);
 
             $("#go_top").click(function(){
 
@@ -146,13 +146,11 @@
                 },500);
 
             });
-
             if(USER_ID!='None'){
                 $.ajax({
                     type:'get',
                     url:"/api/rest/users/"+USER_ID,
                     success:function(result,statusText,jqXHR){
-
                     $("#account_info")
                         .attr('title', result['name'])
                         .attr('src', result['avatar']);

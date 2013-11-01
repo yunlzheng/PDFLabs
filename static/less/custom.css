@@ -18,22 +18,27 @@ p {
   bottom: 5%;
   right: 5%;
   cursor: pointer;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(50));
+  filter: alpha(opacity = (50));
 }
 #main_nav {
   margin-top: 5px;
 }
 #page {
-  -webkit-transition: background 0.7s;
-  -moz-transition: background 0.7s;
-  -o-transition: background 0.7s;
+  -webkit-transition: 0.7s background;
+  -moz-transition: 0.7s background;
+  -ms-transition: 0.7s background;
+  -o-transition: 0.7s background;
+  transition: 0.7s background;
   background: url("/static/images/background_2.png");
 }
 #footer {
-  -webkit-transition: display 0.5s;
-  -moz-transition: display 0.5s;
-  -o-transition: display 0.5s;
+  -webkit-transition: 0.5s display;
+  -moz-transition: 0.5s display;
+  -ms-transition: 0.5s display;
+  -o-transition: 0.5s display;
+  transition: 0.5s display;
   background-color: #292929;
   height: 150px;
   z-index: -9999;
@@ -41,9 +46,11 @@ p {
   display: none;
 }
 #navbar-top {
-  -webkit-transition: display 0.5s;
-  -moz-transition: display 0.5s;
-  -o-transition: display 0.5s;
+  -webkit-transition: 0.5s display;
+  -moz-transition: 0.5s display;
+  -ms-transition: 0.5s display;
+  -o-transition: 0.5s display;
+  transition: 0.5s display;
 }
 .footer {
   width: 100%;
@@ -68,9 +75,11 @@ p {
   width: 100px;
   height: 25px;
   background-position: 20px -3px;
-  -webkit-transition: background-image 0.7s;
-  -moz-transition: background-image 0.7s;
-  -o-transition: background-image 0.7s;
+  -webkit-transition: 0.7s background-image;
+  -moz-transition: 0.7s background-image;
+  -ms-transition: 0.7s background-image;
+  -o-transition: 0.7s background-image;
+  transition: 0.7s background-image;
   margin-top: -5px;
 }
 .footer .other .icon-weibo:hover {
@@ -123,7 +132,6 @@ p {
   font-size: 21px;
   padding: 14px 24px;
 }
-/* Supporting marketing content */
 .marketing {
   margin: 60px 0;
 }
@@ -167,7 +175,11 @@ p {
 .applications .application .application_pic .application_img {
   width: 75px;
   height: 75px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
 }
 .applications .application .application_intro {
@@ -225,11 +237,12 @@ p {
   text-align: center;
   background: none;
   border: none;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 23px;
-  border-radius: 0px;
-  opacity: .5;
-  filter: alpha(opacity=50);
+  -webkit-border-radius: 0px 0px 0px 0px;
+  -moz-border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
+  opacity: 0.5;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(50));
+  filter: alpha(opacity = (50));
   bottom: 0;
   vertical-align: middle;
 }
@@ -248,7 +261,9 @@ p {
   padding: 5px;
   height: 25px;
   width: 25px;
-  border-radius: 50%;
+  -webkit-border-radius: 50% 50% 50% 50%;
+  -moz-border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 50% 50%;
 }
 #ajax_message {
   background-color: #68AF02;
@@ -256,19 +271,10 @@ p {
   margin: 0 auto;
   color: #FFF;
   padding: 5px 30px;
-  border-top-left-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  -moz-border-radius-topright: 0;
-  -webkit-border-top-right-radius: 0;
-  border-bottom-left-radius: 2px;
-  -moz-border-radius-bottomleft: 2px;
-  -webkit-border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  -moz-border-radius-bottomright: 2px;
-  -webkit-border-bottom-right-radius: 2px;
   text-align: center;
+  -webkit-border-radius: 0px 0px 2px 2px;
+  -moz-border-radius: 0px 0px 2px 2px;
+  border-radius: 0px 0px 2px 2px;
   text-shadow: 0 -1px -1px #808080;
   border-top: none;
   display: none;
@@ -277,12 +283,18 @@ p {
   background-color: #EAA000;
 }
 .map_canvas {
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
   height: 450px;
 }
 .span-border {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
   background: #fff;
 }
@@ -327,6 +339,9 @@ p {
 }
 #book .span3 #book_img {
   height: 230px;
+  -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
 }
 #book .span8 {
   text-align: left;
@@ -334,8 +349,12 @@ p {
 .group {
   background: #ffffff;
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
 }
 .group h5 {
@@ -362,7 +381,9 @@ p {
   border-bottom: 1px solid #ddd;
 }
 .group .comments .comment img {
-  border-radius: 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   display: inline-block;
 }
 .group .comments .comment p {
@@ -394,7 +415,9 @@ p {
   margin-right: 10px;
 }
 .group .post-list .post-item .post-image img {
-  border-radius: 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   height: 70px;
   width: 70px;
 }
@@ -447,13 +470,12 @@ p {
 #user_home .span8,
 #user_home .span4 {
   background-color: #fff;
-  border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
-  box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 10px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
+  -webkit-box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 10px 10px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 #user_home .div-like-row {
@@ -466,9 +488,13 @@ p {
 #user_home .div-like-row .book img {
   height: 248px;
   width: 180px;
-  -webkit-transition: box-shadow 0.5s;
-  -moz-transition: box-shadow 0.5s;
-  -o-transition: box-shadow 0.5s;
+  -webkit-transition: 0.5 box-shadow;
+  -moz-transition: 0.5 box-shadow;
+  -ms-transition: 0.5 box-shadow;
+  -o-transition: 0.5 box-shadow;
+  transition: 0.5 box-shadow;
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
   background-color: #dddddd;
 }
@@ -477,7 +503,9 @@ p {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-  opacity: .8;
+  opacity: 0.8;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(opacity=(80));
+  filter: alpha(opacity = (80));
 }
 #user_home .div-like-row .book .name {
   margin-top: 10px;
@@ -504,12 +532,12 @@ p {
   border: 1px solid #cccccc;
   padding: 4px;
   box-sizing: content-box;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
-  box-shadow: rgba(0, 0, 0, 0.0745098) 0px 1px 1px 0px inset;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-top-left-radius: 3px;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0745098);
+  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0745098);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.0745098);
+  -webkit-border-radius: 0px 3px 3px 3px;
+  -moz-border-radius: 0px 3px 3px 3px;
+  border-radius: 0px 3px 3px 3px;
   overflow: scroll;
   outline: none;
 }

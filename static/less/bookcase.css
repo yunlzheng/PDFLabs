@@ -59,7 +59,9 @@
   border: 1px #797373 solid;
   padding: 2px;
   background: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  -webkit-border-radius: 5px 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px 5px;
   color: #FFF;
 }
 .bookstore .book_thing .book_intro a {
