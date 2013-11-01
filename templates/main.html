@@ -6,7 +6,8 @@
     <meta property="wb:webmaster" content="d33383db780dd4ae" />
     <meta property="qc:admins" content="1414761143412360527351006375" />
     <!-- Bootstrap -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">-->
+    <link type="text/css" href="/static/style/font-awesome.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap.css">
     <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap-responsive.min.css">
     <link type="text/css" rel="stylesheet" media="screen" href="/static/less/pdflabs.css">
@@ -44,7 +45,7 @@
                       <ul class="dropdown-menu">
 			     <li><a href="/users/{{ current_user }}"><i class="icon-home"></i>我的主页</a></li>
                         <li><a href="#"><i class="icon-message">我的消息</i></a></li>
-                        <li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>
+                        <!--<li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>-->
                         <li class="divider"></li>
                         <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
                       </ul>
@@ -55,17 +56,17 @@
               <div class="nav-collapse collapse">
                 <ul id="main_nav" class="nav">
                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-book icon-large'></b>资源
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-beaker '></b>资源
                         <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a href="/book?tag=shared"><b class="icon-bell-alt"></b>已分享</a></li>
-                        <li><a href="/book?tag=waiting"><b class="icon-stethoscope"></b>期待中</a></li>
-                        <li><a href="/book?tag=hot"><b class="icon-fighter-jet"></b>最热门</a></li>
+                        <li><a href="/book?tag=shared"><b class="icon-bullhorn"></b>已分享</a></li>
+                        <li><a href="/book?tag=waiting"><b class="icon-bullseye"></b>期待中</a></li>
+                        <li><a href="/book?tag=hot"><b class="icon-bolt "></b>最热门</a></li>
                       </ul>
                     </li>
                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group icon-large"></b>小组
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group "></b>小组
                         <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu">
@@ -76,8 +77,17 @@
 
                       </ul>
                    </li>
-                   <li><a href="/book/find"><b class="icon-search icon-large "></b>发现</a></li>
 
+                   <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-rocket "></b>彩蛋
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                            <li><a href="/gallery"><b class="icon-external-link-sign"></b>用户画廊</a></li>
+                      </ul>
+                   </li>
+
+                   <li><a href="/book/find"><b class="icon-search "></b>发现</a></li>
 		       <!-- <li><a href="#data">数据统计</a></li>
                    <li><a href="/logs">更新日志</a></li> -->
                 </ul>
