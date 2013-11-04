@@ -3,12 +3,7 @@ define(["jquery","application", "module/ajax_client" ,"flexpaper","flexpaper_han
     $(function() {
             $("#alert-ilike-success").hide();
             client.load_book(bookid,success);
-            $('#documentViewer').FlexPaperViewer(
-                    { config : {
-
-                             SwfFile : escape('/static/doc/'+bookid+'.swf'),
-                             localeChain: '/en_US/'
-            }});
+           
 
             $("#contribute-submit").click(function(){
 
