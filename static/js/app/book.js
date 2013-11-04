@@ -1,20 +1,24 @@
 $(function(){
 
-	load_book(bookid);
+	$.ajax({
+      type:"get",
+      url:"/api/book/"+bookid,
+      contentType:'application/json',
+      success: load_success,
+      error:function(jqXHR,textStatus,errorThrown){
+        console.log(textStatus);
+      }
+  });
 
 	$("#btn_ilike").click(function(){
 
         $("#btn_like_icon").attr("disabled",true);
-
         $.ajax({
           type:"post",
           url:"/api/like/"+bookid,
           success:function(result,statusText,jqXHR){
-
               if(jqXHR.responseText.indexOf("登录")!=-1){
-
                     window.location="/sigin?next="+window.location.pathname;
-
               }else{
 
                     $("#btn_like_icon").attr("disabled",false);
@@ -30,9 +34,7 @@ $(function(){
                             .removeClass("icon-heart")
                             .addClass("icon-heart-empty");
                     }
-
               }
-
           },
           error:function(error,jqXHR){
               $("#alert-error").show();
@@ -40,24 +42,10 @@ $(function(){
                 $("#alert-error").hide(1000);
               },2000)
           }
-
       });
 
-    });
+  });
 
-	function load_book(id){
-
-		$.ajax({
-			type:"get",
-			url:"/api/book/"+bookid,
-			contentType:'application/json',
-			success: load_success,
-			error:function(jqXHR,textStatus,errorThrown){
-				console.log(textStatus);
-			}
-		});
-
-	}
 
 	function load_success(result,statusText,jqXHR){
 

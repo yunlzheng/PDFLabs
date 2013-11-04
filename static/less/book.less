@@ -1,0 +1,41 @@
+@import "variables.less";
+
+.btn-like{
+	color:rgb(226, 74, 74);
+}
+
+.btn-thumbs-up{
+	color:rgb(91, 183, 91);
+}
+
+.btn-thumbs-down{
+	color: rgb(91, 183, 91);
+}
+
+.files{
+	
+	li{
+		list-style: none;
+		img{
+			border-radius: 50%;
+			border: 3px solid rgb(255, 255, 255);
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+			.transition-delay(rotate, 3s);
+			&:hover{
+				-webkit-transform: rotate(360deg);
+				transform: rotate(-3deg);
+			}
+		}
+		.network_disk_link{
+			
+			display: inline-block;
+		}
+		.local_disk_link{
+			
+			display: inline-block;
+		}
+
+	}
+}
