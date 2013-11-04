@@ -6,16 +6,18 @@
     <meta property="wb:webmaster" content="d33383db780dd4ae" />
     <meta property="qc:admins" content="1414761143412360527351006375" />
     <!-- Bootstrap -->
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/bootstrap.css") }}">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/bootstrap-responsive.min.css") }}">
-    <link type="text/css" rel="stylesheet" media="screen" href="{{ static_url("style/custom.css") }}">
+    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">-->
+    <link type="text/css" href="/static/style/font-awesome.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap-responsive.min.css">
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/less/pdflabs.css">
 
      <script type="text/javascript" src="/static/js/lib/jquery-1.10.2.js"></script>
      <script type="text/javascript" src="/static/js/bootstrap/bootstrap.js"></script>
      <script type="text/javascript" src="/static/js/lib/underscore.js"></script>
      <script type="text/javascript" src="/static/js/lib/backbone.js"></script>
      <script type="text/javascript" src="/static/js/lib/backbone.localStorage.js"></script>
+     <script type="text/javascript" src="/static/js/lib/jquery.foggy.js"></script>
      <script type="text/javascript">
         USER_ID = '{{ current_user }}'
      </script>
@@ -29,8 +31,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="brand" href="/"><b class="icon-fire icon-large"></b>PDFLabs</a>
-             {% if current_user %}
+              <a class="brand" href="/">
+                  <img class="logo" src="/static/images/logo.png" title=" PDFLabs"/>
+              </a>
+              {% if current_user %}
                     <li class="dropdown rbrand">
                       <a class="dropdown-toggle"
                          data-toggle="dropdown"
@@ -41,7 +45,7 @@
                       <ul class="dropdown-menu">
 			     <li><a href="/users/{{ current_user }}"><i class="icon-home"></i>我的主页</a></li>
                         <li><a href="#"><i class="icon-message">我的消息</i></a></li>
-                        <li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>
+                        <!--<li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>-->
                         <li class="divider"></li>
                         <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
                       </ul>
@@ -52,17 +56,17 @@
               <div class="nav-collapse collapse">
                 <ul id="main_nav" class="nav">
                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-book icon-large'></b>资源
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-beaker '></b>资源
                         <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a href="/book?tag=shared"><b class="icon-bell-alt"></b>现货</a></li>
-                        <li><a href="/book?tag=waiting"><b class="icon-stethoscope"></b>期待中</a></li>
-                        <li><a href="/book?tag=hot"><b class="icon-fighter-jet"></b>最热门</a></li>
+                        <li><a href="/book?tag=shared"><b class="icon-bullhorn"></b>已分享</a></li>
+                        <li><a href="/book?tag=waiting"><b class="icon-bullseye"></b>期待中</a></li>
+                        <li><a href="/book?tag=hot"><b class="icon-bolt "></b>最热门</a></li>
                       </ul>
                     </li>
                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group icon-large"></b>小组
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group "></b>小组
                         <b class="caret"></b>
                       </a>
                       <ul class="dropdown-menu">
@@ -73,8 +77,17 @@
 
                       </ul>
                    </li>
-                   <li><a href="/book/find"><b class="icon-location-arrow icon-large "></b>发现</a></li>
 
+                   <li class="dropdown">
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-rocket "></b>彩蛋
+                        <b class="caret"></b>
+                      </a>
+                      <ul class="dropdown-menu">
+                            <li><a href="/gallery"><b class="icon-external-link-sign"></b>用户画廊</a></li>
+                      </ul>
+                   </li>
+
+                   <li><a href="/book/find"><b class="icon-search "></b>发现</a></li>
 		       <!-- <li><a href="#data">数据统计</a></li>
                    <li><a href="/logs">更新日志</a></li> -->
                 </ul>
@@ -103,13 +116,12 @@
                 © 墨鱼 2013
               </div>
               <div class="other">
-		     联系我
+		        <!--联系我-->
                 <a href="http://weibo.com/503error" target="_blank">
                   <span class="icon icon-weibo"></span>
                 </a>
               </div>
               <div class="clearfix"></div>
-
 	      </p>
             </div>
           </div>
@@ -119,7 +131,6 @@
 
        <script type="text/javascript">
         var sign = 0;
-
         window.onscroll = function(e){
           var t = document.documentElement.scrollTop || document.body.scrollTop;
           var navbar = document.getElementById("navbar-top");
@@ -132,11 +143,11 @@
           }else{
             $("#go_top").fadeOut(500);
           }
-
-
         }
 
         $(function(){
+
+            //$('#page').foggy(false);
 
             $("#go_top").click(function(){
 
@@ -145,13 +156,11 @@
                 },500);
 
             });
-
             if(USER_ID!='None'){
                 $.ajax({
                     type:'get',
                     url:"/api/rest/users/"+USER_ID,
                     success:function(result,statusText,jqXHR){
-
                     $("#account_info")
                         .attr('title', result['name'])
                         .attr('src', result['avatar']);

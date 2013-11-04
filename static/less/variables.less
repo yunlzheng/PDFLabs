@@ -1,0 +1,38 @@
+@head_color: #FAFAFA;
+
+.transition-delay(@delay, @select:all) {
+    -webkit-transition: @select @delay;
+    -moz-transition: @select @delay;
+    -ms-transition: @select @delay;
+    -o-transition: @select @delay;
+    transition: @select @delay;
+}
+
+.transform-skew(@shewX:0deg, @shewY:0deg){
+    -webkit-transform: skewX(@shewX) skewY(@shewY);
+    -moz-transform: skewX(@shewX) skewY(@shewY);
+    -ms-transform: skewX(@shewX) skewY(@shewY);
+    -o-transform: skewX(@shewX) skewY(@shewY);
+    transform: skewX(@shewX) skewY(@shewY);
+}
+
+.box-shadow(@h-shadow:0, @v-shadow:3px, @blur:10px,@spread:0,@color:#fff,@inset:outset){
+   -webkit-box-shadow: @h-shadow @v-shadow @blur @color ;
+   -moz-box-shadow: @h-shadow @v-shadow @blur @color ;
+   box-shadow: @h-shadow @v-shadow @blur @color ;
+}
+
+.border-radius(@left_top:5px,@right_top:5px,@bottom_right:5px, @bottom_left:5px){
+
+  -webkit-border-radius: @left_top @right_top @bottom_right @bottom_left;
+  -moz-border-radius: @left_top @right_top @bottom_right @bottom_left;
+  border-radius: @left_top @right_top @bottom_right @bottom_left;
+
+}
+
+.opacity(@opacity:0.5){
+  @opacityPercentage: @opacity * 100;
+  opacity: @opacity;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=(@{opacityPercentage}))";
+  filter: ~"alpha(opacity = (@{opacityPercentage}))";
+}

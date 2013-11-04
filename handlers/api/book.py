@@ -9,6 +9,7 @@ from handlers import BaseHandler
 from models.books import Book
 from decorators import authenticated
 
+
 class IWantApi(BaseHandler):
 
     def get(self, id):

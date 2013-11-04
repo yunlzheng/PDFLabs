@@ -71,7 +71,7 @@ class BackboneHandler(tornado.web.RequestHandler):
 
 class MongoBackboneHandler(BackboneHandler):
 
-    def encode(self,data):
+    def encode(self, data):
         return data.to_json()
 
     @load_model

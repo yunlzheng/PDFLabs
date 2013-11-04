@@ -1,0 +1,19 @@
+.gallery {
+  position: relative;
+}
+.gallery .gallery_box {
+  position: absolute;
+  border: 5px solid #EEE;
+  border-bottom: 18px solid #EEE;
+  background: #ddd;
+  -webkit-box-shadow: 0px 0px 10px #333333;
+  -moz-box-shadow: 0px 0px 10px #333333;
+  box-shadow: 0px 0px 10px #333333;
+}
+.gallery .gallery_box a {
+  text-indent: -999px;
+  display: block;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}

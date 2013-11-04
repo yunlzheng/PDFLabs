@@ -13,8 +13,8 @@ TEMPLATE_PATH = os.path.join(PROJECT_PATH, "templates")
 STATIC_PATH = os.path.join(PROJECT_PATH, "static")
 
 ###### database setting
-MONGO_DRIVER_URL = "mongodb://localhost:27017"
-# mongodb://zheng:123456@ds041198.mongolab.com:41198/heroku_app17595021
+#MONGO_DRIVER_URL = "mongodb://localhost:27017"
+MONGO_DRIVER_URL = "mongodb://zheng:123456@ds041198.mongolab.com:41198/heroku_app17595021"
 MONGO_COLLECTION = "heroku_app17595021"
 
 ###### douban oauth2 setting

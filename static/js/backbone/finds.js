@@ -27,7 +27,7 @@ var BookView = Backbone.View.extend({
     className: "well row-fluid",
 
     events: {
-        "click .btn-success": "want",
+        "click .btn-want": "want",
         "click .have": 'have'
     },
 
@@ -53,7 +53,7 @@ var BookView = Backbone.View.extend({
 
     want: function(){
 
-         id = this.model.get('id');
+         var id = this.model.get('id');
          $.ajax({
               type:"post",
               url:"/api/want/"+id,

@@ -1,0 +1,79 @@
+@import "variables.less";
+
+@media (min-width: 1200px) {
+
+}
+
+@media (max-width: 767px) {
+
+
+      body {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      .navbar-fixed-top{
+        margin-bottom: 0px;
+      }
+
+    .min-hidden{
+      display:none;
+    }
+
+    .bookstore{
+       background: none;
+       padding-bottom: 40px;
+       .pre_ribbon {
+          position: absolute;
+          top: 0;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          letter-spacing: .5em;
+          span{
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -o-transform: rotate(0deg);
+                transform: rotate(0deg);
+          }
+        }
+       .span3{
+          text-align: center;
+          .book_intro{
+               text-align: center;
+               width: 180px;
+               margin:0 auto;
+               margin-top: 10px;
+               margin-bottom: 20px;
+               font-size: 18px;
+               font-weight: 100;
+               overflow: hidden;
+          }
+          img{
+            width:312px;
+            height:428px;
+          }
+
+       }
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+    .navbar-fixed-top{
+        margin-bottom: 0px;
+    }
+
+   .bookstore{
+       background: url('/static/img/bookcase_max_767.jpg') no-repeat 0px 210px;
+       padding-bottom: 40px;
+       .span3{
+          /*text-align: center;*/
+       }
+    }
+
+}

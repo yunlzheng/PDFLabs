@@ -1,0 +1,106 @@
+@import "variables.less";
+
+
+.bookstore{
+
+   background: url('/static/images/bookcase_2.png') no-repeat -40px 164px;
+   padding-bottom: 20px;
+   text-align: center;
+   .book_thing{
+      position: relative;
+      margin: 0 auto;
+      width: 130px;
+      margin-top: 20px;
+      &:hover{
+        img{
+          .box-shadow( 0, -1px, 20px, @color:rgba(0,0,0,0.5));
+          .transform-skew(0deg,0deg);
+           margin-top: -10px;
+           margin-bottom: 10px;
+        }
+      }
+      &.focus{
+        img{
+           .box-shadow( 0, -1px, 20px, @color:rgba(0,0,0,0.5));
+          .transform-skew(0deg,0deg);
+           margin-top: -10px;
+           margin-bottom: 10px;
+        }
+      }
+      img{
+          height: 160px;
+          width:130px;
+         .box-shadow(0, -1px, 10px,@color:rgba(34,25,25,0.4));
+          background-color: #ddd;
+          .transition-delay(0.3s);
+      }
+     .book_intro{
+          text-align: center;
+          margin-top: 14px;
+          margin-bottom: 20px;
+          font-size: 14px;
+          font-weight: 100;
+          overflow: hidden;
+          height: 15px;
+          width: 120px;
+          line-height: 16px;
+          border: 1px #797373 solid;
+          padding: 2px;
+          background: rgba(0, 0, 0, 0.2);
+          .border-radius(5px,5px 5px, 5px);
+          color: #FFF;
+          a{
+            color:#fff;
+          }
+      }
+      .pre_ribbon{
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100px;
+          width: 100px;
+          overflow: hidden;
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          letter-spacing: .5em;
+          .stack{
+                 background: rgb(70, 165, 70);
+          }
+          .wait{
+            background: rgb(248, 148, 6)
+          }
+          span{
+              filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+              opacity: 0.8;
+              display: block;
+              width: 150px;
+              padding-left: 10px;
+              padding-top: 5px;
+              padding-bottom: 3px;
+              position: relative;
+              left: -40px;
+              top: 75px;
+              text-align: center;
+              -webkit-transform-origin: 0 0;
+              -moz-transform-origin: 0 0;
+              -ms-transform-origin: 0 0;
+              -o-transform-origin: 0 0;
+              transform-origin: 0 0;
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+              -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+              -moz-box-shadow: rgba(0,0,0,0.3) 1px 1px 10px;
+              box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+          }
+      }
+   }
+}
+
+
+.bookrow{
+    padding-left: 40px;
+    padding-right: 50px;
+}

@@ -67,22 +67,27 @@ class MakoHandler(BaseHandler):
     def render(self, filename, **kwargs):  
         self.finish(self.render_string(filename, **kwargs))
 
+
 class MainHandler(BaseHandler):
 
     @tornado.gen.coroutine
     def get(self):
 
-        books = []
-        hot_books = Book.objects().order_by('-wcount')[:8]
-        for book in Book.objects().order_by('+update_at'):
-            books.append(book)
+        result = {}
+        hot_books = Book.objects().order_by('-wcount')[:12]
+        query_books = Book.objects().order_by('-update_at')
+        print len(query_books)
+        rows = int(len(query_books) / 4)
+        for row in xrange(rows):
+            offset = row * 4
+            result[row] = query_books[offset:offset+4]
 
-        books.reverse()
         self.render(
             "home.html",
             page_heading='PDFLabs',
-            books=books,
+            rows=rows,
             hot_books=hot_books,
-            groups = self.get_groups()
+            groups=self.get_groups(),
+            result=result
         )
 
