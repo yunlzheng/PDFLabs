@@ -1,5 +1,6 @@
 body {
   overflow-x: hidden;
+  background: url("/static/images/background_2.png");
 }
 h5 {
   font-size: 24px;
@@ -31,7 +32,6 @@ p {
   -ms-transition: 0.7s background;
   -o-transition: 0.7s background;
   transition: 0.7s background;
-  background: url("/static/images/background_2.png");
 }
 #footer {
   -webkit-transition: 0.5s display;

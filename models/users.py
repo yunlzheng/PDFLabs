@@ -1,5 +1,5 @@
 # -*- coding : utf-8 -*-
-
+from datetime import datetime
 from mongoengine import *
 
 
@@ -12,3 +12,4 @@ class User(Document):
     avatar = URLField()
     access_token = StringField()
     refresh_token = StringField()
+    create_at = DateTimeField(default=datetime.now())

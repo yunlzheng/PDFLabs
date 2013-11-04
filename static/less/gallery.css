@@ -1,5 +1,7 @@
 .gallery {
   position: relative;
+  overflow: hidden;
+  height: 450px;
 }
 .gallery .gallery_box {
   position: absolute;
@@ -9,6 +11,28 @@
   -webkit-box-shadow: 0px 0px 10px #333333;
   -moz-box-shadow: 0px 0px 10px #333333;
   box-shadow: 0px 0px 10px #333333;
+}
+.gallery .gallery_box .gallery_ajax {
+  text-shadow: 0 1px 1px #FFF;
+  color: #717171;
+  text-decoration: none;
+  font-size: 14px;
+  position: absolute;
+  z-index: 10000;
+  width: 150px;
+  border: none;
+  left: 105px;
+  top: -5px;
+  display: none;
+}
+.gallery .gallery_box .gallery_ajax h2 {
+  text-indent: 2em;
+  font-size: 16px;
+  line-height: 1.1em;
+}
+.gallery .gallery_box .gallery_ajax p {
+  text-align: left;
+  text-indent: 2em;
 }
 .gallery .gallery_box a {
   text-indent: -999px;

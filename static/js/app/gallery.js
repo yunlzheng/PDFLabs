@@ -6,10 +6,10 @@
 $(function(){
     var tpl_gallery_box = $("#tpl_gallery_box").html();
     var $container = $("#gallery");
-    var rotate_top = 60;
-    var rotate_limit = -60;
+    var rotate_top = 50;
+    var rotate_limit = -50;
     var position_top = 300;
-    var position_left = $container.innerWidth()-110;//减去相框自身长度
+    var position_left = $container.innerWidth()-210;//减去相框自身长度
     $.ajax({
         url:"/gallery/api",
         success:function(data, textStatus, jqXHR){
@@ -18,7 +18,11 @@ $(function(){
                     var top = parseInt(Math.random()*position_top+i);
                     var left = parseInt(Math.random()*position_left+i);
                     var gallery = data[i];
-                    var gallery_box = $(tpl_gallery_box)[0];
+                    var tpl = tpl_gallery_box
+                        .replace("{type}",gallery['type'])
+                        .replace("{name}", gallery['name']);
+                    var gallery_box = $(tpl)[0];
+                    gallery_box.setAttribute("id", gallery._id.$oid);
                     $container.append(gallery_box);
                     $(gallery_box).css({
                         "top":top,
@@ -35,6 +39,18 @@ $(function(){
         error: function(jqXHR, textStatus, error){}
     });
 
+    //TODO: 用户信息
+    $("body").delegate('.gallery_box','mouseenter mouseleave', function(e){
+        var id = $(this).attr('id');
+        if(e.type=="mouseenter"){
+            $(this).find('.gallery_ajax').fadeIn(500);
+        }else{
+            $(this).find('.gallery_ajax').fadeOut(500);
+        }
+    });
+
+    //TODO: 头像拖动
+
     var params = {
         left: 0,
         top: 0,
@@ -47,22 +63,10 @@ $(function(){
 
     var startDrop = function(e){
 
-        var nowX = e.clientX;
-        var nowY = e.clientY;
-        var disX = nowX - params.currentX;
-        var disY = nowY - params.currentY;
-
-        var left = parseInt(params.left) + disX + "px";
-        var top = parseInt(params.top) + disY + "px";
-
-//        console.log(nowX+"  "+nowY);
-//
-//        $target.css({
-//            "left":nowX-227,
-//            "top":nowY-54
-//        });
+        return false;
 
     }
+
 
     $("body").delegate(".gallery_box", "mousedown", function(e){
 
@@ -77,7 +81,6 @@ $(function(){
 
 
     $("body").delegate(".gallery_box", "mouseup", function(){
-
 
         $(this).unbind("mousemove", startDrop);
         return false;
