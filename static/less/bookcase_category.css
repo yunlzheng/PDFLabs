@@ -1,0 +1,21 @@
+#bookcase_category_list .bookcase_category {
+  background-color: #fff;
+  margin: 20px 0 20px 0;
+  padding: 10px 5px 10px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  -webkit-box-shadow: 1px 2px 2px #dddddd;
+  -moz-box-shadow: 1px 2px 2px #dddddd;
+  box-shadow: 1px 2px 2px #dddddd;
+}
+#bookcase_category_list .bookcase_category .title {
+  float: left;
+  width: 70px;
+  border-right: 1px dashed #ddd;
+  text-align: center;
+  padding: 5px;
+}
+#bookcase_category_list .bookcase_category .title h6 {
+  font-family: "微软雅黑";
+}
