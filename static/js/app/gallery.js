@@ -4,6 +4,7 @@
  * parseInt(Math.random()*(上限-下限+1)+下限);
  */
 $(function(){
+    
     var tpl_gallery_box = $("#tpl_gallery_box").html();
     var $container = $("#gallery");
     var rotate_top = 50;
