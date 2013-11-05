@@ -1,9 +1,9 @@
 var app = app||{}
 var ENTER_KEY = 13
 
-//模型
 var BookModel = Backbone.Model.extend({});
 
+//模型
 var BookCollection = Backbone.Collection.extend({
 
     model: BookModel,

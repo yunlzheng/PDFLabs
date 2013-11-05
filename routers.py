@@ -11,6 +11,7 @@ from handlers.book import PreviewHandler
 from handlers.book import BookHandler
 from handlers.book import BooksHandler
 from handlers.book import FindHandler
+from handlers.book import BookcaseHandler
 from handlers.group import GroupHandler
 from handlers.group import PostHandler
 from handlers.funny import UserGalleryHandler, UserGalleryApiHandler
@@ -47,6 +48,8 @@ router = [
       (r"/book", BooksHandler),
       (r"/book/([0-9]+)", BookHandler),
       (r"/book/preview/([0-9]+)", PreviewHandler),
+      (r"/bookcases", BookcaseHandler),
+      (r"/bookcases/([0-9a-zA-Z\-]+)", BookcaseHandler),
       (r"/group/([0-9a-zA-Z\-]+)", GroupHandler),
       (r"/group/([0-9a-zA-Z\-]+)/([0-9a-zA-Z\-]+)", PostHandler),
       (r"/api/book/search/([\s\S]*)", BookSearchHandler),
