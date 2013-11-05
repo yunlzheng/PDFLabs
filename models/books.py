@@ -1,5 +1,5 @@
 # -*- coding : utf-8 -*-
-
+from datetime import datetime
 from mongoengine import *
 from mongoengine.fields import *
 from models.users import User
@@ -8,7 +8,8 @@ from models.files import File
 
 class Category(Document):
     name = StringField(required=True, unique=True, help_text="Book Category")
-    created_at = DateTimeField(default=datetime.datetime.now(), help_text="create datetime")
+    created_at = DateTimeField(default=datetime.now(), help_text="create datetime")
+    default = BooleanField(default=False, help_text="Is the default book category")
 
 
 class Comment(EmbeddedDocument):
