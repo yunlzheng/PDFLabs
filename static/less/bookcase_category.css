@@ -1,9 +1,9 @@
 #bookcase_category_list .bookcase_category {
-  background-color: #fff;
   margin: 20px 0 20px 0;
   padding: 15px 5px 15px 5px;
   vertical-align: middle;
   overflow: hidden;
+  background: url('/static/images/bookcase_2.png') no-repeat -50px 145px;
   -webkit-border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
@@ -13,36 +13,64 @@
 }
 #bookcase_category_list .bookcase_category .title {
   float: left;
-  width: 120px;
   border-right: 1px dashed #ddd;
   text-align: center;
   padding: 5px;
-  height: 100px;
-  padding-top: 40px;
+  width: 150px;
+  padding-top: 50px;
+  padding-left: 50px;
 }
 #bookcase_category_list .bookcase_category .title .logo img {
   -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
   -moz-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.8);
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
 }
 #bookcase_category_list .bookcase_category .title h6 {
   font-family: "微软雅黑";
 }
+#bookcase_category_list .bookcase_category .move-to {
+  float: right;
+  width: 150px;
+  font-size: 100px;
+  padding-top: 70px;
+  font-weight: 100;
+}
+#bookcase_category_list .bookcase_category .move-to a:hover {
+  text-decoration: none;
+}
 #bookcase_category_list .bookcase_category .list {
-  margin-left: 160px;
+  margin-left: 135px;
+  margin-right: 200px;
+  padding-left: 70px;
   overflow: hidden;
   vertical-align: bottom;
   text-align: left;
+  padding-bottom: 20px;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item {
   display: inline-block;
   vertical-align: bottom;
 }
+#bookcase_category_list .bookcase_category .list .bookcase_item a:hover {
+  text-decoration: none;
+}
 #bookcase_category_list .bookcase_category .list .bookcase_item .book_name {
   font-size: 12px;
   font-family: "微软雅黑";
+}
+#bookcase_category_list .bookcase_category .list .bookcase_item .book_case {
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
+}
+#bookcase_category_list .bookcase_category .list .bookcase_item .book_case:hover {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_0 {
   background: url("/static/img/book_0.png") no-repeat;
