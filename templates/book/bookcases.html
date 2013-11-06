@@ -1,0 +1,37 @@
+{% extends "../main.html" %}
+{% autoescape None %}
+{% block body %}
+<div class="container" id="app-bookcase">
+    <div id="bookcase_category_list"></div>
+</div>
+<script type="text/template" id="tpl_bookcase_book_item">
+
+    <div class="book_case bookcase_<%=img%>">
+         <a href="/book/<%=bid%>">
+            <div class="book_name"><%=title%></div>
+        </a>
+        <!--<img src="/static/img/book_<%=img%>.png" alt="<%=title%>" style="display: none"/>-->
+    </div>
+
+</script>
+<script type="text/template" id="tpl_bookcase_category">
+    <div class="title">
+        <div class="logo">
+            <img src="/static/img/languages.png"/>
+        </div>
+        <h6><a href="/bookcases/<%=id%>"><%=name%></a></h6>
+    </div>
+    <div class="move-to" title="进入书架">
+        <a href="/bookcases/<%=id%>">›</a>
+    </div>
+    <div class="list"></div>
+    <div class="clearfix"></div>
+</script>
+<script type="text/javascript" src="/static/js/backbone/model/book.js"></script>
+<script type="text/javascript" src="/static/js/backbone/model/category.js"></script>
+<script type="text/javascript" src="/static/js/backbone/collection/categorys.js"></script>
+<script type="text/javascript" src="/static/js/backbone/collection/books.js"></script>
+<script type="text/javascript" src="/static/js/backbone/view/bookview.js"></script>
+<script type="text/javascript" src="/static/js/backbone/view/categoryview.js"></script>
+<script type="text/javascript" src="/static/js/backbone/bookcases.js"></script>
+{% end %}

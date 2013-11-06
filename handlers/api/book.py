@@ -66,7 +66,11 @@ class BookDetailHandler(BaseHandler):
         self.set_header('Content-Type', 'application/json')
         http_client = AsyncHTTPClient()
         response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+        book = Book.objects(bid=id).first()
+
         book_details = json.loads(response.body)
+        book.image = book_details.get('image')
+        book.save()
         self.write(book_details)
 
 

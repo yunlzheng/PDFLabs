@@ -86,7 +86,14 @@ class MongoBackboneHandler(BackboneHandler):
 
     @load_model
     def get_collection(self, *args):
-        return self.model.objects()
+
+        skip = self.get_argument('skip', None)
+        limit = self.get_argument('limit', None)
+        if skip and limit:
+            result = self.model.objects[int(skip):int(limit)]
+            return result
+        else:
+            return self.model.objects()
 
     @load_model
     def delete_model(self, *args):

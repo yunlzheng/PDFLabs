@@ -12,16 +12,19 @@ from models.books import Book
 from models.groups import Group
 from models.users import User
 
+
 class UUIDMixin():
 
     def generate_uuid(self):
         date = datetime.datetime.now()
         return date.strftime("%Y%m%d%Hx%M%S")
 
+
 class BBSMixin():
 
     def get_groups(self):
         return Group.objects()
+
 
 class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
 
@@ -41,11 +44,11 @@ class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
     def is_admin(self):
         pass
 
+
 class MakoHandler(BaseHandler):
     '''
         该类继承自BaseHandler 复写了tornado默认的调用模板的方法，转向使用moka模板引擎
     '''
-
     def initialize(self, lookup):
         self._lookup = lookup
 

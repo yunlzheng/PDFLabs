@@ -1,0 +1,60 @@
+@import "variables.less";
+
+#bookcase-details{
+  .head{
+    background-color: #fff;
+    padding: 20px;
+    .logo{
+      border: 1px solid #AAB3B3;
+      display: inline-block;
+      float: left;
+      img{
+        border:5px solid #ddd;
+        height: 100px;
+        width: 100px;
+      }
+    }//图片: ;
+    .info{
+      float: left;
+      margin-left: 50px;
+      font-family: "微软雅黑";
+      .base{
+          h2{
+            line-height: 20px;
+          }
+        }
+        .details{
+          margin-top: 30px;
+          .total{
+
+            line-height: 20px;
+            vertical-align: middle;
+            font-size: 10px;
+            .number{
+
+            }
+          }
+        }//详情: ;
+        .placard{
+          margin-top: 10px;
+          font-size:16px;
+          font-weight: bold;
+          .icon-bullhorn{}
+          .content{}
+        }//公告: ;
+    }
+  }
+  .content{
+    min-height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    .book{
+      margin-top: 20px;
+      img{
+        height: 160px;
+        width: 130px;
+        .box-shadow( 0, -1px, 20px, @color:rgba(0,0,0,0.5));
+      }
+    }
+  }
+}
