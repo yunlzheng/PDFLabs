@@ -53,7 +53,7 @@ class AuthenticateHandler(BaseHandler):
         email = self.get_argument('email').decode()
         password = self.get_argument('password').decode()
         try:
-            user = User.objects(email=email, password=password)[0]
+            user = User.objects(email=email, password=password).first()
             if not user:
                 self.redirect('/sigin')
         except Exception as ex:
@@ -61,6 +61,7 @@ class AuthenticateHandler(BaseHandler):
             self.redirect('/sigin')
         else:
             self.set_secure_cookie('userid', str(user.id))
+            self.set_secure_cookie('admin', "True")
             try:
                 next_url = self.get_argument('next')
                 if next_url:
@@ -81,6 +82,7 @@ class LogoutHandler(BaseHandler):
 
             """
             self.clear_cookie("userid")
+            self.clear_cookie('admin')
             self.redirect("/")
 
 

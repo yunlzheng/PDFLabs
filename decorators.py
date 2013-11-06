@@ -27,7 +27,6 @@ def load_model(func):
             app_log.error(ex)
             print ex
             raise tornado.web.HTTPError(404)
-        print 'revice request args: {0} kwargs: {1}'.format(args, kwargs)
         return func(self, *args, **kwargs)
     return wrapper
 

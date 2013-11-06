@@ -42,7 +42,7 @@ class BaseHandler(tornado.web.RequestHandler, BBSMixin, UUIDMixin):
             return user
 
     def is_admin(self):
-        pass
+        return self.get_secure_cookie('admin')
 
 
 class MakoHandler(BaseHandler):
