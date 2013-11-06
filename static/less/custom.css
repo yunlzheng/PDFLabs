@@ -33,18 +33,6 @@ p {
   transition: 0.7s background;
   background: url("/static/images/background_2.png");
 }
-#footer {
-  -webkit-transition: 0.5s display;
-  -moz-transition: 0.5s display;
-  -ms-transition: 0.5s display;
-  -o-transition: 0.5s display;
-  transition: 0.5s display;
-  background-color: #292929;
-  height: 150px;
-  z-index: -9999;
-  position: fixed;
-  display: none;
-}
 #navbar-top {
   -webkit-transition: 0.5s display;
   -moz-transition: 0.5s display;
@@ -53,20 +41,30 @@ p {
   transition: 0.5s display;
 }
 .footer {
+  -webkit-transition: 0.5s display;
+  -moz-transition: 0.5s display;
+  -ms-transition: 0.5s display;
+  -o-transition: 0.5s display;
+  transition: 0.5s display;
   width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 50px 0 0 0;
   color: #FFF;
   font-weight: bold;
+  background-color: #292929;
+  padding: 20px;
+  text-align: center;
 }
-.footer a {
-  color: #08ADFF;
+.footer .social-links {
+  text-align: right;
 }
-.footer .other {
-  float: right;
-  font-weight: normal;
+.footer .social-links a {
+  color: #fff;
+  padding: 10px;
+}
+.footer .social-links a:hover {
+  text-decoration: none;
+}
+.footer .social-links .icon-large {
+  font-size: 1.5em;
 }
 .footer .other .icon-weibo {
   background-image: url("/static/img/icon_weibo_558.png");

@@ -36,35 +36,35 @@ p{
   background: url("/static/images/background_2.png");
 }
 
-#footer{
-  .transition-delay(display, 0.5s);
-  background-color: #292929;
-  height: 150px;
-  z-index:-9999;
-  position: fixed;
-  display: none;
-}
 
 #navbar-top{
   .transition-delay(display, 0.5s);
 }
 
 .footer{
-
+  .transition-delay(display, 0.5s);
   width: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 50px 0 0 0;
   color: #FFF;
   font-weight: bold;
-  a{
-    color: #08ADFF;
+  background-color: #292929;
+  padding: 20px;
+  text-align: center;
+  .social-links{
+    text-align: right;
+    a{
+      color:#fff;
+      padding: 10px;
+      &:hover{
+        text-decoration: none;
+      }
+    }
+    .icon-large{
+      font-size: 1.5em;
+    }
   }
 
   .other{
-    float:right;
-    font-weight: normal;
+    
     .icon-weibo{
       background-image: url("/static/img/icon_weibo_558.png");
       background-repeat: no-repeat;

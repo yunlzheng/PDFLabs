@@ -1,0 +1,34 @@
+.btn-like {
+  color: #e24a4a;
+}
+.btn-thumbs-up {
+  color: #5bb75b;
+}
+.btn-thumbs-down {
+  color: #5bb75b;
+}
+.files li {
+  list-style: none;
+}
+.files li img {
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  -webkit-transition: 3s rotate;
+  -moz-transition: 3s rotate;
+  -ms-transition: 3s rotate;
+  -o-transition: 3s rotate;
+  transition: 3s rotate;
+}
+.files li img:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(-3deg);
+}
+.files li .network_disk_link {
+  display: inline-block;
+}
+.files li .local_disk_link {
+  display: inline-block;
+}
