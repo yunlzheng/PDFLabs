@@ -17,8 +17,10 @@ app.BookView = Backbone.View.extend({
     },
 
     render: function(){
-        console.log(this.model.toJSON());
-        this.$el.html( this.template(this.model.toJSON()) );
+        var _model = this.model.toJSON();
+        var img = parseInt(Math.random()*(10-0+1)+0);
+        _model.img = img
+        this.$el.html( this.template(_model) );
         return this;
     }
 

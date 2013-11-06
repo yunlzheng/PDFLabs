@@ -33,7 +33,7 @@ app.BookCategoryView = Backbone.View.extend({
              "data": {
                 "category": this.model.attributes.id,
                  "skip":0,
-                 "limit":6
+                 "limit":20
              }
         });
         return this;
