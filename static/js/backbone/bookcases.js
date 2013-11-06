@@ -3,6 +3,7 @@
  */
 var app = app || {};
 
+
 var Workspace = Backbone.View.extend({
 
     el: $("#app-bookcase"),

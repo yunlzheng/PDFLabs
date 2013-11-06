@@ -6,7 +6,7 @@ var app = app || {}
 var BookList = Backbone.Collection.extend({
 
     url: "/api/rest/books",
-    model:app.BookCategoryModel
+    model:app.BookModel
 
 });
 

@@ -987,6 +987,56 @@ p {
   -moz-box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
   box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.6);
 }
+#bookcase-details .head {
+  background-color: #fff;
+  padding: 20px;
+}
+#bookcase-details .head .logo {
+  border: 1px solid #AAB3B3;
+  display: inline-block;
+  float: left;
+}
+#bookcase-details .head .logo img {
+  border: 5px solid #ddd;
+  height: 100px;
+  width: 100px;
+}
+#bookcase-details .head .info {
+  float: left;
+  margin-left: 50px;
+  font-family: "微软雅黑";
+}
+#bookcase-details .head .info .base h2 {
+  line-height: 20px;
+}
+#bookcase-details .head .info .details {
+  margin-top: 30px;
+}
+#bookcase-details .head .info .details .total {
+  line-height: 20px;
+  vertical-align: middle;
+  font-size: 10px;
+}
+#bookcase-details .head .info .placard {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+#bookcase-details .content {
+  min-height: 100px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+#bookcase-details .content .book {
+  margin-top: 20px;
+}
+#bookcase-details .content .book img {
+  height: 160px;
+  width: 130px;
+  -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+}
 .gallery {
   position: relative;
 }
