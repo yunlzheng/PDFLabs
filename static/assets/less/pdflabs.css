@@ -31,7 +31,7 @@ p {
   -ms-transition: 0.7s background;
   -o-transition: 0.7s background;
   transition: 0.7s background;
-  background: url("/static/images/background_2.png");
+  background: url("/static/assets/images/background_2.png");
 }
 #navbar-top {
   -webkit-transition: 0.5s display;
@@ -328,7 +328,7 @@ p {
   margin-top: 60px;
   padding-left: 60px;
   padding-right: 60px;
-  background: url('/static/images/bookcase_2.png') no-repeat -40px 210px;
+  background: url('/static/assets/images/bookcase_2.png') no-repeat -40px 210px;
   padding-bottom: 100px;
   vertical-align: bottom;
 }
@@ -671,7 +671,7 @@ p {
   margin-right: 70px;
 }
 .bookstore {
-  background: url('/static/images/bookcase_2.png') no-repeat -40px 164px;
+  background: url('/static/assets/images/bookcase_2.png') no-repeat -40px 164px;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -791,7 +791,7 @@ p {
   padding: 15px 5px 15px 5px;
   vertical-align: middle;
   overflow: hidden;
-  background: url('/static/images/bookcase_2.png') no-repeat -50px 145px;
+  background: url('/static/assets/images/bookcase_2.png') no-repeat -50px 145px;
   -webkit-border-radius: 5px 5px 5px 5px;
   -moz-border-radius: 5px 5px 5px 5px;
   border-radius: 5px 5px 5px 5px;
@@ -861,7 +861,7 @@ p {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.8);
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_0 {
-  background: url("/static/img/book_0.png") no-repeat;
+  background: url("/static/assets/img/labs/book_0.png") no-repeat;
   width: 29px;
   height: 130px;
 }
@@ -872,7 +872,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_1 {
-  background: url("/static/img/book_1.png") no-repeat;
+  background: url("/static/assets/img/labs/book_1.png") no-repeat;
   width: 32px;
   height: 148px;
 }
@@ -883,7 +883,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_2 {
-  background: url("/static/img/book_2.png") no-repeat;
+  background: url("/static/assets/img/labs/book_2.png") no-repeat;
   width: 30px;
   height: 145px;
 }
@@ -894,7 +894,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_3 {
-  background: url("/static/img/book_3.png") no-repeat;
+  background: url("/static/assets/img/labs/book_3.png") no-repeat;
   width: 32px;
   height: 155px;
 }
@@ -905,7 +905,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_4 {
-  background: url("/static/img/book_4.png") no-repeat;
+  background: url("/static/assets/img/labs/book_4.png") no-repeat;
   width: 30px;
   height: 142px;
 }
@@ -916,7 +916,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_5 {
-  background: url("/static/img/book_5.png") no-repeat;
+  background: url("/static/assets/img/labs/book_5.png") no-repeat;
   width: 38px;
   height: 149px;
 }
@@ -927,7 +927,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_6 {
-  background: url("/static/img/book_6.png") no-repeat;
+  background: url("/static/assets/img/labs/book_6.png") no-repeat;
   width: 32px;
   height: 135px;
 }
@@ -938,7 +938,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_7 {
-  background: url("/static/img/book_7.png") no-repeat;
+  background: url("/static/assets/img/labs/book_7.png") no-repeat;
   width: 28px;
   height: 145px;
 }
@@ -949,7 +949,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_8 {
-  background: url("/static/img/book_8.png") no-repeat;
+  background: url("/static/assets/img/labs/book_8.png") no-repeat;
   width: 28px;
   height: 135px;
 }
@@ -960,7 +960,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_9 {
-  background: url("/static/img/book_9.png") no-repeat;
+  background: url("/static/assets/img/labs/book_9.png") no-repeat;
   width: 26px;
   height: 124px;
 }
@@ -971,7 +971,7 @@ p {
   color: #fff;
 }
 #bookcase_category_list .bookcase_category .list .bookcase_item .bookcase_10 {
-  background: url("/static/img/book_10.png") no-repeat;
+  background: url("/static/assets/img/labs/book_10.png") no-repeat;
   width: 32px;
   height: 150px;
 }

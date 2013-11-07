@@ -1,8 +1,29 @@
 /**
  * Created by zheng on 13-11-5.
  */
-
 var app = app || {};
+
+app.BookView = Backbone.View.extend({
+
+    tag:"div",
+
+    className:"bookcase_item",
+
+    template : _.template( $("#tpl_bookcase_book_item").html() ),
+
+    initialize: function(){
+
+    },
+
+    render: function(){
+        var _model = this.model.toJSON();
+        var img = parseInt(Math.random()*(10-0+1)+0);
+        _model.img = img
+        this.$el.html( this.template(_model) );
+        return this;
+    }
+
+});
 
 app.BookCategoryView = Backbone.View.extend({
 
@@ -38,5 +59,30 @@ app.BookCategoryView = Backbone.View.extend({
         });
         return this;
     }
+
+});
+
+var Workspace = Backbone.View.extend({
+
+    el: $("#app-bookcase"),
+    initialize: function(){
+
+        this.$bookcases = this.$("#bookcase_category_list");
+
+        this.listenTo(app.Categorys,'add', this.addCategory);
+
+        app.Categorys.fetch();
+
+    },
+    addCategory: function(category){
+        var view = new app.BookCategoryView( {model: category} );
+        this.$bookcases.append(view.render().el);
+    }
+
+});
+
+$(function(){
+
+    var workspace = new Workspace();
 
 });
