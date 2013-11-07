@@ -51,7 +51,6 @@ $(function(){
     });
 
     //TODO: 头像拖动
-
     var params = {
         left: 0,
         top: 0,
@@ -63,11 +62,8 @@ $(function(){
     var $target = null;
 
     var startDrop = function(e){
-
         return false;
-
     }
-
 
     $("body").delegate(".gallery_box", "mousedown", function(e){
 
@@ -80,13 +76,11 @@ $(function(){
 
     });
 
-
     $("body").delegate(".gallery_box", "mouseup", function(){
 
         $(this).unbind("mousemove", startDrop);
         return false;
 
     });
-
 
 });
