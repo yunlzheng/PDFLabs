@@ -21,6 +21,8 @@ develop-eggs
 lib64
 .idea
 
+/static/assets/less/*.css
+
 # Installer logs
 pip-log.txt
 
