@@ -4,7 +4,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 	<head>
 	  <meta charset="utf-8" />
-	  <title>labs | Admin Dashboard</title>
+	  <title>labs |  管理控制台</title>
 	  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	   <meta content="" name="description" />
 	   <meta content="" name="author" />
@@ -56,7 +56,7 @@
 				    <form class="sidebar-search">
 				      <div class="input-box">
 				        <a href="javascript:;" class="remove"></a>
-				        <input type="text" placeholder="Search..." />       
+				        <input type="text" placeholder="搜索..." />
 				        <input type="button" class="submit" value=" " />
 				      </div>
 				    </form>
@@ -65,27 +65,27 @@
 				 <li class="start active ">
 				    <a href="#index">
 				    <i class="icon-home"></i> 
-				    <span class="title">Dashboard</span>
+				    <span class="title">控制台</span>
 				    <span class="selected"></span>
 				    </a>
 				 </li>
 				 <li class="">
 				    <a href="javascript:;">
 				    <i class="icon-cogs"></i> 
-				    <span class="title">Pdflabs</span>
+				    <span class="title">图书</span>
 				    <span class="arrow "></span>
 				    </a>
 				    <ul class="sub-menu">
-				      <li >
-				        <a href="#books/category">
-				        	<i class="icon-envelope"></i>
-				        	Category
+                      <li >
+				        <a href="#books">
+				        	<i class="icon-sitemap"></i>
+				        	图书
 				    	</a>
 				      </li>
 				      <li >
-				        <a href="#books/book">
-				        	<i class="icon-sitemap"></i>
-				        	Books         
+				        <a href="#books/category">
+				        	<i class="icon-envelope"></i>
+				        	分类
 				    	</a>
 				      </li>
 				      
@@ -94,20 +94,20 @@
 				  <li class="">
 				    <a href="javascript:;">
 				    <i class="icon-th-list"></i> 
-				    <span class="title">Groups</span>
+				    <span class="title">小组</span>
 				    <span class="arrow "></span>
 				    </a>
 				    <ul class="sub-menu">
 				      <li >
-				        <a href="#groups/group">
+				        <a href="#groups">
 				        	<i class="icon-envelope"></i>
-				        	group
+				        	小组
 				    	</a>
 				      </li>
 				      <li >
 				        <a href="#groups/post">
 				        	<i class="icon-sitemap"></i>
-				        	post         
+				        	文章
 				    	</a>
 				      </li>
 				      
@@ -116,13 +116,13 @@
 				  <li class="">
 				    <a href="javascript:;">
 				    <i class="icon-map-marker"></i> 
-				    <span class="title">Users</span>
+				    <span class="title">用户</span>
 				    <span class="arrow "></span>
 				    </a>
 				    <ul class="sub-menu">
 				      <li >
-				        <a href="#user/indexbox">
-				        Index Box             </a>
+				        <a href="#users">
+				        用户</a>
 				      </li>
 				      
 				    </ul>
@@ -130,7 +130,7 @@
 				  <li class="">
 				    <a href="#settings">
 				    <i class="icon-cogs"></i> 
-				    <span class="title">Settings</span>
+				    <span class="title">设置</span>
 				    </a>
 				  </li>
 			  </ul>
@@ -274,19 +274,17 @@
 	   <script src="/static/assets/plugins/jquery.sparkline.min.js" type="text/javascript"></script>  
 	   <!-- END PAGE LEVEL PLUGINS -->
 	   <!-- BEGIN PAGE LEVEL SCRIPTS -->
-	   
+       <script type="text/javascript" src="/static/js/core/underscore.js"></script>
+       <script type="text/javascript" src="/static/js/core/backbone.js"></script>
+       <script type="text/javascript" src="/static/js/core/backbone.localStorage.js"></script>
 	   <script src="/static/assets/scripts/app.js" type="text/javascript"></script>
 	   <script src="/static/assets/scripts/index.js" type="text/javascript"></script>      
-	   
+	   <script src="/static/js/backbone/view/admin.js" type="text/javascript"></script>
+       <script src="/static/js/backbone/router/admin.js" type="text/javascript"></script>
 	   <!-- END PAGE LEVEL SCRIPTS -->  
 	   <script>
 	      jQuery(document).ready(function() {    
 	         App.init(); // initlayout and core plugins
-	         Index.init();
-	         Index.initChat();
-	         Index.initMiniCharts();
-	         Index.initDashboardDaterange();
-	         Index.initIntro();
 	      });
 	   </script>
    	   <!-- END JAVASCRIPTS -->
