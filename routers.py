@@ -6,6 +6,7 @@ import tornado.web
 
 from handlers import MainHandler
 from handlers.web import LogsHandler
+from handlers.web import AdminHandler
 from handlers.user import UserHandler
 from handlers.book import PreviewHandler
 from handlers.book import BookHandler
@@ -39,6 +40,7 @@ router = [
       (r"/(rebots\.xml)", tornado.web.StaticFileHandler, static_dir_dict),
       # handlers
       (r"/", MainHandler),
+      (r"/admin", AdminHandler),
       (r"/websocket", ChartHandler),
       (r"/logs", LogsHandler),
       (r'/users/(.+)', UserHandler),

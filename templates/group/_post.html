@@ -59,7 +59,7 @@
             {% if  comment.author.avatar %}
               <img src="{{ comment.author.avatar }}"/>
             {% else %}
-              <img src="/static/images/avatar.jpg"/>
+              <img src="/static/assets/images/avatar.jpg"/>
             {% end %}
 
           </div>
@@ -115,5 +115,5 @@
     </form>
     <form id="delete_post_form" action="" method="delete"></form>
   </div>
-<script data-main="{{ static_url("js/app/post.js") }}" src="{{ static_url("js/lib/require.js") }}"></script>
+<script data-main="/static/js/app/post.js" src="/static/js/core/require.js"></script>
 {% end %}

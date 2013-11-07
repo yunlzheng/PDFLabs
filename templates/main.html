@@ -6,18 +6,16 @@
     <meta property="wb:webmaster" content="d33383db780dd4ae" />
     <meta property="qc:admins" content="1414761143412360527351006375" />
     <!-- Bootstrap -->
-    <!--<link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">-->
-    <link type="text/css" href="/static/style/font-awesome.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="/static/style/bootstrap-responsive.min.css">
-    <link type="text/css" rel="stylesheet" media="screen" href="/static/less/pdflabs.css">
+    <link href="/static/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/static/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" rel="stylesheet" media="screen" href="/static/assets/less/pdflabs.css">
 
-     <script type="text/javascript" src="/static/js/lib/jquery-1.10.2.js"></script>
-     <script type="text/javascript" src="/static/js/bootstrap/bootstrap.js"></script>
-     <script type="text/javascript" src="/static/js/lib/underscore.js"></script>
-     <script type="text/javascript" src="/static/js/lib/backbone.js"></script>
-     <script type="text/javascript" src="/static/js/lib/backbone.localStorage.js"></script>
-     <script type="text/javascript" src="/static/js/lib/jquery.foggy.js"></script>
+     <script type="text/javascript" src="/static/js/core/jquery-1.10.2.js"></script>
+     <script type="text/javascript" src="/static/js/core/underscore.js"></script>
+     <script type="text/javascript" src="/static/js/core/backbone.js"></script>
+     <script type="text/javascript" src="/static/js/core/backbone.localStorage.js"></script>
+     <script type="text/javascript" src="/static/js/core/jquery.foggy.js"></script>
      <script type="text/javascript">
         USER_ID = '{{ current_user }}'
      </script>
@@ -32,7 +30,7 @@
                 <span class="icon-bar"></span>
               </button>
               <a class="brand" href="/">
-                  <img class="logo" src="/static/images/logo.png" title=" PDFLabs"/>
+                  <img class="logo" src="/static/assets/images/logo.png" title=" PDFLabs"/>
               </a>
               {% if current_user %}
                     <li class="dropdown rbrand">

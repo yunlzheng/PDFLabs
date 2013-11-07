@@ -1,0 +1,116 @@
+.bookstore {
+  background: url('/static/assets/images/bookcase_2.png') no-repeat -40px 164px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.bookstore .book_thing {
+  position: relative;
+  margin: 0 auto;
+  width: 130px;
+  margin-top: 20px;
+}
+.bookstore .book_thing:hover img {
+  -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: skewX(0deg) skewY(0deg);
+  -moz-transform: skewX(0deg) skewY(0deg);
+  -ms-transform: skewX(0deg) skewY(0deg);
+  -o-transform: skewX(0deg) skewY(0deg);
+  transform: skewX(0deg) skewY(0deg);
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.bookstore .book_thing.focus img {
+  -webkit-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5);
+  -webkit-transform: skewX(0deg) skewY(0deg);
+  -moz-transform: skewX(0deg) skewY(0deg);
+  -ms-transform: skewX(0deg) skewY(0deg);
+  -o-transform: skewX(0deg) skewY(0deg);
+  transform: skewX(0deg) skewY(0deg);
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+.bookstore .book_thing img {
+  height: 160px;
+  width: 130px;
+  -webkit-box-shadow: 0 -1px 10px rgba(34, 25, 25, 0.4);
+  -moz-box-shadow: 0 -1px 10px rgba(34, 25, 25, 0.4);
+  box-shadow: 0 -1px 10px rgba(34, 25, 25, 0.4);
+  background-color: #ddd;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.bookstore .book_thing .book_intro {
+  text-align: center;
+  margin-top: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  overflow: hidden;
+  height: 15px;
+  width: 120px;
+  line-height: 16px;
+  border: 1px #797373 solid;
+  padding: 2px;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px 5px;
+  color: #FFF;
+}
+.bookstore .book_thing .book_intro a {
+  color: #fff;
+}
+.bookstore .book_thing .pre_ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: .5em;
+}
+.bookstore .book_thing .pre_ribbon .stack {
+  background: #46a546;
+}
+.bookstore .book_thing .pre_ribbon .wait {
+  background: #f89406;
+}
+.bookstore .book_thing .pre_ribbon span {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: block;
+  width: 150px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  position: relative;
+  left: -40px;
+  top: 75px;
+  text-align: center;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 10px;
+}
+.bookrow {
+  padding-left: 40px;
+  padding-right: 50px;
+}

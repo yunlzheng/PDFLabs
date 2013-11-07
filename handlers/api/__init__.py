@@ -14,6 +14,27 @@ from decorators import load_model
 __author__ = 'zheng'
 
 
+class Page(object):
+    
+    def __init__(self, skip=None, limit=None):
+        self._skip = skip
+        self._limit = limit
+
+    @property
+    def availiable(self):
+        if self._skip and self._limit:
+            return True
+        return False
+
+    @property
+    def skip(self):
+        return int(self._skip)
+
+    @property
+    def limit(self):
+        return int(self._limit)
+
+
 class BackboneHandler(tornado.web.RequestHandler):
 
     model = None
@@ -53,6 +74,20 @@ class BackboneHandler(tornado.web.RequestHandler):
     def is_get_collection(self, *args):
         return len(args) == 1
 
+    def get_params(self, *args):
+        query = {}
+        arguments = self.request.arguments.copy()
+        arguments.pop('skip', None)
+        arguments.pop('limit', None)
+        for key in arguments.keys():
+            query[key] = self.get_argument(key)
+        return query
+
+    def get_page_params(self, *args):
+        skip = self.get_argument('skip', None)
+        limit = self.get_argument('limit', None)
+        return Page(skip=skip, limit=limit)
+
     def create_model(self, obj, *args):
         raise tornado.web.HTTPError(404)
 
@@ -87,18 +122,19 @@ class MongoBackboneHandler(BackboneHandler):
     @load_model
     def get_collection(self, *args):
 
-        skip = self.get_argument('skip', None)
-        limit = self.get_argument('limit', None)
-        if skip and limit:
-            result = self.model.objects[int(skip):int(limit)]
+        query = self.get_params()
+        print query
+        page = self.get_page_params()
+        if page.availiable:
+            result = self.model.objects.skip(page.skip).limit(page.limit).filter(**query)
             return result
         else:
-            return self.model.objects()
+            return self.model.objects().filter(**query)
 
     @load_model
     def delete_model(self, *args):
         try:
-            instance = self.model.objects(id=args[1])[0]
+            instance = self.model.objects(id=args[1]).first()
             instance.delete()
         except Exception, e:
             raise e
@@ -116,9 +152,8 @@ class MongoBackboneHandler(BackboneHandler):
     @load_model
     def update_model(self, *args):
         obj = self.decode(self.request.body)
-        instance = self.model.objects(id=args[1])[0]
+        instance = self.model.objects(id=args[1]).first()
         for key in obj:
-            print key
             if hasattr(instance, key):
                 setattr(instance, key, obj[key])
         instance.save()
