@@ -1,7 +1,7 @@
 /**
  * Created by zheng on 13-11-7.
  */
-var app = app || {}
+var app = app || {};
 
 var Workspace = Backbone.Router.extend({
 
@@ -16,34 +16,31 @@ var Workspace = Backbone.Router.extend({
     },
 
     index: function(){
-        app.appView.trigger('navigate',"index");
+        app.appView.navigate_to_index();
     },
 
     books: function(){
-        app.appView.trigger('navigate',"books");
+        app.appView.navigate_to_books();
     },
 
     book_category: function(){
-        app.appView.trigger('navigate',"categorys");
+        app.appView.navigate_to_category();
     },
 
     groups: function(){
-        app.appView.trigger('navigate',"groups");
+        app.appView.navigate_to_groups();
     },
 
     posts: function(){
-        app.appView.trigger('navigate',"posts");
+        app.appView.navigate_to_posts();
     },
 
     users: function(){
-        app.appView.trigger('navigate',"users");
+        app.appView.navigate_to_users();
     },
 
     settings: function(){
-        app.appView.trigger('navigate',"settings");
+        app.appView.navigate_to_settings();
     }
 
 });
-
-app.TodoRouter = new Workspace();
-Backbone.history.start();

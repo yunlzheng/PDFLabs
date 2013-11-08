@@ -1,0 +1,48 @@
+ <script type="text/template" id="tpl_stage_categorys">
+    <div class="row-fluid">
+      <div class="span12">
+        <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+        <h3 class="page-title">
+          书架
+          <small>图书分类</small>
+        </h3>
+        <ul class="breadcrumb">
+          <li>
+            <i class="icon-home"></i>
+            <a href="/">主页</a>
+            <span class="icon-angle-right"></span>
+          </li>
+          <li>
+            <a href="#index">控制台</a>
+            <span class="icon-angle-right"></span>
+          </li>
+          <li><a href="#">书架</a></li>
+        </ul>
+      </div>
+    </div>
+   <div id="page-container">
+
+   </div>
+</script>
+
+<script type="text/template" id="tpl_bookshelf">
+    <div class="title">
+        <div class="logo">
+            <img src="/static/img/languages.png"/>
+        </div>
+        <h6><a href="/bookcases/<%=id%>"><%=name%></a></h6>
+    </div>
+    <div class="list"></div>
+    <div class="clearfix"></div>
+</script>
+
+<script type="text/template" id="tpl_bookshelf_book">
+
+    <div class="book_case bookcase_<%=img%>">
+         <a href="/book/<%=bid%>">
+            <div class="book_name"><%=title%></div>
+        </a>
+        <!--<img src="/static/img/book_<%=img%>.png" alt="<%=title%>" style="display: none"/>-->
+    </div>
+
+</script>
