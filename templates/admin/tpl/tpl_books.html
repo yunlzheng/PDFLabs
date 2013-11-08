@@ -17,13 +17,20 @@
             <span class="icon-angle-right"></span>
           </li>
           <li><a href="#">图书</a></li>
-
         </ul>
       </div>
     </div>
-   <div id="page-container">图书</div>
+   <div id="page-container"></div>
 </script>
 
-<script type="text/template" id="tpl_stage_item">
-    <img src="image"/>
+<script type="text/template" id="tpl_book_item">
+    <div class="main">
+        <a href="/book/<%=bid%>"><img src="<%=image%>"/></a>
+        <div class="contextMenu">
+            <i class="icon-chevron-right menu"></i>
+        </div>
+    </div>
+    <div class="mianMenu">
+
+    </div>
 </script>

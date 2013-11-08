@@ -1,0 +1,42 @@
+@import "variables.less";
+.books{
+  .book_item{
+    height: 110px;
+    width: 90px;
+    display: inline-block;
+    margin:10px;
+    .main{
+        position: relative;
+        .contextMenu{
+          background-color: #28B779;
+          position: absolute;
+          bottom: 0px;
+          left:0px;
+          right: 0px;
+          height: 20px;
+          .menu{
+            float: right;
+            margin-right: 5px;
+            margin-top: 5px;
+            color:#fff;
+          }
+        }
+        img{
+          height: 110px;
+          width: 90px;
+          .box-shadow(1px,1px,2px,@color:rgba(0,0,0,0.6));
+        }
+    }
+    .mianMenu{
+      display: none;
+      position: absolute;
+      z-index:100;
+      background-color: #fff;
+      height: 300px;
+      left:0px;
+      right:0px;
+      background-color:rgba(0,0,0,0.8);
+    }
+
+  }
+}

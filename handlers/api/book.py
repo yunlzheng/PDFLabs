@@ -7,6 +7,7 @@ from tornado.httpclient import AsyncHTTPClient
 from tornado.log import app_log
 from handlers import BaseHandler
 from models.books import Book
+from models.books import Category
 from decorators import authenticated
 
 
@@ -28,18 +29,13 @@ class IWantApi(BaseHandler):
             book = Book.objects(bid=bookid)[0]
         except Exception, e:
             app_log.error(e)
-            book = Book(bid = bid,
-                title=title,
-                image=image,
-                isbn13=isbn13,
-                publisher=publisher,
-                wcount=0,
-                dcount=0
-            )
+            category = Category.objects(default=True).first()
+            book = Book(bid=bid, title=title, image=image, isbn13=isbn13,
+                        publisher=publisher, wcount=0, dcount=0, category=category)
         else:
             book.wcount = book.wcount+1
         finally:
-            book.update_at=datetime.datetime.now()
+            book.update_at = datetime.datetime.now()
             book.save()
 
 

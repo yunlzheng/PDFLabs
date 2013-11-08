@@ -22,6 +22,10 @@ var AppView = Backbone.View.extend({
 
     el: 'body',
 
+    events: {
+        "click": "clearContextMenu"
+    },
+
     initialize: function(){
 
         this.$stage = this.$('#stage');
@@ -59,9 +63,11 @@ var AppView = Backbone.View.extend({
 
     navigate_to_settings: function(){
 
+    },
+
+    clearContextMenu: function(){
+        $('.mianMenu').hide();
     }
-
-
 
 });
 

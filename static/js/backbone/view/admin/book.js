@@ -5,19 +5,45 @@ var app = app || {};
 
 var BookView = Backbone.View.extend({
 
-    template: _.template( $("#tpl_stage_item").html() ),
+    tag: "div",
+
+    className: "book_item",
+
+    template: _.template( $("#tpl_book_item").html() ),
+
+    events: {
+
+        'click .menu': 'contextMenu'
+    },
 
     initialize: function(){
 
-    }
+    },
+
+    render: function(){
+
+        this.el.innerHTML = this.template( this.model.toJSON() );
+        return this;
+
+    },
+
+     contextMenu: function(e){
+         $('body').foggy(false);
+         return false;
+
+     }
 
 });
 
 var BooksView = Backbone.View.extend({
+
     tag: 'div',
+
     className:"books",
 
     template: _.template( $("#tpl_stage_books").html() ),
+
+
 
     initialize: function(){
 
@@ -27,6 +53,7 @@ var BooksView = Backbone.View.extend({
 
     render: function(){
 
+        app.books.reset();
         this.el.innerHTML = this.template();
         this.$container = this.$('#page-container');
         app.books.fetch();
@@ -36,7 +63,8 @@ var BooksView = Backbone.View.extend({
 
     addOne: function( model ){
 
-        console.log(model.toJSON());
+        var view = new BookView({ model:model });
+        this.$container.append( view.render().el );
 
     }
 
