@@ -19,8 +19,8 @@ from handlers.api import MongoBackboneHandler
 from handlers.chart import ChartHandler
 from handlers.auth import AuthenticateHandler
 from handlers.auth import GoogleLoginHandler
-from handlers.auth import DoubanSiginHandler, DoubanCallbackHandler
-from handlers.auth import TencentSiginHandler, TencentSiginCallbackHandler
+from handlers.oauth2.douban import DoubanSiginHandler, DoubanCallbackHandler
+from handlers.oauth2.tencent import TencentSiginHandler, TencentSiginCallbackHandler
 from handlers.auth import LogoutHandler
 
 router = [
