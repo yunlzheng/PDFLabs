@@ -2,6 +2,7 @@
 from datetime import datetime
 from mongoengine import *
 from mongoengine.fields import *
+
 from models.users import User
 from models.files import File
 
@@ -37,5 +38,5 @@ class Book(Document):
     wants = ListField()
 
     meta = {
-        'ordering' : ['-update_at']
+        'ordering': ['-update_at']
     }

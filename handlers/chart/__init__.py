@@ -1,12 +1,11 @@
 # coding: utf-8
 import tornado.websocket
 from tornado.log import app_log
+
 __author__ = 'zheng'
 
+
 class ChartHandler(tornado.websocket.WebSocketHandler):
-
-
-
     def on_message(self, message):
         app_log.debug(self)
         self.write_message(u"You said:" + message)

@@ -1,5 +1,4 @@
 # -*- coding : utf-8 -*-
-from tornado.options import options
 
 from models.admin import Admin as admins
 from models.books import Book as books

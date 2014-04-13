@@ -12,8 +12,10 @@ import tornado.web
 from tornado.util import import_object
 from tornado.log import app_log
 
+
 def load_model(func):
     """注入一个Model参数给函数."""
+
     @functools.wraps(func)
     def wrapper(self, *args, **kwargs):
         #setattr(self, 'session', "session")
@@ -28,6 +30,7 @@ def load_model(func):
             print ex
             raise tornado.web.HTTPError(404)
         return func(self, *args, **kwargs)
+
     return wrapper
 
 
@@ -35,6 +38,7 @@ def log_exception(view_func):
     """ 
     log exception decorator for a view,
     """
+
     def _decorator(self, *args, **kwargs):
         try:
             response = view_func(self, *args, **kwargs)
@@ -43,26 +47,26 @@ def log_exception(view_func):
                 raise
             tb = traceback.format_exc()
             # get the view name from request
-            log_dict = { 'class_method':"%s.%s" % (self.__class__.__module__, self.__class__.__name__),
-                         'method':self.request.method,
-                         'url':self.request.full_url(),
-                         'remote':self.request.remote_ip,
-                         'tb':tb,
-                         'date':datetime.datetime.utcnow(),
-                         'tb_short':tb.splitlines()[-1],
-                         'hostname':socket.gethostname(),
-                         'pid':int(os.getpid()),
-                         'rss':int(resource.getrusage(resource.RUSAGE_SELF)[2])
-                         }
+            log_dict = {'class_method': "%s.%s" % (self.__class__.__module__, self.__class__.__name__),
+                        'method': self.request.method,
+                        'url': self.request.full_url(),
+                        'remote': self.request.remote_ip,
+                        'tb': tb,
+                        'date': datetime.datetime.utcnow(),
+                        'tb_short': tb.splitlines()[-1],
+                        'hostname': socket.gethostname(),
+                        'pid': int(os.getpid()),
+                        'rss': int(resource.getrusage(resource.RUSAGE_SELF)[2])
+            }
             if getattr(self, 'current_user', None):
                 #log_dict['user'] = g.current_user
                 pass
             if len(self.request.arguments) > 0:
                 form = ""
                 for key in self.request.arguments.keys():
-                    form += '%s=\"%s\"\n' % (key,self.request.arguments[key])
+                    form += '%s=\"%s\"\n' % (key, self.request.arguments[key])
                 log_dict['form'] = form
- 
+
             try:
                 #res = self.db.log.save(log_dict)
                 app_log.error(log_dict)
@@ -71,13 +75,16 @@ def log_exception(view_func):
                 print (log_dict)
             raise
         return response
+
     return functools.wraps(view_func)(_decorator)
+
 
 def authenticated(method):
     """
     自定义登录验证
     @param method:
     """
+
     @functools.wraps(method)
     def wrapper(self, *args, **kwargs):
         if self.current_user is None:

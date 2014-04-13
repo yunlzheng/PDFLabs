@@ -1,13 +1,12 @@
 # coding: utf-8
 from itertools import izip
-import tornado.web
+
 from handlers import BaseHandler
 from models.users import User
 from models.books import Book
 
 
 class UserHandler(BaseHandler):
-
     def get(self, id):
         user = User.objects(id=id)[0]
         books = Book.objects(likes__in=[user])

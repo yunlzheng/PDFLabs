@@ -3,6 +3,7 @@
 from mongoengine import *
 from mongoengine.fields import *
 
+
 class Group(Document):
     name = StringField(required=True)
     tag = StringField(required=True)

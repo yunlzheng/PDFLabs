@@ -2,118 +2,125 @@
 {% autoescape None %}
 {% block group %}
 <div class="row-fluid group">
-  <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
-  {% if current_user %}
-      <a id="btn-create" class="btn btn-info" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
-      {% if current_user == post.author.id%}
-          <div class="btn-group">
-            <a id="btn-edit" class="btn " data-toggle='modal' href='#myModal'>编辑</a>
-            <button class="btn dropdown-toggle " data-toggle="dropdown">
-              <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a id="btn_delete_post" href="#">删除本帖</a></li>
-            </ul>
-          </div>
-      {% end %}
-  {% else %}
-      <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
-  {% end %}
-  <br/>
-  <span class="subtitle">{{ post.group.description }}</span>
-  <hr>
-  <div class="post-list">
-    <div class="post-item">
-      <div class="post-image">
-          <img src="{{ post.author.avatar }}"/>
-      </div>
-      <div class="post span9">
-        <div class="post-title">
-          <a id="old_post_title">{{ post.title }}</a>
-        </div>
-        <div class="post-info">
-          <span class="post-author">{{post.author.name}}</span>
-          <div class="post-last-comment">
-            {{ post.create_at.strftime('%Y-%m-%d %H:%M:%S') }}       
-          </div>
-        </div>
-      </div>
-      <div class="post-comments-count">
-        <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
-      </div>
-      <div class='clearfix'></div>
+    <h5><a href="../{{ post.group.tag }}">{{ post.group.name }}</a></h5>
+    {% if current_user %}
+    <a id="btn-create" class="btn btn-info" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+    {% if current_user == post.author.id%}
+    <div class="btn-group">
+        <a id="btn-edit" class="btn " data-toggle='modal' href='#myModal'>编辑</a>
+        <button class="btn dropdown-toggle " data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a id="btn_delete_post" href="#">删除本帖</a></li>
+        </ul>
     </div>
-  </div>
-  <div class="post-content">
-
-      <div id="old_post_content">{{ post.content }}</div>
-
-      <br/>
-  </div>
-  <h8><b class="icon-list-alt"></b>回复:</h8>
-  <div class="comments">
-    {% for comment in post.comments %}
-      <div class="comment">
-        <div class="row-fluid">
-          <div class="span1">
-            {% if  comment.author.avatar %}
-              <img src="{{ comment.author.avatar }}"/>
-            {% else %}
-              <img src="/static/assets/images/avatar.jpg"/>
-            {% end %}
-
-          </div>
-          <div class="span11">
-              <p class="comment-info"><b>{{ comment.author.name }}</b> 发表与 <b>{{ comment.create_at.strftime('%Y-%m-%d %H:%M:%S') }}</b> &nbsp;<a href="#"><b class="icon-share-alt"></b>回复</a> &nbsp;<a href="#"><b class="icon-heart"></b>顶</a></p>
-              <p>{{ comment.content }}</p>
-          </div>
-        </div>
-      </div>
     {% end %}
-    {% if not post.comments %}
+    {% else %}
+    <a class="btn" disabled><b class="icon-edit"></b>发帖</a>
+    {% end %}
+    <br/>
+    <span class="subtitle">{{ post.group.description }}</span>
+    <hr>
+    <div class="post-list">
+        <div class="post-item">
+            <div class="post-image">
+                <img src="{{ post.author.avatar }}"/>
+            </div>
+            <div class="post span9">
+                <div class="post-title">
+                    <a id="old_post_title">{{ post.title }}</a>
+                </div>
+                <div class="post-info">
+                    <span class="post-author">{{post.author.name}}</span>
+
+                    <div class="post-last-comment">
+                        {{ post.create_at.strftime('%Y-%m-%d %H:%M:%S') }}
+                    </div>
+                </div>
+            </div>
+            <div class="post-comments-count">
+                <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
+            </div>
+            <div class='clearfix'></div>
+        </div>
+    </div>
+    <div class="post-content">
+
+        <div id="old_post_content">{{ post.content }}</div>
+
+        <br/>
+    </div>
+    <h8><b class="icon-list-alt"></b>回复:</h8>
+    <div class="comments">
+        {% for comment in post.comments %}
+        <div class="comment">
+            <div class="row-fluid">
+                <div class="span1">
+                    {% if comment.author.avatar %}
+                    <img src="{{ comment.author.avatar }}"/>
+                    {% else %}
+                    <img src="/static/assets/images/avatar.jpg"/>
+                    {% end %}
+
+                </div>
+                <div class="span11">
+                    <p class="comment-info"><b>{{ comment.author.name }}</b> 发表与 <b>{{
+                        comment.create_at.strftime('%Y-%m-%d %H:%M:%S') }}</b> &nbsp;<a href="#"><b
+                            class="icon-share-alt"></b>回复</a> &nbsp;<a href="#"><b class="icon-heart"></b>顶</a></p>
+
+                    <p>{{ comment.content }}</p>
+                </div>
+            </div>
+        </div>
+        {% end %}
+        {% if not post.comments %}
         <p>快来抢沙发了</p>
-    {% end %}
-  </div>
-  <div class="comment-publish">
-    <form id="comment-publish-form" action="" method="post">
-      <textarea class="comment-content" name="content"></textarea>
-      {% if current_user %}
-        <button type="submit" class='btn btn-publish'>发布</button>
-      {% else %}
-        <button class='btn btn-publish' disabled>发布</button>
-      {% end %}
-    </form>
-  </div>
+        {% end %}
+    </div>
+    <div class="comment-publish">
+        <form id="comment-publish-form" action="" method="post">
+            <textarea class="comment-content" name="content"></textarea>
+            {% if current_user %}
+            <button type="submit" class='btn btn-publish'>发布</button>
+            {% else %}
+            <button class='btn btn-publish' disabled>发布</button>
+            {% end %}
+        </form>
+    </div>
 </div>
-  <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
     <form id="publish-post-form" class="form-horizontal" action="/group/{{ post.group.tag }}" method="post">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h4 id="model_title">发表帖子</h4>
-    </div>
-    <div class="modal-body">
-        <div class="control-group">
-          <label class="control-label">标题</label>
-          <div class="controls">
-            <input id="post_title" type="text" name="title" class="input-large" laceholder="帖子的标题">
-            <input type="hidden" name="id" value="{{ post.id }}">
-            <input id="post-mode" type="hidden" name="type" value="new">
-          </div>
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="model_title">发表帖子</h4>
         </div>
-        <div class="control-group">
-          <label class="control-label">内容</label>
-          <div class="controls">
-                <textarea id="editor_content" name="content" style="display:none"></textarea>
-               {% module Editor() %}
-          </div>
+        <div class="modal-body">
+            <div class="control-group">
+                <label class="control-label">标题</label>
+
+                <div class="controls">
+                    <input id="post_title" type="text" name="title" class="input-large" laceholder="帖子的标题">
+                    <input type="hidden" name="id" value="{{ post.id }}">
+                    <input id="post-mode" type="hidden" name="type" value="new">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">内容</label>
+
+                <div class="controls">
+                    <textarea id="editor_content" name="content" style="display:none"></textarea>
+                    {% module Editor() %}
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
-      <button type="submit" class="btn btn-primary">发表</button>
-    </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+            <button type="submit" class="btn btn-primary">发表</button>
+        </div>
     </form>
     <form id="delete_post_form" action="" method="delete"></form>
-  </div>
+</div>
 <script data-main="/static/js/app/post.js" src="/static/js/core/require.js"></script>
 {% end %}

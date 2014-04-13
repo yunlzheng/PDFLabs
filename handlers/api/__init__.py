@@ -1,21 +1,22 @@
 # coding: utf-8
 
 import json
+
 import tornado.web
 from tornado.log import app_log
+
 from .book import IWantApi
 from .book import LikeApiHandler
 from .book import BookDetailHandler
 from .book import BookSearchHandler
 from .weixin import WeiXinHandler
-
 from decorators import load_model
+
 
 __author__ = 'zheng'
 
 
 class Page(object):
-    
     def __init__(self, skip=None, limit=None):
         self._skip = skip
         self._limit = limit
@@ -36,10 +37,9 @@ class Page(object):
 
 
 class BackboneHandler(tornado.web.RequestHandler):
-
     model = None
 
-    def initialize(self, auth= False):
+    def initialize(self, auth=False):
         self.auth = auth
 
     def prepare(self):
@@ -105,7 +105,6 @@ class BackboneHandler(tornado.web.RequestHandler):
 
 
 class MongoBackboneHandler(BackboneHandler):
-
     def encode(self, data):
         return data.to_json()
 

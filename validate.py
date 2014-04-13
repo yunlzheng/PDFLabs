@@ -8,5 +8,7 @@ def validate(schema):
             args_dict.update(dict((field_name, kws.get(field_name)) for field_name in field_names if field_name in kws))
             schema().to_python(args_dict)
             return realfn(*args, **kws)
+
         return wrapper
+
     return fn

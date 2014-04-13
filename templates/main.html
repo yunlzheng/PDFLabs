@@ -1,135 +1,136 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{{ page_heading }} 分享你的互联网</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="wb:webmaster" content="d33383db780dd4ae" />
-    <meta property="qc:admins" content="1414761143412360527351006375" />
+    <meta property="wb:webmaster" content="d33383db780dd4ae"/>
+    <meta property="qc:admins" content="1414761143412360527351006375"/>
     <!-- Bootstrap -->
     <link href="/static/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <link href="/static/assets/plugins/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
     <link href="/static/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link type="text/css" rel="stylesheet" media="screen" href="/static/assets/less/pdflabs.css">
 
-     <script type="text/javascript" src="/static/js/core/jquery-1.10.2.js"></script>
-     <script type="text/javascript" src="/static/js/core/underscore.js"></script>
-     <script type="text/javascript" src="/static/js/core/backbone.js"></script>
-     <script type="text/javascript" src="/static/js/core/backbone.localStorage.js"></script>
-     <script type="text/javascript" src="/static/js/core/jquery.foggy.js"></script>
-     <script type="text/javascript">
+    <script type="text/javascript" src="/static/js/core/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="/static/js/core/underscore.js"></script>
+    <script type="text/javascript" src="/static/js/core/backbone.js"></script>
+    <script type="text/javascript" src="/static/js/core/backbone.localStorage.js"></script>
+    <script type="text/javascript" src="/static/js/core/jquery.foggy.js"></script>
+    <script type="text/javascript">
         USER_ID = '{{ current_user }}'
-     </script>
-  </head>
-  <body>
-        <div id="navbar-top" class="navbar navbar-fixed-top">
-          <div class="navbar-inner">
-            <div class="container">
-              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+
+    </script>
+</head>
+<body>
+<div id="navbar-top" class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-              </button>
-              <a class="brand" href="/">
-                  <img class="logo" src="/static/assets/images/logo.png" title=" PDFLabs"/>
-              </a>
-              {% if current_user %}
-                    <li class="dropdown rbrand">
-                      <a class="dropdown-toggle"
-                         data-toggle="dropdown"
-                         href="#">
-                          <img id="account_info" title="{{ current_user }}" src=""/>
-                          <b class="caret"></b>
-                        </a>
-                      <ul class="dropdown-menu">
-			     <li><a href="/users/{{ current_user }}"><i class="icon-home"></i>我的主页</a></li>
-                        <li><a href="#"><i class="icon-message">我的消息</i></a></li>
-                        <!--<li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>-->
-                        <li class="divider"></li>
-                        <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
-                      </ul>
-                    </li>
-              {% else %}
-                <a class="rbrand" href="/sigin">登录</a>
-              {% end %}
-              <div class="nav-collapse collapse">
-                <ul id="main_nav" class="nav">
-                   <li><a href="/bookcases"><b class="icon-flag-alt"></b>分类书架</a></li>
-                   <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-beaker '></b>资源
-                        <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="/book?tag=shared"><b class="icon-bullhorn"></b>已分享</a></li>
-                        <li><a href="/book?tag=waiting"><b class="icon-bullseye"></b>期待中</a></li>
-                        <li><a href="/book?tag=hot"><b class="icon-bolt "></b>最热门</a></li>
-                      </ul>
-                    </li>
-
-                   <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group "></b>小组
-                        <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-
-                          {% for group in groups %}
-                            <li><a href="/group/{{ group.tag }}">{{group.name}}</a></li>
-                          {% end %}
-
-                      </ul>
-                   </li>
-
-                   <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-rocket "></b>彩蛋
-                        <b class="caret"></b>
-                      </a>
-                      <ul class="dropdown-menu">
-                            <li><a href="/gallery"><b class="icon-external-link-sign"></b>用户画廊</a></li>
-                      </ul>
-                   </li>
-
-                   <li><a href="/book/find"><b class="icon-search "></b>发现</a></li>
-		       <!-- <li><a href="#data">数据统计</a></li>
-                   <li><a href="/logs">更新日志</a></li> -->
+            </button>
+            <a class="brand" href="/">
+                <img class="logo" src="/static/assets/images/logo.png" title=" PDFLabs"/>
+            </a>
+            {% if current_user %}
+            <li class="dropdown rbrand">
+                <a class="dropdown-toggle"
+                   data-toggle="dropdown"
+                   href="#">
+                    <img id="account_info" title="{{ current_user }}" src=""/>
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="/users/{{ current_user }}"><i class="icon-home"></i>我的主页</a></li>
+                    <li><a href="#"><i class="icon-message">我的消息</i></a></li>
+                    <!--<li><a href="/book/find"><i class="icon-bookmark"></i>发现/共享</a></li>-->
+                    <li class="divider"></li>
+                    <li><a href="/sigout"><i class="icon-off"></i>退出</a></li>
                 </ul>
-              </div>
+            </li>
+            {% else %}
+            <a class="rbrand" href="/sigin">登录</a>
+            {% end %}
+            <div class="nav-collapse collapse">
+                <ul id="main_nav" class="nav">
+                    <li><a href="/bookcases"><b class="icon-flag-alt"></b>分类书架</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class='icon-beaker '></b>资源
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/book?tag=shared"><b class="icon-bullhorn"></b>已分享</a></li>
+                            <li><a href="/book?tag=waiting"><b class="icon-bullseye"></b>期待中</a></li>
+                            <li><a href="/book?tag=hot"><b class="icon-bolt "></b>最热门</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-group "></b>小组
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            {% for group in groups %}
+                            <li><a href="/group/{{ group.tag }}">{{group.name}}</a></li>
+                            {% end %}
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><b class="icon-rocket "></b>彩蛋
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/gallery"><b class="icon-external-link-sign"></b>用户画廊</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="/book/find"><b class="icon-search "></b>发现</a></li>
+                    <!-- <li><a href="#data">数据统计</a></li>
+                        <li><a href="/logs">更新日志</a></li> -->
+                </ul>
             </div>
-          </div>
         </div>
-        <div id="page">
+    </div>
+</div>
+<div id="page">
 
-          <div id="wrapper2">
-             <div id="main-conatiner" class="container" style="min-height:700px">
-                <div id="ajax_message" class="alert">数据加载中</div>
-                <div class="container" >
-                    {% block body %}{% end %}
-               </div>
-               <aside id="go_top" style="display: none;">
-                   <i class="icon-circle-arrow-up icon-2x"></i>
-               </aside>
-             </div>
-          </div>
-
-          <div id="footer" class="footer">
+    <div id="wrapper2">
+        <div id="main-conatiner" class="container" style="min-height:700px">
+            <div id="ajax_message" class="alert">数据加载中</div>
             <div class="container">
-              
-              <div class="social-links">
+                {% block body %}{% end %}
+            </div>
+            <aside id="go_top" style="display: none;">
+                <i class="icon-circle-arrow-up icon-2x"></i>
+            </aside>
+        </div>
+    </div>
+
+    <div id="footer" class="footer">
+        <div class="container">
+
+            <div class="social-links">
                 <a href="http://weibo.com/503error" target="_blank">
-                  <span class="icon-weibo icon-large"></span>
+                    <span class="icon-weibo icon-large"></span>
                 </a>
                 <a href="http://github.com/yunlzheng" target="_blank">
-                  <span class="icon-github icon-large"></span>
+                    <span class="icon-github icon-large"></span>
                 </a>
                 <a href="http://shareks.tumblr.com" target="_blank">
-                  <span class="icon-tumblr icon-large"></span>
+                    <span class="icon-tumblr icon-large"></span>
                 </a>
-              </div>
-              <div class="clearfix"></div>
-        
             </div>
-          </div>
-       </div>
+            <div class="clearfix"></div>
 
-       <script type="text/javascript">
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
         var sign = 0;
         window.onscroll = function(e){
           var t = document.documentElement.scrollTop || document.body.scrollTop;
@@ -173,14 +174,16 @@
 
         });
 
-      </script>
-      <script type="text/javascript">
+
+</script>
+<script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
         ga('create', 'UA-37439567-2', 'pdflabs.herokuapp.com');
         ga('send', 'pageview');
-      </script>
-  </body>
+
+</script>
+</body>
 </html>

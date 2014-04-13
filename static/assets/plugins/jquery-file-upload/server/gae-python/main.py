@@ -11,31 +11,37 @@
 #
 
 from __future__ import with_statement
+import json
+import re
+import urllib
+
 from google.appengine.api import files, images
 from google.appengine.ext import blobstore, deferred
 from google.appengine.ext.webapp import blobstore_handlers
-import json, re, urllib, webapp2
+import webapp2
+
 
 WEBSITE = 'http://blueimp.github.com/jQuery-File-Upload/'
-MIN_FILE_SIZE = 1 # bytes
-MAX_FILE_SIZE = 5000000 # bytes
+MIN_FILE_SIZE = 1  # bytes
+MAX_FILE_SIZE = 5000000  # bytes
 IMAGE_TYPES = re.compile('image/(gif|p?jpeg|(x-)?png)')
 ACCEPT_FILE_TYPES = IMAGE_TYPES
-THUMBNAIL_MODIFICATOR = '=s80' # max width / height
-EXPIRATION_TIME = 300 # seconds
+THUMBNAIL_MODIFICATOR = '=s80'  # max width / height
+EXPIRATION_TIME = 300  # seconds
+
 
 def cleanup(blob_keys):
     blobstore.delete(blob_keys)
 
-class UploadHandler(webapp2.RequestHandler):
 
+class UploadHandler(webapp2.RequestHandler):
     def initialize(self, request, response):
         super(UploadHandler, self).initialize(request, response)
         self.response.headers['Access-Control-Allow-Origin'] = '*'
         self.response.headers[
             'Access-Control-Allow-Methods'
         ] = 'OPTIONS, HEAD, GET, POST, PUT, DELETE'
-    
+
     def validate(self, file):
         if file['size'] < MIN_FILE_SIZE:
             file['error'] = 'File is too small'
@@ -46,13 +52,13 @@ class UploadHandler(webapp2.RequestHandler):
         else:
             return True
         return False
-    
+
     def get_file_size(self, file):
-        file.seek(0, 2) # Seek to the end of the file
-        size = file.tell() # Get the position of EOF
-        file.seek(0) # Reset the file position to the beginning
+        file.seek(0, 2)  # Seek to the end of the file
+        size = file.tell()  # Get the position of EOF
+        file.seek(0)  # Reset the file position to the beginning
         return size
-    
+
     def write_blob(self, data, info):
         blob = files.blobstore.create(
             mime_type=info['type'],
@@ -62,7 +68,7 @@ class UploadHandler(webapp2.RequestHandler):
             f.write(data)
         files.finalize(blob)
         return files.blobstore.get_blob_key(blob)
-    
+
     def handle_upload(self):
         results = []
         blob_keys = []
@@ -71,7 +77,7 @@ class UploadHandler(webapp2.RequestHandler):
                 continue
             result = {}
             result['name'] = re.sub(r'^.*\\', '',
-                fieldStorage.filename)
+                                    fieldStorage.filename)
             result['type'] = fieldStorage.type
             result['size'] = self.get_file_size(fieldStorage.file)
             if self.validate(result):
@@ -80,23 +86,23 @@ class UploadHandler(webapp2.RequestHandler):
                 )
                 blob_keys.append(blob_key)
                 result['delete_type'] = 'DELETE'
-                result['delete_url'] = self.request.host_url +\
-                    '/?key=' + urllib.quote(blob_key, '')
+                result['delete_url'] = self.request.host_url + \
+                                       '/?key=' + urllib.quote(blob_key, '')
                 if (IMAGE_TYPES.match(result['type'])):
                     try:
                         result['url'] = images.get_serving_url(
                             blob_key,
-                            secure_url=self.request.host_url\
-                                .startswith('https')
+                            secure_url=self.request.host_url \
+                            .startswith('https')
                         )
-                        result['thumbnail_url'] = result['url'] +\
-                            THUMBNAIL_MODIFICATOR
-                    except: # Could not get an image serving url
+                        result['thumbnail_url'] = result['url'] + \
+                                                  THUMBNAIL_MODIFICATOR
+                    except:  # Could not get an image serving url
                         pass
                 if not 'url' in result:
-                    result['url'] = self.request.host_url +\
-                        '/' + blob_key + '/' + urllib.quote(
-                            result['name'].encode('utf-8'), '')
+                    result['url'] = self.request.host_url + \
+                                    '/' + blob_key + '/' + urllib.quote(
+                        result['name'].encode('utf-8'), '')
             results.append(result)
         deferred.defer(
             cleanup,
@@ -104,21 +110,21 @@ class UploadHandler(webapp2.RequestHandler):
             _countdown=EXPIRATION_TIME
         )
         return results
-    
+
     def options(self):
         pass
-        
+
     def head(self):
         pass
-    
+
     def get(self):
         self.redirect(WEBSITE)
-    
+
     def post(self):
         if (self.request.get('_method') == 'DELETE'):
             return self.delete()
         result = {'files': self.handle_upload()}
-        s = json.dumps(result, separators=(',',':'))
+        s = json.dumps(result, separators=(',', ':'))
         redirect = self.request.get('redirect')
         if redirect:
             return self.redirect(str(
@@ -131,15 +137,17 @@ class UploadHandler(webapp2.RequestHandler):
     def delete(self):
         blobstore.delete(self.request.get('key') or '')
 
+
 class DownloadHandler(blobstore_handlers.BlobstoreDownloadHandler):
     def get(self, key, filename):
         if not blobstore.get(key):
             self.error(404)
         else:
             # Cache for the expiration time:
-            self.response.headers['Cache-Control'] =\
+            self.response.headers['Cache-Control'] = \
                 'public,max-age=%d' % EXPIRATION_TIME
             self.send_blob(key, save_as=filename)
+
 
 app = webapp2.WSGIApplication(
     [

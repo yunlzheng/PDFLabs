@@ -3,96 +3,97 @@
 {% block body %}
 <script type="text/javascript">
 	var bookid = {{ book.bid }}
+
 </script>
 <div id="alert-ilike-success" class="alert alert-success" style="display:none">
-              <button type="button" class="close" data-dismiss="alert">×</button>
-              <strong>恭喜</strong>  点击喜欢的次数越多，该本书得到分享的机会也就越来大.
- </div>
- <div id="alert-error" class="alert alert-error" style="display:none">
-	  <strong>抱歉 </strong>与服务器进行数据传输时出现的错误
+    <button type="button" class="close" data-dismiss="alert">×</button>
+    <strong>恭喜</strong> 点击喜欢的次数越多，该本书得到分享的机会也就越来大.
+</div>
+<div id="alert-error" class="alert alert-error" style="display:none">
+    <strong>抱歉 </strong>与服务器进行数据传输时出现的错误
 </div>
 <div id="book" class="row-fluid bookstore">
-	<div class="span3">
-	     <img id="book_img" class="img" src=""/>
-	</div>
-	<div class="span8">
-		<div class="span8">
-		<h5>{{ book.title }}
-            <button id="btn_ilike" class="btn btn-like" title="喜欢">
-                <i id="btn_like_icon" class="icon-heart{{ like }}"></i>
-                <!-- <i class="icon-heart-empty"></i> -->
-            </button>
-        </h5>
-        <h6 id="book_subtitle"></h6>
+    <div class="span3">
+        <img id="book_img" class="img" src=""/>
+    </div>
+    <div class="span8">
+        <div class="span8">
+            <h5>{{ book.title }}
+                <button id="btn_ilike" class="btn btn-like" title="喜欢">
+                    <i id="btn_like_icon" class="icon-heart{{ like }}"></i>
+                    <!-- <i class="icon-heart-empty"></i> -->
+                </button>
+            </h5>
+            <h6 id="book_subtitle"></h6>
 
-		<label id="book_authors"><b>作者:</b>
-		</label>
-		<label>
-			<b>出版商:</b><span id="book_publisher">{{ book.publisher }}</span>
-		</label>
-		<label>
-			<b>出版日期:</b><span id="book_publisher"></span>
-		</label>
-		<label>
-			<b>ISBN:</b><span id="book_isbn13">{{ book.isbn13 }}</span>
-		</label>
-		<label id="book_tags"><b>标签:</b>
-		</label>
-		</div>
-	</div>
+            <label id="book_authors"><b>作者:</b>
+            </label>
+            <label>
+                <b>出版商:</b><span id="book_publisher">{{ book.publisher }}</span>
+            </label>
+            <label>
+                <b>出版日期:</b><span id="book_publisher"></span>
+            </label>
+            <label>
+                <b>ISBN:</b><span id="book_isbn13">{{ book.isbn13 }}</span>
+            </label>
+            <label id="book_tags"><b>标签:</b>
+            </label>
+        </div>
+    </div>
 </div>
 <br/>
 <div class="row-fulid">
-   <h5 title="登录后可共享资源">
-   	共享的文件
-   	{% if current_user %}
+    <h5 title="登录后可共享资源">
+        共享的文件
+        {% if current_user %}
         <a class="btn" id="btn_share" title="我要分享" data-toggle='modal' href='#myModal'>
             <i class="icon-hand-up"></i>
             我要分享
         </a>
-   	{% end %}
-   </h5>
-   <hr>
-   <ul class="files">
-   {% if book.files %}
-	{% for file in book.files %}
-	    {% if file.file_type=='network_disk' %}
-	    	<li>
-	    		<img id="account_info" src="{{ file.author.avatar }}" title="{{ file.author.name }}"/>
-	    		<a class="network_disk_link" href="{{ file.file_address }}" target="_blank" >网盘下载地址</a>
-	    		&nbsp;&nbsp;&nbsp;
-	    		<button class="btn btn-thumbs-up"><i class="icon-thumbs-up"></i></button>
-	    		<button class="btn btn-thumbs-down"><i class="icon-thumbs-down"></i></button>
-	    	</li>
-	    {% else %}
-	    	 <li><img id="account_info" src="{{ file.author.avatar }}" title="{{ file.author.name }}"/>
-	          	<a class="local_disk_link" href="/{{ file.file_address }}" target="_blank">下载</a>&nbsp;
-	          	<a href="/book/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li>
-	          	&nbsp;&nbsp;&nbsp;
-	          	<button class="btn"><i class="icon-thumbs-up"></i></button>
-	    	<button class="btn"><i class="icon-thumbs-down"></i></button>
-	          	<br/>
-	    {% end %}
+        {% end %}
+    </h5>
+    <hr>
+    <ul class="files">
+        {% if book.files %}
+        {% for file in book.files %}
+        {% if file.file_type=='network_disk' %}
+        <li>
+            <img id="account_info" src="{{ file.author.avatar }}" title="{{ file.author.name }}"/>
+            <a class="network_disk_link" href="{{ file.file_address }}" target="_blank">网盘下载地址</a>
+            &nbsp;&nbsp;&nbsp;
+            <button class="btn btn-thumbs-up"><i class="icon-thumbs-up"></i></button>
+            <button class="btn btn-thumbs-down"><i class="icon-thumbs-down"></i></button>
+        </li>
+        {% else %}
+        <li><img id="account_info" src="{{ file.author.avatar }}" title="{{ file.author.name }}"/>
+            <a class="local_disk_link" href="/{{ file.file_address }}" target="_blank">下载</a>&nbsp;
+            <a href="/book/preview/{{ file.id}}" target="_blank" class="btn btn-success">预览</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <button class="btn"><i class="icon-thumbs-up"></i></button>
+        <button class="btn"><i class="icon-thumbs-down"></i></button>
+        <br/>
+        {% end %}
 
-   	{% end %}
-   {% else %}
-   	暂时未提供相关分享
-   {% end %}
- </ul>
+        {% end %}
+        {% else %}
+        暂时未提供相关分享
+        {% end %}
+    </ul>
 </div>
 <br/>
 <div class="row-fluid ">
-	<h5>关于本书</h5>
-	<hr>
-	<p id="book_summary"></p>
+    <h5>关于本书</h5>
+    <hr>
+    <p id="book_summary"></p>
 </div>
 <br/>
 <div class="row-fluid">
-	<h5>看过这本书的人都是这样说的</h5>
-	<hr>
+    <h5>看过这本书的人都是这样说的</h5>
+    <hr>
     <div>
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
         var disqus_shortname = 'pdflabs'; // required: replace example with your forum shortname
         /* * * DON'T EDIT BELOW THIS LINE * * */
@@ -101,52 +102,66 @@
             dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a style="display:none" href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a style="display:none" href="http://disqus.com" class="dsq-brlink">comments powered by <span
+                class="logo-disqus">Disqus</span></a>
     </div>
 </div>
 <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h4 >分享-{{ book.title }}</h4>
-  </div>
-  <div class="modal-body">
-    <form id="form-contribute" class="form-horizontal" action="" method="post" enctype="multipart/form-data">
-   <input id="contribute-book-id" type="hidden" name="id" value="{{ book.bid }}"/>
-	<div class="tabbable">
-	  <ul class="nav nav-tabs">
-	    <li class="active"><a href="#tab1" data-toggle="tab">网盘资源</a></li>
-	    <li><a href="#tab2" data-toggle="tab">本地上传</a></li>
-	  </ul>
-	  <div class="tab-content">
-	    <div class="tab-pane active" id="tab1">
-              <div class="control-group"><label class="control-label">我要分享的</label><div class="controls"><input type="text" class="info-book-name" readonly="readonly" value="{{ book.title }}"></div></div>
-	      <div class="control-group">
-		    <label class="control-label">网盘下载地址</label>
-		    <div class="controls">
-		      <input type="text" name="resource_url" placeholder="资源下载地址">
-		    </div>
-		</div>
-	    </div>
-	    <div class="tab-pane" id="tab2">
-	     <div class="control-group"><label class="control-label">我要分享的</label><div class="controls"><input type="text" class="info-book-name" value="{{ book.title }}" readonly="readonly"></div></div>
-	     <div class="control-group">
-		    <label class="control-label">直接上传文件</label>
-		   <div class="controls">
-	   	    <input type="file" name="file" />
-		    </div>
-		</div>
-	    </div>
-	  </div>
-	</div>
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4>分享-{{ book.title }}</h4>
+    </div>
+    <div class="modal-body">
+        <form id="form-contribute" class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+            <input id="contribute-book-id" type="hidden" name="id" value="{{ book.bid }}"/>
 
-   </form>
-  </div>
-  <div class="modal-footer">
-    <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
-    <button id="contribute-submit" class="btn btn-primary">分享</button>
-  </div>
-  </div>
- <script type="text/javascript" src="/static/js/app/book.js"></script>
+            <div class="tabbable">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a href="#tab1" data-toggle="tab">网盘资源</a></li>
+                    <li><a href="#tab2" data-toggle="tab">本地上传</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab1">
+                        <div class="control-group"><label class="control-label">我要分享的</label>
+
+                            <div class="controls"><input type="text" class="info-book-name" readonly="readonly"
+                                                         value="{{ book.title }}"></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">网盘下载地址</label>
+
+                            <div class="controls">
+                                <input type="text" name="resource_url" placeholder="资源下载地址">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="tab2">
+                        <div class="control-group"><label class="control-label">我要分享的</label>
+
+                            <div class="controls"><input type="text" class="info-book-name" value="{{ book.title }}"
+                                                         readonly="readonly"></div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label">直接上传文件</label>
+
+                            <div class="controls">
+                                <input type="file" name="file"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+        <button id="contribute-submit" class="btn btn-primary">分享</button>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/app/book.js"></script>
 {% end %}

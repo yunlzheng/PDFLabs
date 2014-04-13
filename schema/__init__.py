@@ -2,6 +2,7 @@
 import formencode
 from formencode import validators
 
+
 class WantSchema(formencode.Schema):
     book_id = validators.String(not_empty=True)
 
@@ -9,7 +10,8 @@ class WantSchema(formencode.Schema):
 class BookSearchSchema(formencode.Schema):
     keyword = validators.String(not_empty=True)
 
+
 class GreetSchema(formencode.Schema):
-    filter_extra_fields=True
+    filter_extra_fields = True
 
     name = validators.String(not_empty=True)

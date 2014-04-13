@@ -1,27 +1,33 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Flot Examples</title>
     <link href="layout.css" rel="stylesheet" type="text/css">
-    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
     <script language="javascript" type="text/javascript" src="../jquery.js"></script>
     <script language="javascript" type="text/javascript" src="../jquery.flot.js"></script>
- </head>
-    <body>
-    <h1>Flot Examples</h1>
+</head>
+<body>
+<h1>Flot Examples</h1>
 
-    <div id="placeholder" style="width:600px;height:300px;"></div>
+<div id="placeholder" style="width:600px;height:300px;"></div>
 
-    <p>Multiple axis support showing the raw oil price in US $/barrel of
+<p>Multiple axis support showing the raw oil price in US $/barrel of
     crude oil vs. the exchange rate from US $ to €.</p>
 
-    <p>As illustrated, you can put in multiple axes if you
+<p>As illustrated, you can put in multiple axes if you
     need to. For each data series, simply specify the axis number.
     In the options, you can then configure where you want the extra
     axes to appear.</p>
 
-    <p>Position axis <button>left</button> or <button>right</button>.</p>
+<p>Position axis
+    <button>left</button>
+    or
+    <button>right</button>
+    .
+</p>
 
 <script type="text/javascript">
 $(function () {
@@ -55,6 +61,7 @@ $(function () {
         doPlot($(this).text());
     });
 });
+
 </script>
- </body>
+</body>
 </html>

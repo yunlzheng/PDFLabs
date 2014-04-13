@@ -9,8 +9,8 @@ import tornado.web
 import tornado.gen
 from tornado.httpclient import AsyncHTTPClient
 
-class WeiXinHandler(tornado.web.RequestHandler,):
 
+class WeiXinHandler(tornado.web.RequestHandler, ):
     def get(self):
         self.get_argument('signature', None)
         self.get_argument('timestamp', None)
@@ -61,8 +61,8 @@ class WeiXinHandler(tornado.web.RequestHandler,):
                     wether_data = content.split(":")
 
                 city = wether_data[1]
-                url =  "http://www.webxml.com.cn/WebServices/WeatherWebservice.asmx/getWeatherbyCityName?theCityName=" + \
-                    wether_data[1]
+                url = "http://www.webxml.com.cn/WebServices/WeatherWebservice.asmx/getWeatherbyCityName?theCityName=" + \
+                      wether_data[1]
                 http_client = AsyncHTTPClient()
                 weather_response = yield http_client.fetch(url)
                 weather_doc = xml.dom.minidom.parseString(

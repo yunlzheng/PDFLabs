@@ -1,23 +1,24 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Flot Examples</title>
     <link href="layout.css" rel="stylesheet" type="text/css">
-    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
     <script language="javascript" type="text/javascript" src="../jquery.js"></script>
     <script language="javascript" type="text/javascript" src="../jquery.flot.js"></script>
     <script language="javascript" type="text/javascript" src="../jquery.flot.selection.js"></script>
- </head>
-    <body>
-    <h1>Flot Examples</h1>
+</head>
+<body>
+<h1>Flot Examples</h1>
 
-    <div id="placeholder" style="width:600px;height:300px;"></div>
+<div id="placeholder" style="width:600px;height:300px;"></div>
 
-    <p>Visitors per day to the Flot homepage. Weekends are colored. Try zooming.
-      The plot below shows an overview.</p>
+<p>Visitors per day to the Flot homepage. Weekends are colored. Try zooming.
+    The plot below shows an overview.</p>
 
-    <div id="overview" style="margin-left:50px;margin-top:20px;width:400px;height:50px"></div>
+<div id="overview" style="margin-left:50px;margin-top:20px;width:400px;height:50px"></div>
 
 <script id="source">
 $(function () {
@@ -84,7 +85,8 @@ $(function () {
         plot.setSelection(ranges);
     });
 });
+
 </script>
 
- </body>
+</body>
 </html>

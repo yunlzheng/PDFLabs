@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>jQuery Knob demo</title>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
-        <script src="js/jquery.knob.js"></script>
-        <script src="js/jquery.jqcanvas.js"></script>
-        <script>
+<head>
+    <title>jQuery Knob demo</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/jquery.knob.js"></script>
+    <script src="js/jquery.jqcanvas.js"></script>
+    <script>
             $(function() {
 
                 $(".knob").knob({
@@ -92,85 +92,91 @@
                                                 }
                                     });
             });
-        </script>
-        <style>
-            body{
-              padding: 0;
-              margin: 0px 50px;
-              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-              font-weight: 300;
-              text-rendering: optimizelegibility;
-            }
-            p{font-size: 30px; line-height: 30px}
-            div.demo{text-align: center; width: 280px; float: left}
-            div.demo > p{font-size: 20px}
-        </style>
-    </head>
-    <body>
-        <div style="width:100%;font-size:40px;letter-spacing:-8px;line-height:40px;">
-            <h1>jQuery Knob</h1>
-        </div>
-        <div>
-            <p>Nice, downward compatible, touchable, jQuery dial. <a href="http://flattr.com/thing/674900/jQuery-Knob" target="_blank"><img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></p>
-            <p style="font-size: 20px">* implemented interactions : mouse click and wheel mouse, keyboard (on focus) and fingers (touch events)</p>
-        </div>
-        <div class="demo">
-            <p>&#215; Disable display input</p>
+
+    </script>
+    <style>
+        body{
+        padding: 0;
+        margin: 0px 50px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        text-rendering: optimizelegibility;
+        }
+        p{font-size: 30px; line-height: 30px}
+        div.demo{text-align: center; width: 280px; float: left}
+        div.demo > p{font-size: 20px}
+    </style>
+</head>
+<body>
+<div style="width:100%;font-size:40px;letter-spacing:-8px;line-height:40px;">
+    <h1>jQuery Knob</h1>
+</div>
+<div>
+    <p>Nice, downward compatible, touchable, jQuery dial. <a href="http://flattr.com/thing/674900/jQuery-Knob"
+                                                             target="_blank"><img
+            src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0"/></a>
+    </p>
+
+    <p style="font-size: 20px">* implemented interactions : mouse click and wheel mouse, keyboard (on focus) and fingers
+        (touch events)</p>
+</div>
+<div class="demo">
+    <p>&#215; Disable display input</p>
             <pre>
 data-width="100"
 data-displayInput=false
             </pre>
-            <input class="knob" data-width="100" data-displayInput=false value="35">
-        </div>
-        <div class="demo">
-            <p>&#215; 'cursor' mode</p>
+    <input class="knob" data-width="100" data-displayInput=false value="35">
+</div>
+<div class="demo">
+    <p>&#215; 'cursor' mode</p>
             <pre>
 data-width="150"
 data-cursor=true
 data-thickness=.3
 data-fgColor="#222222"
             </pre>
-            <input class="knob" data-width="150" data-cursor=true data-fgColor="#222222" data-thickness=.3 value="29">
-        </div>
-        <div class="demo" >
-            <p>&#215; Display previous value</p>
+    <input class="knob" data-width="150" data-cursor=true data-fgColor="#222222" data-thickness=.3 value="29">
+</div>
+<div class="demo">
+    <p>&#215; Display previous value</p>
             <pre>
 data-displayPrevious=true
 data-min="-100"
             </pre>
-            <input class="knob" data-width="200" data-min="-100" data-displayPrevious=true value="44">
-        </div>
-        <div style="clear:both"></div>
-        <div class="demo">
-            <p>&#215; Angle offset</p>
+    <input class="knob" data-width="200" data-min="-100" data-displayPrevious=true value="44">
+</div>
+<div style="clear:both"></div>
+<div class="demo">
+    <p>&#215; Angle offset</p>
             <pre>
 data-angleOffset=90
             </pre>
-            <input class="knob" data-angleOffset=90 value="35">
-        </div>
-        <div class="demo">
-            <p>&#215; Angle offset and arc</p>
+    <input class="knob" data-angleOffset=90 value="35">
+</div>
+<div class="demo">
+    <p>&#215; Angle offset and arc</p>
             <pre>
 data-fgColor="#66CC66"
 data-angleOffset=-125
 data-angleArc=250
             </pre>
-            <input class="knob" data-angleOffset=-125 data-angleArc=250 data-fgColor="#66EE66" value="35">
-        </div>
-        <div class="demo" >
-            <p>&#215; 5-digit values</p>
+    <input class="knob" data-angleOffset=-125 data-angleArc=250 data-fgColor="#66EE66" value="35">
+</div>
+<div class="demo">
+    <p>&#215; 5-digit values</p>
             <pre>
 data-min="-15000"
 data-max="15000"
             </pre>
-            <input class="knob" data-min="-15000" data-max="15000" value="-11000">
-        </div>
-        <div style="clear:both"></div>
-        <div style="text-align: center">
-            <p style="font-size: 20px">&#215; Overloaded 'draw' method</p>
-        </div>
-        <div style="background-color: #222; height: 340px">
-            <div class="demo" style="background-color:#222; color:#FFF;">
+    <input class="knob" data-min="-15000" data-max="15000" value="-11000">
+</div>
+<div style="clear:both"></div>
+<div style="text-align: center">
+    <p style="font-size: 20px">&#215; Overloaded 'draw' method</p>
+</div>
+<div style="background-color: #222; height: 340px">
+    <div class="demo" style="background-color:#222; color:#FFF;">
                 <pre>
     data-width="75"
     data-fgColor="#ffec03"
@@ -178,9 +184,10 @@ data-max="15000"
     data-thickness=".2"
     data-displayPrevious=true
                 </pre>
-                <input class="knob" data-width="75" data-displayPrevious=true data-fgColor="#ffec03" data-skin="tron" data-cursor=true value="75" data-thickness=".2">
-            </div>
-            <div class="demo" style="background-color:#222; color:#FFF;">
+        <input class="knob" data-width="75" data-displayPrevious=true data-fgColor="#ffec03" data-skin="tron"
+               data-cursor=true value="75" data-thickness=".2">
+    </div>
+    <div class="demo" style="background-color:#222; color:#FFF;">
                 <pre>
     data-width="150"
     data-fgColor="#ffec03"
@@ -188,9 +195,10 @@ data-max="15000"
     data-thickness=".2"
     data-displayPrevious=true
                 </pre>
-                <input class="knob" data-width="150" data-displayPrevious=true data-fgColor="#ffec03" data-skin="tron" data-thickness=".2" value="75">
-            </div>
-            <div class="demo" style="background-color:#222; color:#FFF;">
+        <input class="knob" data-width="150" data-displayPrevious=true data-fgColor="#ffec03" data-skin="tron"
+               data-thickness=".2" value="75">
+    </div>
+    <div class="demo" style="background-color:#222; color:#FFF;">
                 <pre>
     data-width="150"
     data-fgColor="#C0ffff"
@@ -198,36 +206,38 @@ data-max="15000"
     data-thickness=".1"
     data-angleOffset="180"
                 </pre>
-                <input class="knob" data-width="150" data-angleOffset="180" data-fgColor="#C0ffff" data-skin="tron" data-thickness=".1" value="35">
-            </div>
-        </div>
-        <div style="clear:both"></div>
-        <div class="demo">
-            <p>&#215; Readonly</p>
+        <input class="knob" data-width="150" data-angleOffset="180" data-fgColor="#C0ffff" data-skin="tron"
+               data-thickness=".1" value="35">
+    </div>
+</div>
+<div style="clear:both"></div>
+<div class="demo">
+    <p>&#215; Readonly</p>
             <pre>
 data-thickness=".4"
 data-fgColor="chartreuse"
 data-readOnly=true
             </pre>
-            <input class="knob" data-fgColor="chartreuse" data-thickness=".4" data-readOnly=true value="22">
-        </div>
-        <div class="demo">
-            <p>&#215; Dynamic</p>
+    <input class="knob" data-fgColor="chartreuse" data-thickness=".4" data-readOnly=true value="22">
+</div>
+<div class="demo">
+    <p>&#215; Dynamic</p>
             <pre>
 data-width="200"
             </pre>
-            <input type="button" onclick="$('.knob-dyn').knob();" value="knobify!">
-            <input type="text" class="knob-dyn" data-width="200" data-cursor=true value="56">
+    <input type="button" onclick="$('.knob-dyn').knob();" value="knobify!">
+    <input type="text" class="knob-dyn" data-width="200" data-cursor=true value="56">
             <pre>
 data-width="50"
 data-cursor=true
             </pre>
-            <input type="button" onclick="$('.knob-dyn2').knob();" value="knobify!">
-            <input type="text" class="knob-dyn2" data-width="50" data-thickness=".4" value="56">
-        </div>
-        <div class="demo" style="height:440px;width:300px">
-            <p>&#215; Infinite || iPod click wheel</p>
-            <div style="float:left;width:180px;height:320px;padding:20px;background-color:#EEEEEE;text-align:center;">
+    <input type="button" onclick="$('.knob-dyn2').knob();" value="knobify!">
+    <input type="text" class="knob-dyn2" data-width="50" data-thickness=".4" value="56">
+</div>
+<div class="demo" style="height:440px;width:300px">
+    <p>&#215; Infinite || iPod click wheel</p>
+
+    <div style="float:left;width:180px;height:320px;padding:20px;background-color:#EEEEEE;text-align:center;">
                 <pre>
 data-width="150"
 data-cursor=true
@@ -237,32 +247,39 @@ data-bgColor="#FFFFFF"
 data-displayInput="false"
 + some code
                 </pre>
-                <input class="infinite" data-width="150" data-thickness=".5" data-fgColor="#AAAAAA" data-bgColor="#FFFFFF" data-displayInput="false" data-cursor=true>
-            </div>
-            <div style="float:left;margin-top:200px;">
-                <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">0</div>
-                <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
-            </div>
-        </div>
-        <div style="clear:both"></div>
-        <div id="big" class="demo" style="height:800px;width:100%">
-            <p>&#215; Big !</p>
+        <input class="infinite" data-width="150" data-thickness=".5" data-fgColor="#AAAAAA" data-bgColor="#FFFFFF"
+               data-displayInput="false" data-cursor=true>
+    </div>
+    <div style="float:left;margin-top:200px;">
+        <div class="ival" style="width:80px;text-align:center;font-size:50px;color:#AAA">0</div>
+        <div class="idir" style="width:80px;text-align:center;font-size:50px;"></div>
+    </div>
+</div>
+<div style="clear:both"></div>
+<div id="big" class="demo" style="height:800px;width:100%">
+    <p>&#215; Big !</p>
             <pre>
 data-width="700"
             </pre>
-            <input class="knob" data-min="-100" data-max="100" data-width="700" data-height="700" data-thickness=".3" data-cursor=true>
-        </div>
-        <div style="clear:both"></div>
-        <div style="padding:30px; margin-top:30px;">
-            <p style="font-size:20px;">jQuery Knob is &copy; 2012 Anthony Terrien and dual licensed under the MIT or GPL licenses.</p>
-        </div>
-        <div style="border: 0 none; position: absolute; right: 0; top: 0;"><a href="https://github.com/aterrien" target="_blank"><img src="../i/github-ribbon.png" style="border: 0 none;"></a></div>
-        <script type="text/javascript">
+    <input class="knob" data-min="-100" data-max="100" data-width="700" data-height="700" data-thickness=".3"
+           data-cursor=true>
+</div>
+<div style="clear:both"></div>
+<div style="padding:30px; margin-top:30px;">
+    <p style="font-size:20px;">jQuery Knob is &copy; 2012 Anthony Terrien and dual licensed under the MIT or GPL
+        licenses.</p>
+</div>
+<div style="border: 0 none; position: absolute; right: 0; top: 0;"><a href="https://github.com/aterrien"
+                                                                      target="_blank"><img src="../i/github-ribbon.png"
+                                                                                           style="border: 0 none;"></a>
+</div>
+<script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3008949-6']);
             _gaq.push(['_trackPageview']);
-        </script>
-        <script type="text/javascript">
+
+</script>
+<script type="text/javascript">
             (function() {
                     var ga = document.createElement('script');
                     ga.type = 'text/javascript';
@@ -270,6 +287,7 @@ data-width="700"
                     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
             })();
-        </script>
-    </body>
+
+</script>
+</body>
 </html>

@@ -12,7 +12,6 @@ from decorators import authenticated
 
 
 class BookHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self, id):
         book = Book.objects(bid=id)[0]
@@ -30,7 +29,7 @@ class BookHandler(BaseHandler):
         except Exception as ex:
             app_log.exception(ex)
 
-        self.render("book/book.html",**params)
+        self.render("book/book.html", **params)
 
     @authenticated
     def post(self, bookid):
@@ -43,20 +42,19 @@ class BookHandler(BaseHandler):
             else:
                 user = self.get_curent_user_model()
                 file = File(file_type='network_disk',
-                        file_address=resource_url,
+                            file_address=resource_url,
                 )
                 file.author = user
                 book.files.append(file)
-                book.update_at=datetime.datetime.now()
+                book.update_at = datetime.datetime.now()
                 book.save()
         self.redirect("/book/" + bookid)
 
 
 class PreviewHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self, bookid):
-        book = Book.objects(bid = bookid)[0]
+        book = Book.objects(bid=bookid)[0]
         self.render(
             "book/preview.html",
             page_heading=book['title'],

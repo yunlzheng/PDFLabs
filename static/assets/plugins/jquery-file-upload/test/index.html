@@ -13,16 +13,19 @@
 -->
 <html lang="en">
 <head>
-<!-- Force latest IE rendering engine or ChromeFrame if installed -->
-<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
-<meta charset="utf-8">
-<title>jQuery File Upload Plugin Test</title>
-<meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css">
+    <!-- Force latest IE rendering engine or ChromeFrame if installed -->
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta charset="utf-8">
+    <title>jQuery File Upload Plugin Test</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://code.jquery.com/qunit/git/qunit.css">
 </head>
 <body>
 <h1 id="qunit-header">jQuery File Upload Plugin Test</h1>
+
 <h2 id="qunit-banner"></h2>
+
 <div id="qunit-testrunner-toolbar"></div>
 <h2 id="qunit-userAgent"></h2>
 <ol id="qunit-tests"></ol>
@@ -55,7 +58,8 @@
             <!-- The global progress information -->
             <div class="span5 fileupload-progress">
                 <!-- The global progress bar -->
-                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0"
+                     aria-valuemax="100">
                     <div class="bar" style="width:0%;"></div>
                 </div>
                 <!-- The extended global progress information -->
@@ -66,7 +70,9 @@
         <div class="fileupload-loading"></div>
         <br>
         <!-- The table listing the files available for upload/download -->
-        <table role="presentation" class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
+        <table role="presentation" class="table table-striped">
+            <tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody>
+        </table>
     </form>
 </div>
 <!-- The template to display files available for upload -->
@@ -99,6 +105,7 @@
         {% } %}</td>
     </tr>
 {% } %}
+
 </script>
 <!-- The template to display files available for download -->
 <script id="template-download" type="text/x-tmpl">
@@ -128,6 +135,7 @@
         </td>
     </tr>
 {% } %}
+
 </script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="../js/vendor/jquery.ui.widget.js"></script>
@@ -142,5 +150,5 @@
 <script>window.testUIWidget = $.blueimp.fileupload;</script>
 <script src="http://code.jquery.com/qunit/git/qunit.js"></script>
 <script src="test.js"></script>
-</body> 
+</body>
 </html>

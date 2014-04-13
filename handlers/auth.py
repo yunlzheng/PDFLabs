@@ -5,6 +5,7 @@ import json
 import urllib
 import urllib2
 import urlparse
+
 import tornado.web
 import tornado.gen
 import tornado.httpclient
@@ -29,7 +30,6 @@ def callback(_dict):
 
 
 class UUIDMixin():
-
     def __init__(self):
         pass
 
@@ -39,7 +39,6 @@ class UUIDMixin():
 
 
 class AuthenticateHandler(BaseHandler):
-
     def get(self):
         """
         跳转到登录页面
@@ -74,20 +73,18 @@ class AuthenticateHandler(BaseHandler):
 
 
 class LogoutHandler(BaseHandler):
-
     @tornado.web.authenticated
     def get(self):
-            """
-            退出登录，清除当前cookie值
+        """
+        退出登录，清除当前cookie值
 
-            """
-            self.clear_cookie("userid")
-            self.clear_cookie('admin')
-            self.redirect("/")
+        """
+        self.clear_cookie("userid")
+        self.clear_cookie('admin')
+        self.redirect("/")
 
 
 class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, UUIDMixin):
-
     @tornado.web.asynchronous
     @tornado.gen.coroutine
     def get(self):
@@ -104,7 +101,7 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
                             email=result['email'],
                             name=result['name'],
                             avatar=getAvatar('email')
-                            )
+                )
                 user.save()
 
             self.set_secure_cookie('userid', str(user.id))
@@ -115,18 +112,16 @@ class GoogleLoginHandler(tornado.web.RequestHandler, tornado.auth.GoogleMixin, U
 
 
 class DoubanSiginHandler(BaseHandler):
-
     def get(self):
         """
         跳转到豆瓣登录页面
         """
         url = options.douban_auth_url + "?response_type=code&client_id=" + \
-            options.douban_app_key + "&redirect_uri=" + options.douban_callback
+              options.douban_app_key + "&redirect_uri=" + options.douban_callback
         self.redirect(url)
 
 
 class DoubanCallbackHandler(BaseHandler):
-
     # get the params of douban callback
     @tornado.gen.coroutine
     def get(self):
@@ -190,8 +185,6 @@ class DoubanCallbackHandler(BaseHandler):
 
 
 class TencentSiginHandler(BaseHandler):
-
-
     @tornado.gen.coroutine
     def get(self):
         """
@@ -208,27 +201,26 @@ class TencentSiginHandler(BaseHandler):
         """
         auth_url = options.qq_auth_url
         params = {
-             "response_type": "code",
-             "client_id": options.qq_app_key,
-             "redirect_uri": options.qq_callback,
-             "state": "pdflabs"
+            "response_type": "code",
+            "client_id": options.qq_app_key,
+            "redirect_uri": options.qq_callback,
+            "state": "pdflabs"
         }
         params = urllib.urlencode(params)
-        request_url = auth_url+"?"+params
+        request_url = auth_url + "?" + params
         return request_url
 
 
 class TencentSiginCallbackHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self):
         async_client = AsyncHTTPClient()
-        auth_code = self.get_argument("code",None)
+        auth_code = self.get_argument("code", None)
         if auth_code:
             # 第一步 获取access_token
             auth_token_url = self.__build_auth_token_url(auth_code)
-            token_response =yield async_client.fetch(auth_token_url)
-            access_token,refresh_token = self.__parse_token(token_response)
+            token_response = yield async_client.fetch(auth_token_url)
+            access_token, refresh_token = self.__parse_token(token_response)
 
             # 第二不 得到用户身份信息
             auth_me_url = self.__build_auth_me_url(access_token)
@@ -266,24 +258,24 @@ class TencentSiginCallbackHandler(BaseHandler):
             redirect_uri=options.qq_callback
         )
         params = urllib.urlencode(params)
-        request_url = token_url+"?"+params
+        request_url = token_url + "?" + params
         return request_url
 
     def __build_auth_me_url(self, access_token):
         """
         生成获取用户openid的url地址
         """
-        auth_me_url = options.qq_auth_me+"?access_token="+str(access_token)
+        auth_me_url = options.qq_auth_me + "?access_token=" + str(access_token)
         return auth_me_url
 
     def __build_auth_user_url(self, access_token, openid):
         """
         生成根据penid 获取生成QQ用户信息的url地址
         """
-        auth_user_url = options.qq_auth_user+"?" \
-                            "access_token="+access_token+"" \
-                            "&oauth_consumer_key=100530962" \
-                            "&openid="+str(openid)
+        auth_user_url = options.qq_auth_user + "?" \
+                                               "access_token=" + access_token + "" \
+                                                                                "&oauth_consumer_key=100530962" \
+                                                                                "&openid=" + str(openid)
         return auth_user_url
 
     def __parse_token(self, http_response):

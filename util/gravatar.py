@@ -4,7 +4,6 @@ import hashlib
 
 
 def getAvatar(email, default=None, size=100):
-
     if default:
         return default
     else:

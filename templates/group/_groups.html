@@ -2,70 +2,75 @@
 {% autoescape None %}
 {% block group %}
 <div class="row-fluid group">
-  <h5>{{ _group.name }}</h5>
- {% if current_user %}
-      <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
-  {% else %}
-      <a class="btn btn-info" disabled><b class="icon-edit"></b>发帖</a>
-  {% end %}
-  <br/>
-  <span class="subtitle">{{ _group.description }}</span>
-  <hr>
-  <div class="post-list">
-    {% for post in posts%}
-    <div class="post-item">
-      <div class="post-image">
-          <img src="{{ post.author.avatar }}"/>
-      </div>
-      <div class="post span9">
-        <div class="post-title">
-          <a href="{{post.group.tag}}/{{ post.id }}">{{ post.title[:25] }}....</a>
-        </div>
-        <div class="post-info">
-          <span class="post-author">{{ post.author.name }}</span>
-          <div class="post-last-comment">
-            {% if post.comments %}
-              最后由 <span class="comment-author">{{ post.comments[0].author.name }}</span> 于{{ post.comments[0].create_at.strftime('%Y-%m-%d %H:%M:%S') }}回复
-            {% end %}
-          </div>
-        </div>
-      </div>
-      <div class="post-comments-count">
-        <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
-      </div>
-      <div class='clearfix'></div>
-    </div>
+    <h5>{{ _group.name }}</h5>
+    {% if current_user %}
+    <a class="btn" data-toggle='modal' href='#myModal'><b class="icon-edit"></b>发帖</a>
+    {% else %}
+    <a class="btn btn-info" disabled><b class="icon-edit"></b>发帖</a>
     {% end %}
-  </div>
-</div>
-  <div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <form id="publish-post-form" class="form-horizontal" action="" method="post">
-    <div class="modal-header">
-      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-      <h4 >发表帖子</h4>
-    </div>
-    <div class="modal-body">
-        <div class="control-group">
-          <label class="control-label">标题</label>
-          <div class="controls">
-            <input type="text" name="title" class="input-large" laceholder="帖子的标题">
-            <input id="post-mode" type="hidden" name="type" value="new">
-          </div>
-        </div>
-        <div class="control-group">
-          <label class="control-label">内容</label>
-          <div class="controls">
-                <textarea id="editor_content" name="content" style="display:none"></textarea>
-               {% module Editor() %}
-          </div>
-        </div>
+    <br/>
+    <span class="subtitle">{{ _group.description }}</span>
+    <hr>
+    <div class="post-list">
+        {% for post in posts%}
+        <div class="post-item">
+            <div class="post-image">
+                <img src="{{ post.author.avatar }}"/>
+            </div>
+            <div class="post span9">
+                <div class="post-title">
+                    <a href="{{post.group.tag}}/{{ post.id }}">{{ post.title[:25] }}....</a>
+                </div>
+                <div class="post-info">
+                    <span class="post-author">{{ post.author.name }}</span>
 
+                    <div class="post-last-comment">
+                        {% if post.comments %}
+                        最后由 <span class="comment-author">{{ post.comments[0].author.name }}</span> 于{{
+                        post.comments[0].create_at.strftime('%Y-%m-%d %H:%M:%S') }}回复
+                        {% end %}
+                    </div>
+                </div>
+            </div>
+            <div class="post-comments-count">
+                <span class="badge" title="有{{ len(post.comments) }}人围观">{{ len(post.comments) }}</span>
+            </div>
+            <div class='clearfix'></div>
+        </div>
+        {% end %}
     </div>
-    <div class="modal-footer">
-      <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
-      <button type="submit" class="btn btn-primary">发表</button>
-    </div>
+</div>
+<div id="myModal" class="modal hide fade model-large " tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <form id="publish-post-form" class="form-horizontal" action="" method="post">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4>发表帖子</h4>
+        </div>
+        <div class="modal-body">
+            <div class="control-group">
+                <label class="control-label">标题</label>
+
+                <div class="controls">
+                    <input type="text" name="title" class="input-large" laceholder="帖子的标题">
+                    <input id="post-mode" type="hidden" name="type" value="new">
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">内容</label>
+
+                <div class="controls">
+                    <textarea id="editor_content" name="content" style="display:none"></textarea>
+                    {% module Editor() %}
+                </div>
+            </div>
+
+        </div>
+        <div class="modal-footer">
+            <button class="btn" data-dismiss="modal" aria-hidden="true">取消</button>
+            <button type="submit" class="btn btn-primary">发表</button>
+        </div>
     </form>
-  </div>
+</div>
 <script data-main=/static/js/app/group.js" src="/static/js/core/require.js"></script>
 {% end %}

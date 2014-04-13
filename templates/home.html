@@ -4,84 +4,88 @@
 <div class="row-fluid" id="app_home">
     <div id="page_search">
         <input id="input_search" type="text" placeholder="检索"/>
+
         <div class="clearfix"></div>
     </div>
     <div id="divHomeCarousel" class="carousel slide custom-carousel ">
         <div id="hot-container">
-              <h5 class="min-hidden">最热门</h5>
-              <hr class="min-hidden">
-                <div class="carousel-inner bookstore min-hidden" >
-                      <div class="item active">
-                        <div class="row-fluid ">
+            <h5 class="min-hidden">最热门</h5>
+            <hr class="min-hidden">
+            <div class="carousel-inner bookstore min-hidden">
+                <div class="item active">
+                    <div class="row-fluid ">
                         {% for book in hot_books[0:4] %}
                         <div class="span3">
                             <div class="book_thing">
                                 <div class="pre_ribbon">
-                                  {% if book.files %}
+                                    {% if book.files %}
                                     <span class='stack'>已分享</span>
-                                 {% else %}
+                                    {% else %}
                                     <span class='wait'>期待中</span>
-                                 {% end %}
+                                    {% end %}
                                 </div>
                                 <a href="/book/{{ book.bid }}"><img alt="" src="{{ book.image }}"> </a>
+
                                 <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
 
                             </div>
-                         </div>
+                        </div>
                         {% end %}
 
-                        </div>
-                      </div>
-                      <div class="item">
-                        <div class="row-fluid">
-                            {% for book in hot_books[4:8] %}
-                                <div class="span3">
-                                    <div class="book_thing">
-                                        <div class="pre_ribbon">
-                                              {% if book.files %}
-                                                <span class='stack'>已分享</span>
-                                             {% else %}
-                                                <span class='wait'>期待中</span>
-                                             {% end %}
-                                        </div>
-                                       <a href="/book/{{ book.bid }}"><img alt="" src="{{ book.image }}"> </a>
-                                       <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
-                                    </div>
-                                </div>
-                            {% end %}
-                        </div>
-                      </div>
+                    </div>
                 </div>
-                <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
-                <a class="right carousel-control min-hidden" href="#divHomeCarousel" data-slide="next">›</a>
+                <div class="item">
+                    <div class="row-fluid">
+                        {% for book in hot_books[4:8] %}
+                        <div class="span3">
+                            <div class="book_thing">
+                                <div class="pre_ribbon">
+                                    {% if book.files %}
+                                    <span class='stack'>已分享</span>
+                                    {% else %}
+                                    <span class='wait'>期待中</span>
+                                    {% end %}
+                                </div>
+                                <a href="/book/{{ book.bid }}"><img alt="" src="{{ book.image }}"> </a>
+
+                                <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
+                            </div>
+                        </div>
+                        {% end %}
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control min-hidden" href="#divHomeCarousel" data-slide="prev">‹</a>
+            <a class="right carousel-control min-hidden" href="#divHomeCarousel" data-slide="next">›</a>
         </div>
         <div id="all-container">
             <h5>最新共享</h5>
             <hr>
-            	<div class="row-fluid">
-                    {% for key in result.keys() %}
-                        <div class="bookstore bookrow">
-                            {% for book in result[key] %}
-                                <div class="span3">
-                                    <div class="book_thing">
-                                        <div class="pre_ribbon">
-                                              {% if book.files %}
-                                                <span class='stack'>已分享</span>
-                                             {% else %}
-                                                <span class='wait'>期待中</span>
-                                             {% end %}
-                                        </div>
-                                        <a href="/book/{{ book.bid }}"><img class="img"  src="{{ book.image }}"></a>
-                                        <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
-                                        </a>
-                                        </div>
-                                </div>
-                            {% end %}
-                            <div class="clearfix"></div>
-                         </div>
+            <div class="row-fluid">
+                {% for key in result.keys() %}
+                <div class="bookstore bookrow">
+                    {% for book in result[key] %}
+                    <div class="span3">
+                        <div class="book_thing">
+                            <div class="pre_ribbon">
+                                {% if book.files %}
+                                <span class='stack'>已分享</span>
+                                {% else %}
+                                <span class='wait'>期待中</span>
+                                {% end %}
+                            </div>
+                            <a href="/book/{{ book.bid }}"><img class="img" src="{{ book.image }}"></a>
+
+                            <div class="book_intro"><a href="/book/{{ book.bid }}">{{ book.title }}</a></div>
+                            </a>
+                        </div>
+                    </div>
                     {% end %}
-              </div>
+                    <div class="clearfix"></div>
+                </div>
+                {% end %}
+            </div>
         </div>
-</div>
-<script type="text/javascript" src="/static/js/backbone/view/home.js"></script>
-{% end %}
+    </div>
+    <script type="text/javascript" src="/static/js/backbone/view/home.js"></script>
+    {% end %}

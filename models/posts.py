@@ -2,8 +2,10 @@
 
 from mongoengine import *
 from mongoengine.fields import *
+
 from models.users import User
 from models.groups import Group
+
 
 class Comment(EmbeddedDocument):
     content = StringField()
@@ -11,16 +13,17 @@ class Comment(EmbeddedDocument):
     create_at = DateTimeField()
     praise = IntField(default=0)
 
+
 class Post(Document):
     group = ReferenceField(Group)
     title = StringField(required=True)
     author = ReferenceField(User)
-    content =StringField(required=True)
+    content = StringField(required=True)
     comments = ListField(EmbeddedDocumentField(Comment))
     create_at = DateTimeField()
     update_at = DateTimeField()
 
     meta = {
-        'ordering' : ['-create_at']
+        'ordering': ['-create_at']
     }
 

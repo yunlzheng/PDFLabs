@@ -2,12 +2,12 @@
 from validate import validate
 from schema import GreetSchema
 
+
 class TestSchema():
-    
-    def setUp(self):  
+    def setUp(self):
         pass
 
-    def tearDown(self):  
+    def tearDown(self):
         pass
 
     @validate(GreetSchema)
@@ -15,7 +15,7 @@ class TestSchema():
         print 'hello', name
 
     def testGreetSchema(self):
-         try:
-         	self.greet(name='xxxxxx')
-         except Exception as ex:
-         	print ex
+        try:
+            self.greet(name='xxxxxx')
+        except Exception as ex:
+            print ex

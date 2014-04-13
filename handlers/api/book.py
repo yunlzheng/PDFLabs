@@ -1,19 +1,20 @@
 # -*- coding : utf-8 -*-
 import json
 import datetime
+
 import tornado.web
 import tornado.gen
 from tornado.httpclient import AsyncHTTPClient
 from tornado.log import app_log
+
 from handlers import BaseHandler
 from models.books import Book
 from decorators import authenticated
 
 
 class IWantApi(BaseHandler):
-
     def get(self, id):
-        self.redirect("/book/"+id)
+        self.redirect("/book/" + id)
 
     @authenticated
     def post(self, bookid):
@@ -28,25 +29,24 @@ class IWantApi(BaseHandler):
             book = Book.objects(bid=bookid)[0]
         except Exception, e:
             app_log.error(e)
-            book = Book(bid = bid,
-                title=title,
-                image=image,
-                isbn13=isbn13,
-                publisher=publisher,
-                wcount=0,
-                dcount=0
+            book = Book(bid=bid,
+                        title=title,
+                        image=image,
+                        isbn13=isbn13,
+                        publisher=publisher,
+                        wcount=0,
+                        dcount=0
             )
         else:
-            book.wcount = book.wcount+1
+            book.wcount = book.wcount + 1
         finally:
-            book.update_at=datetime.datetime.now()
+            book.update_at = datetime.datetime.now()
             book.save()
 
 
 class LikeApiHandler(BaseHandler):
-
     def get(self, id):
-        self.redirect("/book/"+id)
+        self.redirect("/book/" + id)
 
     @authenticated
     def post(self, id):
@@ -60,12 +60,11 @@ class LikeApiHandler(BaseHandler):
 
 
 class BookDetailHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self, id):
         self.set_header('Content-Type', 'application/json')
         http_client = AsyncHTTPClient()
-        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+        response = yield http_client.fetch("https://api.douban.com/v2/book/" + id)
         book = Book.objects(bid=id).first()
 
         book_details = json.loads(response.body)
@@ -75,13 +74,12 @@ class BookDetailHandler(BaseHandler):
 
 
 class BookSearchHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self, keyword):
         self.set_header('contentType', 'application/json')
         fields = self.get_argument('fields')
         http_client = AsyncHTTPClient()
         url = "https://api.douban.com/v2/book/search?q=" + \
-            keyword + "&fields=" + fields
+              keyword + "&fields=" + fields
         response = yield http_client.fetch(url)
         self.write(response.body)

@@ -7,7 +7,6 @@ from handlers import BaseHandler
 
 
 class BooksHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self):
         tag = self.get_arguments('tag')[0].decode()

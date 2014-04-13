@@ -4,7 +4,6 @@ from handlers import BaseHandler
 
 
 class BookcaseHandler(BaseHandler):
-
     def get(self, *args):
         variables = {
             "page_heading": "分类书架",

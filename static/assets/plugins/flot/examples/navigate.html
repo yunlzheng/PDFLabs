@@ -1,45 +1,46 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
- <head>
+<head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Flot Examples</title>
     <link href="layout.css" rel="stylesheet" type="text/css">
-    <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
+    <!--[if lte IE 8]>
+    <script language="javascript" type="text/javascript" src="../excanvas.min.js"></script><![endif]-->
     <script language="javascript" type="text/javascript" src="../jquery.js"></script>
     <script language="javascript" type="text/javascript" src="../jquery.flot.js"></script>
     <script language="javascript" type="text/javascript" src="../jquery.flot.navigate.js"></script>
     <style type="text/css">
-    #placeholder .button {
+        #placeholder .button {
         position: absolute;
         cursor: pointer;
-    }
-    #placeholder div.button {
+        }
+        #placeholder div.button {
         font-size: smaller;
         color: #999;
         background-color: #eee;
         padding: 2px;
-    }
-    .message {
+        }
+        .message {
         padding-left: 50px;
         font-size: smaller;
-    }
+        }
     </style>
- </head>
- <body>
-    <h1>Flot Examples</h1>
+</head>
+<body>
+<h1>Flot Examples</h1>
 
-    <div id="placeholder" style="width:600px;height:300px;"></div>
+<div id="placeholder" style="width:600px;height:300px;"></div>
 
-    <p class="message"></p>
+<p class="message"></p>
 
-    <p>With the navigate plugin it is easy to add panning and zooming.
+<p>With the navigate plugin it is easy to add panning and zooming.
     Drag to pan, double click to zoom (or use the mouse scrollwheel).</p>
 
-    <p>The plugin fires events (useful for synchronizing several
+<p>The plugin fires events (useful for synchronizing several
     plots) and adds a couple of public methods so you can easily build
     a little user interface around it, like the little buttons at the
     top right in the plot.</p>
-    
+
 
 <script type="text/javascript">
 $(function () {
@@ -112,7 +113,8 @@ $(function () {
     addArrow('up', 40, 45, { top: -100 });
     addArrow('down', 40, 75, { top: 100 });
 });
+
 </script>
 
- </body>
+</body>
 </html>

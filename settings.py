@@ -1,6 +1,5 @@
 # coding: utf-8
 import os.path
-__author__ = 'zheng'
 
 ###### application setting
 PORT = 5000

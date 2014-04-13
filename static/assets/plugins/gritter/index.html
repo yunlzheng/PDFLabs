@@ -1,65 +1,71 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Gritter demo for jQuery - boedesign.com</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="css/jquery.gritter.css" />
-<script type="text/javascript" src="http://www.google.com/jsapi"></script>
-<script type="text/javascript">google.load('jquery', '1.7.1');</script>
-<script type="text/javascript" src="js/jquery.gritter.js"></script>
-<style type="text/css">
-	body {
-		background:#222 url(images/trees.jpg);
-		color:#fff;
-	}
-	a {
-		color:#00ff00;
-	}
-	#container {
-		width:600px;
-		background:#333;
-		padding:10px;
-	}
-</style>
+    <title>Gritter demo for jQuery - boedesign.com</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.gritter.css"/>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">google.load('jquery', '1.7.1');</script>
+    <script type="text/javascript" src="js/jquery.gritter.js"></script>
+    <style type="text/css">
+        body {
+        background:#222 url(images/trees.jpg);
+        color:#fff;
+        }
+        a {
+        color:#00ff00;
+        }
+        #container {
+        width:600px;
+        background:#333;
+        padding:10px;
+        }
+    </style>
 </head>
 
 
 <body>
 <div id="container">
-	<h1>Gritter Demo</h1>
-	<p>
-		The super awesome background is just to show you that all notifications are transparent!
-		<em>Tested in: FF 3+, Opera 9, IE7, IE8, Safari 4+</em>
-	</p>
-	<ul>
-		<li>
-			<a href="#" id="add-regular">Add regular notification</a>: Fades out after a certain amount of time, can be set for each notification.
-		</li>
-		<li>
-			<a href="#" id="add-sticky">Add sticky notification</a>: Doesn't run on a fade timer.  Just sits there until the user manually removes it by clicking on the (X).
-		</li>
-		<li>
-			<a href="#" id="add-without-image">Add notification without image</a>
-		</li>
+    <h1>Gritter Demo</h1>
+
+    <p>
+        The super awesome background is just to show you that all notifications are transparent!
+        <em>Tested in: FF 3+, Opera 9, IE7, IE8, Safari 4+</em>
+    </p>
+    <ul>
         <li>
-            <a href="#" id="add-gritter-light">Add a white notification</a>: has a 'gritter-light' class_name applied to it.
+            <a href="#" id="add-regular">Add regular notification</a>: Fades out after a certain amount of time, can be
+            set for each notification.
         </li>
-		<li>
-			<a href="#" id="add-with-callbacks">Add notification (with callbacks)</a>
-		</li>
-		<li>
-			<a href="#" id="add-sticky-with-callbacks">Add a sticky notification (with callbacks)</a>
-		</li>
         <li>
-            <a href="#" id="add-max">Add notification with max of 3</a>: If there are 3 messages already on screen, it won't show another one.
+            <a href="#" id="add-sticky">Add sticky notification</a>: Doesn't run on a fade timer. Just sits there until
+            the user manually removes it by clicking on the (X).
         </li>
-		<li>
-			<a href="#" id="remove-all">Remove all notifications</a>
-		</li>
-		<li>
-			<a href="#" id="remove-all-with-callbacks">Remove all notifications (with callbacks)</a>
-		</li>
-	</ul>
+        <li>
+            <a href="#" id="add-without-image">Add notification without image</a>
+        </li>
+        <li>
+            <a href="#" id="add-gritter-light">Add a white notification</a>: has a 'gritter-light' class_name applied to
+            it.
+        </li>
+        <li>
+            <a href="#" id="add-with-callbacks">Add notification (with callbacks)</a>
+        </li>
+        <li>
+            <a href="#" id="add-sticky-with-callbacks">Add a sticky notification (with callbacks)</a>
+        </li>
+        <li>
+            <a href="#" id="add-max">Add notification with max of 3</a>: If there are 3 messages already on screen, it
+            won't show another one.
+        </li>
+        <li>
+            <a href="#" id="remove-all">Remove all notifications</a>
+        </li>
+        <li>
+            <a href="#" id="remove-all-with-callbacks">Remove all notifications (with callbacks)</a>
+        </li>
+    </ul>
 </div>
 
 <script type="text/javascript">
@@ -263,6 +269,7 @@
 
 
 	});
+
 </script>
 
 </body>

@@ -2,6 +2,8 @@
 import json
 import datetime
 import os.path
+from uuid import uuid4
+
 import tornado.web
 import tornado.gen
 import tornado.httpclient
@@ -13,30 +15,34 @@ from models.files import File
 from handlers import BaseHandler
 from decorators import authenticated
 
-class FindHandler(BaseHandler):
 
-    ''' contribute new book resources handler '''
+class FindHandler(BaseHandler):
+    """
+    contribute new book
+    resources handler
+    """
+
     @authenticated
     def get(self):
         self.render(
             "book/_find.html",
             page_heading='cuttle | contribute book',
-            groups = self.get_groups()
+            groups=self.get_groups()
         )
 
     def share_network_file(self, book, resource_url):
         user = self.get_curent_user_model()
         file = File(file_type='network_disk',
-                file_address=resource_url,
+                    file_address=resource_url,
         )
         if user:
             file.author = user
         book.files.append(file)
-        book.update_at=datetime.datetime.now()
+        book.update_at = datetime.datetime.now()
         book.save()
         self.redirect("/book/" + book.bid)
 
-    def share_local_file(self,book, resource_url):
+    def share_local_file(self, book, resource_url):
 
         user = self.get_curent_user_model()
         try:
@@ -44,7 +50,7 @@ class FindHandler(BaseHandler):
             uploadFile = self.request.files['file'][0]
             filename = uploadFile['filename']
             fiexed = filename[filename.rindex('.'):]
-            path = 'static' + os.path.sep +'doc' + os.path.sep + self.generate_uuid() + fiexed
+            path = 'static' + os.path.sep + 'doc' + os.path.sep + str(uuid4()) + fiexed
             file_obj = open(path, 'w+')
             file_obj.write(uploadFile['body'])
             file = File(
@@ -54,7 +60,7 @@ class FindHandler(BaseHandler):
             if user:
                 file.author = user
             book.files.append(file)
-            book.update_at=datetime.datetime.now()
+            book.update_at = datetime.datetime.now()
             book.save()
         except Exception as ex:
             app_log.error(ex)
@@ -68,21 +74,21 @@ class FindHandler(BaseHandler):
         resource_url = self.get_argument('resource_url', '')
 
         http_client = AsyncHTTPClient()
-        response = yield http_client.fetch("https://api.douban.com/v2/book/"+id)
+        response = yield http_client.fetch("https://api.douban.com/v2/book/" + id)
         response = json.loads(response.body)
 
-        book=None
+        book = None
         try:
             book = Book.objects(bid=id)[0]
         except Exception as ex:
             app_log.error(ex)
-            book = Book(bid = id,
-                title=response['title'],
-                image=response['images']['large'],
-                isbn13=response['isbn13'],
-                publisher=response['publisher'],
-                wcount=0,
-                dcount=0
+            book = Book(bid=id,
+                        title=response['title'],
+                        image=response['images']['large'],
+                        isbn13=response['isbn13'],
+                        publisher=response['publisher'],
+                        wcount=0,
+                        dcount=0
             )
         finally:
             book.save()
