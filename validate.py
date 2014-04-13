@@ -1,5 +1,6 @@
 # -*- coding : utf-8 -*-
 
+
 def validate(schema):
     def fn(realfn):
         def wrapper(*args, **kws):
