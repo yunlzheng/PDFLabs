@@ -83,7 +83,8 @@ class TencentSiginCallbackHandler(BaseHandler):
             # 登录失败，跳转到登录页面
             self.redirect("/sigin")
 
-    def __build_auth_token_url(self, auth_code):
+    @staticmethod
+    def __build_auth_token_url(auth_code):
         """
         生成获取access_token的url地址
         """
@@ -99,14 +100,16 @@ class TencentSiginCallbackHandler(BaseHandler):
         request_url = token_url + "?" + params
         return request_url
 
-    def __build_auth_me_url(self, access_token):
+    @staticmethod
+    def __build_auth_me_url(access_token):
         """
         生成获取用户openid的url地址
         """
         auth_me_url = options.qq_auth_me + "?access_token=" + str(access_token)
         return auth_me_url
 
-    def __build_auth_user_url(self, access_token, openid):
+    @staticmethod
+    def __build_auth_user_url(access_token, openid):
         """
         生成根据penid 获取生成QQ用户信息的url地址
         """
@@ -116,7 +119,8 @@ class TencentSiginCallbackHandler(BaseHandler):
                                                                                 "&openid=" + str(openid)
         return auth_user_url
 
-    def __parse_token(self, http_response):
+    @staticmethod
+    def __parse_token(http_response):
         """
         解析返回的access_token, 和 refresh_token
         @param http_response:
@@ -128,7 +132,8 @@ class TencentSiginCallbackHandler(BaseHandler):
         refresh_token = params['refresh_token'][0]
         return (access_token, refresh_token)
 
-    def __parse_me(self, http_response):
+    @staticmethod
+    def __parse_me(http_response):
         """
         解析获取用户QQ的openid
         @param http_response:
@@ -137,7 +142,8 @@ class TencentSiginCallbackHandler(BaseHandler):
         _dic = eval(evel_str)
         return _dic.get('openid')
 
-    def __parse_user(self, http_response, access_token, refresh_token, open_id):
+    @staticmethod
+    def __parse_user(http_response, access_token, refresh_token, open_id):
 
         user_info = json.loads(http_response.body)
         user = User(

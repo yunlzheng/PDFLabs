@@ -7,6 +7,8 @@ import tornado
 import tornado.gen
 from tornado.log import app_log
 from tornado.options import options
+from tornado.httpclient import AsyncHTTPClient
+from tornado.httpclient import HTTPRequest
 
 from handlers import BaseHandler
 from models.users import User
@@ -23,56 +25,67 @@ class DoubanSiginHandler(BaseHandler):
 
 
 class DoubanCallbackHandler(BaseHandler):
+
     @tornado.gen.coroutine
     def get(self):
-
+        async_client = AsyncHTTPClient()
         code = self.get_argument('code')
         if not code:
-            # 登录失败跳转到登录页面
-            return self.redirect("/sigin")
-        url = options.douban_auth_token
-        values = {
+            try:
+                auth_token_url = self.__build_auth_token_url(code)
+                token_response = yield async_client.fetch(auth_token_url)
+                data = json.loads(token_response.body)
+                access_token = data['access_token']
+                refresh_token = data['refresh_token']
+
+                # 根据access_token 获取用户信息
+                auth_response = yield async_client.fetch(self.__build_auth_user_request(access_token))
+                user = self.save_douban_user(self.__build_user_info(auth_response, access_token, refresh_token))
+                self.set_secure_cookie('userid', str(user.id))
+                self.set_secure_cookie('type', 'douban')
+                self.redirect("/")
+
+            except urllib2.URLError, e:
+                app_log.error(e)
+                self.redirect("/sigin?error=" + e.reason)
+        else:
+            self.redirect("/sigin")
+
+    @staticmethod
+    def save_douban_user(user):
+        try:
+            user = User.objects(type='douban', uid=user['uid'])[0]
+        except Exception, e:
+            app_log.error(e)
+        finally:
+            user.save()
+        return user
+
+    @staticmethod
+    def __build_auth_token_url(auth_code):
+        token_url = options.douban_auth_token
+        params = {
             "client_id": options.douban_app_key,
             "client_secret": options.douban_app_secret,
             "grant_type": "authorization_code",
             "redirect_uri": options.douban_callback,
-            "code": code
+            "code": auth_code
         }
+        params = urllib.urlencode(params)
+        request_url = token_url + "?" + params
+        return request_url
 
-        data = urllib.urlencode(values)
+    @staticmethod
+    def __build_auth_user_request(access_token):
+        httprequest = HTTPRequest(options.douban_auth_user)
+        httprequest.headers = {
+            "Authorization": 'Bearer ' + access_token
+        }
+        return httprequest
 
-        try:
-            #TODO ： 修改为异步方法调用
-            request = urllib2.Request(url, data)
-            response = urllib2.urlopen(request)
-            data = json.loads(response.read())
-            access_token = data['access_token']
-            refresh_token = data['refresh_token']
-
-            # 根据access_token 获取用户信息
-            # TODO : 修改为异步方法调用
-            request2 = urllib2.Request(options.douban_account_info)
-            request2.add_header('Authorization', 'Bearer ' + data['access_token'])
-            response2 = urllib2.urlopen(request2)
-            user = self.__build_user_info(response2, access_token, refresh_token)
-
-            try:
-                user = User.objects(type='douban', uid=user['uid'])[0]
-            except Exception, e:
-                app_log.error(e)
-            finally:
-                user.save()
-
-            self.set_secure_cookie('userid', str(user.id))
-            self.set_secure_cookie('type', 'douban')
-            self.redirect("/")
-
-        except urllib2.URLError, e:
-            app_log.error(e)
-            self.redirect("/sigin?error=" + e.reason)
-
-    def __build_user_info(self, response, access_token, refresh_token):
-        json_data = json.loads(response.read())
+    @staticmethod
+    def __build_user_info(response, access_token, refresh_token):
+        json_data = json.loads(response.body)
         user = User(
             uid=json_data['uid'],
             type='douban',
