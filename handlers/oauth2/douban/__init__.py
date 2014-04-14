@@ -1,7 +1,6 @@
 # coding=utf-8
 import json
 import urllib
-import urllib2
 
 import tornado
 import tornado.gen
@@ -9,6 +8,7 @@ from tornado.log import app_log
 from tornado.options import options
 from tornado.httpclient import AsyncHTTPClient
 from tornado.httpclient import HTTPRequest
+from tornado.httpclient import HTTPError
 
 from handlers import BaseHandler
 from models.users import User
@@ -18,6 +18,7 @@ class DoubanSiginHandler(BaseHandler):
     """
     跳转到豆瓣登录页面
     """
+
     def get(self):
         url = options.douban_auth_url + "?response_type=code&client_id=" + \
               options.douban_app_key + "&redirect_uri=" + options.douban_callback
@@ -25,7 +26,6 @@ class DoubanSiginHandler(BaseHandler):
 
 
 class DoubanCallbackHandler(BaseHandler):
-
     @tornado.gen.coroutine
     def get(self):
         async_client = AsyncHTTPClient()
@@ -45,9 +45,9 @@ class DoubanCallbackHandler(BaseHandler):
                 self.set_secure_cookie('type', 'douban')
                 self.redirect("/")
 
-            except urllib2.URLError, e:
+            except HTTPError, e:
                 app_log.error(e)
-                self.redirect("/sigin?error=" + e.reason)
+                self.redirect("/sigin?error=" + e.message)
         else:
             self.redirect("/sigin")
 
